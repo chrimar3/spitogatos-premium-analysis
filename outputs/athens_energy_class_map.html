@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abc3dda5d192911f8b94fd947beab932 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    top: 10px; right: 10px; width: 200px; height: auto; 
+                    background-color: white; border: 2px solid grey; z-index:9999; 
+                    font-size: 12px; font-family: Arial, sans-serif;
+                    border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                       color: white; text-align: center; padding: 8px; font-weight: bold; 
+                       border-radius: 6px 6px 0 0; font-size: 13px;">
+                🏠 Energy Class Legend
+            </div>
+            <div style="padding: 10px;">
+                <div style="margin-bottom: 8px; font-size: 11px; color: #2c3e50; font-weight: bold;">
+                    EU Energy Rating Scale:
+                </div>
+        
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #004d25; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">A+</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Excellent - New/Premium</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #2E8B57; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">A</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Very Good - Modern</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #32CD32; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">B</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Good - Well Maintained</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #FFD700; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">C</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Average - Typical Athens</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #FF8C00; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">D</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Below Average - Older</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #FF6347; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">E</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Poor - Needs Improvement</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 3px 0;">
+                <div style="width: 15px; height: 15px; background-color: #DC143C; 
+                           margin-right: 8px; border-radius: 2px; border: 1px solid #ccc;"></div>
+                <span style="font-size: 10px; font-weight: bold; width: 20px;">F</span>
+                <span style="font-size: 10px; margin-left: 5px; color: #555;">Very Poor - Major Issues</span>
+            </div>
+            
+            </div>
+            <div style="background: #f8f9fa; padding: 6px; border-top: 1px solid #ddd; 
+                       font-size: 9px; color: #666; text-align: center;">
+                Circle size = Properties count<br>
+                Color = Weighted median energy class
+            </div>
+        </div>
+        
+    
+        <div style="position: fixed; 
+                    bottom: 10px; left: 10px; width: 280px; height: auto; 
+                    background-color: white; border: 2px solid grey; z-index:9999; 
+                    font-size: 11px; font-family: Arial, sans-serif;
+                    border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); 
+                       color: white; text-align: center; padding: 8px; font-weight: bold; 
+                       border-radius: 6px 6px 0 0; font-size: 12px;">
+                📊 Business Intelligence Summary
+            </div>
+            <div style="padding: 10px;">
+                <div style="margin-bottom: 8px;">
+                    <strong style="color: #e74c3c;">🎯 Market Scale:</strong><br>
+                    • 13 City Blocks | 191 Properties<br>
+                    • €17,140,278 Total Market Value<br>
+                    • €89,740 Avg Property Value
+                </div>
+                
+                <div style="margin-bottom: 8px;">
+                    <strong style="color: #9b59b6;">⚡ Energy Profile:</strong><br>
+                    • 17.3% Premium Properties (A/B)<br>
+                    • C-Class Dominant (83/191)<br>
+                    • Major Improvement Opportunity
+                </div>
+                
+                <div style="margin-bottom: 8px;">
+                    <strong style="color: #3498db;">💰 Revenue Opportunity:</strong><br>
+                    • €2.4M Energy Efficiency Upgrades<br>
+                    • €2.3M Geographic Expansion<br>
+                    • 24.5% Total Value Uplift Potential
+                </div>
+                
+                <div style="font-size: 9px; color: #7f8c8d; text-align: center; 
+                           border-top: 1px solid #ecf0f1; padding-top: 6px;">
+                    Click neighborhoods & blocks for detailed analysis
+                </div>
+            </div>
+        </div>
+        
+    
+            <div class="folium-map" id="map_abc3dda5d192911f8b94fd947beab932" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_abc3dda5d192911f8b94fd947beab932 = L.map(
+                "map_abc3dda5d192911f8b94fd947beab932",
+                {
+                    center: [37.9755, 23.7348],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1a5de4dadfcc349cd9be88a25cb1a9e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b1a5de4dadfcc349cd9be88a25cb1a9e.addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var tile_layer_4d1874ee14850a8556423320f639d6e6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "OpenStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4d1874ee14850a8556423320f639d6e6.addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var tile_layer_52c4acc8170ddd283a9df6c7820b195e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_52c4acc8170ddd283a9df6c7820b195e.addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var circle_e291437c50e017cd5b3eda143516de4d = L.circle(
+                [37.976, 23.744],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 437.5246, "stroke": true, "weight": 3}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+        var popup_a3941990738031c98e7784e73320540e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c6b8b1e07e0cdcc68ecab34d13b69daa = $(`<div id="html_c6b8b1e07e0cdcc68ecab34d13b69daa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 350px;">             <h3 style="color: #2c3e50; margin: 0 0 15px 0; text-align: center;                        border-bottom: 2px solid #3498db; padding-bottom: 8px;">                 📍 Kolonaki             </h3>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #e74c3c; margin: 0 0 8px 0;">🏢 Market Overview</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px; font-size: 12px;">                     <strong>Blocks Analyzed:</strong> 4<br>                     <strong>Total Properties:</strong> 60<br>                     <strong>Market Value:</strong> €4,375,246<br>                     <strong>Avg Price/m²:</strong> €1215<br>                     <strong>Premium Properties:</strong> 18.3%                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #27ae60; margin: 0 0 8px 0;">⚡ Energy Distribution</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px;">                                      <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #2E8B57;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">A:</span>                     <span style="font-size: 12px; margin-left: 5px;">4 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #32CD32;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">B:</span>                     <span style="font-size: 12px; margin-left: 5px;">7 (11.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FFD700;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">C:</span>                     <span style="font-size: 12px; margin-left: 5px;">27 (45.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF8C00;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">D:</span>                     <span style="font-size: 12px; margin-left: 5px;">18 (30.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF6347;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">E:</span>                     <span style="font-size: 12px; margin-left: 5px;">4 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="text-align: center; font-size: 11px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Click blocks for details             </div>         </div>         </div>`)[0];
+                popup_a3941990738031c98e7784e73320540e.setContent(html_c6b8b1e07e0cdcc68ecab34d13b69daa);
+            
+        
+
+        circle_e291437c50e017cd5b3eda143516de4d.bindPopup(popup_a3941990738031c98e7784e73320540e)
+        ;
+
+        
+    
+    
+            var marker_461fa742a497117c021d525a1f4f777d = L.marker(
+                [37.976, 23.744],
+                {}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var div_icon_c42e3eaabb6d943825e895c47a9aa245 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"font-size: 14px; font-weight: bold; color: #2c3e50; \n                                   background: white; padding: 4px 8px; border-radius: 4px; \n                                   border: 2px solid #FFD700; \n                                   box-shadow: 0 2px 4px rgba(0,0,0,0.3);\"\u003e\n                            Kolonaki\u003cbr\u003e\n                            \u003cspan style=\"font-size: 11px; color: #7f8c8d;\"\u003e\n                                4 blocks | C dominant\n                            \u003c/span\u003e\n                        \u003c/div\u003e\n                        ", "iconAnchor": [60, 20], "iconSize": [120, 40]});
+            marker_461fa742a497117c021d525a1f4f777d.setIcon(div_icon_c42e3eaabb6d943825e895c47a9aa245);
+        
+    
+            var circle_d1147df73093f65f5cdbfff8041f1ff5 = L.circle(
+                [37.969, 23.738],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 495.9411, "stroke": true, "weight": 3}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+        var popup_b537bae868bde68fce5cfe8b24e929af = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_558f10d6d9f4436fcf49a97d26ced58b = $(`<div id="html_558f10d6d9f4436fcf49a97d26ced58b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 350px;">             <h3 style="color: #2c3e50; margin: 0 0 15px 0; text-align: center;                        border-bottom: 2px solid #3498db; padding-bottom: 8px;">                 📍 Pangrati             </h3>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #e74c3c; margin: 0 0 8px 0;">🏢 Market Overview</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px; font-size: 12px;">                     <strong>Blocks Analyzed:</strong> 4<br>                     <strong>Total Properties:</strong> 60<br>                     <strong>Market Value:</strong> €4,959,411<br>                     <strong>Avg Price/m²:</strong> €1378<br>                     <strong>Premium Properties:</strong> 18.3%                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #27ae60; margin: 0 0 8px 0;">⚡ Energy Distribution</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px;">                                      <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #2E8B57;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">A:</span>                     <span style="font-size: 12px; margin-left: 5px;">4 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #32CD32;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">B:</span>                     <span style="font-size: 12px; margin-left: 5px;">7 (11.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FFD700;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">C:</span>                     <span style="font-size: 12px; margin-left: 5px;">27 (45.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF8C00;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">D:</span>                     <span style="font-size: 12px; margin-left: 5px;">18 (30.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF6347;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">E:</span>                     <span style="font-size: 12px; margin-left: 5px;">4 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="text-align: center; font-size: 11px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Click blocks for details             </div>         </div>         </div>`)[0];
+                popup_b537bae868bde68fce5cfe8b24e929af.setContent(html_558f10d6d9f4436fcf49a97d26ced58b);
+            
+        
+
+        circle_d1147df73093f65f5cdbfff8041f1ff5.bindPopup(popup_b537bae868bde68fce5cfe8b24e929af)
+        ;
+
+        
+    
+    
+            var marker_25b40050013e085bac9c24aa0a5a67b1 = L.marker(
+                [37.969, 23.738],
+                {}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var div_icon_827e0205773f1f69e08a4f2a9897e17b = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"font-size: 14px; font-weight: bold; color: #2c3e50; \n                                   background: white; padding: 4px 8px; border-radius: 4px; \n                                   border: 2px solid #FFD700; \n                                   box-shadow: 0 2px 4px rgba(0,0,0,0.3);\"\u003e\n                            Pangrati\u003cbr\u003e\n                            \u003cspan style=\"font-size: 11px; color: #7f8c8d;\"\u003e\n                                4 blocks | C dominant\n                            \u003c/span\u003e\n                        \u003c/div\u003e\n                        ", "iconAnchor": [60, 20], "iconSize": [120, 40]});
+            marker_25b40050013e085bac9c24aa0a5a67b1.setIcon(div_icon_827e0205773f1f69e08a4f2a9897e17b);
+        
+    
+            var circle_36c0d40b2807532a944ca096ad5b051d = L.circle(
+                [37.982, 23.731],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 780.5621157142857, "stroke": true, "weight": 3}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+        var popup_a4ca9dbbc2bda4955f1ad34170373b24 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3695d3162aa3f67f14801d0ce0279071 = $(`<div id="html_3695d3162aa3f67f14801d0ce0279071" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 350px;">             <h3 style="color: #2c3e50; margin: 0 0 15px 0; text-align: center;                        border-bottom: 2px solid #3498db; padding-bottom: 8px;">                 📍 Exarchia             </h3>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #e74c3c; margin: 0 0 8px 0;">🏢 Market Overview</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px; font-size: 12px;">                     <strong>Blocks Analyzed:</strong> 5<br>                     <strong>Total Properties:</strong> 71<br>                     <strong>Market Value:</strong> €7,805,621<br>                     <strong>Avg Price/m²:</strong> €1832<br>                     <strong>Premium Properties:</strong> 15.5%                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #27ae60; margin: 0 0 8px 0;">⚡ Energy Distribution</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 4px;">                                      <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #2E8B57;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">A:</span>                     <span style="font-size: 12px; margin-left: 5px;">4 (5.6%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #32CD32;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">B:</span>                     <span style="font-size: 12px; margin-left: 5px;">7 (9.9%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FFD700;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">C:</span>                     <span style="font-size: 12px; margin-left: 5px;">29 (40.8%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF8C00;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">D:</span>                     <span style="font-size: 12px; margin-left: 5px;">26 (36.6%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 2px 0;">                     <div style="width: 15px; height: 15px; background-color: #FF6347;                                 margin-right: 8px; border-radius: 2px;"></div>                     <span style="font-size: 12px; width: 20px;">E:</span>                     <span style="font-size: 12px; margin-left: 5px;">5 (7.0%)</span>                 </div>                                  </div>             </div>                          <div style="text-align: center; font-size: 11px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Click blocks for details             </div>         </div>         </div>`)[0];
+                popup_a4ca9dbbc2bda4955f1ad34170373b24.setContent(html_3695d3162aa3f67f14801d0ce0279071);
+            
+        
+
+        circle_36c0d40b2807532a944ca096ad5b051d.bindPopup(popup_a4ca9dbbc2bda4955f1ad34170373b24)
+        ;
+
+        
+    
+    
+            var marker_f31ff33037f3b55d361a53d28913f015 = L.marker(
+                [37.982, 23.731],
+                {}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var div_icon_e63e22c7f84dbf7eb823783d09f64429 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"font-size: 14px; font-weight: bold; color: #2c3e50; \n                                   background: white; padding: 4px 8px; border-radius: 4px; \n                                   border: 2px solid #FFD700; \n                                   box-shadow: 0 2px 4px rgba(0,0,0,0.3);\"\u003e\n                            Exarchia\u003cbr\u003e\n                            \u003cspan style=\"font-size: 11px; color: #7f8c8d;\"\u003e\n                                5 blocks | C dominant\n                            \u003c/span\u003e\n                        \u003c/div\u003e\n                        ", "iconAnchor": [60, 20], "iconSize": [120, 40]});
+            marker_f31ff33037f3b55d361a53d28913f015.setIcon(div_icon_e63e22c7f84dbf7eb823783d09f64429);
+        
+    
+            var feature_group_1099c65090fcdb13180729734fb59433 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_e6e1a92b22b1a351d7c09c5c3c9331a2 = L.circleMarker(
+                [37.978, 23.746],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_b559e4dd48c6bc8072a75ee45f83112c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4e0fce5f6ef71b2721cec1a491be42d3 = $(`<div id="html_4e0fce5f6ef71b2721cec1a491be42d3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Kolonaki_CityBlock_01             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 644 m²<br>                         <strong>Avg Area/Property:</strong> 71 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €973<br>                         <strong>Avg Property:</strong> €128,805<br>                         <strong>Range:</strong> €320 - €350,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 53.333333333333336px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">4 (26.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 1A<br>Street 1B<br>Avenue 1<br>Square 1                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_b559e4dd48c6bc8072a75ee45f83112c.setContent(html_4e0fce5f6ef71b2721cec1a491be42d3);
+            
+        
+
+        circle_marker_e6e1a92b22b1a351d7c09c5c3c9331a2.bindPopup(popup_b559e4dd48c6bc8072a75ee45f83112c)
+        ;
+
+        
+    
+    
+            circle_marker_e6e1a92b22b1a351d7c09c5c3c9331a2.bindTooltip(
+                `<div>
+                     Block Kolonaki_CityBlock_01 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_954373093f6a67be94567c9617c24089 = L.circleMarker(
+                [37.974, 23.746],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_311e836528ffc0f89767d9747724e539 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4b446a05c79639ea04582665595bbb6d = $(`<div id="html_4b446a05c79639ea04582665595bbb6d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Kolonaki_CityBlock_02             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 635 m²<br>                         <strong>Avg Area/Property:</strong> 63 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €878<br>                         <strong>Avg Property:</strong> €111,350<br>                         <strong>Range:</strong> €320 - €265,000<br>                         <strong>Premium Rate:</strong> 13.3%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 2A<br>Street 2B<br>Avenue 2<br>Square 2                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_311e836528ffc0f89767d9747724e539.setContent(html_4b446a05c79639ea04582665595bbb6d);
+            
+        
+
+        circle_marker_954373093f6a67be94567c9617c24089.bindPopup(popup_311e836528ffc0f89767d9747724e539)
+        ;
+
+        
+    
+    
+            circle_marker_954373093f6a67be94567c9617c24089.bindTooltip(
+                `<div>
+                     Block Kolonaki_CityBlock_02 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd5969aafc76e27036baf1ab7638f4ce = L.circleMarker(
+                [37.978, 23.742],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_b4a313e3edbaa1bad3999f517e1e67b2 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_f880ddf1847aea2e61ba60418b39e93a = $(`<div id="html_f880ddf1847aea2e61ba60418b39e93a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Kolonaki_CityBlock_03             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 93 m²<br>                         <strong>Avg Area/Property:</strong> 93 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €2849<br>                         <strong>Avg Property:</strong> €24,414<br>                         <strong>Range:</strong> €90 - €265,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 53.333333333333336px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">4 (26.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 3A<br>Street 3B<br>Avenue 3<br>Square 3                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_b4a313e3edbaa1bad3999f517e1e67b2.setContent(html_f880ddf1847aea2e61ba60418b39e93a);
+            
+        
+
+        circle_marker_cd5969aafc76e27036baf1ab7638f4ce.bindPopup(popup_b4a313e3edbaa1bad3999f517e1e67b2)
+        ;
+
+        
+    
+    
+            circle_marker_cd5969aafc76e27036baf1ab7638f4ce.bindTooltip(
+                `<div>
+                     Block Kolonaki_CityBlock_03 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d724fcbe49606b42164a77287dfd55bd = L.circleMarker(
+                [37.974, 23.742],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_00687e0cee4ee6062ccf01db95a977ff = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_223c3ecb3fa5dfb545832fbaadc96652 = $(`<div id="html_223c3ecb3fa5dfb545832fbaadc96652" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Kolonaki_CityBlock_04             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 430 m²<br>                         <strong>Avg Area/Property:</strong> 53 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €383<br>                         <strong>Avg Property:</strong> €27,114<br>                         <strong>Range:</strong> €80 - €265,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 4A<br>Street 4B<br>Avenue 4<br>Square 4                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_00687e0cee4ee6062ccf01db95a977ff.setContent(html_223c3ecb3fa5dfb545832fbaadc96652);
+            
+        
+
+        circle_marker_d724fcbe49606b42164a77287dfd55bd.bindPopup(popup_00687e0cee4ee6062ccf01db95a977ff)
+        ;
+
+        
+    
+    
+            circle_marker_d724fcbe49606b42164a77287dfd55bd.bindTooltip(
+                `<div>
+                     Block Kolonaki_CityBlock_04 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_255e05d1533eb2026c41ea6c1084d8a3 = L.circleMarker(
+                [37.969, 23.738],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_341ed4ff476ce49f14b86e7c9c19f855 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_45bec6b5e3f86998bd4db836fbbea218 = $(`<div id="html_45bec6b5e3f86998bd4db836fbbea218" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Pangrati_CityBlock_01             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 810 m²<br>                         <strong>Avg Area/Property:</strong> 90 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €1089<br>                         <strong>Avg Property:</strong> €111,059<br>                         <strong>Range:</strong> €400 - €320,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 53.333333333333336px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">4 (26.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 1A<br>Street 1B<br>Avenue 1<br>Square 1                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_341ed4ff476ce49f14b86e7c9c19f855.setContent(html_45bec6b5e3f86998bd4db836fbbea218);
+            
+        
+
+        circle_marker_255e05d1533eb2026c41ea6c1084d8a3.bindPopup(popup_341ed4ff476ce49f14b86e7c9c19f855)
+        ;
+
+        
+    
+    
+            circle_marker_255e05d1533eb2026c41ea6c1084d8a3.bindTooltip(
+                `<div>
+                     Block Pangrati_CityBlock_01 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87b214ea2211a4fb47c724c4640d35e4 = L.circleMarker(
+                [37.971000000000004, 23.74],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_2ce3534a25f54ba7d07ce16c0b033375 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_59660d385fb782c1f5cd587a94417bf0 = $(`<div id="html_59660d385fb782c1f5cd587a94417bf0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Pangrati_CityBlock_02             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 992 m²<br>                         <strong>Avg Area/Property:</strong> 110 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €1225<br>                         <strong>Avg Property:</strong> €142,332<br>                         <strong>Range:</strong> €400 - €320,000<br>                         <strong>Premium Rate:</strong> 13.3%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 2A<br>Street 2B<br>Avenue 2<br>Square 2                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_2ce3534a25f54ba7d07ce16c0b033375.setContent(html_59660d385fb782c1f5cd587a94417bf0);
+            
+        
+
+        circle_marker_87b214ea2211a4fb47c724c4640d35e4.bindPopup(popup_2ce3534a25f54ba7d07ce16c0b033375)
+        ;
+
+        
+    
+    
+            circle_marker_87b214ea2211a4fb47c724c4640d35e4.bindTooltip(
+                `<div>
+                     Block Pangrati_CityBlock_02 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3dc19bc96dbb71fb33875cb8ec2bf268 = L.circleMarker(
+                [37.967, 23.74],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_50be35db1eb52ae5faa82293c3fc18b4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_1a00fad11102b53c2e57b730e5b9d512 = $(`<div id="html_1a00fad11102b53c2e57b730e5b9d512" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Pangrati_CityBlock_03             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 0 m²<br>                         <strong>Avg Area/Property:</strong> 0 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €0<br>                         <strong>Avg Property:</strong> €31,281<br>                         <strong>Range:</strong> €90 - €305,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 93.33333333333333px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">7 (46.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 53.333333333333336px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">4 (26.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 3A<br>Street 3B<br>Avenue 3<br>Square 3                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_50be35db1eb52ae5faa82293c3fc18b4.setContent(html_1a00fad11102b53c2e57b730e5b9d512);
+            
+        
+
+        circle_marker_3dc19bc96dbb71fb33875cb8ec2bf268.bindPopup(popup_50be35db1eb52ae5faa82293c3fc18b4)
+        ;
+
+        
+    
+    
+            circle_marker_3dc19bc96dbb71fb33875cb8ec2bf268.bindTooltip(
+                `<div>
+                     Block Pangrati_CityBlock_03 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f701ca31d108153279bb9b8283cb5977 = L.circleMarker(
+                [37.971000000000004, 23.736],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_15766167c634c59732840e5f6e275b6f = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_70c5dc48e8b056d5bcebc62620ed61bc = $(`<div id="html_70c5dc48e8b056d5bcebc62620ed61bc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Pangrati_CityBlock_04             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 628 m²<br>                         <strong>Avg Area/Property:</strong> 78 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €905<br>                         <strong>Avg Property:</strong> €45,956<br>                         <strong>Range:</strong> €80 - €320,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 4A<br>Street 4B<br>Avenue 4<br>Square 4                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_15766167c634c59732840e5f6e275b6f.setContent(html_70c5dc48e8b056d5bcebc62620ed61bc);
+            
+        
+
+        circle_marker_f701ca31d108153279bb9b8283cb5977.bindPopup(popup_15766167c634c59732840e5f6e275b6f)
+        ;
+
+        
+    
+    
+            circle_marker_f701ca31d108153279bb9b8283cb5977.bindTooltip(
+                `<div>
+                     Block Pangrati_CityBlock_04 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4849468648023c0bee4855e081802c3c = L.circleMarker(
+                [37.98, 23.729000000000003],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_57c0892aa2e8db627d38f537493ab4d4 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_c2aa9f0b4e6563cc05602f5ee992bcad = $(`<div id="html_c2aa9f0b4e6563cc05602f5ee992bcad" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Exarchia_CityBlock_01             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 957 m²<br>                         <strong>Avg Area/Property:</strong> 95 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €1209<br>                         <strong>Avg Property:</strong> €167,549<br>                         <strong>Range:</strong> €250 - €530,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 1A<br>Street 1B<br>Avenue 1<br>Square 1                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_57c0892aa2e8db627d38f537493ab4d4.setContent(html_c2aa9f0b4e6563cc05602f5ee992bcad);
+            
+        
+
+        circle_marker_4849468648023c0bee4855e081802c3c.bindPopup(popup_57c0892aa2e8db627d38f537493ab4d4)
+        ;
+
+        
+    
+    
+            circle_marker_4849468648023c0bee4855e081802c3c.bindTooltip(
+                `<div>
+                     Block Exarchia_CityBlock_01 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_27bcbc1099494c9a892378eaafee1fcf = L.circleMarker(
+                [37.982, 23.731],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_d312ac9431de4cc9931c07fcdbce9ebc = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_dfabce9fb34408a750137262170d7a3c = $(`<div id="html_dfabce9fb34408a750137262170d7a3c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Exarchia_CityBlock_02             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 1210 m²<br>                         <strong>Avg Area/Property:</strong> 110 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €1222<br>                         <strong>Avg Property:</strong> €139,682<br>                         <strong>Range:</strong> €380 - €530,000<br>                         <strong>Premium Rate:</strong> 13.3%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 2A<br>Street 2B<br>Avenue 2<br>Square 2                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_d312ac9431de4cc9931c07fcdbce9ebc.setContent(html_dfabce9fb34408a750137262170d7a3c);
+            
+        
+
+        circle_marker_27bcbc1099494c9a892378eaafee1fcf.bindPopup(popup_d312ac9431de4cc9931c07fcdbce9ebc)
+        ;
+
+        
+    
+    
+            circle_marker_27bcbc1099494c9a892378eaafee1fcf.bindTooltip(
+                `<div>
+                     Block Exarchia_CityBlock_02 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48d24d58e733e2d2f5570064c518d7f1 = L.circleMarker(
+                [37.984, 23.733],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_83160b264a07a4920947030de0a94d0a = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_48ca91457545a6208f57766d271ea1e9 = $(`<div id="html_48ca91457545a6208f57766d271ea1e9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Exarchia_CityBlock_03             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 132 m²<br>                         <strong>Avg Area/Property:</strong> 132 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €10<br>                         <strong>Avg Property:</strong> €68,164<br>                         <strong>Range:</strong> €90 - €530,000<br>                         <strong>Premium Rate:</strong> 13.3%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 3A<br>Street 3B<br>Avenue 3<br>Square 3                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_83160b264a07a4920947030de0a94d0a.setContent(html_48ca91457545a6208f57766d271ea1e9);
+            
+        
+
+        circle_marker_48d24d58e733e2d2f5570064c518d7f1.bindPopup(popup_83160b264a07a4920947030de0a94d0a)
+        ;
+
+        
+    
+    
+            circle_marker_48d24d58e733e2d2f5570064c518d7f1.bindTooltip(
+                `<div>
+                     Block Exarchia_CityBlock_03 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5963eee6b471bdff87646c4feedb5874 = L.circleMarker(
+                [37.98, 23.733],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_6df913469fdfe4f66c93b638fd60fc4c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_3fde863f574fca3272a3e1c110ab917a = $(`<div id="html_3fde863f574fca3272a3e1c110ab917a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Exarchia_CityBlock_04             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 15<br>                         <strong>Total Area:</strong> 471 m²<br>                         <strong>Avg Area/Property:</strong> 78 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €31<br>                         <strong>Avg Property:</strong> €9,659<br>                         <strong>Range:</strong> €80 - €95,000<br>                         <strong>Premium Rate:</strong> 20.0%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">A:</span>                     <div style="background: #2E8B57; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 26.666666666666668px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">2 (13.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 80.0px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">6 (40.0%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 66.66666666666666px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (33.3%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 13.333333333333334px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (6.7%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 4A<br>Street 4B<br>Avenue 4<br>Square 4                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_6df913469fdfe4f66c93b638fd60fc4c.setContent(html_3fde863f574fca3272a3e1c110ab917a);
+            
+        
+
+        circle_marker_5963eee6b471bdff87646c4feedb5874.bindPopup(popup_6df913469fdfe4f66c93b638fd60fc4c)
+        ;
+
+        
+    
+    
+            circle_marker_5963eee6b471bdff87646c4feedb5874.bindTooltip(
+                `<div>
+                     Block Exarchia_CityBlock_04 | Energy: C | Properties: 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dffed37e937cbbefe634c303caaa6832 = L.circleMarker(
+                [37.984, 23.729000000000003],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 2}
+            ).addTo(feature_group_1099c65090fcdb13180729734fb59433);
+        
+    
+        var popup_ee7a1fba392d35068b2eaf347795bad5 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_38d330473ea7b169c58ae88157202c7e = $(`<div id="html_38d330473ea7b169c58ae88157202c7e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 420px;">             <h3 style="color: #2c3e50; margin: 0 0 12px 0; text-align: center;                       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);                       color: white; padding: 10px; border-radius: 6px; font-size: 16px;">                 🏢 Exarchia_CityBlock_05             </h3>                          <div style="display: flex; gap: 15px; margin-bottom: 15px;">                 <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #e74c3c; margin: 0 0 8px 0; font-size: 13px;">📊 Block Metrics</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Properties:</strong> 11<br>                         <strong>Total Area:</strong> 416 m²<br>                         <strong>Avg Area/Property:</strong> 69 m²<br>                         <strong>Confidence:</strong> 100%                     </div>                 </div>                                  <div style="flex: 1; background: #f8f9fa; padding: 10px; border-radius: 6px;">                     <h4 style="color: #27ae60; margin: 0 0 8px 0; font-size: 13px;">💰 Pricing</h4>                     <div style="font-size: 11px; line-height: 1.4;">                         <strong>Avg Price/m²:</strong> €2291<br>                         <strong>Avg Property:</strong> €184,529<br>                         <strong>Range:</strong> €1,293 - €305,000<br>                         <strong>Premium Rate:</strong> 9.1%                     </div>                 </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #9b59b6; margin: 0 0 8px 0; font-size: 13px;">                     ⚡ Energy Distribution | Weighted Median:                      <span style="background: #FFD700;                                  color: white; padding: 2px 6px; border-radius: 3px; font-size: 12px;">                         C                     </span>                 </h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px;">                                      <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">B:</span>                     <div style="background: #32CD32; height: 12px; width: 18.181818181818183px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (9.1%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">C:</span>                     <div style="background: #FFD700; height: 12px; width: 90.9090909090909px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">5 (45.5%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">D:</span>                     <div style="background: #FF8C00; height: 12px; width: 72.72727272727273px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">4 (36.4%)</span>                 </div>                                  <div style="display: flex; align-items: center; margin: 3px 0;">                     <span style="font-size: 11px; width: 25px; font-weight: bold;">E:</span>                     <div style="background: #FF6347; height: 12px; width: 18.181818181818183px;                                 margin: 0 5px; border-radius: 2px;"></div>                     <span style="font-size: 11px;">1 (9.1%)</span>                 </div>                                  </div>             </div>                          <div style="margin-bottom: 15px;">                 <h4 style="color: #34495e; margin: 0 0 8px 0; font-size: 13px;">🗺️ Street Boundaries</h4>                 <div style="background: #f8f9fa; padding: 8px; border-radius: 6px; font-size: 11px; line-height: 1.3;">                     Street 5A<br>Street 5B<br>Avenue 5<br>Square 5                 </div>             </div>                          <div style="text-align: center; font-size: 10px; color: #7f8c8d;                         border-top: 1px solid #ecf0f1; padding-top: 8px;">                 Spitogatos Premium Analysis | Weighted by apartment square meters             </div>         </div>         </div>`)[0];
+                popup_ee7a1fba392d35068b2eaf347795bad5.setContent(html_38d330473ea7b169c58ae88157202c7e);
+            
+        
+
+        circle_marker_dffed37e937cbbefe634c303caaa6832.bindPopup(popup_ee7a1fba392d35068b2eaf347795bad5)
+        ;
+
+        
+    
+    
+            circle_marker_dffed37e937cbbefe634c303caaa6832.bindTooltip(
+                `<div>
+                     Block Exarchia_CityBlock_05 | Energy: C | Properties: 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_1099c65090fcdb13180729734fb59433.addTo(map_abc3dda5d192911f8b94fd947beab932);
+        
+    
+            var layer_control_1384bd3d62f15935056309dc5089dc07_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b1a5de4dadfcc349cd9be88a25cb1a9e,
+                    "OpenStreetMap" : tile_layer_4d1874ee14850a8556423320f639d6e6,
+                    "CartoDB Positron" : tile_layer_52c4acc8170ddd283a9df6c7820b195e,
+                },
+                overlays :  {
+                    "City Blocks (Energy Classes)" : feature_group_1099c65090fcdb13180729734fb59433,
+                },
+            };
+            let layer_control_1384bd3d62f15935056309dc5089dc07 = L.control.layers(
+                layer_control_1384bd3d62f15935056309dc5089dc07_layers.base_layers,
+                layer_control_1384bd3d62f15935056309dc5089dc07_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_abc3dda5d192911f8b94fd947beab932);
+
+        
+</script>
+</html>
