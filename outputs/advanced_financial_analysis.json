@@ -1,0 +1,672 @@
+{
+  "analysis_timestamp": "2025-08-01T17:45:24.503170",
+  "methodology": "Fortune 500 Financial Standards",
+  "executive_summary": {
+    "analysis_scope": "4 investment scenarios analyzed",
+    "recommended_strategy": "comprehensive_strategy",
+    "expected_npv": 7682365.41,
+    "expected_irr": 19.08,
+    "probability_of_success": 1.0,
+    "payback_period": 6.67,
+    "risk_rating": "Low Risk",
+    "total_investment_required": 19711319.88071429,
+    "portfolio_optimization": "Modern Portfolio Theory applied for risk-return optimization",
+    "key_insight": "Best scenario: comprehensive_strategy with 19.1% IRR"
+  },
+  "scenario_analysis": {
+    "energy_efficiency_upgrade": {
+      "npv_analysis": {
+        "cash_flows": [
+          -2571041.7235714286,
+          277740.3816472166,
+          323386.4095874983,
+          333088.00187512324,
+          343080.641931377,
+          353373.06118931825,
+          363974.25302499783,
+          374893.4806157478,
+          386140.28503422026,
+          397724.4935852469,
+          4728737.583748787
+        ],
+        "npv": 1766480.86,
+        "irr": 16.38,
+        "profitability_index": 1.687,
+        "payback_period": 7.52,
+        "initial_investment": 2571041.7235714286,
+        "terminal_value": 4319081.355355983,
+        "total_return": 68.7
+      },
+      "monte_carlo_simulation": {
+        "simulations_run": 10000,
+        "npv_statistics": {
+          "mean": 1820659.45,
+          "std": 686864.92,
+          "percentile_5": 847301.61,
+          "percentile_25": 1335162.86,
+          "percentile_50": 1746976.11,
+          "percentile_75": 2210478.87,
+          "percentile_95": 3066244.44,
+          "probability_positive": 1.0
+        },
+        "irr_statistics": {
+          "mean": 16.38,
+          "std": 0.57,
+          "percentile_5": 15.44,
+          "percentile_25": 16.01,
+          "percentile_50": 16.39,
+          "percentile_75": 16.76,
+          "percentile_95": 17.32
+        },
+        "risk_assessment": {
+          "npv_at_risk_5%": 847301.61,
+          "probability_of_loss": 0.0,
+          "risk_rating": "Low Risk"
+        }
+      },
+      "sensitivity_analysis": {
+        "initial_investment": {
+          "changes": [
+            "-20%",
+            "-10%",
+            "+0%",
+            "+10%",
+            "+20%"
+          ],
+          "npv_impact": [
+            -20.0,
+            -10.0,
+            0.0,
+            10.0,
+            20.0
+          ],
+          "elasticity": 1.0
+        },
+        "value_increase": {
+          "changes": [
+            "-30%",
+            "-15%",
+            "+0%",
+            "+15%",
+            "+30%"
+          ],
+          "npv_impact": [
+            -6.8,
+            -3.4,
+            0.0,
+            3.4,
+            6.8
+          ],
+          "elasticity": 0.22666666666666666
+        },
+        "discount_rate": {
+          "changes": [
+            "-25%",
+            "-12%",
+            "+0%",
+            "+12%",
+            "+25%"
+          ],
+          "npv_impact": [
+            36.9,
+            17.61,
+            0.0,
+            -16.08,
+            -30.8
+          ],
+          "elasticity": 1.3508
+        },
+        "rental_premium": {
+          "changes": [
+            "-40%",
+            "-20%",
+            "+0%",
+            "+20%",
+            "+40%"
+          ],
+          "npv_impact": [
+            -6.98,
+            -3.49,
+            0.0,
+            3.49,
+            6.98
+          ],
+          "elasticity": 0.17450000000000002
+        }
+      },
+      "risk_metrics": {
+        "beta": 0.8,
+        "required_return": 6.8,
+        "expected_return": 12.5,
+        "volatility": 15.0,
+        "sharpe_ratio": 0.7,
+        "risk_premium": 10.5
+      },
+      "break_even_analysis": {
+        "break_even_rental_premium": 0.0,
+        "break_even_value_increase": 0.0,
+        "safety_margin_rental": Infinity,
+        "safety_margin_value": Infinity
+      },
+      "roi_optimization": {
+        "optimal_implementation_period": 1,
+        "optimal_npv": 1800024.39,
+        "optimal_irr": 16.6,
+        "improvement_vs_base": 1.9
+      }
+    },
+    "premium_portfolio_expansion": {
+      "npv_analysis": {
+        "cash_flows": [
+          -5142083.447142857,
+          552260.5849564945,
+          640139.2517988427,
+          732793.6041252711,
+          754777.4122490293,
+          777420.7346165001,
+          800743.3566549951,
+          824765.657354645,
+          849508.6270752844,
+          874993.8858875429,
+          10575985.938461568
+        ],
+        "npv": 4364936.45,
+        "irr": 17.86,
+        "profitability_index": 1.849,
+        "payback_period": 7.07,
+        "initial_investment": 5142083.447142857,
+        "terminal_value": 9674742.2359974,
+        "total_return": 84.9
+      },
+      "monte_carlo_simulation": {
+        "simulations_run": 10000,
+        "npv_statistics": {
+          "mean": 4481934.31,
+          "std": 1609791.85,
+          "percentile_5": 2190716.04,
+          "percentile_25": 3335454.29,
+          "percentile_50": 4298060.35,
+          "percentile_75": 5454209.83,
+          "percentile_95": 7376706.4,
+          "probability_positive": 1.0
+        },
+        "irr_statistics": {
+          "mean": 17.85,
+          "std": 0.9,
+          "percentile_5": 16.37,
+          "percentile_25": 17.26,
+          "percentile_50": 17.85,
+          "percentile_75": 18.46,
+          "percentile_95": 19.31
+        },
+        "risk_assessment": {
+          "npv_at_risk_5%": 2190716.04,
+          "probability_of_loss": 0.0,
+          "risk_rating": "Low Risk"
+        }
+      },
+      "sensitivity_analysis": {
+        "initial_investment": {
+          "changes": [
+            "-20%",
+            "-10%",
+            "+0%",
+            "+10%",
+            "+20%"
+          ],
+          "npv_impact": [
+            -20.0,
+            -10.0,
+            0.0,
+            10.0,
+            20.0
+          ],
+          "elasticity": 1.0
+        },
+        "value_increase": {
+          "changes": [
+            "-30%",
+            "-15%",
+            "+0%",
+            "+15%",
+            "+30%"
+          ],
+          "npv_impact": [
+            -8.8,
+            -4.4,
+            0.0,
+            4.4,
+            8.8
+          ],
+          "elasticity": 0.29333333333333333
+        },
+        "discount_rate": {
+          "changes": [
+            "-25%",
+            "-12%",
+            "+0%",
+            "+12%",
+            "+25%"
+          ],
+          "npv_impact": [
+            33.16,
+            15.82,
+            0.0,
+            -14.44,
+            -27.65
+          ],
+          "elasticity": 1.2132999999999998
+        },
+        "rental_premium": {
+          "changes": [
+            "-40%",
+            "-20%",
+            "+0%",
+            "+20%",
+            "+40%"
+          ],
+          "npv_impact": [
+            -10.28,
+            -5.14,
+            0.0,
+            5.14,
+            10.28
+          ],
+          "elasticity": 0.257
+        }
+      },
+      "risk_metrics": {
+        "beta": 0.8,
+        "required_return": 6.8,
+        "expected_return": 13.33,
+        "volatility": 15.0,
+        "sharpe_ratio": 0.756,
+        "risk_premium": 11.33
+      },
+      "break_even_analysis": {
+        "break_even_rental_premium": 0.0,
+        "break_even_value_increase": 0.0,
+        "safety_margin_rental": Infinity,
+        "safety_margin_value": Infinity
+      },
+      "roi_optimization": {
+        "optimal_implementation_period": 1,
+        "optimal_npv": 4554284.81,
+        "optimal_irr": 18.46,
+        "improvement_vs_base": 4.3
+      }
+    },
+    "geographic_expansion": {
+      "npv_analysis": {
+        "cash_flows": [
+          -4285069.539285715,
+          422648.4068544601,
+          456057.7571105745,
+          491091.2848158868,
+          527816.3722021184,
+          543650.8633681819,
+          559960.3892692274,
+          576759.2009473043,
+          594061.9769757234,
+          611883.8362849951,
+          7540770.519943116
+        ],
+        "npv": 2454358.87,
+        "irr": 15.05,
+        "profitability_index": 1.573,
+        "payback_period": 8.18,
+        "initial_investment": 4285069.539285715,
+        "terminal_value": 6910530.168569571,
+        "total_return": 57.3
+      },
+      "monte_carlo_simulation": {
+        "simulations_run": 10000,
+        "npv_statistics": {
+          "mean": 2552481.44,
+          "std": 1067835.87,
+          "percentile_5": 1026923.69,
+          "percentile_25": 1794546.96,
+          "percentile_50": 2426093.17,
+          "percentile_75": 3177293.1,
+          "percentile_95": 4479717.21,
+          "probability_positive": 1.0
+        },
+        "irr_statistics": {
+          "mean": 15.05,
+          "std": 0.45,
+          "percentile_5": 14.32,
+          "percentile_25": 14.75,
+          "percentile_50": 15.04,
+          "percentile_75": 15.34,
+          "percentile_95": 15.78
+        },
+        "risk_assessment": {
+          "npv_at_risk_5%": 1026923.69,
+          "probability_of_loss": 0.0,
+          "risk_rating": "Low Risk"
+        }
+      },
+      "sensitivity_analysis": {
+        "initial_investment": {
+          "changes": [
+            "-20%",
+            "-10%",
+            "+0%",
+            "+10%",
+            "+20%"
+          ],
+          "npv_impact": [
+            -20.0,
+            -10.0,
+            0.0,
+            10.0,
+            20.0
+          ],
+          "elasticity": 1.0
+        },
+        "value_increase": {
+          "changes": [
+            "-30%",
+            "-15%",
+            "+0%",
+            "+15%",
+            "+30%"
+          ],
+          "npv_impact": [
+            -6.52,
+            -3.26,
+            0.0,
+            3.26,
+            6.52
+          ],
+          "elasticity": 0.21733333333333332
+        },
+        "discount_rate": {
+          "changes": [
+            "-25%",
+            "-12%",
+            "+0%",
+            "+12%",
+            "+25%"
+          ],
+          "npv_impact": [
+            41.79,
+            19.94,
+            0.0,
+            -18.2,
+            -34.85
+          ],
+          "elasticity": 1.5292
+        },
+        "rental_premium": {
+          "changes": [
+            "-40%",
+            "-20%",
+            "+0%",
+            "+20%",
+            "+40%"
+          ],
+          "npv_impact": [
+            -6.1,
+            -3.05,
+            0.0,
+            3.05,
+            6.1
+          ],
+          "elasticity": 0.1525
+        }
+      },
+      "risk_metrics": {
+        "beta": 0.8,
+        "required_return": 6.8,
+        "expected_return": 5.0,
+        "volatility": 15.0,
+        "sharpe_ratio": 0.2,
+        "risk_premium": 3.0
+      },
+      "break_even_analysis": {
+        "break_even_rental_premium": 0.0,
+        "break_even_value_increase": 0.0,
+        "safety_margin_rental": Infinity,
+        "safety_margin_value": Infinity
+      },
+      "roi_optimization": {
+        "optimal_implementation_period": 1,
+        "optimal_npv": 2562759.58,
+        "optimal_irr": 15.44,
+        "improvement_vs_base": 4.4
+      }
+    },
+    "comprehensive_strategy": {
+      "npv_analysis": {
+        "cash_flows": [
+          -7713125.170714287,
+          818730.3424209255,
+          940308.1755698029,
+          1068443.8213994338,
+          1203421.32862083,
+          1345535.8868362503,
+          1385901.963441338,
+          1427479.0223445783,
+          1470303.3930149155,
+          1514412.494805363,
+          17108537.74893106
+        ],
+        "npv": 7682365.41,
+        "irr": 19.08,
+        "profitability_index": 1.996,
+        "payback_period": 6.67,
+        "initial_investment": 7713125.170714287,
+        "terminal_value": 15548692.879281538,
+        "total_return": 99.6
+      },
+      "monte_carlo_simulation": {
+        "simulations_run": 10000,
+        "npv_statistics": {
+          "mean": 7877212.67,
+          "std": 2686707.04,
+          "percentile_5": 4051948.3,
+          "percentile_25": 5948048.57,
+          "percentile_50": 7541329.4,
+          "percentile_75": 9520124.26,
+          "percentile_95": 12801695.06,
+          "probability_positive": 1.0
+        },
+        "irr_statistics": {
+          "mean": 19.07,
+          "std": 0.96,
+          "percentile_5": 17.47,
+          "percentile_25": 18.45,
+          "percentile_50": 19.07,
+          "percentile_75": 19.72,
+          "percentile_95": 20.64
+        },
+        "risk_assessment": {
+          "npv_at_risk_5%": 4051948.3,
+          "probability_of_loss": 0.0,
+          "risk_rating": "Low Risk"
+        }
+      },
+      "sensitivity_analysis": {
+        "initial_investment": {
+          "changes": [
+            "-20%",
+            "-10%",
+            "+0%",
+            "+10%",
+            "+20%"
+          ],
+          "npv_impact": [
+            -20.0,
+            -10.0,
+            0.0,
+            10.0,
+            20.0
+          ],
+          "elasticity": 1.0
+        },
+        "value_increase": {
+          "changes": [
+            "-30%",
+            "-15%",
+            "+0%",
+            "+15%",
+            "+30%"
+          ],
+          "npv_impact": [
+            -9.37,
+            -4.69,
+            0.0,
+            4.69,
+            9.37
+          ],
+          "elasticity": 0.3125
+        },
+        "discount_rate": {
+          "changes": [
+            "-25%",
+            "-12%",
+            "+0%",
+            "+12%",
+            "+25%"
+          ],
+          "npv_impact": [
+            30.82,
+            14.7,
+            0.0,
+            -13.43,
+            -25.71
+          ],
+          "elasticity": 1.1279
+        },
+        "rental_premium": {
+          "changes": [
+            "-40%",
+            "-20%",
+            "+0%",
+            "+20%",
+            "+40%"
+          ],
+          "npv_impact": [
+            -9.82,
+            -4.91,
+            0.0,
+            4.91,
+            9.82
+          ],
+          "elasticity": 0.2455
+        }
+      },
+      "risk_metrics": {
+        "beta": 0.8,
+        "required_return": 6.8,
+        "expected_return": 10.0,
+        "volatility": 15.0,
+        "sharpe_ratio": 0.533,
+        "risk_premium": 8.0
+      },
+      "break_even_analysis": {
+        "break_even_rental_premium": 0.0,
+        "break_even_value_increase": 0.0,
+        "safety_margin_rental": Infinity,
+        "safety_margin_value": Infinity
+      },
+      "roi_optimization": {
+        "optimal_implementation_period": 1,
+        "optimal_npv": 8515046.57,
+        "optimal_irr": 20.77,
+        "improvement_vs_base": 10.8
+      }
+    }
+  },
+  "portfolio_optimization": {
+    "scenario_metrics": {
+      "energy_efficiency_upgrade": {
+        "expected_return": 0.1638,
+        "risk": 0.2702154281008497,
+        "investment_size": 2571041.7235714286
+      },
+      "premium_portfolio_expansion": {
+        "expected_return": 0.17859999999999998,
+        "risk": 0.3195524162317916,
+        "investment_size": 5142083.447142857
+      },
+      "geographic_expansion": {
+        "expected_return": 0.1505,
+        "risk": 0.24054433435678088,
+        "investment_size": 4285069.539285715
+      },
+      "comprehensive_strategy": {
+        "expected_return": 0.19079999999999997,
+        "risk": 0.33973095366703804,
+        "investment_size": 7713125.170714287
+      }
+    },
+    "optimal_portfolio": {
+      "energy_efficiency_upgrade": 0.25042711354889313,
+      "premium_portfolio_expansion": 0.2493108535546099,
+      "geographic_expansion": 0.2508870944846976,
+      "comprehensive_strategy": 0.24937493841179936
+    },
+    "portfolio_expected_return": 0.1708861256130803,
+    "diversification_benefit": "Reduced portfolio risk through strategic allocation"
+  },
+  "risk_assessment": {
+    "scenario_risks": {
+      "energy_efficiency_upgrade": {
+        "probability_of_loss": 0.0,
+        "value_at_risk_5%": 847301.61,
+        "risk_rating": "Low Risk"
+      },
+      "premium_portfolio_expansion": {
+        "probability_of_loss": 0.0,
+        "value_at_risk_5%": 2190716.04,
+        "risk_rating": "Low Risk"
+      },
+      "geographic_expansion": {
+        "probability_of_loss": 0.0,
+        "value_at_risk_5%": 1026923.69,
+        "risk_rating": "Low Risk"
+      },
+      "comprehensive_strategy": {
+        "probability_of_loss": 0.0,
+        "value_at_risk_5%": 4051948.3,
+        "risk_rating": "Low Risk"
+      }
+    },
+    "portfolio_risk_level": "Low Risk",
+    "risk_diversification_opportunity": 1.0
+  },
+  "investment_recommendations": [
+    {
+      "priority": "High",
+      "scenario": "comprehensive_strategy",
+      "npv": 7682365.41,
+      "irr": 19.08,
+      "success_probability": "100.0%",
+      "recommendation": "Recommended for well-capitalized investors only - highest risk/reward",
+      "key_risks": "Capital requirements, execution complexity, market timing",
+      "implementation_notes": "Require significant capital commitment, dedicated project management, staged rollout"
+    },
+    {
+      "priority": "Medium",
+      "scenario": "premium_portfolio_expansion",
+      "npv": 4364936.45,
+      "irr": 17.86,
+      "success_probability": "100.0%",
+      "recommendation": "Consider phased approach - significant upside with managed risk",
+      "key_risks": "Market saturation, competition, execution complexity",
+      "implementation_notes": "Secure financing early, focus on Kolonaki area, develop premium brand positioning"
+    },
+    {
+      "priority": "Low",
+      "scenario": "geographic_expansion",
+      "npv": 2454358.87,
+      "irr": 15.05,
+      "success_probability": "100.0%",
+      "recommendation": "Delay until market conditions improve - higher execution risk",
+      "key_risks": "Market acceptance, local regulations, competition",
+      "implementation_notes": "Conduct detailed market research, establish local partnerships, phase implementation"
+    }
+  ]
+}
