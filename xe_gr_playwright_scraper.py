@@ -7,6 +7,7 @@ Handles React SPA dynamic loading using browser automation
 import asyncio
 import json
 import logging
+import os
 import re
 import time
 from datetime import datetime
@@ -44,16 +45,31 @@ class RealPropertyData:
 class PlaywrightXEScraper:
     """XE.gr scraper using Playwright for dynamic content"""
     
-    def __init__(self):
+    def __init__(self, proxy_server: Optional[str] = None, use_stealth: bool = True, session_file: str = "outputs/xe_session.json"):
         self.scraped_properties = []
         self.failed_urls = []
         self.audit_log = []
+        self.proxy_server = proxy_server
+        self.use_stealth = use_stealth
+        self.session_file = session_file
         
         # Discovered working endpoint
         self.search_url = "https://xe.gr/search"
         
-        logger.info("🎭 PLAYWRIGHT XE.GR SCRAPER")
-        logger.info("🚀 Browser automation for React dynamic content")
+        # User agents rotation
+        self.user_agents = [
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15'
+        ]
+        
+        logger.info("🎭 ENHANCED PLAYWRIGHT XE.GR SCRAPER")
+        logger.info("🚀 Browser automation with proxy support and stealth mode")
+        if proxy_server:
+            logger.info(f"🌐 Using proxy: {proxy_server}")
+        if use_stealth:
+            logger.info("🥷 Stealth mode enabled")
     
     async def scrape_properties_dynamic(self, neighborhood: str, max_properties: int = 10) -> List[RealPropertyData]:
         """Scrape properties using browser automation"""
@@ -64,50 +80,156 @@ class PlaywrightXEScraper:
         properties = []
         
         async with async_playwright() as p:
-            # Launch browser with realistic settings
+            # Enhanced browser launch with stealth settings
+            launch_args = [
+                '--no-sandbox',
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+                '--disable-extensions',
+                '--disable-gpu',
+                '--no-first-run',
+                '--no-default-browser-check',
+                '--disable-default-apps',
+                '--disable-web-security',
+                '--disable-features=VizDisplayCompositor'
+            ]
+            
+            if self.use_stealth:
+                launch_args.extend([
+                    '--disable-plugins-discovery',
+                    '--disable-notifications',
+                    '--disable-popup-blocking'
+                ])
+            
             browser = await p.chromium.launch(
                 headless=True,  # Set to False for debugging
-                args=[
-                    '--no-sandbox',
-                    '--disable-blink-features=AutomationControlled',
-                    '--disable-dev-shm-usage',
-                    '--disable-extensions',
-                    '--disable-gpu',
-                    '--no-first-run',
-                    '--no-default-browser-check',
-                    '--disable-default-apps'
-                ]
+                args=launch_args,
+                proxy={"server": self.proxy_server} if self.proxy_server else None
             )
             
-            # Create context with realistic viewport
-            context = await browser.new_context(
-                viewport={'width': 1920, 'height': 1080},
-                user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                locale='el-GR',
-                timezone_id='Europe/Athens'
-            )
+            # Enhanced context with rotation
+            import random
+            user_agent = random.choice(self.user_agents)
+            
+            context_options = {
+                'viewport': {'width': 1920, 'height': 1080},
+                'user_agent': user_agent,
+                'locale': 'el-GR',
+                'timezone_id': 'Europe/Athens',
+                'extra_http_headers': {
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'el-GR,el;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'DNT': '1',
+                    'Connection': 'keep-alive',
+                    'Sec-Fetch-Dest': 'document',
+                    'Sec-Fetch-Mode': 'navigate',
+                    'Sec-Fetch-Site': 'none',
+                    'Cache-Control': 'max-age=0'
+                }
+            }
+            
+            context = await browser.new_context(**context_options)
+            
+            # Load saved session if available
+            await self.load_session(context)
             
             try:
                 page = await context.new_page()
                 
-                # Intercept and log network requests (for debugging)
-                await page.route('**/*', self.handle_route)
+                # Apply stealth techniques
+                if self.use_stealth:
+                    await self.apply_stealth_techniques(page)
                 
-                # Step 1: Navigate to search page and perform search
-                logger.info("🔍 Loading search page...")
-                await page.goto(self.search_url, wait_until='networkidle')
+                # Handle cookie consent first
+                await self.handle_cookie_consent(page)
                 
-                # Wait for React to load
-                await page.wait_for_timeout(3000)
+                # Try homepage-first approach with natural navigation
+                search_approaches = [
+                    ("homepage_navigation", "https://xe.gr"),
+                    ("property_main_section", "https://xe.gr/property"),
+                    ("search_with_category", "https://xe.gr/search"),
+                    ("direct_property_search", f"https://xe.gr/search?q={neighborhood}+διαμέρισμα"),
+                ]
                 
-                # Step 2: Fill search form with neighborhood
-                logger.info(f"📝 Searching for: {neighborhood}")
-                await self.perform_search(page, neighborhood)
+                property_urls = []
                 
-                # Step 3: Wait for results and extract property URLs
-                logger.info("⏳ Waiting for search results...")
-                property_urls = await self.extract_property_urls_dynamic(page)
-                logger.info(f"📦 Found {len(property_urls)} property URLs")
+                for approach_name, start_url in search_approaches:
+                    if len(property_urls) >= max_properties:
+                        break
+                        
+                    logger.info(f"🔄 Trying approach: {approach_name}")
+                    
+                    # Retry logic for each approach
+                    max_retries = 2
+                    for retry in range(max_retries):
+                        try:
+                            # Navigate to page with retries
+                            logger.info(f"🔍 Loading: {start_url} (attempt {retry + 1})")
+                            
+                            try:
+                                await page.goto(start_url, wait_until='load', timeout=45000)
+                            except Exception as nav_error:
+                                if retry < max_retries - 1:
+                                    logger.warning(f"⚠️ Navigation failed, retrying: {nav_error}")
+                                    await page.wait_for_timeout(5000)
+                                    continue
+                                else:
+                                    raise nav_error
+                            
+                            # Wait for content to load
+                            await page.wait_for_timeout(5000)
+                            
+                            # Check if page loaded properly
+                            title = await page.title()
+                            logger.info(f"📄 Page title: {title}")
+                            
+                            # Check for error pages or blocks
+                            page_content = await page.content()
+                            if "403" in page_content or "blocked" in page_content.lower():
+                                logger.warning(f"⚠️ {approach_name}: Page blocked or restricted")
+                                break
+                            
+                            if approach_name == "homepage_navigation":
+                                # Navigate from homepage to property section
+                                logger.info("🏠 Starting from homepage, navigating to properties...")
+                                await self.navigate_to_properties_from_homepage(page, neighborhood)
+                            
+                            elif approach_name == "property_main_section":
+                                # Try direct property section access
+                                logger.info("📋 Accessing property section directly...")
+                                await page.wait_for_timeout(3000)
+                                await self.perform_search(page, neighborhood)
+                            
+                            elif approach_name in ["search_with_category", "direct_property_search"]:
+                                # Use search functionality
+                                logger.info(f"🔍 Using search approach for: {neighborhood}")
+                                await page.wait_for_timeout(3000)
+                                await self.perform_search(page, neighborhood)
+                            
+                            # Extract URLs
+                            logger.info("⏳ Extracting property URLs...")
+                            approach_urls = await self.extract_property_urls_dynamic(page)
+                            property_urls.extend(approach_urls)
+                            logger.info(f"📦 {approach_name}: Found {len(approach_urls)} URLs")
+                            
+                            # Take screenshot for debugging
+                            screenshot_path = f'outputs/{approach_name}_attempt{retry + 1}.png'
+                            await page.screenshot(path=screenshot_path)
+                            logger.info(f"📸 Screenshot: {screenshot_path}")
+                            
+                            # Success - break retry loop
+                            break
+                            
+                        except Exception as e:
+                            logger.warning(f"⚠️ {approach_name} attempt {retry + 1} failed: {e}")
+                            if retry < max_retries - 1:
+                                await page.wait_for_timeout(10000)  # Wait before retry
+                            continue
+                
+                # Remove duplicates
+                property_urls = list(set(property_urls))
+                logger.info(f"📦 Total unique URLs found: {len(property_urls)}")
                 
                 # Step 4: Visit each property page and extract data
                 for i, prop_url in enumerate(property_urls[:max_properties]):
@@ -126,10 +248,180 @@ class PlaywrightXEScraper:
             except Exception as e:
                 logger.error(f"❌ Browser automation failed: {e}")
             finally:
+                # Save session before closing
+                await self.save_session(context)
                 await browser.close()
         
         logger.info(f"🎭 PLAYWRIGHT SCRAPING COMPLETE: {len(properties)} properties")
         return properties
+    
+    async def apply_stealth_techniques(self, page):
+        """Apply stealth techniques to avoid detection"""
+        
+        # Override navigator.webdriver
+        await page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined,
+            });
+        """)
+        
+        # Override plugins length
+        await page.add_init_script("""
+            Object.defineProperty(navigator, 'plugins', {
+                get: () => [1, 2, 3, 4, 5],
+            });
+        """)
+        
+        # Override languages
+        await page.add_init_script("""
+            Object.defineProperty(navigator, 'languages', {
+                get: () => ['el-GR', 'el', 'en-US', 'en'],
+            });
+        """)
+        
+        # Override permissions
+        await page.add_init_script("""
+            const originalQuery = window.navigator.permissions.query;
+            return window.navigator.permissions.query = (parameters) => (
+                parameters.name === 'notifications' ?
+                    Promise.resolve({ state: Notification.permission }) :
+                    originalQuery(parameters)
+            );
+        """)
+        
+        # Add mouse movement simulation
+        await page.mouse.move(100, 100)
+        await page.wait_for_timeout(100)
+        await page.mouse.move(200, 200)
+    
+    async def handle_cookie_consent(self, page):
+        """Handle cookie consent dialog"""
+        try:
+            logger.info("🍪 Checking for cookie consent dialog...")
+            
+            # First navigate to homepage to trigger cookie dialog
+            await page.goto("https://xe.gr", wait_until="load", timeout=30000)
+            await page.wait_for_timeout(3000)
+            
+            # Look for cookie consent buttons
+            cookie_selectors = [
+                'button:has-text("ΣΥΜΦΩΝΩ")',
+                'button:has-text("Συμφωνώ")',
+                'button:has-text("ΑΠΟΔΟΧΗ")',
+                'button:has-text("Αποδοχή")',
+                'button:has-text("Accept")',
+                'button:has-text("OK")',
+                '[class*="cookie"] button',
+                '[id*="cookie"] button',
+                '.cookie-consent button',
+                '#cookie-consent button'
+            ]
+            
+            cookie_handled = False
+            for selector in cookie_selectors:
+                try:
+                    element = await page.wait_for_selector(selector, timeout=2000)
+                    if element and await element.is_visible():
+                        await element.click()
+                        logger.info(f"✅ Clicked cookie consent: {selector}")
+                        await page.wait_for_timeout(2000)
+                        cookie_handled = True
+                        break
+                except:
+                    continue
+            
+            if not cookie_handled:
+                # Try pressing Escape or Enter
+                await page.keyboard.press('Escape')
+                await page.wait_for_timeout(1000)
+                logger.info("⌨️ Pressed Escape for cookie dialog")
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Cookie consent handling failed: {e}")
+    
+    async def navigate_to_properties_from_homepage(self, page, neighborhood):
+        """Navigate naturally from homepage to property listings"""
+        try:
+            logger.info("🏡 Looking for property navigation links...")
+            
+            # Look for property/real estate links on homepage
+            property_links = [
+                'a:has-text("Ακίνητα")',
+                'a:has-text("Property")',
+                'a:has-text("Κατοικίες")',
+                'a:has-text("Διαμερίσματα")',
+                'a[href*="property"]',
+                'a[href*="enoikiaseis"]',
+                'a[href*="poliseis"]',
+                '.property-link',
+                '[data-category*="property"]'
+            ]
+            
+            navigation_successful = False
+            for selector in property_links:
+                try:
+                    element = await page.wait_for_selector(selector, timeout=3000)
+                    if element and await element.is_visible():
+                        await element.click()
+                        logger.info(f"✅ Clicked property link: {selector}")
+                        await page.wait_for_timeout(3000)
+                        navigation_successful = True
+                        break
+                except:
+                    continue
+            
+            if not navigation_successful:
+                # Try typing in search box
+                search_selectors = [
+                    'input[type="search"]',
+                    'input[placeholder*="αναζήτηση"]',
+                    'input[placeholder*="search"]',
+                    '.search-input',
+                    '#search'
+                ]
+                
+                for selector in search_selectors:
+                    try:
+                        element = await page.wait_for_selector(selector, timeout=2000)
+                        if element:
+                            await element.fill(f"{neighborhood} διαμέρισμα")
+                            await page.keyboard.press('Enter')
+                            logger.info(f"✅ Used search box: {neighborhood}")
+                            await page.wait_for_timeout(3000)
+                            break
+                    except:
+                        continue
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Homepage navigation failed: {e}")
+    
+    async def load_session(self, context):
+        """Load saved cookies and session data"""
+        try:
+            if os.path.exists(self.session_file):
+                with open(self.session_file, 'r') as f:
+                    session_data = json.load(f)
+                    if 'cookies' in session_data:
+                        await context.add_cookies(session_data['cookies'])
+                        logger.info("🍪 Loaded saved session cookies")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load session: {e}")
+    
+    async def save_session(self, context):
+        """Save cookies and session data"""
+        try:
+            cookies = await context.cookies()
+            session_data = {
+                'cookies': cookies,
+                'timestamp': datetime.now().isoformat()
+            }
+            
+            os.makedirs(os.path.dirname(self.session_file), exist_ok=True)
+            with open(self.session_file, 'w') as f:
+                json.dump(session_data, f, indent=2)
+                logger.info("💾 Saved session data")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not save session: {e}")
     
     async def handle_route(self, route):
         """Handle network requests (for debugging)"""
@@ -140,11 +432,50 @@ class PlaywrightXEScraper:
         """Perform search on the loaded page"""
         
         try:
-            # Method 1: Look for freetext search input
+            # Check if we're on a property listing page already
+            current_url = page.url
+            if "/property/enoikiaseis" in current_url or "/property/poliseis" in current_url:
+                logger.info("📍 Already on property listing page, skipping search")
+                return
+            
+            # Method 1: Look for location/area filter first
+            location_selectors = [
+                'select[name*="location"]',
+                'select[name*="area"]',
+                'select[name*="region"]',
+                'input[name*="location"]',
+                'input[name*="area"]'
+            ]
+            
+            location_filled = False
+            for selector in location_selectors:
+                try:
+                    element = await page.wait_for_selector(selector, timeout=2000)
+                    if element:
+                        tag_name = await element.evaluate('element => element.tagName.toLowerCase()')
+                        if tag_name == 'select':
+                            # Try to select Athens option
+                            try:
+                                await element.select_option(label='Αθήνα')
+                                logger.info("✅ Selected Αθήνα from dropdown")
+                                location_filled = True
+                                break
+                            except:
+                                pass
+                        else:
+                            await element.fill('Αθήνα')
+                            logger.info("✅ Filled location with: Αθήνα")
+                            location_filled = True
+                            break
+                except:
+                    continue
+            
+            # Method 2: Look for freetext search input
             freetext_selectors = [
                 'input[name="Publication.freetext"]',
+                'input[placeholder*="αναζήτηση"]',
                 'input[placeholder*="search"]',
-                'input[type="text"]',
+                'input[type="text"]:not([name*="price"])',
                 '.search-input',
                 '#search-input'
             ]
@@ -154,17 +485,17 @@ class PlaywrightXEScraper:
                 try:
                     element = await page.wait_for_selector(selector, timeout=2000)
                     if element:
-                        await element.fill(f"Αθήνα {neighborhood}")
-                        logger.info(f"✅ Filled search with: Αθήνα {neighborhood}")
+                        search_term = f"{neighborhood} Αθήνα" if not location_filled else neighborhood
+                        await element.fill(search_term)
+                        logger.info(f"✅ Filled search with: {search_term}")
                         search_filled = True
                         break
                 except:
                     continue
             
-            if not search_filled:
-                logger.warning("⚠️ Could not find search input field")
-                # Try to type in any visible input
-                await page.keyboard.type(f"Αθήνα {neighborhood}")
+            if not search_filled and not location_filled:
+                logger.warning("⚠️ Could not find any search fields")
+                return
             
             # Look for submit button or press Enter
             submit_selectors = [
@@ -173,7 +504,8 @@ class PlaywrightXEScraper:
                 '.search-button',
                 '.submit-button',
                 'button:has-text("Αναζήτηση")',
-                'button:has-text("Search")'
+                'button:has-text("Search")',
+                'button:has-text("Εύρεση")'
             ]
             
             submitted = False
@@ -189,12 +521,12 @@ class PlaywrightXEScraper:
                     continue
             
             if not submitted:
-                # Try pressing Enter
+                # Try pressing Enter on the last filled input
                 await page.keyboard.press('Enter')
                 logger.info("✅ Pressed Enter to search")
             
             # Wait for search results to load
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(4000)
             
         except Exception as e:
             logger.error(f"❌ Search form submission failed: {e}")
@@ -208,18 +540,39 @@ class PlaywrightXEScraper:
             # Wait for content to load
             await page.wait_for_timeout(5000)
             
-            # Method 1: Look for property links in the DOM
+            # Method 1: Enhanced property link selectors
             property_selectors = [
+                # Direct property page patterns
+                'a[href*="/property/d/"]',
+                'a[href*="/d/enoikiaseis"]',
+                'a[href*="/d/poliseis"]',
+                
+                # General property patterns
                 'a[href*="/property/"]',
-                'a[href*="/d/"]',
                 'a[href*="enoikiaseis"]',
                 'a[href*="poliseis"]',
+                'a[href*="diamerisma"]',
+                'a[href*="apartment"]',
+                
+                # Element-based selectors
                 '.property-card a',
+                '.property-item a',
                 '.listing a',
+                '.result a',
+                '.search-result a',
                 '.result-item a',
                 '[data-testid*="property"] a',
+                '[data-testid*="listing"] a',
                 '[class*="property"] a',
-                '[class*="listing"] a'
+                '[class*="listing"] a',
+                '[class*="item"] a',
+                '[class*="card"] a',
+                
+                # Link text patterns
+                'a[title*="διαμέρισμα"]',
+                'a[title*="apartment"]',
+                'a[title*="ενοικίαση"]',
+                'a[title*="πώληση"]'
             ]
             
             for selector in property_selectors:
@@ -712,39 +1065,117 @@ class PlaywrightXEScraper:
         return True
 
 async def main():
-    """Test Playwright scraper"""
+    """Production-ready Playwright scraper with comprehensive options"""
     
-    logger.info("🎭 TESTING PLAYWRIGHT XE.GR SCRAPER")
-    logger.info("🚀 Browser automation for dynamic content")
+    # Setup enhanced logging
+    log_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     
-    scraper = PlaywrightXEScraper()
+    # Console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(log_formatter)
     
-    # Test with Kolonaki
-    properties = await scraper.scrape_properties_dynamic('Κολωνάκι', max_properties=5)
+    # File handler
+    os.makedirs('outputs', exist_ok=True)
+    file_handler = logging.FileHandler('outputs/xe_scraper.log')
+    file_handler.setFormatter(log_formatter)
     
-    logger.info(f"\n🎯 PLAYWRIGHT RESULTS: {len(properties)} properties")
+    # Configure logger
+    logger.handlers = []
+    logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+    logger.setLevel(logging.INFO)
     
-    if properties:
-        for i, prop in enumerate(properties, 1):
-            logger.info(f"\n📊 PROPERTY {i}:")
+    logger.info("🎭 PRODUCTION PLAYWRIGHT XE.GR SCRAPER")
+    logger.info("🚀 Enhanced browser automation with stealth mode")
+    
+    # Configuration options
+    proxy_server = None  # Set to "http://proxy:port" if needed
+    use_stealth = True
+    session_file = "outputs/xe_session.json"
+    
+    # Initialize scraper with all enhancements
+    scraper = PlaywrightXEScraper(
+        proxy_server=proxy_server,
+        use_stealth=use_stealth,
+        session_file=session_file
+    )
+    
+    # Test multiple neighborhoods
+    neighborhoods = ['Κολωνάκι', 'Παγκράτι', 'Εξάρχεια']
+    all_properties = []
+    
+    for neighborhood in neighborhoods:
+        logger.info(f"\n🏘️ PROCESSING NEIGHBORHOOD: {neighborhood}")
+        try:
+            properties = await scraper.scrape_properties_dynamic(neighborhood, max_properties=3)
+            all_properties.extend(properties)
+            
+            if properties:
+                logger.info(f"✅ {neighborhood}: {len(properties)} properties extracted")
+            else:
+                logger.warning(f"⚠️ {neighborhood}: No properties found")
+                
+        except Exception as e:
+            logger.error(f"❌ {neighborhood}: Failed - {e}")
+        
+        # Delay between neighborhoods
+        await asyncio.sleep(5)
+    
+    logger.info(f"\n🎯 TOTAL RESULTS: {len(all_properties)} properties from {len(neighborhoods)} neighborhoods")
+    
+    if all_properties:
+        # Detailed results logging
+        for i, prop in enumerate(all_properties, 1):
+            logger.info(f"\n📊 PROPERTY {i} ({prop.neighborhood}):")
             logger.info(f"   Address: {prop.address}")
             logger.info(f"   Price: €{prop.price}")
             logger.info(f"   Area: {prop.sqm}m²")
             logger.info(f"   Rooms: {prop.rooms}")
             logger.info(f"   Energy: {prop.energy_class}")
             logger.info(f"   Confidence: {prop.extraction_confidence:.2f}")
-            logger.info(f"   URL: {prop.url}")
+            logger.info(f"   URL: {prop.url[:80]}...")
         
-        # Save results
-        output_data = [asdict(prop) for prop in properties]
-        with open('outputs/playwright_results.json', 'w', encoding='utf-8') as f:
+        # Save comprehensive results
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # JSON results
+        output_data = [asdict(prop) for prop in all_properties]
+        json_file = f'outputs/xe_playwright_results_{timestamp}.json'
+        with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(output_data, f, indent=2, ensure_ascii=False)
         
-        logger.info(f"\n✅ PLAYWRIGHT SUCCESS!")
-        logger.info(f"📄 Results saved: outputs/playwright_results.json")
-        logger.info(f"🎭 {len(properties)} DYNAMIC properties extracted!")
+        # CSV summary
+        csv_file = f'outputs/xe_playwright_summary_{timestamp}.csv'
+        import csv
+        with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+            if all_properties:
+                writer = csv.DictWriter(f, fieldnames=asdict(all_properties[0]).keys())
+                writer.writeheader()
+                for prop in all_properties:
+                    writer.writerow(asdict(prop))
+        
+        # Statistics
+        total_with_price = len([p for p in all_properties if p.price])
+        total_with_area = len([p for p in all_properties if p.sqm])
+        avg_confidence = sum(p.extraction_confidence for p in all_properties) / len(all_properties)
+        
+        logger.info(f"\n📈 EXTRACTION STATISTICS:")
+        logger.info(f"   Total properties: {len(all_properties)}")
+        logger.info(f"   With price: {total_with_price}")
+        logger.info(f"   With area: {total_with_area}")
+        logger.info(f"   Avg confidence: {avg_confidence:.2f}")
+        logger.info(f"   Success rate: {len(all_properties) / (len(neighborhoods) * 3) * 100:.1f}%")
+        
+        logger.info(f"\n✅ PRODUCTION SCRAPING COMPLETE!")
+        logger.info(f"📄 JSON results: {json_file}")
+        logger.info(f"📊 CSV summary: {csv_file}")
+        logger.info(f"📋 Log file: outputs/xe_scraper.log")
+        logger.info(f"🎭 {len(all_properties)} properties successfully extracted!")
+        
     else:
-        logger.warning("❌ No properties extracted")
+        logger.error("❌ No properties extracted from any neighborhood")
+        logger.info("💡 Try checking the screenshots in outputs/ for debugging")
+        logger.info("💡 Consider using a proxy if access is restricted")
 
 if __name__ == "__main__":
     asyncio.run(main())

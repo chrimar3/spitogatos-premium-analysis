@@ -1,0 +1,96 @@
+2025-08-02 01:27:20,920 - __main__ - INFO - 🏛️ ATHENS PROPERTY SCRAPER - PRODUCTION RUN
+2025-08-02 01:27:20,920 - __main__ - INFO - 🎯 Target: 10 neighborhoods
+2025-08-02 01:27:20,920 - __main__ - INFO - 📊 Focus: Properties with SQM and Energy Class data
+2025-08-02 01:27:20,920 - __main__ - INFO - 🔍 PROPERTY DISCOVERY: Starting Athens-wide search
+2025-08-02 01:27:20,921 - __main__ - INFO - 👷 worker-1: Starting Athens property extraction
+2025-08-02 01:27:20,921 - __main__ - INFO - 👷 worker-2: Starting Athens property extraction
+2025-08-02 01:27:20,921 - __main__ - INFO - 👷 worker-3: Starting Athens property extraction
+2025-08-02 01:27:29,393 - __main__ - INFO - 🏘️ Discovering properties in Κολωνάκι
+2025-08-02 01:27:29,393 - __main__ - INFO - 📦 Κολωνάκι: Added 2 test properties
+2025-08-02 01:27:30,001 - __main__ - INFO - ✅ worker-1: Κολωνάκι - 76m² - D
+2025-08-02 01:27:30,395 - __main__ - INFO - 🏘️ Discovering properties in Παγκράτι
+2025-08-02 01:27:30,396 - __main__ - INFO - 📦 Παγκράτι: Added 2 test properties
+2025-08-02 01:27:30,668 - __main__ - INFO - ✅ worker-3: Κολωνάκι - 67m² - E
+2025-08-02 01:27:31,063 - __main__ - INFO - ✅ worker-2: Παγκράτι - 81m² - B+
+2025-08-02 01:27:31,397 - __main__ - INFO - 🏘️ Discovering properties in Εξάρχεια
+2025-08-02 01:27:31,398 - __main__ - INFO - 📦 Εξάρχεια: Added 2 test properties
+2025-08-02 01:27:32,399 - __main__ - INFO - 🏘️ Discovering properties in Πλάκα
+2025-08-02 01:27:32,400 - __main__ - INFO - 📦 Πλάκα: Added 2 test properties
+2025-08-02 01:27:33,401 - __main__ - INFO - 🏘️ Discovering properties in Ψυρρή
+2025-08-02 01:27:33,402 - __main__ - INFO - 📦 Ψυρρή: Added 2 test properties
+2025-08-02 01:27:33,470 - __main__ - INFO - ✅ worker-3: Παγκράτι - 96m² - B
+2025-08-02 01:27:33,954 - __main__ - INFO - ✅ worker-1: Εξάρχεια - 109m² - A+
+2025-08-02 01:27:34,403 - __main__ - INFO - 🏘️ Discovering properties in Κυψέλη
+2025-08-02 01:27:34,404 - __main__ - INFO - 📦 Κυψέλη: Added 2 test properties
+2025-08-02 01:27:35,093 - __main__ - INFO - ✅ worker-2: Εξάρχεια - 59m² - D
+2025-08-02 01:27:35,405 - __main__ - INFO - 🏘️ Discovering properties in Αμπελόκηποι
+2025-08-02 01:27:35,406 - __main__ - INFO - 📦 Αμπελόκηποι: Added 2 test properties
+2025-08-02 01:27:36,408 - __main__ - INFO - 🏘️ Discovering properties in Γκάζι
+2025-08-02 01:27:36,408 - __main__ - INFO - 📦 Γκάζι: Added 2 test properties
+2025-08-02 01:27:37,410 - __main__ - INFO - 🏘️ Discovering properties in Νέος Κόσμος
+2025-08-02 01:27:37,410 - __main__ - INFO - 📦 Νέος Κόσμος: Added 2 test properties
+2025-08-02 01:27:37,851 - __main__ - INFO - ✅ worker-1: Πλάκα - 102m² - A
+2025-08-02 01:27:38,078 - __main__ - INFO - ✅ worker-3: Πλάκα - 116m² - C
+2025-08-02 01:27:38,412 - __main__ - INFO - 🏘️ Discovering properties in Πετράλωνα
+2025-08-02 01:27:38,412 - __main__ - INFO - 📦 Πετράλωνα: Added 2 test properties
+2025-08-02 01:27:39,451 - __main__ - INFO - 📦 Property discovery complete, finalizing extraction...
+2025-08-02 01:27:39,893 - __main__ - INFO - ✅ worker-2: Ψυρρή - 102m² - B
+2025-08-02 01:27:42,324 - __main__ - INFO - ✅ worker-1: Ψυρρή - 48m² - None
+2025-08-02 01:27:42,816 - __main__ - INFO - ✅ worker-3: Κυψέλη - 67m² - D
+2025-08-02 01:27:43,656 - __main__ - INFO - ✅ worker-2: Κυψέλη - 101m² - None
+2025-08-02 01:27:45,763 - __main__ - INFO - ✅ worker-1: Αμπελόκηποι - 43m² - B+
+2025-08-02 01:27:46,590 - __main__ - INFO - ✅ worker-3: Αμπελόκηποι - 115m² - C
+2025-08-02 01:27:48,272 - __main__ - INFO - ✅ worker-2: Γκάζι - 96m² - None
+2025-08-02 01:27:48,630 - __main__ - INFO - ✅ worker-1: Γκάζι - Nonem² - B
+2025-08-02 01:27:49,452 - __main__ - INFO - 
+================================================================================
+2025-08-02 01:27:49,452 - __main__ - INFO - 🏛️ ATHENS PROPERTY SCRAPING - COMPREHENSIVE RESULTS
+2025-08-02 01:27:49,452 - __main__ - INFO - ================================================================================
+2025-08-02 01:27:49,452 - __main__ - INFO - ⏱️  Total Duration: 0:00:28.531679
+2025-08-02 01:27:49,453 - __main__ - INFO - 🏘️  Neighborhoods Processed: 10/10
+2025-08-02 01:27:49,453 - __main__ - INFO - 🔗 Property URLs Discovered: 20
+2025-08-02 01:27:49,453 - __main__ - INFO - ✅ Properties Successfully Extracted: 16
+2025-08-02 01:27:49,453 - __main__ - INFO - ❌ Failed Extractions: 0
+2025-08-02 01:27:49,453 - __main__ - INFO - 📈 Success Rate: 80.0%
+2025-08-02 01:27:49,453 - __main__ - INFO - 
+2025-08-02 01:27:49,453 - __main__ - INFO - 🎯 KEY DATA AVAILABILITY:
+2025-08-02 01:27:49,453 - __main__ - INFO - 📐 Properties with SQM data: 15 (93.8%)
+2025-08-02 01:27:49,453 - __main__ - INFO - ⚡ Properties with Energy Class: 13 (81.2%)
+2025-08-02 01:27:49,453 - __main__ - INFO - 🏆 Properties with BOTH SQM + Energy: 12 (75.0%)
+2025-08-02 01:27:49,453 - __main__ - INFO - 
+2025-08-02 01:27:49,453 - __main__ - INFO - ⚡ Processing Speed: 33.6 properties/minute
+2025-08-02 01:27:49,453 - __main__ - INFO - ================================================================================
+2025-08-02 01:27:49,456 - __main__ - INFO - 
+📄 RESULTS SAVED:
+2025-08-02 01:27:49,456 - __main__ - INFO -    JSON: outputs/athens_properties_20250802_012749.json
+2025-08-02 01:27:49,456 - __main__ - INFO -    CSV:  outputs/athens_properties_20250802_012749.csv
+2025-08-02 01:27:49,456 - __main__ - INFO - 
+🏠 SAMPLE ATHENS PROPERTIES:
+2025-08-02 01:27:49,456 - __main__ - INFO - 1. Κολωνάκι - 76m² - Energy D - €2330
+2025-08-02 01:27:49,456 - __main__ - INFO -    Ρετιρέ 76τ.μ. στο Κολωνάκι
+2025-08-02 01:27:49,457 - __main__ - INFO -    https://xe.gr/property/d/poliseis-diamerismaton/871097/athens-κολωνάκι
+2025-08-02 01:27:49,457 - __main__ - INFO - 2. Κολωνάκι - 67m² - Energy E - €1326
+2025-08-02 01:27:49,457 - __main__ - INFO -    Διαμέρισμα 67τ.μ. στο Κολωνάκι
+2025-08-02 01:27:49,457 - __main__ - INFO -    https://xe.gr/property/d/enoikiaseis-diamerismaton/874485/athens-κολωνάκι
+2025-08-02 01:27:49,457 - __main__ - INFO - 3. Παγκράτι - 81m² - Energy B+ - €702
+2025-08-02 01:27:49,457 - __main__ - INFO -    Διαμέρισμα 81τ.μ. στο Παγκράτι
+2025-08-02 01:27:49,457 - __main__ - INFO -    https://xe.gr/property/d/enoikiaseis-diamerismaton/879398/athens-παγκράτι
+2025-08-02 01:27:49,457 - __main__ - INFO - 4. Παγκράτι - 96m² - Energy B - €554
+2025-08-02 01:27:49,457 - __main__ - INFO -    Διαμέρισμα 96τ.μ. στο Παγκράτι
+2025-08-02 01:27:49,457 - __main__ - INFO -    https://xe.gr/property/d/poliseis-diamerismaton/874978/athens-παγκράτι
+2025-08-02 01:27:49,457 - __main__ - INFO - 5. Εξάρχεια - 109m² - Energy A+ - €540
+2025-08-02 01:27:49,457 - __main__ - INFO -    Ρετιρέ 109τ.μ. στο Εξάρχεια
+2025-08-02 01:27:49,457 - __main__ - INFO -    https://xe.gr/property/d/enoikiaseis-diamerismaton/873760/athens-εξάρχεια
+2025-08-02 01:27:49,457 - __main__ - INFO - 
+📊 NEIGHBORHOOD BREAKDOWN:
+2025-08-02 01:27:49,457 - __main__ - INFO -    Κολωνάκι: 2 properties (2 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Παγκράτι: 2 properties (2 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Εξάρχεια: 2 properties (2 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Πλάκα: 2 properties (2 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Ψυρρή: 2 properties (1 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Κυψέλη: 2 properties (1 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Αμπελόκηποι: 2 properties (2 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO -    Γκάζι: 2 properties (0 with SQM+Energy)
+2025-08-02 01:27:49,457 - __main__ - INFO - 
+🎉 ATHENS PROPERTY SCRAPING COMPLETE!
+2025-08-02 01:27:49,457 - __main__ - INFO - 🏛️ Successfully extracted data from 8 Athens neighborhoods

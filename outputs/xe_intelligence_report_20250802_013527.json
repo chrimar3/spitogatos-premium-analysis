@@ -1,0 +1,2134 @@
+{
+  "reconnaissance_timestamp": "2025-08-02T01:35:27.744488",
+  "summary": {
+    "working_urls_found": 2,
+    "failed_urls": 6,
+    "url_patterns_discovered": 21,
+    "search_methods_found": 2
+  },
+  "working_urls": [
+    "https://xe.gr/property",
+    "https://www.xe.gr/property"
+  ],
+  "failed_urls": [
+    "https://xe.gr/ακίνητα",
+    "https://xe.gr/real-estate",
+    "https://xe.gr/enoikiaseis",
+    "https://xe.gr/poliseis",
+    "https://www.xe.gr/property/",
+    "https://www.xe.gr/property/"
+  ],
+  "property_patterns": {
+    "https://{SLUG}.{SLUG}.gr/property/s/poliseis-epaggelmatikon-xoron": [
+      "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/enoikiaseis-parking": [
+      "https://www.xe.gr/property/s/enoikiaseis-parking"
+    ],
+    "https://{SLUG}.{SLUG}.{SLUG}.gr/rodeo-static/packs/static/images/property/subscription-{ID}da{ID}bb{ID}fc{ID}{SLUG}.svg": [
+      "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/subscription-8740da93bb20fc017bfb.svg"
+    ],
+    "https://{SLUG}.{SLUG}.{SLUG}.gr/rodeo-static/packs/static/images/property/home_new_ad-{ID}f{ID}d{ID}db{ID}e{ID}.webp": [
+      "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_new_ad-94f5913d020db02e5337.webp"
+    ],
+    "https://{SLUG}.{SLUG}.{SLUG}.gr/rodeo-static/packs/static/images/property/home_find_prof-{ID}b{ID}e{ID}b{ID}cb{ID}ce{ID}.webp": [
+      "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_prof-3b9e7856329b6cb54ce9.webp"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/enoikiaseis-katoikion": [
+      "https://www.xe.gr/property/s/enoikiaseis-katoikion"
+    ],
+    "https://{SLUG}.eu{ID}.{SLUG}.net/jserrors/{ID}/NRJS-{ID}e{ID}bf{ID}ea?a={ID}&v={ID}.{ID}.{ID}&to=JhpeRQoXXw{ID}SQRpPA{ID}oFQl{ID}IHUEXThxGUgcXFlhUC{ID}ddBkA%{ID}D&rst={ID}&ck={ID}&s=ad{ID}b{ID}e{ID}afd{ID}&ref=https://{SLUG}.{SLUG}.gr/property/&ptid=bbba{ID}b{ID}be{ID}": [
+      "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/times-akiniton": [
+      "https://www.xe.gr/property/times-akiniton"
+    ],
+    "https://{SLUG}.{SLUG}.{SLUG}.gr/rodeo-static/packs/static/images/property/home_find_house-{ID}d{ID}d{ID}fbed{ID}ab{ID}.webp": [
+      "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_house-43d011d657fbed677ab6.webp"
+    ],
+    "https://{SLUG}.{SLUG}.{SLUG}.gr/rodeo-static/packs/static/images/property/sotm-e{ID}d{ID}ebc{ID}ea{ID}adc{ID}d{ID}{SLUG}.webp": [
+      "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/sotm-e53d1ebc74ea7adc6d0c.webp"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/": [
+      "https://www.xe.gr/property/"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/poliseis-katoikion": [
+      "https://www.xe.gr/property/s/poliseis-katoikion"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/poliseis-parking": [
+      "https://www.xe.gr/property/s/poliseis-parking"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/pros": [
+      "https://www.xe.gr/property/pros"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/enoikiaseis-epaggelmatikon-xoron": [
+      "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/s/poliseis-gis-oikopedon": [
+      "https://www.xe.gr/property/s/poliseis-gis-oikopedon"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/stegastiko-daneio": [
+      "https://www.xe.gr/property/stegastiko-daneio"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/foititika-spitia": [
+      "https://www.xe.gr/property/foititika-spitia"
+    ],
+    "https://{SLUG}.{SLUG}.gr/property/kataxorisi-aggelias-akinitou": [
+      "https://www.xe.gr/property/kataxorisi-aggelias-akinitou"
+    ],
+    "/property/": [
+      "/property/"
+    ],
+    "https://{SLUG}.eu{ID}.{SLUG}.net/events/{ID}/NRJS-{ID}e{ID}bf{ID}ea?a={ID}&v={ID}.{ID}.{ID}&to=JhpeRQoXXw{ID}SQRpPA{ID}oFQl{ID}IHUEXThxGUgcXFlhUC{ID}ddBkA%{ID}D&rst={ID}&ck={ID}&s=ad{ID}b{ID}e{ID}afd{ID}&ref=https://{SLUG}.{SLUG}.gr/property/&ptid=bbba{ID}b{ID}be{ID}": [
+      "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230"
+    ]
+  },
+  "search_methods": [
+    {
+      "form_index": 0,
+      "elements": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": null,
+          "placeholder": null,
+          "value": null
+        }
+      ],
+      "url": "https://www.xe.gr/search"
+    },
+    {
+      "form_index": 1,
+      "elements": [
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "System.age",
+          "placeholder": null,
+          "value": "7"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "Asset.has_photos",
+          "placeholder": null,
+          "value": "1"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "Owner.type",
+          "placeholder": null,
+          "value": "5295"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "Owner.type",
+          "placeholder": null,
+          "value": "5296"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "Product.price_reduction",
+          "placeholder": null,
+          "value": "1"
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "Publication.freetext",
+          "placeholder": null,
+          "value": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "Transaction.price.from",
+          "placeholder": null,
+          "value": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "Transaction.price.to",
+          "placeholder": null,
+          "value": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "all"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117526"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117538"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117518"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117524"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117541"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117536"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117533"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117521"
+        },
+        {
+          "tag": "INPUT",
+          "type": "radio",
+          "name": "Transaction.type_channel",
+          "placeholder": null,
+          "value": "117523"
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "name": "Publication.age",
+          "placeholder": null,
+          "value": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "hidden",
+          "name": "Item.category__hierarchy",
+          "placeholder": null,
+          "value": "117139"
+        }
+      ],
+      "url": "https://www.xe.gr/search"
+    }
+  ],
+  "site_structure": {
+    "homepage_links": [
+      {
+        "text": "Ακίνητα",
+        "href": "https://www.xe.gr/property",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις κατοικιών",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-katoikion",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις parking",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-parking",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις κατοικιών",
+        "href": "https://www.xe.gr/property/s/poliseis-katoikion",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις γης",
+        "href": "https://www.xe.gr/property/s/poliseis-gis-oikopedon",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις parking",
+        "href": "https://www.xe.gr/property/s/poliseis-parking",
+        "is_property_related": true
+      },
+      {
+        "text": "Στεγαστικό δάνειο",
+        "href": "https://www.xe.gr/property/stegastiko-daneio",
+        "is_property_related": true
+      },
+      {
+        "text": "Φοιτητικά σπίτια",
+        "href": "https://www.xe.gr/property/foititika-spitia",
+        "is_property_related": true
+      },
+      {
+        "text": "Εργασία",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B5%CF%8D%CF%81%CE%B5%CF%83%CE%B7-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Λογιστές",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Υπάλληλοι γραφείου",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%85%CF%80%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%BF%CF%82-%CE%B3%CF%81%CE%B1%CF%86%CE%B5%CE%AF%CE%BF%CF%85",
+        "is_property_related": false
+      },
+      {
+        "text": "Εξυπηρέτηση πελατών",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B5%CE%BE%CF%85%CF%80%CE%B7%CF%81%CE%AD%CF%84%CE%B7%CF%83%CE%B7-%CF%80%CE%B5%CE%BB%CE%B1%CF%84%CF%8E%CE%BD",
+        "is_property_related": false
+      },
+      {
+        "text": "Back office",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-back-office",
+        "is_property_related": false
+      },
+      {
+        "text": "Γηροκόμοι",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B3%CE%B7%CF%81%CE%BF%CE%BA%CF%8C%CE%BC%CE%BF%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Φιλόλογοι",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%86%CE%B9%CE%BB%CF%8C%CE%BB%CE%BF%CE%B3%CE%BF%CE%B9",
+        "is_property_related": false
+      },
+      {
+        "text": "Logistics",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-logistics",
+        "is_property_related": false
+      },
+      {
+        "text": "Φύλακες ασφαλείας - Security",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%86%CF%8D%CE%BB%CE%B1%CE%BA%CE%B1%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Καθαριστές",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CE%B1%CE%B8%CE%B1%CF%81%CE%AF%CF%83%CF%84%CF%81%CE%B9%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Ψυχολόγοι",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%88%CF%85%CF%87%CE%BF%CE%BB%CF%8C%CE%B3%CE%BF%CE%B9",
+        "is_property_related": false
+      },
+      {
+        "text": "Ημιαπασχόληση",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B7%CE%BC%CE%B9%CE%B1%CF%80%CE%B1%CF%83%CF%87%CF%8C%CE%BB%CE%B7%CF%83%CE%B7",
+        "is_property_related": false
+      },
+      {
+        "text": "Αυτοκίνητα",
+        "href": "https://www.xe.gr/automoto",
+        "is_property_related": false
+      },
+      {
+        "text": "Αυτοκίνητα",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-aytokinhta",
+        "is_property_related": false
+      },
+      {
+        "text": "Μοτοσυκλέτες",
+        "href": "https://www.xe.gr/automoto/r/metaxireismenes-mhchanes",
+        "is_property_related": false
+      },
+      {
+        "text": "Επαγγελματικά οχήματα",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-epaggelmatika-ochhmata",
+        "is_property_related": false
+      },
+      {
+        "text": "Ταξί",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-taxi",
+        "is_property_related": false
+      },
+      {
+        "text": "Τρέιλερ",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-treiler",
+        "is_property_related": false
+      },
+      {
+        "text": "Σκάφη",
+        "href": "https://www.xe.gr/boats/",
+        "is_property_related": false
+      },
+      {
+        "text": "Αεροσκάφη",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-aeroplana",
+        "is_property_related": false
+      },
+      {
+        "text": "Διάφορα οχήματα",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-alla-ochhmata",
+        "is_property_related": false
+      },
+      {
+        "text": "Ανταλλακτικά - αξεσουάρ",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-antallaktika",
+        "is_property_related": false
+      },
+      {
+        "text": "Επιχειρήσεις",
+        "href": "https://www.xe.gr/epixeirisiaka/",
+        "is_property_related": false
+      },
+      {
+        "text": "Πωλήσεις επιχειρήσεων",
+        "href": "https://www.xe.gr/epixeirisiaka/epixeiriseis,13632.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Εξοπλισμός επιχειρήσεων",
+        "href": "https://www.xe.gr/epixeirisiaka/eksoplismos-epixeiriseon,12422.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Εξοπλισμός γραφείου",
+        "href": "https://www.xe.gr/eksoplismos-grafeiou/",
+        "is_property_related": false
+      },
+      {
+        "text": "Μηχανήματα",
+        "href": "https://www.xe.gr/epixeirisiaka/mixanimata,34232.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Επαγγελματικές άδειες",
+        "href": "https://www.xe.gr/epixeirisiaka/epaggelmatikes-adeies,13422.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ενοικιάσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Έπιπλα",
+        "href": "https://www.xe.gr/epipla/",
+        "is_property_related": false
+      },
+      {
+        "text": "Ηλεκτρικές συσκευές",
+        "href": "https://www.xe.gr/hlektrikes-syskeves/",
+        "is_property_related": false
+      },
+      {
+        "text": "Αντίκες & έργα τέχνης",
+        "href": "https://www.xe.gr/diafora-eidh/antikes-erga-texnis,6722.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Οικιακά σκεύη",
+        "href": "https://www.xe.gr/search?Item.category__hierarchy=117131&System.item_type=xe_stelexos",
+        "is_property_related": false
+      },
+      {
+        "text": "Οικοδομικά είδη",
+        "href": "https://www.xe.gr/spiti-kipos/oikodomika-eidi,35654.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Διακόσμηση",
+        "href": "https://www.xe.gr/search?Item.category__hierarchy=117141&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114567",
+        "is_property_related": false
+      },
+      {
+        "text": "Ηλεκτρολόγοι, υδραυλικοί, τεχνίτες",
+        "href": "https://www.xe.gr/professionals/results?category=139088",
+        "is_property_related": false
+      },
+      {
+        "text": "Οικιακές εργασίες",
+        "href": "https://www.xe.gr/professionals/results?category=139090",
+        "is_property_related": false
+      },
+      {
+        "text": "Υπολογιστές",
+        "href": "https://www.xe.gr/computers/",
+        "is_property_related": false
+      },
+      {
+        "text": "Κινητά τηλέφωνα",
+        "href": "https://www.xe.gr/tilefonia/kinita-tilefona,all,27682.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ηχοσυστήματα",
+        "href": "https://www.xe.gr/hlektronika/home-hi-fi,24228.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Τηλεοράσεις",
+        "href": "https://www.xe.gr/hlektronika/tileoraseis,all,81998.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Φωτογραφία",
+        "href": "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117110",
+        "is_property_related": false
+      },
+      {
+        "text": "Περιφερειακά Η/Υ",
+        "href": "https://www.xe.gr/computers/perifereiaka-aksesouar-i-y,40706.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Αξεσουάρ κινητής",
+        "href": "https://www.xe.gr/tilefonia/aksesouar-kinitis-tilefonias,266.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Μουσικά όργανα & αξεσουάρ",
+        "href": "https://www.xe.gr/mousika-organa/",
+        "is_property_related": false
+      },
+      {
+        "text": "Gaming",
+        "href": "https://www.xe.gr/eleytheros-xronos/video-games.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Βιβλία, τύπος, ταινίες & μουσική",
+        "href": "https://www.xe.gr/search?System.type=xe_stelexos&Item.category__hierarchy=117145&from=search",
+        "is_property_related": false
+      },
+      {
+        "text": "Κυνήγι",
+        "href": "https://www.xe.gr/eleytheros-xronos/kynigi,31652.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Συλλογές",
+        "href": "https://www.xe.gr/eleytheros-xronos/sylloges,80332.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ταξίδι",
+        "href": "https://www.xe.gr/travel/",
+        "is_property_related": false
+      },
+      {
+        "text": "Είδη camping",
+        "href": "https://www.xe.gr/eleytheros-xronos/eidi-camping,12174.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Χόμπι",
+        "href": "https://www.xe.gr/eleytheros-xronos/xompi.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ποδήλατα",
+        "href": "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117129&Item.master_type=118030",
+        "is_property_related": false
+      },
+      {
+        "text": "Όργανα γυμναστικής",
+        "href": "https://www.xe.gr/eleytheros-xronos/organa-gymnastikis,35720.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Αξεσουάρ ποδηλασίας",
+        "href": "https://www.xe.gr/eleytheros-xronos/aksesouar-podilasias,296.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Αθλητικά ρούχα & παπούτσια",
+        "href": "https://www.xe.gr/search?System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.category__hierarchy=117107",
+        "is_property_related": false
+      },
+      {
+        "text": "Ski & snowboarding",
+        "href": "https://www.xe.gr/eleytheros-xronos/ski-snowboarding,76130.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Άλλα σπορ",
+        "href": "https://www.xe.gr/eleytheros-xronos/alla-spor,800.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Σκύλοι",
+        "href": "https://www.xe.gr/zoa/skyloi,77344.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Καναρίνια",
+        "href": "https://www.xe.gr/zoa/kanarinia,25960.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Παπαγάλοι",
+        "href": "https://www.xe.gr/zoa/papagaloi,40204.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Διάφορα",
+        "href": "https://www.xe.gr/zoa/zoa-diafora,89228.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Γάτες",
+        "href": "https://www.xe.gr/zoa/gates,17450.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Αξεσουάρ",
+        "href": "https://www.xe.gr/zoa/aksesouar-gia-zoa,242.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Γιατροί",
+        "href": "https://www.xe.gr/εργασία/θέσεις-εργασίας?free_text=Γιατροί",
+        "is_property_related": false
+      },
+      {
+        "text": "Νοσοκόμοι - νοσηλευτές",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BD%CE%BF%CF%83%CE%B7%CE%BB%CE%B5%CF%85%CF%84%CE%AD%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Φυσιοθεραπευτές",
+        "href": "https://www.xe.gr/professionals/results?master_type=fysikotherapeuths",
+        "is_property_related": false
+      },
+      {
+        "text": "Ψυχική υγεία",
+        "href": "https://www.xe.gr/professionals/results?category=PSYXIKH_FRONTIDA",
+        "is_property_related": false
+      },
+      {
+        "text": "Ιατρικά & νοσηλευτικά είδη",
+        "href": "https://www.xe.gr/diafora-eidh/iatrika-nosileftika-eidi,24344.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Βιολογικά προϊόντα",
+        "href": "https://www.xe.gr/diafora-eidh/viologika-proionta,85652.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Υπηρεσίες ομορφιάς",
+        "href": "https://www.xe.gr/professionals/results?category=139091",
+        "is_property_related": false
+      },
+      {
+        "text": "Φροντίδα ηλικιωμένων",
+        "href": "https://www.xe.gr/professionals/results?category=139090&master_type=139201",
+        "is_property_related": false
+      },
+      {
+        "text": "Ρολόγια",
+        "href": "https://www.xe.gr/rouxa-kosmimata/rologia,45260.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Τσάντες & είδη ταξιδίου",
+        "href": "https://www.xe.gr/rouxa-kosmimata/tsantes-eidi-taksidiou,83470.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ρούχα",
+        "href": "https://www.xe.gr/rouxa-kosmimata/royxa.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Παπούτσια",
+        "href": "https://www.xe.gr/search?System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.category__hierarchy=117121",
+        "is_property_related": false
+      },
+      {
+        "text": "Κοσμήματα",
+        "href": "https://www.xe.gr/rouxa-kosmimata/kosmimata,29600.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Αξεσουάρ",
+        "href": "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117138",
+        "is_property_related": false
+      },
+      {
+        "text": "Βρεφικά & παιδικά",
+        "href": "https://www.xe.gr/brefika-paidika/",
+        "is_property_related": false
+      },
+      {
+        "text": "Γάμος & βάφτιση",
+        "href": "https://www.xe.gr/diafora-eidh/gamos-vaptisi.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Γνωριμίες",
+        "href": "https://www.xe.gr/prosopika/gnorimies,17882.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Συστέγαση - συγκατοίκηση",
+        "href": "https://www.xe.gr/search?Item.category__hierarchy=117128&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114544",
+        "is_property_related": false
+      },
+      {
+        "text": "Συνοικέσια",
+        "href": "https://www.xe.gr/search?Item.category__hierarchy=117128&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114551",
+        "is_property_related": false
+      },
+      {
+        "text": "Αστρολογία",
+        "href": "https://www.xe.gr/search?Item.category__hierarchy=117134&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114653",
+        "is_property_related": false
+      },
+      {
+        "text": "Καταχώριση αγγελίας",
+        "href": "https://www.xe.gr/account/property_listing_new",
+        "is_property_related": true
+      },
+      {
+        "text": "Πολιτική δεδομένων",
+        "href": "https://support.xe.gr/el/article/politikh-dedomenwn-dmhve8/",
+        "is_property_related": false
+      },
+      {
+        "text": "Αρχική",
+        "href": "https://www.xe.gr/",
+        "is_property_related": false
+      },
+      {
+        "text": "FAQ",
+        "href": "https://support.xe.gr/",
+        "is_property_related": false
+      },
+      {
+        "text": "Όροι χρήσης",
+        "href": "https://support.xe.gr/el/article/oroi-xrhshs-i37xm/",
+        "is_property_related": false
+      },
+      {
+        "text": "Πολιτική δεδομένων",
+        "href": "https://support.xe.gr/el/article/politikh-dedomenwn-dmhve8/",
+        "is_property_related": false
+      },
+      {
+        "text": "Πολιτική cookies",
+        "href": "https://support.xe.gr/el/article/epikoinwnia-me-th-xrysh-eykairia-j8web0/",
+        "is_property_related": false
+      },
+      {
+        "text": "Ευκαιρίες καριέρας",
+        "href": "https://careers.xe.gr/",
+        "is_property_related": false
+      },
+      {
+        "text": "Επικοινωνία",
+        "href": "https://support.xe.gr/el/article/epikoinwnia-me-th-xrysh-eykairia-j8web0/",
+        "is_property_related": false
+      },
+      {
+        "text": "Ακίνητα",
+        "href": "https://www.xe.gr/property",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις κατοικιών",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-katoikion",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις κατοικιών",
+        "href": "https://www.xe.gr/property/s/poliseis-katoikion",
+        "is_property_related": true
+      },
+      {
+        "text": "Στεγαστικό δάνειο",
+        "href": "https://www.xe.gr/property/stegastiko-daneio",
+        "is_property_related": true
+      },
+      {
+        "text": "Τιμές και τάσεις της αγοράς ακινήτων",
+        "href": "https://www.xe.gr/property/times-akiniton",
+        "is_property_related": true
+      },
+      {
+        "text": "Καταχώρηση αγγελίας ακινήτου",
+        "href": "https://www.xe.gr/property/kataxorisi-aggelias-akinitou",
+        "is_property_related": true
+      },
+      {
+        "text": "Φοιτητικά σπίτια",
+        "href": "https://www.xe.gr/property/foititika-spitia",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Ενοικιάσεις parking",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-parking",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις γης",
+        "href": "https://www.xe.gr/property/s/poliseis-gis-oikopedon",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις parking",
+        "href": "https://www.xe.gr/property/s/poliseis-parking",
+        "is_property_related": true
+      },
+      {
+        "text": "Εύρεση εργασίας",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B5%CF%8D%CF%81%CE%B5%CF%83%CE%B7-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Εύρεση προσωπικού",
+        "href": "https://www.xe.gr/jobs/evresi-prosopikou",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Αθήνα",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B1%CE%B8%CE%AE%CE%BD%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Θεσσαλονίκη",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B8%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Πάτρα",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%80%CE%AC%CF%84%CF%81%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Λάρισα",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BB%CE%AC%CF%81%CE%B9%CF%83%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Κρήτη",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CF%81%CE%AE%CF%84%CE%B7",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Ιωάννινα",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B9%CF%89%CE%AC%CE%BD%CE%BD%CE%B9%CE%BD%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Βόλος",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%B2%CF%8C%CE%BB%CE%BF%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Καβάλα",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CE%B1%CE%B2%CE%AC%CE%BB%CE%B1",
+        "is_property_related": false
+      },
+      {
+        "text": "Θέσεις εργασίας Ρόδος",
+        "href": "https://www.xe.gr/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/%CE%B8%CE%AD%CF%83%CE%B5%CE%B9%CF%82-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CF%81%CF%8C%CE%B4%CE%BF%CF%82",
+        "is_property_related": false
+      },
+      {
+        "text": "Αυτοκίνητα",
+        "href": "https://www.xe.gr/automoto",
+        "is_property_related": false
+      },
+      {
+        "text": "Μοτοσυκλέτες",
+        "href": "https://www.xe.gr/automoto/r/metaxireismenes-mhchanes",
+        "is_property_related": false
+      },
+      {
+        "text": "Επαγγελματικά οχήματα",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-epaggelmatika-ochhmata",
+        "is_property_related": false
+      },
+      {
+        "text": "Ταξί",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-taxi",
+        "is_property_related": false
+      },
+      {
+        "text": "Τρέιλερ",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-treiler",
+        "is_property_related": false
+      },
+      {
+        "text": "Σκάφη",
+        "href": "https://www.xe.gr/boats/",
+        "is_property_related": false
+      },
+      {
+        "text": "Αεροσκάφη",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-aeroplana",
+        "is_property_related": false
+      },
+      {
+        "text": "Διάφορα οχήματα",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-alla-ochhmata",
+        "is_property_related": false
+      },
+      {
+        "text": "Ανταλλακτικά - αξεσουάρ",
+        "href": "https://www.xe.gr/automoto/r/metaxireismena-antallaktika",
+        "is_property_related": false
+      },
+      {
+        "text": "Επιχειρήσεις",
+        "href": "https://www.xe.gr/epixeirisiaka/",
+        "is_property_related": false
+      },
+      {
+        "text": "Πωλήσεις επιχειρήσεων",
+        "href": "https://www.xe.gr/epixeirisiaka/epixeiriseis,13632.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Εξοπλισμός επιχειρήσεων",
+        "href": "https://www.xe.gr/epixeirisiaka/eksoplismos-epixeiriseon,12422.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Εξοπλισμός γραφείου",
+        "href": "https://www.xe.gr/eksoplismos-grafeiou/",
+        "is_property_related": false
+      },
+      {
+        "text": "Μηχανήματα",
+        "href": "https://www.xe.gr/epixeirisiaka/mixanimata,34232.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Επαγγελματικές άδειες",
+        "href": "https://www.xe.gr/epixeirisiaka/epaggelmatikes-adeies,13422.html",
+        "is_property_related": false
+      },
+      {
+        "text": "Ενοικιάσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "Πωλήσεις επαγγ. χώρων",
+        "href": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "is_property_related": true
+      },
+      {
+        "text": "",
+        "href": "tel:+302109091300",
+        "is_property_related": false
+      },
+      {
+        "text": "210 9091300",
+        "href": "tel:+302109091300",
+        "is_property_related": false
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/xrisi.eukairia/",
+        "is_property_related": false
+      },
+      {
+        "text": "Twitter",
+        "href": "http://twitter.com/xe_gr",
+        "is_property_related": false
+      },
+      {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/company/xegr/",
+        "is_property_related": false
+      },
+      {
+        "text": "Instagram",
+        "href": "https://instagram.com/xe_gr/",
+        "is_property_related": false
+      }
+    ],
+    "property_page_1": {
+      "url": "https://xe.gr/property",
+      "forms_count": 2,
+      "inputs": [
+        {
+          "type": "hidden",
+          "name": "property_type",
+          "placeholder": null,
+          "class": null
+        },
+        {
+          "type": "hidden",
+          "name": "property_item_type",
+          "placeholder": null,
+          "class": null
+        },
+        {
+          "type": "text",
+          "name": "geo_place_id",
+          "placeholder": "Τοποθεσία (πόλη, περιοχή, γειτονιά ή διεύθυνση)",
+          "class": null
+        },
+        {
+          "type": "submit",
+          "name": null,
+          "placeholder": null,
+          "class": "button-property redesigned"
+        },
+        {
+          "type": "text",
+          "name": "email",
+          "placeholder": "Συμπλήρωσε το email σου",
+          "class": ""
+        }
+      ],
+      "timestamp": "2025-08-02T01:34:25.944396"
+    },
+    "listings_found_2": [
+      {
+        "url": "https://www.xe.gr/property/stegastiko-daneio",
+        "text": "Μάθε περισσότερα",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/pros",
+        "text": "Δες τη λίστα συνεργατών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/times-akiniton",
+        "text": "Δες τις τιμές ανά περιοχή",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/stegastiko-daneio",
+        "text": "Μάθε περισσότερα",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/pros",
+        "text": "Δες τη λίστα συνεργατών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/times-akiniton",
+        "text": "Δες τις τιμές ανά περιοχή",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/enoikiaseis-katoikion",
+        "text": "Ενοικιάσεις κατοικιών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/poliseis-katoikion",
+        "text": "Πωλήσεις κατοικιών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "text": "Ενοικιάσεις επαγγελματικών χώρων",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "text": "Πωλήσεις επαγγελματικών χώρων",
+        "selector": "a[href*=\"property\"]"
+      }
+    ],
+    "property_page_3": {
+      "url": "https://www.xe.gr/property",
+      "forms_count": 2,
+      "inputs": [
+        {
+          "type": "hidden",
+          "name": "property_type",
+          "placeholder": null,
+          "class": null
+        },
+        {
+          "type": "hidden",
+          "name": "property_item_type",
+          "placeholder": null,
+          "class": null
+        },
+        {
+          "type": "text",
+          "name": "geo_place_id",
+          "placeholder": "Τοποθεσία (πόλη, περιοχή, γειτονιά ή διεύθυνση)",
+          "class": null
+        },
+        {
+          "type": "submit",
+          "name": null,
+          "placeholder": null,
+          "class": "button-property redesigned"
+        },
+        {
+          "type": "text",
+          "name": "email",
+          "placeholder": "Συμπλήρωσε το email σου",
+          "class": ""
+        }
+      ],
+      "timestamp": "2025-08-02T01:34:45.608690"
+    },
+    "listings_found_4": [
+      {
+        "url": "https://www.xe.gr/property/stegastiko-daneio",
+        "text": "Μάθε περισσότερα",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/pros",
+        "text": "Δες τη λίστα συνεργατών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/times-akiniton",
+        "text": "Δες τις τιμές ανά περιοχή",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/stegastiko-daneio",
+        "text": "Μάθε περισσότερα",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/pros",
+        "text": "Δες τη λίστα συνεργατών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/times-akiniton",
+        "text": "Δες τις τιμές ανά περιοχή",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/enoikiaseis-katoikion",
+        "text": "Ενοικιάσεις κατοικιών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/poliseis-katoikion",
+        "text": "Πωλήσεις κατοικιών",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "text": "Ενοικιάσεις επαγγελματικών χώρων",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "text": "Πωλήσεις επαγγελματικών χώρων",
+        "selector": "a[href*=\"property\"]"
+      }
+    ],
+    "search_results": [
+      {
+        "url": "/property/",
+        "text": "Αναζήτηση με περισσότερα κριτήρια & χάρτη",
+        "selector": "a[href*=\"property\"]"
+      },
+      {
+        "url": "https://www.xe.gr/property/",
+        "text": "property.gr",
+        "selector": "a[href*=\"property\"]"
+      }
+    ],
+    "network_requests": [
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949za200zb72672746zd72672746&_p=1754087700031&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&cid=82492137.1754087700&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=2&sid=1754087700&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=Cg&en=user_engagement&_et=4205&tfd=4419",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.6;e,'fp,28,4;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.04181913225300575;e,'fcp,28,7;6,'timeToFirstByte,11.299999952316284;6,'firstByteToFCP,68.70000004768372;5,'loadState,'dom-content-loaded;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,'load,5f,4;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,'unload,3ep,4;5,1,2;6,3,50.;6,4,10.;6,5,0.08091447684443473;e,5,28,8;5,'metricId,'v4-1754087700210-5223784746877;5,'largestShiftTarget,'html.webpalpha>body>main;6,'largestShiftTime,76.69999992847443;6,'largestShiftValue,0.04181913225300575;5,9,a;5,1,2;6,3,50.;6,4,10.;e,'pageHide,3eq,4;5,1,2;6,3,50.;6,4,10.;6,5,0.08091447684443473;e,'lcp,2w,e;6,'size,1113600.;5,'eid;5,'element,'html.webpalpha>body>main>div.home-search-container>div.cinema;6,7,11.299999952316284;6,'resourceLoadDelay,59.200000047683716;6,'resourceLoadDuration,0.;6,'resourceLoadTime,0.;6,'elementRenderDelay,33.5;5,'elUrl,'https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp;5,'elTag,'DIV;5,1,2;6,3,50.;6,4,10.;6,5,0.08091447684443473"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"sm\":[{\"params\":{\"name\":\"Generic/LoaderType/pro/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/DistMethod/CDN/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/Runtime/Browser/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Framework/React/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/IFrame/Added\"},\"stats\":{\"t\":7,\"min\":1,\"max\":3,\"sos\":13,\"c\":5}},{\"params\":{\"name\":\"API/logging/info/called\"},\"stats\":{\"c\":2}},{\"params\":{\"name\":\"Ajax/Events/Excluded/App\"},\"stats\":{\"c\":8}},{\"params\":{\"name\":\"Ajax/Events/Excluded/Agent\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Logging/Event/Dropped/Sampling\"},\"stats\":{\"c\":2}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"xhr\":[{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/services/screen_view_events\",\"method\":\"POST\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":63},\"rxSize\":{\"t\":0},\"duration\":{\"t\":116},\"time\":{\"t\":63}}},{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/account/user_info\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":116},\"time\":{\"t\":63}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/geoip\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":46},\"duration\":{\"t\":83},\"cbTime\":{\"t\":0},\"time\":{\"t\":98}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list-trimmed-v1.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":656565},\"duration\":{\"t\":11},\"cbTime\":{\"t\":2},\"time\":{\"t\":181}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":793985},\"duration\":{\"t\":7},\"cbTime\":{\"t\":0},\"time\":{\"t\":189}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/tcfv2/google-atp-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":144562},\"duration\":{\"t\":8},\"cbTime\":{\"t\":0},\"time\":{\"t\":189}}},{\"params\":{\"hostname\":\"region1.google-analytics.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"region1.google-analytics.com:443\",\"pathname\":\"/g/collect\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":55},\"time\":{\"t\":212}}},{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-317e383610bf84150ea\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":187},\"duration\":{\"t\":107},\"cbTime\":{\"t\":0},\"time\":{\"t\":202}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"ep1.adtrafficquality.google\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"ep1.adtrafficquality.google:443\",\"pathname\":\"/getconfig/sodar\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":17238},\"duration\":{\"t\":75},\"cbTime\":{\"t\":0},\"time\":{\"t\":247}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/gampad/ads\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"t\":26235},\"duration\":{\"t\":386},\"time\":{\"t\":601}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/pagead/ping\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":125},\"rxSize\":{\"c\":1},\"duration\":{\"t\":68},\"time\":{\"t\":1096}}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=4419&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=bbba0b6be8050230",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.7;2,,1r,38,,,'POST,5k,'www.xe.gr:443,'/services/screen_view_events,1r,,1,'0,!!!;2,,1r,38,,,'GET,5k,1,'/account/user_info,,,1,3,!!!"
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=greek,greek-ext,latin-ext",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/subscription-8740da93bb20fc017bfb.svg",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/property",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "referer": "https://www.xe.gr/",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=greek,greek-ext,latin-ext",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/property-home-4d0fd4bc32e3afbb627d-v1.0.7.js",
+        "method": "GET",
+        "headers": {
+          "origin": "https://www.xe.gr",
+          "sec-ch-ua-platform": "\"macOS\"",
+          "if-none-match": "W/\"fe5d65035c1d90fbc9f9755a3153dcf0\"",
+          "referer": "https://www.xe.gr/",
+          "accept-language": "el-GR",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "if-modified-since": "Wed, 16 Jul 2025 09:07:18 GMT"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?en=page_view&dr=www.xe.gr&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty&scrsrc=www.googletagmanager.com&frm=0&rnd=1187102779.1754087709&navt=n&npa=1&_tu=CA&gtm=45He57u1v72672746za200zd72672746&gcs=G100&gcd=13p3p3p2p5l1&dma_cps=-&dma=1&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&tft=1754087709194&tfd=75&apve=1&apvf=sb",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/subscription-8740da93bb20fc017bfb.svg",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_house-43d011d657fbed677ab6.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-de746268.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_prof-3b9e7856329b6cb54ce9.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-de746268.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_new_ad-94f5913d020db02e5337.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-de746268.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/sotm-e53d1ebc74ea7adc6d0c.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-de746268.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949z872672746za200zb72672746zd72672746&_p=1754087709185&gcs=G100&gcd=13p3pPp2p5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163~105113532&cid=2065615070.1754087709&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=1&sid=1754087709&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty&dr=https%3A%2F%2Fwww.xe.gr%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=CA&en=property_homepage_visited_raw&_fv=1&_nsi=1&_ss=1&tfd=138",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=232&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property&ptid=bc630d92551f8f7e&af=err,xhr,stn,ins&qt=3&ap=86&be=50&fe=174&dc=54&fsh=0&perf=%7B%22timing%22:%7B%22of%22:1754087709121,%22n%22:0,%22u%22:54,%22ue%22:54,%22f%22:44,%22dn%22:44,%22dne%22:44,%22c%22:44,%22s%22:44,%22ce%22:44,%22rq%22:44,%22rp%22:50,%22rpe%22:51,%22di%22:89,%22ds%22:89,%22de%22:104,%22dc%22:222,%22l%22:222,%22le%22:224%7D,%22navigation%22:%7B%7D%7D&fp=132&fcp=132&timestamp=1754087709478",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/gampad/ads?pvsid=827274351935980&correlator=3251897814528244&eid=31085777%2C83321072&output=ldjh&gdfp_req=1&vrg=202507290101&ptt=17&impl=fifs&rdp=1&gdpr_consent=CQVeCMAQVeCMAAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gdpr=1&addtl_consent=1~&us_privacy=1---&gpp=DBABMA~CQVhIkIQVhIkIAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gpp_sid=2&iu_parts=12392028%2Cxe.gr_Property_Homepage%2Cxe.gr_Property_Homepage_Top%2Cxe.gr_Property_Homepage_Middle%2Cxe.gr_Property_Homepage_Bottom&enc_prev_ius=%2F0%2F1%2F2%2C%2F0%2F1%2F3%2C%2F0%2F1%2F4&prev_iu_szs=300x600%7C320x50%7C300x250%7C970x250%7C970x200%7C728x90%2C970x200%7C320x50%7C728x90%7C300x250%7C970x250%7C300x600%2C300x600%7C320x50%7C970x250%7C300x250%7C728x90%7C970x200&ifi=1&dids=div-gpt-ad-1591869893599-0~div-gpt-ad-1593425510617-0~div-gpt-ad-1591870043964-0&adfs=3192325099~1665272853~945928291&sfv=1-0-45&sc=1&abxe=1&dt=1754087709754&lmt=1754087709&adxs=807%2C472%2C807&adys=662%2C1022%2C1183&biw=1913&bih=1080&scr_x=0&scr_y=0&btvi=0%7C0%7C1&ucis=1%7C2%7C3&oid=2&u_his=14&u_h=1080&u_w=1920&u_ah=1080&u_aw=1920&u_cd=30&u_sd=1&u_tz=180&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjEwXzE1XzciLCJ4ODYiLCIiLCIxMzkuMC43MjU4LjUiLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMzkuMC43MjU4LjUiXSxbIk5vdDtBPUJyYW5kIiwiOTkuMC4wLjAiXV0sMF0.&url=https%3A%2F%2Fwww.xe.gr%2Fproperty&ref=https%3A%2F%2Fwww.xe.gr%2F&vis=1&psz=1913x0%7C1913x0%7C1913x0&msz=1913x0%7C1913x0%7C1913x0&fws=4%2C4%2C4&ohw=1913%2C1913%2C1913&topics=5&tps=5&htps=5&nt=1&psd=WzMxLFtdLG51bGwsNV0.&dlt=1754087709177&idt=69&cust_params=Environment%3Dproduction&adks=3418425828%2C1026657939%2C2185773038&frm=20&eo_id_str=ID%3De40f142da7932ec3%3AT%3D1754087655%3ART%3D1754087655%3AS%3DAA-AfjZSSqB35LisvKLG7MdUsb_o&td=1&egid=47368&tdf=2",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949z872672746za200zb72672746zd72672746&_p=1754087709185&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163~105113532&cid=2065615070.1754087709&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=2&sid=1754087709&sct=1&seg=1&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty&dr=https%3A%2F%2Fwww.xe.gr%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=CA&en=page_view&_et=93&tfd=5232",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949za200zb72672746zd72672746&_p=1754087709185&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163~105113532&cid=2065615070.1754087709&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=3&sid=1754087709&sct=1&seg=1&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty&dr=https%3A%2F%2Fwww.xe.gr%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=Cg&en=user_engagement&_et=5094&tfd=5326",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=5327&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property&ptid=bc630d92551f8f7e",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.6;e,'fp,3o,4;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;e,'fcp,3o,7;6,'timeToFirstByte,50.199999928474426;6,'firstByteToFCP,81.80000007152557;5,'loadState,'dom-content-loaded;5,1,2;6,3,50.;6,4,10.;6,5,0.;e,'load,68,4;5,1,2;6,3,50.;6,4,10.;6,5,0.;e,'unload,43w,4;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897;e,5,13,8;5,'metricId,'v4-1754087709352-2217215964327;5,'largestShiftTarget,'html.webpalpha>body>main>div.grid-container.services-container;6,'largestShiftTime,1167.6999999284744;6,'largestShiftValue,0.03909534459142897;5,9,'complete;5,1,2;6,3,50.;6,4,10.;e,'pageHide,43y,4;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897;e,'lcp,3o,e;6,'size,1113600.;5,'eid;5,'element,'html.webpalpha>body>main>div.home-search-container>div.cinema;6,7,50.199999928474426;6,'resourceLoadDelay,50.300000071525574;6,'resourceLoadDuration,0.;6,'resourceLoadTime,0.;6,'elementRenderDelay,31.5;5,'elUrl,'https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp;5,'elTag,'DIV;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=5327&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property&ptid=bc630d92551f8f7e",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"sm\":[{\"params\":{\"name\":\"Generic/LoaderType/pro/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/DistMethod/CDN/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/Runtime/Browser/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Framework/React/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/IFrame/Added\"},\"stats\":{\"t\":7,\"min\":1,\"max\":3,\"sos\":13,\"c\":5}},{\"params\":{\"name\":\"API/logging/info/called\"},\"stats\":{\"c\":2}},{\"params\":{\"name\":\"Ajax/Events/Excluded/App\"},\"stats\":{\"c\":9}},{\"params\":{\"name\":\"Ajax/Events/Excluded/Agent\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Logging/Event/Dropped/Sampling\"},\"stats\":{\"c\":2}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=5328&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property&ptid=bc630d92551f8f7e",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"xhr\":[{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/account/user_info\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":57},\"time\":{\"t\":90}}},{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/services/screen_view_events\",\"method\":\"POST\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":80},\"rxSize\":{\"t\":0},\"duration\":{\"t\":56},\"time\":{\"t\":91}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/geoip\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":46},\"duration\":{\"t\":64},\"cbTime\":{\"t\":0},\"time\":{\"t\":144}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list-trimmed-v1.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":656565},\"duration\":{\"t\":12},\"cbTime\":{\"t\":2},\"time\":{\"t\":208}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":793985},\"duration\":{\"t\":10},\"cbTime\":{\"t\":0},\"time\":{\"t\":216}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/tcfv2/google-atp-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":144562},\"duration\":{\"t\":10},\"cbTime\":{\"t\":0},\"time\":{\"t\":217}}},{\"params\":{\"hostname\":\"region1.google-analytics.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"region1.google-analytics.com:443\",\"pathname\":\"/g/collect\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":2,\"txSize\":{\"t\":0,\"min\":0,\"max\":0,\"sos\":0,\"c\":2},\"rxSize\":{\"c\":2},\"duration\":{\"t\":191,\"min\":61,\"max\":130,\"sos\":20621,\"c\":2},\"time\":{\"t\":5369,\"min\":138,\"max\":5231,\"sos\":27382405,\"c\":2}}},{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-317e383610bf84150ea\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":187},\"duration\":{\"t\":67},\"cbTime\":{\"t\":0},\"time\":{\"t\":232}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"ep1.adtrafficquality.google\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"ep1.adtrafficquality.google:443\",\"pathname\":\"/getconfig/sodar\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":17482},\"duration\":{\"t\":78},\"cbTime\":{\"t\":0},\"time\":{\"t\":276}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/gampad/ads\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"t\":26200},\"duration\":{\"t\":498},\"time\":{\"t\":638}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/pagead/ping\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":124},\"rxSize\":{\"c\":1},\"duration\":{\"t\":107},\"time\":{\"t\":1132}}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=5328&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property&ptid=bc630d92551f8f7e",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.7;2,,2i,1l,,,'GET,5k,'www.xe.gr:443,'/account/user_info,,,1,'0,!!!;2,,2j,1k,,,'POST,5k,1,'/services/screen_view_events,28,,1,3,!!!"
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_antiparoxi-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_enoikiaseis-epaggelmatikon-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_poliseis-epaggelmatikon-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://xe.gr/property/",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/property/",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=greek,greek-ext,latin-ext",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/property-home-4d0fd4bc32e3afbb627d-v1.0.7.js",
+        "method": "GET",
+        "headers": {
+          "origin": "https://www.xe.gr",
+          "sec-ch-ua-platform": "\"macOS\"",
+          "if-none-match": "W/\"fe5d65035c1d90fbc9f9755a3153dcf0\"",
+          "referer": "https://www.xe.gr/",
+          "accept-language": "el-GR",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "if-modified-since": "Wed, 16 Jul 2025 09:07:18 GMT"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=314353378.1754087719&navt=n&npa=1&_tu=CA&gtm=45He57u1v72672746za200zd72672746&gcs=G100&gcd=13p3p3p2p5l1&dma_cps=-&dma=1&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&tft=1754087718859&tfd=79&apve=1&apvf=sb",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/subscription-8740da93bb20fc017bfb.svg",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_house-43d011d657fbed677ab6.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-9ed8b17e.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_prof-3b9e7856329b6cb54ce9.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-9ed8b17e.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_new_ad-94f5913d020db02e5337.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-9ed8b17e.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/sotm-e53d1ebc74ea7adc6d0c.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://rodeo.cdn.xe.gr/rodeo-static/packs/css/application-9ed8b17e.css",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=244&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=31ef4dc06a916447&af=err,xhr,stn,ins&qt=3&ap=34&be=50&fe=183&dc=72&fsh=0&perf=%7B%22timing%22:%7B%22of%22:1754087718781,%22n%22:0,%22f%22:43,%22dn%22:43,%22dne%22:43,%22c%22:43,%22s%22:43,%22ce%22:43,%22rq%22:43,%22rp%22:50,%22rpe%22:54,%22di%22:108,%22ds%22:108,%22de%22:122,%22dc%22:231,%22l%22:231,%22le%22:233%7D,%22navigation%22:%7B%7D%7D&fp=116&fcp=116&timestamp=1754087719149",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949z872672746za200zb72672746zd72672746&_p=1754087718840&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&cid=2086765122.1754087719&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=1&sid=1754087719&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=CA&en=page_view&_fv=1&_ss=1&tfd=253",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/gampad/ads?pvsid=3499136160193935&correlator=3522942131486818&eid=31093713%2C83321072&output=ldjh&gdfp_req=1&vrg=202507290101&ptt=17&impl=fifs&rdp=1&gdpr_consent=CQVeCMAQVeCMAAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gdpr=1&addtl_consent=1~&us_privacy=1---&gpp=DBABMA~CQVhIkIQVhIkIAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gpp_sid=2&iu_parts=12392028%2Cxe.gr_Property_Homepage%2Cxe.gr_Property_Homepage_Top%2Cxe.gr_Property_Homepage_Middle%2Cxe.gr_Property_Homepage_Bottom&enc_prev_ius=%2F0%2F1%2F2%2C%2F0%2F1%2F3%2C%2F0%2F1%2F4&prev_iu_szs=300x600%7C320x50%7C300x250%7C970x250%7C970x200%7C728x90%2C970x200%7C320x50%7C728x90%7C300x250%7C970x250%7C300x600%2C300x600%7C320x50%7C970x250%7C300x250%7C728x90%7C970x200&ifi=1&dids=div-gpt-ad-1591869893599-0~div-gpt-ad-1593425510617-0~div-gpt-ad-1591870043964-0&adfs=3192325099~1665272853~945928291&sfv=1-0-45&sc=1&abxe=1&dt=1754087719423&lmt=1754087719&adxs=807%2C472%2C807&adys=662%2C1022%2C1183&biw=1913&bih=1080&scr_x=0&scr_y=0&btvi=0%7C0%7C1&ucis=1%7C2%7C3&oid=2&u_his=20&u_h=1080&u_w=1920&u_ah=1080&u_aw=1920&u_cd=30&u_sd=1&u_tz=180&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjEwXzE1XzciLCJ4ODYiLCIiLCIxMzkuMC43MjU4LjUiLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMzkuMC43MjU4LjUiXSxbIk5vdDtBPUJyYW5kIiwiOTkuMC4wLjAiXV0sMF0.&uas=3&url=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&vis=1&psz=1913x0%7C1913x0%7C1913x0&msz=1913x0%7C1913x0%7C1913x0&fws=4%2C4%2C4&ohw=1913%2C1913%2C1913&topics=5&tps=5&htps=5&nt=1&psd=WzMxLFtdLG51bGwsNV0.&dlt=1754087718834&idt=81&cust_params=Environment%3Dproduction&adks=3418425828%2C1026657939%2C2185773038&frm=20&eo_id_str=ID%3De40f142da7932ec3%3AT%3D1754087655%3ART%3D1754087655%3AS%3DAA-AfjZSSqB35LisvKLG7MdUsb_o&td=1&egid=47368&tdf=2",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_antiparoxi-epaggelmatikon-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949za200zb72672746zd72672746&_p=1754087718840&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&cid=2086765122.1754087719&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=2&sid=1754087719&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=Cg&en=user_engagement&_et=1458&tfd=1714",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1715&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=31ef4dc06a916447",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.6;e,'fp,38,4;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.04181913225300575;e,'fcp,38,7;6,'timeToFirstByte,50.39999997615814;6,'firstByteToFCP,65.60000002384186;5,'loadState,'dom-content-loaded;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,'load,6h,4;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,'unload,1bj,4;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,5,15,8;5,'metricId,'v4-1754087719024-4677347958554;5,'largestShiftTarget,'html.webpalpha>body>main;6,'largestShiftTime,126.89999997615814;6,'largestShiftValue,0.04181913225300575;5,9,a;5,1,2;6,3,50.;6,4,10.;e,'pageHide,1bm,4;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575;e,'lcp,4c,e;6,'size,1113600.;5,'eid;5,'element,'html.webpalpha>body>main>div.home-search-container>div.cinema;6,7,50.39999997615814;6,'resourceLoadDelay,67.30000007152557;6,'resourceLoadDuration,0.;6,'resourceLoadTime,0.;6,'elementRenderDelay,38.299999952316284;5,'elUrl,'https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp;5,'elTag,'DIV;5,1,2;6,3,50.;6,4,10.;6,5,0.04181913225300575"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1715&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=31ef4dc06a916447",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"sm\":[{\"params\":{\"name\":\"Generic/LoaderType/pro/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/DistMethod/CDN/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/Runtime/Browser/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Framework/React/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/IFrame/Added\"},\"stats\":{\"t\":7,\"min\":1,\"max\":3,\"sos\":13,\"c\":5}},{\"params\":{\"name\":\"API/logging/info/called\"},\"stats\":{\"c\":2}},{\"params\":{\"name\":\"Ajax/Events/Excluded/App\"},\"stats\":{\"c\":8}},{\"params\":{\"name\":\"Ajax/Events/Excluded/Agent\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Logging/Event/Dropped/Sampling\"},\"stats\":{\"c\":2}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1716&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=31ef4dc06a916447",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"xhr\":[{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/geoip\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":46},\"duration\":{\"t\":76},\"cbTime\":{\"t\":0},\"time\":{\"t\":144}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list-trimmed-v1.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":656565},\"duration\":{\"t\":10},\"cbTime\":{\"t\":1},\"time\":{\"t\":220}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":793985},\"duration\":{\"t\":8},\"cbTime\":{\"t\":0},\"time\":{\"t\":228}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/tcfv2/google-atp-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":144562},\"duration\":{\"t\":9},\"cbTime\":{\"t\":0},\"time\":{\"t\":228}}},{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/services/screen_view_events\",\"method\":\"POST\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":63},\"rxSize\":{\"t\":0},\"duration\":{\"t\":144},\"time\":{\"t\":110}}},{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/account/user_info\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":177},\"time\":{\"t\":110}}},{\"params\":{\"hostname\":\"region1.google-analytics.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"region1.google-analytics.com:443\",\"pathname\":\"/g/collect\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":56},\"time\":{\"t\":253}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"ep1.adtrafficquality.google\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"ep1.adtrafficquality.google:443\",\"pathname\":\"/getconfig/sodar\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":17494},\"duration\":{\"t\":74},\"cbTime\":{\"t\":0},\"time\":{\"t\":286}}},{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-317e383610bf84150ea\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":187},\"duration\":{\"t\":116},\"cbTime\":{\"t\":0},\"time\":{\"t\":244}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/gampad/ads\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"t\":26229},\"duration\":{\"t\":510},\"time\":{\"t\":647}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/pagead/ping\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":126},\"rxSize\":{\"c\":1},\"duration\":{\"t\":125},\"time\":{\"t\":1142}}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1716&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=31ef4dc06a916447",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.7;2,,32,40,,,'POST,5k,'www.xe.gr:443,'/services/screen_view_events,1r,,1,'0,!!!;2,,32,4x,,,'GET,5k,1,'/account/user_info,,,1,3,!!!"
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_poliseis-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/property/",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=greek,greek-ext,latin-ext",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/property-home-4d0fd4bc32e3afbb627d-v1.0.7.js",
+        "method": "GET",
+        "headers": {
+          "origin": "https://www.xe.gr",
+          "sec-ch-ua-platform": "\"macOS\"",
+          "if-none-match": "W/\"fe5d65035c1d90fbc9f9755a3153dcf0\"",
+          "referer": "https://www.xe.gr/",
+          "accept-language": "el-GR",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "if-modified-since": "Wed, 16 Jul 2025 09:07:18 GMT"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=696162126.1754087724&navt=n&npa=1&_tu=CA&gtm=45He57u1v72672746za200zd72672746&gcs=G100&gcd=13p3p3p2p5l1&dma_cps=-&dma=1&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&tft=1754087724185&tfd=35&apve=1&apvf=f",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/subscription-8740da93bb20fc017bfb.svg",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_house-43d011d657fbed677ab6.webp",
+        "method": "GET",
+        "headers": {
+          "referer": ""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_find_prof-3b9e7856329b6cb54ce9.webp",
+        "method": "GET",
+        "headers": {
+          "referer": ""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/home_new_ad-94f5913d020db02e5337.webp",
+        "method": "GET",
+        "headers": {
+          "referer": ""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property/sotm-e53d1ebc74ea7adc6d0c.webp",
+        "method": "GET",
+        "headers": {
+          "referer": ""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=192&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=1e36f0f2b2b3d079&af=err,xhr,stn,ins&qt=3&ap=34&be=10&fe=174&dc=54&fsh=0&perf=%7B%22timing%22:%7B%22of%22:1754087724150,%22n%22:0,%22u%22:14,%22ue%22:14,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22s%22:0,%22ce%22:0,%22rq%22:1,%22rp%22:11,%22rpe%22:12,%22di%22:49,%22ds%22:49,%22de%22:64,%22dc%22:182,%22l%22:182,%22le%22:184%7D,%22navigation%22:%7B%7D%7D&fp=96&fcp=96&timestamp=1754087724467",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949z872672746za200zb72672746zd72672746&_p=1754087724176&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&cid=1223502946.1754087724&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=1&sid=1754087724&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=CA&en=page_view&_fv=1&_ss=1&tfd=200",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/gampad/ads?pvsid=5015366166243505&correlator=175669413852099&eid=31093712%2C83321073&output=ldjh&gdfp_req=1&vrg=202507290101&ptt=17&impl=fifs&rdp=1&gdpr_consent=CQVeCMAQVeCMAAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gdpr=1&addtl_consent=1~&us_privacy=1---&gpp=DBABMA~CQVhIkIQVhIkIAKA8AELB2FgAAAAAEPgAAyIAAAW1ABMNCogjLIgRCJQMIIEACgrCACgQBAAAkDRAQAmDApyBgAusJkAIAUAAwQAgABBgACAAASABCIAKACAQAAQCBQABgAQBAQAMDAAGACxEAgABAdAxTAggECwASMyKDTAlAASCAlsqEEgCBBXCEIs8AggREwUAAAIABQEAADwWAhJICViQQBcQTQAAEAAAUQIECKRswBBQGaLQXgyfRkaYBg-YJklMgyAJgjIyTYhN-Ew8chRCghyEAAA.YAAAAAAAAAAA&gpp_sid=2&iu_parts=12392028%2Cxe.gr_Property_Homepage%2Cxe.gr_Property_Homepage_Top%2Cxe.gr_Property_Homepage_Middle%2Cxe.gr_Property_Homepage_Bottom&enc_prev_ius=%2F0%2F1%2F2%2C%2F0%2F1%2F3%2C%2F0%2F1%2F4&prev_iu_szs=300x600%7C320x50%7C300x250%7C970x250%7C970x200%7C728x90%2C970x200%7C320x50%7C728x90%7C300x250%7C970x250%7C300x600%2C300x600%7C320x50%7C970x250%7C300x250%7C728x90%7C970x200&ifi=1&dids=div-gpt-ad-1591869893599-0~div-gpt-ad-1593425510617-0~div-gpt-ad-1591870043964-0&adfs=3192325099~1665272853~945928291&sfv=1-0-45&sc=1&abxe=1&dt=1754087724741&lmt=1754087724&adxs=807%2C472%2C807&adys=662%2C1022%2C1183&biw=1913&bih=1080&scr_x=0&scr_y=0&btvi=0%7C0%7C1&ucis=1%7C2%7C3&oid=2&u_his=23&u_h=1080&u_w=1920&u_ah=1080&u_aw=1920&u_cd=30&u_sd=1&u_tz=180&dmc=8&bc=31&nvt=1&uach=WyJtYWNPUyIsIjEwXzE1XzciLCJ4ODYiLCIiLCIxMzkuMC43MjU4LjUiLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMzkuMC43MjU4LjUiXSxbIk5vdDtBPUJyYW5kIiwiOTkuMC4wLjAiXV0sMF0.&uas=3&url=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&vis=1&psz=1913x0%7C1913x0%7C1913x0&msz=1913x0%7C1913x0%7C1913x0&fws=4%2C4%2C4&ohw=1913%2C1913%2C1913&topics=5&tps=5&htps=5&nt=1&psd=WzMxLFtdLG51bGwsNV0.&dlt=1754087724171&idt=61&cust_params=Environment%3Dproduction&adks=3418425828%2C1026657939%2C2185773038&frm=20&eo_id_str=ID%3De40f142da7932ec3%3AT%3D1754087655%3ART%3D1754087655%3AS%3DAA-AfjZSSqB35LisvKLG7MdUsb_o&td=1&egid=47368&tdf=2",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://www.xe.gr/sitemap_property_enoikiaseis-diamerismaton.xml",
+        "method": "GET",
+        "headers": {
+          "accept-language": "el-GR",
+          "upgrade-insecure-requests": "1",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"macOS\""
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-S00JV588D8&gtm=45je57u1v886489949za200zb72672746zd72672746&_p=1754087724176&gcs=G100&gcd=13u3uPq2q5l1&npa=1&dma_cps=-&dma=1&tcfd=10001&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~105087538~105087540~105103161~105103163&cid=1223502946.1754087724&ul=el-gr&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B139.0.7258.5%7CNot%253BA%253DBrand%3B99.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=denied&_s=2&sid=1754087724&sct=1&seg=0&dl=https%3A%2F%2Fwww.xe.gr%2Fproperty%2F&dt=%CE%A7%CF%81%CF%85%CF%83%CE%AE%20%CE%95%CF%85%CE%BA%CE%B1%CE%B9%CF%81%CE%AF%CE%B1%3A%20E%CE%BD%CE%BF%CE%B9%CE%BA%CE%B9%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%26%20%CF%80%CF%89%CE%BB%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B1%CE%BA%CE%B9%CE%BD%CE%AE%CF%84%CF%89%CE%BD%20%7C%20xe.gr&_tu=Cg&en=user_engagement&_et=1059&tfd=1261",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "accept-language": "el-GR",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "post_data": null
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1261&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=1e36f0f2b2b3d079",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.6;e,'fp,2o,4;5,'net-etype,'4g;6,'net-rtt,50.;6,'net-dlink,10.;6,'cls,0.;e,'fcp,2o,7;6,'timeToFirstByte,10.600000023841858;6,'firstByteToFCP,85.39999997615814;5,'loadState,'dom-content-loaded;5,1,2;6,3,50.;6,4,10.;6,5,0.;e,'load,54,4;5,1,2;6,3,50.;6,4,10.;6,5,0.;e,'unload,yz,4;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897;e,5,13,8;5,'metricId,'v4-1754087724342-6113869933331;5,'largestShiftTarget,'html.webpalpha>body>main>div.grid-container.services-container;6,'largestShiftTime,843.3000000715256;6,'largestShiftValue,0.03909534459142897;5,9,'complete;5,1,2;6,3,50.;6,4,10.;e,'pageHide,z1,4;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897;e,'lcp,2o,e;6,'size,1113600.;5,'eid;5,'element,'html.webpalpha>body>main>div.home-search-container>div.cinema;6,7,10.600000023841858;6,'resourceLoadDelay,49.300000071525574;6,'resourceLoadDuration,0.;6,'resourceLoadTime,0.;6,'elementRenderDelay,36.09999990463257;5,'elUrl,'https://rodeo.cdn.xe.gr/rodeo-static/packs/static/images/property_tab/property_xxxlarge_1600_2560px-1d6e5b95611d8f962bbe.webp;5,'elTag,'DIV;5,1,2;6,3,50.;6,4,10.;6,5,0.03909534459142897"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1261&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=1e36f0f2b2b3d079",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"sm\":[{\"params\":{\"name\":\"Generic/LoaderType/pro/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/DistMethod/CDN/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/Runtime/Browser/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Framework/React/Detected\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Generic/IFrame/Added\"},\"stats\":{\"t\":7,\"min\":1,\"max\":3,\"sos\":13,\"c\":5}},{\"params\":{\"name\":\"API/logging/info/called\"},\"stats\":{\"c\":2}},{\"params\":{\"name\":\"Ajax/Events/Excluded/App\"},\"stats\":{\"c\":9}},{\"params\":{\"name\":\"Ajax/Events/Excluded/Agent\"},\"stats\":{\"c\":1}},{\"params\":{\"name\":\"Logging/Event/Dropped/Sampling\"},\"stats\":{\"c\":2}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1261&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=1e36f0f2b2b3d079",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "{\"xhr\":[{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/services/screen_view_events\",\"method\":\"POST\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":63},\"rxSize\":{\"t\":0},\"duration\":{\"t\":57},\"time\":{\"t\":50}}},{\"params\":{\"hostname\":\"www.xe.gr\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"www.xe.gr:443\",\"pathname\":\"/account/user_info\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":57},\"time\":{\"t\":50}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/ccm/collect\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":134},\"time\":{\"t\":35}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/geoip\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":46},\"duration\":{\"t\":80},\"cbTime\":{\"t\":0},\"time\":{\"t\":90}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list-trimmed-v1.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":656565},\"duration\":{\"t\":10},\"cbTime\":{\"t\":1},\"time\":{\"t\":170}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/GVL-v3/vendor-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":793985},\"duration\":{\"t\":7},\"cbTime\":{\"t\":0},\"time\":{\"t\":178}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"cmp.inmobi.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"cmp.inmobi.com:443\",\"pathname\":\"/tcfv2/google-atp-list.json\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":144562},\"duration\":{\"t\":8},\"cbTime\":{\"t\":0},\"time\":{\"t\":178}}},{\"params\":{\"hostname\":\"region1.google-analytics.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"region1.google-analytics.com:443\",\"pathname\":\"/g/collect\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"c\":1},\"duration\":{\"t\":55},\"time\":{\"t\":200}}},{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-317e383610bf84150ea\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":187},\"duration\":{\"t\":106},\"cbTime\":{\"t\":0},\"time\":{\"t\":192}}},{\"params\":{\"method\":\"GET\",\"hostname\":\"ep1.adtrafficquality.google\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"ep1.adtrafficquality.google:443\",\"pathname\":\"/getconfig/sodar\",\"status\":200},\"metrics\":{\"count\":1,\"rxSize\":{\"t\":17458},\"duration\":{\"t\":76},\"cbTime\":{\"t\":0},\"time\":{\"t\":235}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/gampad/ads\",\"method\":\"GET\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":0},\"rxSize\":{\"t\":26253},\"duration\":{\"t\":228},\"time\":{\"t\":594}}},{\"params\":{\"hostname\":\"pagead2.googlesyndication.com\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"pagead2.googlesyndication.com:443\",\"pathname\":\"/pagead/ping\",\"method\":\"POST\",\"status\":0},\"metrics\":{\"count\":1,\"txSize\":{\"t\":125},\"rxSize\":{\"c\":1},\"duration\":{\"t\":71},\"time\":{\"t\":1088}}}]}"
+      },
+      {
+        "url": "https://bam.eu01.nr-data.net/events/1/NRJS-317e383610bf84150ea?a=149429577&v=1.293.0&to=JhpeRQoXXw9SQRpPA0oFQl4IHUEXThxGUgcXFlhUC1ddBkA%3D&rst=1261&ck=0&s=ad6b675705e3afd6&ref=https://www.xe.gr/property/&ptid=1e36f0f2b2b3d079",
+        "method": "POST",
+        "headers": {
+          "sec-ch-ua-platform": "\"macOS\"",
+          "referer": "https://www.xe.gr/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+          "content-type": "text/plain;charset=UTF-8",
+          "sec-ch-ua-mobile": "?0",
+          "accept-language": "el-GR"
+        },
+        "post_data": "bel.7;2,,1e,1l,,,'POST,5k,'www.xe.gr:443,'/services/screen_view_events,1r,,1,'0,!!!;2,,1e,1l,,,'GET,5k,1,'/account/user_info,,,1,3,!!!"
+      }
+    ],
+    "robots_txt": {
+      "content": "  User-agent: Mediapartners-Google\n  Disallow:\n\n  User-agent: *\n  Disallow: /search\n  Disallow: */automoto/premium\n  Disallow: */automoto/count\n  Disallow: */automoto/selected\n  Disallow: */automoto/recent_classifieds\n  Disallow: */automoto/result_metrics\n  Disallow: */automoto/r/*/*?\n  Disallow: */property/search\n  Disallow: */property/results\n  Disallow: */property/evresi\n  Disallow: */property/result_metrics\n  Disallow: */property/unique_properties\n  Disallow: */property/u\n  Disallow: */property/r/*/*?\n  Disallow: */account\n  Disallow: */services\n  Disallow: */auth\n  Disallow: */εργασία/θέσεις-εργασίας?*\n  Disallow: */εργασία/θέση-εργασίας*?*\n  Allow: */εργασία/θέσεις-εργασίας?page=\n  Disallow: */εργασία/θέσεις-εργασίας?page=*&\n  Disallow: /static_html/promo/esales/phones/\n  Disallow: /*/εργασία\n  Disallow: /*/professionals\n  Disallow: /*/automoto\n  Disallow: */jobs/search\n  Disallow: */jobs/results\n\n  User-agent: Twitterbot\n  Disallow:\n\n  User-agent: proximic\n  Disallow: */property/d/*\n  Disallow: */εργασία/θέση-εργασίας-*\n  Disallow: */professionals/results/*\n\n  User-agent: Claude-Web\n  User-agent: Google-Extended\n  User-agent: PerplexityBot\n  User-agent: PiplBot\n  User-agent: 01h4x.com\n  User-agent: 360Spider\n  User-agent: 404checker\n  User-agent: 404enemy\n  User-agent: 80legs\n  User-agent: ADmantX\n  User-agent: AIBOT\n  User-agent: ALittle Client\n  User-agent: ASPSeekUser-agent: Abonti\n  User-agent: Aboundex\n  User-agent: Aboundexbot\n  User-agent: Acunetix\n  User-agent: AdsTxtCrawlerTP\n  User-agent: AfD-Verbotsverfahren\n  User-agent: AhrefsBot\n  User-agent: AiHitBot\n  User-agent: Aipbot\n  User-agent: Alexibot\n  User-agent: AllSubmitter\n  User-agent: Alligator\n  User-agent: AlphaBot\n  User-agent: Anarchie\n  User-agent: Anarchy\n  User-agent: Anarchy99\n  User-agent: Ankit\n  User-agent: Anthill\n  User-agent: Apexoo\n  User-agent: Aspiegel\n  User-agent: Asterias\n  User-agent: Atomseobot\n  User-agent: Attach\n  User-agent: AwarioBot\n  User-agent: AwarioRssBot\n  User-agent: AwarioSmartBot\n  User-agent: BBBike\n  User-agent: BDCbot\n  User-agent: BDFetch\n  User-agent: BLEXBot\n  User-agent: BackDoorBot\n  User-agent: BackStreet\n  User-agent: BackWeb\n  User-agent: Backlink-Ceck\n  User-agent: BacklinkCrawler\n  User-agent: BacklinksExtendedBot\n  User-agent: Badass\n  User-agent: Bandit\n  User-agent: Barkrowler\n  User-agent: BatchFTP\n  User-agent: Battleztar Bazinga\n  User-agent: BetaBot\n  User-agent: Bigfoot\n  User-agent: Bitacle\n  User-agent: Black Hole\n  User-agent: BlackWidow\n  User-agent: Blackboard\n  User-agent: Blow\n  User-agent: BlowFish\n  User-agent: Boardreader\n  User-agent: Bolt\n  User-agent: BotALot\n  User-agent: Brandprotect\n  User-agent: Brandwatch\n  User-agent: Buck\n  User-agent: Buddy\n  User-agent: BuiltBotTough\n  User-agent: BuiltWith\n  User-agent: Bullseye\n  User-agent: BunnySlippers\n  User-agent: BuzzSumo\n  User-agent: Bytespider\n  User-agent: CATExplorador\n  User-agent: CCBot\n  User-agent: CODE87\n  User-agent: CSHttp\n  User-agent: Calculon\n  User-agent: CazoodleBot\n  User-agent: Cegbfeieh\n  User-agent: CensysInspect\n  User-agent: ChatGPT-User\n  User-agent: CheTeam\n  User-agent: CheeseBot\n  User-agent: CherryPicker\n  User-agent: ChinaClaw\n  User-agent: Chlooe\n  User-agent: Citoid\n  User-agent: Claritybot\n  User-agent: ClaudeBot\n  User-agent: Cliqzbot\n  User-agent: Cloud mapping\n  User-agent: Cocolyzebot\n  User-agent: Cogentbot\n  User-agent: Collector\n  User-agent: Copier\n  User-agent: CopyRightCheck\n  User-agent: Copyscape\n  User-agent: Cosmos\n  User-agent: Craftbot\n  User-agent: Crawling at Home Project\n  User-agent: CrazyWebCrawler\n  User-agent: Crescent\n  User-agent: CrunchBot\n  User-agent: Curious\n  User-agent: Custo\n  User-agent: CyotekWebCopy\n  User-agent: DBLBot\n  User-agent: DIIbot\n  User-agent: DSearch\n  User-agent: DTS Agent\n  User-agent: DataCha0s\n  User-agent: DatabaseDriverMysqli\n  User-agent: Demon\n  User-agent: Deusu\n  User-agent: Devil\n  User-agent: Digincore\n  User-agent: DigitalPebble\n  User-agent: Dirbuster\n  User-agent: Disco\n  User-agent: Discobot\n  User-agent: Discoverybot\n  User-agent: Dispatch\n  User-agent: DittoSpyder\n  User-agent: DnBCrawler-Analytics\n  User-agent: DnyzBot\n  User-agent: DomCopBot\n  User-agent: DomainAppender\n  User-agent: DomainCrawler\n  User-agent: DomainSigmaCrawler\n  User-agent: DomainStatsBot\n  User-agent: Domains Project\n  User-agent: Dotbot\n  User-agent: Download Wonder\n  User-agent: Dragonfly\n  User-agent: Drip\n  User-agent: ECCP/1.0\n  User-agent: EMail Siphon\n  User-agent: EMail Wolf\n  User-agent: EasyDL\n  User-agent: Ebingbong\n  User-agent: Ecxi\n  User-agent: EirGrabber\n  User-agent: EroCrawler\n  User-agent: Evil\n  User-agent: Exabot\n  User-agent: Express WebPictures\n  User-agent: ExtLinksBot\n  User-agent: Extractor\n  User-agent: ExtractorPro\n  User-agent: Extreme Picture Finder\n  User-agent: EyeNetIE\n  User-agent: Ezooms\n  User-agent: FDM\n  User-agent: FHscan\n  User-agent: FacebookBot\n  User-agent: FemtosearchBot\n  User-agent: Fimap\n  User-agent: Firefox/7.0\n  User-agent: FlashGet\n  User-agent: Flunky\n  User-agent: Foobot\n  User-agent: Freeuploader\n  User-agent: FrontPage\n  User-agent: Fuzz\n  User-agent: FyberSpider\n  User-agent: Fyrebot\n  User-agent: G-i-g-a-b-o-t\n  User-agent: GPTBot\n  User-agent: GT::WWW\n  User-agent: GalaxyBot\n  User-agent: GeedoProductSearch\n  User-agent: Genieo\n  User-agent: GermCrawler\n  User-agent: GetRight\n  User-agent: GetWeb\n  User-agent: Getintent\n  User-agent: Gigabot\n  User-agent: Go!Zilla\n  User-agent: Go-Ahead-Got-It\n  User-agent: GoZilla\n  User-agent: Gotit\n  User-agent: GrabNet\n  User-agent: Grabber\n  User-agent: Grafula\n  User-agent: GrapeFX\n  User-agent: GrapeshotCrawler\n  User-agent: GridBot\n  User-agent: HEADMasterSEO\n  User-agent: HMView\n  User-agent: HTMLparser\n  User-agent: HTTP::Lite\n  User-agent: HTTrack\n  User-agent: Haansoft\n  User-agent: HaosouSpider\n  User-agent: Harvest\n  User-agent: Havij\n  User-agent: Heritrix\n  User-agent: Hloader\n  User-agent: HonoluluBot\n  User-agent: Humanlinks\n  User-agent: HybridBot\n  User-agent: IDBTE4M\n  User-agent: IDBot\n  User-agent: IRLbot\n  User-agent: Iblog\n  User-agent: Id-search\n  User-agent: IlseBot\n  User-agent: Image Fetch\n  User-agent: Image Sucker\n  User-agent: ImagesiftBot\n  User-agent: IndeedBot\n  User-agent: Indy Library\n  User-agent: InfoNaviRobot\n  User-agent: InfoTekies\n  User-agent: Information Security Team InfraSec Scanner\n  User-agent: InfraSec Scanner\n  User-agent: Intelliseek\n  User-agent: InterGET\n  User-agent: Internet Ninja\n  User-agent: InternetMeasurement\n  User-agent: InternetSeer\n  User-agent: Iria\n  User-agent: Iskanie\n  User-agent: IstellaBot\n  User-agent: JOC Web Spider\n  User-agent: JamesBOT\n  User-agent: Jbrofuzz\n  User-agent: JennyBot\n  User-agent: JetCar\n  User-agent: Jetty\n  User-agent: JikeSpider\n  User-agent: Joomla\n  User-agent: Jorgee\n  User-agent: JustView\n  User-agent: Jyxobot\n  User-agent: Kenjin Spider\n  User-agent: Keybot Translation-Search-Machine\n  User-agent: Keyword Density\n  User-agent: Kinza\n  User-agent: Kozmosbot\n  User-agent: LNSpiderguy\n  User-agent: LWP::Simple\n  User-agent: Lanshanbot\n  User-agent: Larbin\n  User-agent: Leap\n  User-agent: LeechFTP\n  User-agent: LeechGet\n  User-agent: LexiBot\n  User-agent: Lftp\n  User-agent: LibWeb\n  User-agent: Libwhisker\n  User-agent: LieBaoFast\n  User-agent: Lightspeedsystems\n  User-agent: Likse\n  User-agent: LinkScan\n  User-agent: LinkWalker\n  User-agent: Linkbot\n  User-agent: LinkextractorPro\n  User-agent: LinkpadBot\n  User-agent: LinksManager\n  User-agent: LinqiaMetadataDownloaderBot\n  User-agent: LinqiaRSSBot\n  User-agent: LinqiaScrapeBot\n  User-agent: Lipperhey\n  User-agent: Lipperhey Spider\n  User-agent: Litemage_walker\n  User-agent: Lmspider\n  User-agent: Ltx71\n  User-agent: MFC_Tear_Sample\n  User-agent: MIDown tool\n  User-agent: MIIxpc\n  User-agent: MJ12bot\n  User-agent: MQQBrowser\n  User-agent: MSFrontPage\n  User-agent: MSIECrawler\n  User-agent: MTRobot\n  User-agent: Mag-Net\n  User-agent: Magnet\n  User-agent: Mail.RU_Bot\n  User-agent: Majestic SEO\n  User-agent: Majestic-SEO\n  User-agent: Majestic12\n  User-agent: MarkMonitor\n  User-agent: MarkWatch\n  User-agent: Mass Downloader\n  User-agent: Masscan\n  User-agent: Mata Hari\n  User-agent: MauiBot\n  User-agent: Mb2345Browser\n  User-agent: MeanPath Bot\n  User-agent: Meanpathbot\n  User-agent: Mediatoolkitbot\n  User-agent: MegaIndex.ru\n  User-agent: Metauri\n  User-agent: MicroMessenger\n  User-agent: Microsoft Data Access\n  User-agent: Microsoft URL Control\n  User-agent: Minefield\n  User-agent: Mister PiX\n  User-agent: Moblie Safari\n  User-agent: Mojeek\n  User-agent: Mojolicious\n  User-agent: MolokaiBot\n  User-agent: Morfeus Fucking Scanner\n  User-agent: Mozlila\n  User-agent: Mr.4x3\n  User-agent: Msrabot\n  User-agent: Musobot\n  User-agent: NICErsPRO\n  User-agent: NPbot\n  User-agent: Name Intelligence\n  User-agent: Nameprotect\n  User-agent: Navroad\n  User-agent: NearSite\n  User-agent: Needle\n  User-agent: Nessus\n  User-agent: Net Vampire\n  User-agent: NetAnts\n  User-agent: NetLyzer\n  User-agent: NetMechanic\n  User-agent: NetSpider\n  User-agent: NetZIP\n  User-agent: Netcraft\n  User-agent: Nettrack\n  User-agent: Netvibes\n  User-agent: NextGenSearchBot\n  User-agent: Nibbler\n  User-agent: Niki-bot\n  User-agent: Nikto\n  User-agent: NimbleCrawler\n  User-agent: Nimbostratus\n  User-agent: Ninja\n  User-agent: Nmap\n  User-agent: Nuclei\n  User-agent: Nutch\n  User-agent: Octopus\n  User-agent: Offline Explorer\n  User-agent: Offline Navigator\n  User-agent: OnCrawl\n  User-agent: OpenLinkProfiler\n  User-agent: OpenVAS\n  User-agent: Openfind\n  User-agent: Openvas\n  User-agent: OrangeBot\n  User-agent: OrangeSpider\n  User-agent: OutclicksBot\n  User-agent: OutfoxBot\n  User-agent: PECL::HTTP\n  User-agent: PHPCrawl\n  User-agent: POE-Component-Client-HTTP\n  User-agent: Page Analyzer\n  User-agent: PageAnalyzer\n  User-agent: PageGrabber\n  User-agent: PageScorer\n  User-agent: PageThing.com\n  User-agent: Pandalytics\n  User-agent: Panscient\n  User-agent: Papa Foto\n  User-agent: Pavuk\n  User-agent: PeoplePal\n  User-agent: Petalbot\n  User-agent: Pi-Monster\n  User-agent: Picscout\n  User-agent: Picsearch\n  User-agent: PictureFinder\n  User-agent: Piepmatz\n  User-agent: Pimonster\n  User-agent: Pixray\n  User-agent: PleaseCrawl\n  User-agent: Pockey\n  User-agent: ProPowerBot\n  User-agent: ProWebWalker\n  User-agent: Probethenet\n  User-agent: Proximic\n  User-agent: Psbot\n  User-agent: Pu_iN\n  User-agent: Pump\n  User-agent: PxBroker\n  User-agent: PyCurl\n  User-agent: QueryN Metasearch\n  User-agent: Quick-Crawler\n  User-agent: RSSingBot\n  User-agent: Rainbot\n  User-agent: RankActive\n  User-agent: RankActiveLinkBot\n  User-agent: RankFlex\n  User-agent: RankingBot\n  User-agent: RankingBot2\n  User-agent: Rankivabot\n  User-agent: RankurBot\n  User-agent: Re-re\n  User-agent: ReGet\n  User-agent: RealDownload\n  User-agent: Reaper\n  User-agent: RebelMouse\n  User-agent: Recorder\n  User-agent: RedesScrapy\n  User-agent: RepoMonkey\n  User-agent: Ripper\n  User-agent: RocketCrawler\n  User-agent: Rogerbot\n  User-agent: SBIder\n  User-agent: SEOkicks\n  User-agent: SEOkicks-Robot\n  User-agent: SEOlyt\n  User-agent: SEOlyticsCrawler\n  User-agent: SEOprofiler\n  User-agent: SEOstats\n  User-agent: SISTRIX\n  User-agent: SMTBot\n  User-agent: SalesIntelligent\n  User-agent: ScanAlert\n  User-agent: Scanbot\n  User-agent: ScoutJet\n  User-agent: Scrapy\n  User-agent: Screaming\n  User-agent: ScreenerBot\n  User-agent: ScrepyBot\n  User-agent: Searchestate\n  User-agent: SearchmetricsBot\n  User-agent: Seekport\n  User-agent: SeekportBot\n  User-agent: SemanticJuice\n  User-agent: Semrush\n  User-agent: SemrushBot\n  User-agent: SemrushBot-BA\n  User-agent: SemrushBot-FT\n  User-agent: SemrushBot-OCOB\n  User-agent: SemrushBot-SI\n  User-agent: SemrushBot-SWA\n  User-agent: SentiBot\n  User-agent: SenutoBot\n  User-agent: SeoCherryBot\n  User-agent: SeoSiteCheckup\n  User-agent: SeobilityBot\n  User-agent: Seomoz\n  User-agent: Shodan\n  User-agent: Siphon\n  User-agent: Site Sucker\n  User-agent: SiteAuditBot\n  User-agent: SiteCheckerBotCrawler\n  User-agent: SiteExplorer\n  User-agent: SiteLockSpider\n  User-agent: SiteSnagger\n  User-agent: SiteSucker\n  User-agent: Sitebeam\n  User-agent: Siteimprove\n  User-agent: Sitevigil\n  User-agent: SlySearch\n  User-agent: SmartDownload\n  User-agent: Snake\n  User-agent: Snapbot\n  User-agent: Snoopy\n  User-agent: SocialRankIOBot\n  User-agent: Sociscraper\n  User-agent: Sogou web spider\n  User-agent: Sosospider\n  User-agent: Sottopop\n  User-agent: SpaceBison\n  User-agent: Spammen\n  User-agent: SpankBot\n  User-agent: Spanner\n  User-agent: Spbot\n  User-agent: Spider_Bot\n  User-agent: Spider_Bot/3.0\n  User-agent: Spinn3r\n  User-agent: SplitSignalBot\n  User-agent: SputnikBot\n  User-agent: Sqlmap\n  User-agent: Sqlworm\n  User-agent: Sqworm\n  User-agent: Steeler\n  User-agent: Stripper\n  User-agent: Sucker\n  User-agent: Sucuri\n  User-agent: SuperBot\n  User-agent: SuperHTTP\n  User-agent: Surfbot\n  User-agent: SurveyBot\n  User-agent: Suzuran\n  User-agent: Swiftbot\n  User-agent: Szukacz\n  User-agent: T0PHackTeam\n  User-agent: T8Abot\n  User-agent: Teleport\n  User-agent: TeleportPro\n  User-agent: Telesoft\n  User-agent: Telesphoreo\n  User-agent: Telesphorep\n  User-agent: The Intraformant\n  User-agent: TheNomad\n  User-agent: Thumbor\n  User-agent: TightTwatBot\n  User-agent: TinyTestBot\n  User-agent: Titan\n  User-agent: Toata\n  User-agent: Toweyabot\n  User-agent: Tracemyfile\n  User-agent: Trendiction\n  User-agent: ubermetrics-technologies.com\n  User-agent: voyagerx.com\n  User-agent: webgains-bot\n  User-agent: webmeup-crawler\n  User-agent: webpros.com\n  User-agent: webprosbot\n  User-agent: x09Mozilla\n  User-agent: x22Mozilla\n  User-agent: xpymep1.exe\n  User-agent: zauba.io\n  User-agent: zgrab\n  Disallow:/\n\n  Sitemap: https://www.xe.gr/sitemap.xml\n",
+      "sitemaps": [
+        "https://www.xe.gr/sitemap.xml"
+      ]
+    },
+    "sitemap_8": {
+      "url": "https://www.xe.gr/sitemap.xml",
+      "property_urls": [
+        "https://www.xe.gr/sitemap_property_poliseis-diamerismaton.xml",
+        "https://www.xe.gr/sitemap_property_enoikiaseis-diamerismaton.xml",
+        "https://www.xe.gr/sitemap_property_antiparoxi-epaggelmatikon-diamerismaton.xml",
+        "https://www.xe.gr/sitemap_property_poliseis-epaggelmatikon-diamerismaton.xml",
+        "https://www.xe.gr/sitemap_property_enoikiaseis-epaggelmatikon-diamerismaton.xml",
+        "https://www.xe.gr/sitemap_property_antiparoxi-diamerismaton.xml"
+      ]
+    }
+  }
+}

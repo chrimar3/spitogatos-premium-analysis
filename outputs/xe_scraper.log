@@ -1,0 +1,156 @@
+2025-08-01 22:28:47,389 - __main__ - INFO - 🎭 PRODUCTION PLAYWRIGHT XE.GR SCRAPER
+2025-08-01 22:28:47,389 - __main__ - INFO - 🚀 Enhanced browser automation with stealth mode
+2025-08-01 22:28:47,389 - __main__ - INFO - 🎭 ENHANCED PLAYWRIGHT XE.GR SCRAPER
+2025-08-01 22:28:47,389 - __main__ - INFO - 🚀 Browser automation with proxy support and stealth mode
+2025-08-01 22:28:47,389 - __main__ - INFO - 🥷 Stealth mode enabled
+2025-08-01 22:28:47,389 - __main__ - INFO - 
+🏘️ PROCESSING NEIGHBORHOOD: Κολωνάκι
+2025-08-01 22:28:47,389 - __main__ - INFO - 🎯 DYNAMIC SCRAPING: Κολωνάκι
+2025-08-01 22:28:47,389 - __main__ - INFO - 📋 Target: 3 properties with full browser rendering
+2025-08-01 22:28:48,031 - __main__ - INFO - 🔄 Trying approach: property_section
+2025-08-01 22:28:48,031 - __main__ - INFO - 🔍 Loading: https://xe.gr/property (attempt 1)
+2025-08-01 22:28:54,286 - __main__ - INFO - 📄 Page title: Χρυσή Ευκαιρία: Eνοικιάσεις & πωλήσεις ακινήτων | xe.gr
+2025-08-01 22:28:54,296 - __main__ - WARNING - ⚠️ property_section: Page blocked or restricted
+2025-08-01 22:28:54,296 - __main__ - INFO - 🔄 Trying approach: direct_athens_rent
+2025-08-01 22:28:54,296 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens (attempt 1)
+2025-08-01 22:28:59,651 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:28:59,657 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:29:05,684 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:29:10,786 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:29:13,824 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_222913.html
+2025-08-01 22:29:13,824 - __main__ - INFO - 📦 direct_athens_rent: Found 0 URLs
+2025-08-01 22:29:13,880 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_rent_attempt1.png
+2025-08-01 22:29:13,880 - __main__ - INFO - 🔄 Trying approach: direct_athens_sale
+2025-08-01 22:29:13,880 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/poliseis-katoikion/athens (attempt 1)
+2025-08-01 22:29:19,273 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:29:19,278 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:29:25,290 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:29:30,378 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:29:33,408 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_222933.html
+2025-08-01 22:29:33,408 - __main__ - INFO - 📦 direct_athens_sale: Found 0 URLs
+2025-08-01 22:29:33,460 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_sale_attempt1.png
+2025-08-01 22:29:33,460 - __main__ - INFO - 🔄 Trying approach: specific_area_rent
+2025-08-01 22:29:33,460 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens-κολωνάκι (attempt 1)
+2025-08-01 22:29:38,794 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:29:38,800 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:29:44,819 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:29:49,905 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:29:52,941 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_222952.html
+2025-08-01 22:29:52,942 - __main__ - INFO - 📦 specific_area_rent: Found 0 URLs
+2025-08-01 22:29:52,993 - __main__ - INFO - 📸 Screenshot: outputs/specific_area_rent_attempt1.png
+2025-08-01 22:29:52,993 - __main__ - INFO - 🔄 Trying approach: working_search_url
+2025-08-01 22:29:52,993 - __main__ - INFO - 🔍 Loading: https://xe.gr/search?Item.category__hierarchy=117139&Publication.freetext=Αθήνα (attempt 1)
+2025-08-01 22:29:58,776 - __main__ - INFO - 📄 Page title: Αγγελίες για Έπιπλα, Αναζήτηση για "Αθήνα&quo
+2025-08-01 22:29:58,785 - __main__ - WARNING - ⚠️ working_search_url: Page blocked or restricted
+2025-08-01 22:29:58,785 - __main__ - INFO - 🔄 Trying approach: test_known_property
+2025-08-01 22:29:58,785 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki (attempt 1)
+2025-08-01 22:30:04,909 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:30:04,915 - __main__ - INFO - 🏠 Loading property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki...
+2025-08-01 22:30:09,241 - __main__ - WARNING - ⚠️ Not a property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki
+2025-08-01 22:30:09,241 - __main__ - INFO - 📦 Total unique URLs found: 0
+2025-08-01 22:30:09,244 - __main__ - INFO - 💾 Saved session data
+2025-08-01 22:30:09,275 - __main__ - INFO - 🎭 PLAYWRIGHT SCRAPING COMPLETE: 0 properties
+2025-08-01 22:30:09,275 - __main__ - WARNING - ⚠️ Κολωνάκι: No properties found
+2025-08-01 22:30:14,277 - __main__ - INFO - 
+🏘️ PROCESSING NEIGHBORHOOD: Παγκράτι
+2025-08-01 22:30:14,277 - __main__ - INFO - 🎯 DYNAMIC SCRAPING: Παγκράτι
+2025-08-01 22:30:14,277 - __main__ - INFO - 📋 Target: 3 properties with full browser rendering
+2025-08-01 22:30:14,508 - __main__ - INFO - 🍪 Loaded saved session cookies
+2025-08-01 22:30:14,661 - __main__ - INFO - 🔄 Trying approach: property_section
+2025-08-01 22:30:14,661 - __main__ - INFO - 🔍 Loading: https://xe.gr/property (attempt 1)
+2025-08-01 22:30:20,851 - __main__ - INFO - 📄 Page title: Χρυσή Ευκαιρία: Eνοικιάσεις & πωλήσεις ακινήτων | xe.gr
+2025-08-01 22:30:20,861 - __main__ - WARNING - ⚠️ property_section: Page blocked or restricted
+2025-08-01 22:30:20,861 - __main__ - INFO - 🔄 Trying approach: direct_athens_rent
+2025-08-01 22:30:20,861 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens (attempt 1)
+2025-08-01 22:30:26,162 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:30:26,168 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:30:32,191 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:30:37,288 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:30:40,326 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223040.html
+2025-08-01 22:30:40,326 - __main__ - INFO - 📦 direct_athens_rent: Found 0 URLs
+2025-08-01 22:30:40,375 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_rent_attempt1.png
+2025-08-01 22:30:40,375 - __main__ - INFO - 🔄 Trying approach: direct_athens_sale
+2025-08-01 22:30:40,375 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/poliseis-katoikion/athens (attempt 1)
+2025-08-01 22:30:45,696 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:30:45,702 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:30:51,723 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:30:56,809 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:30:59,845 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223059.html
+2025-08-01 22:30:59,845 - __main__ - INFO - 📦 direct_athens_sale: Found 0 URLs
+2025-08-01 22:30:59,908 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_sale_attempt1.png
+2025-08-01 22:30:59,908 - __main__ - INFO - 🔄 Trying approach: specific_area_rent
+2025-08-01 22:30:59,908 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens-παγκράτι (attempt 1)
+2025-08-01 22:31:05,702 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:31:05,709 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:31:11,731 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:31:16,814 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:31:19,851 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223119.html
+2025-08-01 22:31:19,851 - __main__ - INFO - 📦 specific_area_rent: Found 0 URLs
+2025-08-01 22:31:19,906 - __main__ - INFO - 📸 Screenshot: outputs/specific_area_rent_attempt1.png
+2025-08-01 22:31:19,906 - __main__ - INFO - 🔄 Trying approach: working_search_url
+2025-08-01 22:31:19,906 - __main__ - INFO - 🔍 Loading: https://xe.gr/search?Item.category__hierarchy=117139&Publication.freetext=Αθήνα (attempt 1)
+2025-08-01 22:31:25,157 - __main__ - INFO - 📄 Page title: Αγγελίες για Έπιπλα, Αναζήτηση για "Αθήνα&quo
+2025-08-01 22:31:25,167 - __main__ - WARNING - ⚠️ working_search_url: Page blocked or restricted
+2025-08-01 22:31:25,167 - __main__ - INFO - 🔄 Trying approach: test_known_property
+2025-08-01 22:31:25,167 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki (attempt 1)
+2025-08-01 22:31:31,277 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:31:31,282 - __main__ - INFO - 🏠 Loading property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki...
+2025-08-01 22:31:35,630 - __main__ - WARNING - ⚠️ Not a property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki
+2025-08-01 22:31:35,630 - __main__ - INFO - 📦 Total unique URLs found: 0
+2025-08-01 22:31:35,633 - __main__ - INFO - 💾 Saved session data
+2025-08-01 22:31:35,664 - __main__ - INFO - 🎭 PLAYWRIGHT SCRAPING COMPLETE: 0 properties
+2025-08-01 22:31:35,664 - __main__ - WARNING - ⚠️ Παγκράτι: No properties found
+2025-08-01 22:31:40,665 - __main__ - INFO - 
+🏘️ PROCESSING NEIGHBORHOOD: Εξάρχεια
+2025-08-01 22:31:40,665 - __main__ - INFO - 🎯 DYNAMIC SCRAPING: Εξάρχεια
+2025-08-01 22:31:40,665 - __main__ - INFO - 📋 Target: 3 properties with full browser rendering
+2025-08-01 22:31:40,901 - __main__ - INFO - 🍪 Loaded saved session cookies
+2025-08-01 22:31:41,055 - __main__ - INFO - 🔄 Trying approach: property_section
+2025-08-01 22:31:41,055 - __main__ - INFO - 🔍 Loading: https://xe.gr/property (attempt 1)
+2025-08-01 22:31:47,368 - __main__ - INFO - 📄 Page title: Χρυσή Ευκαιρία: Eνοικιάσεις & πωλήσεις ακινήτων | xe.gr
+2025-08-01 22:31:47,378 - __main__ - WARNING - ⚠️ property_section: Page blocked or restricted
+2025-08-01 22:31:47,378 - __main__ - INFO - 🔄 Trying approach: direct_athens_rent
+2025-08-01 22:31:47,378 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens (attempt 1)
+2025-08-01 22:31:52,724 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:31:52,728 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:31:58,744 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:32:03,843 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:32:06,887 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223206.html
+2025-08-01 22:32:06,887 - __main__ - INFO - 📦 direct_athens_rent: Found 0 URLs
+2025-08-01 22:32:06,936 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_rent_attempt1.png
+2025-08-01 22:32:06,936 - __main__ - INFO - 🔄 Trying approach: direct_athens_sale
+2025-08-01 22:32:06,936 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/poliseis-katoikion/athens (attempt 1)
+2025-08-01 22:32:12,209 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:32:12,214 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:32:18,239 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:32:23,307 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:32:26,334 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223226.html
+2025-08-01 22:32:26,334 - __main__ - INFO - 📦 direct_athens_sale: Found 0 URLs
+2025-08-01 22:32:26,386 - __main__ - INFO - 📸 Screenshot: outputs/direct_athens_sale_attempt1.png
+2025-08-01 22:32:26,386 - __main__ - INFO - 🔄 Trying approach: specific_area_rent
+2025-08-01 22:32:26,386 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/enoikiaseis-katoikion/athens-εξάρχεια (attempt 1)
+2025-08-01 22:32:31,793 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:32:31,798 - __main__ - INFO - 📜 Scrolling to load more properties...
+2025-08-01 22:32:37,815 - __main__ - INFO - ⏳ Extracting property URLs...
+2025-08-01 22:32:42,901 - __main__ - INFO - 🔄 Scrolling to load more results...
+2025-08-01 22:32:45,936 - __main__ - INFO - 🔍 Search page saved: outputs/search_page_debug_223245.html
+2025-08-01 22:32:45,936 - __main__ - INFO - 📦 specific_area_rent: Found 0 URLs
+2025-08-01 22:32:45,986 - __main__ - INFO - 📸 Screenshot: outputs/specific_area_rent_attempt1.png
+2025-08-01 22:32:45,986 - __main__ - INFO - 🔄 Trying approach: working_search_url
+2025-08-01 22:32:45,986 - __main__ - INFO - 🔍 Loading: https://xe.gr/search?Item.category__hierarchy=117139&Publication.freetext=Αθήνα (attempt 1)
+2025-08-01 22:32:51,583 - __main__ - INFO - 📄 Page title: Αγγελίες για Έπιπλα, Αναζήτηση για "Αθήνα&quo
+2025-08-01 22:32:51,593 - __main__ - WARNING - ⚠️ working_search_url: Page blocked or restricted
+2025-08-01 22:32:51,593 - __main__ - INFO - 🔄 Trying approach: test_known_property
+2025-08-01 22:32:51,593 - __main__ - INFO - 🔍 Loading: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki (attempt 1)
+2025-08-01 22:32:57,986 - __main__ - INFO - 📄 Page title: xe.gr
+2025-08-01 22:32:57,991 - __main__ - INFO - 🏠 Loading property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki...
+2025-08-01 22:33:02,342 - __main__ - WARNING - ⚠️ Not a property page: https://xe.gr/property/d/enoikiaseis-diamerismaton/869853845/athens-kolonaki
+2025-08-01 22:33:02,343 - __main__ - INFO - 📦 Total unique URLs found: 0
+2025-08-01 22:33:02,346 - __main__ - INFO - 💾 Saved session data
+2025-08-01 22:33:02,377 - __main__ - INFO - 🎭 PLAYWRIGHT SCRAPING COMPLETE: 0 properties
+2025-08-01 22:33:02,377 - __main__ - WARNING - ⚠️ Εξάρχεια: No properties found
+2025-08-01 22:33:07,379 - __main__ - INFO - 
+🎯 TOTAL RESULTS: 0 properties from 3 neighborhoods
+2025-08-01 22:33:07,379 - __main__ - ERROR - ❌ No properties extracted from any neighborhood
+2025-08-01 22:33:07,380 - __main__ - INFO - 💡 Try checking the screenshots in outputs/ for debugging
+2025-08-01 22:33:07,380 - __main__ - INFO - 💡 Consider using a proxy if access is restricted

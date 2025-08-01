@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """
 XE.GR FINAL BREAKTHROUGH SCRAPER
-Using intelligence + enhanced property URL detection
+Using reconnaissance findings to extract real property data
 """
 
 import asyncio
-import aiohttp
 import json
 import logging
 import re
+import csv
 from datetime import datetime
-from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, asdict
-from bs4 import BeautifulSoup
-import hashlib
-from urllib.parse import urljoin, urlencode
+from typing import List, Dict, Optional
+from playwright.async_api import async_playwright
+from urllib.parse import urljoin, urlparse
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

@@ -1,0 +1,115 @@
+{
+  "cookies": [
+    {
+      "name": "device_resolution",
+      "value": "1920x1080",
+      "domain": "www.xe.gr",
+      "path": "/property/enoikiaseis-katoikion",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "device_resolution",
+      "value": "1920x1080",
+      "domain": "www.xe.gr",
+      "path": "/property/poliseis-katoikion",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xe-data-events-user-id",
+      "value": "47d9b975-ff7c-4fa7-8740-f84ff6261402",
+      "domain": ".www.xe.gr",
+      "path": "/",
+      "expires": 1785612528.654242,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "device_resolution",
+      "value": "1920x1080",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__SID",
+      "value": "E5EABD26-6F0D-11F0-AEEE-B2FD96431588",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__XE_COOKIE",
+      "value": "f56805cfd1443984320ce8ef72f6d5f5",
+      "domain": ".xe.gr",
+      "path": "/",
+      "expires": 1756668593.61652,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xe_preferences",
+      "value": "%257B%2522comparisonListHeight%2522%253A135%252C%2522cpOpen%2522%253Afalse%257D",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xe_last_search",
+      "value": "https%3A%2F%2Fwww.xe.gr%2Fsearch%3FItem.category__hierarchy%3D117139%26Publication.freetext%3D%2525CE%252591%2525CE%2525B8%2525CE%2525AE%2525CE%2525BD%2525CE%2525B1",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "last_search",
+      "value": "https%3A%2F%2Fwww.xe.gr%2Fsearch%3FItem.category__hierarchy%3D117139%26Publication.freetext%3D%2525CE%252591%2525CE%2525B8%2525CE%2525AE%2525CE%2525BD%2525CE%2525B1%7C%0A%09%09%09%CE%91%CE%B3%CE%B3%CE%B5%CE%BB%CE%AF%CE%B5%CF%82%20%CE%B3%CE%B9%CE%B1%20%CE%88%CF%80%CE%B9%CF%80%CE%BB%CE%B1%2C%20%CE%91%CE%BD%CE%B1%CE%B6%CE%AE%CF%84%CE%B7%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%22%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%22%20-%20%CE%A0%CF%81%CE%BF%CF%83%CF%86%CE%BF%CF%81%CE%AC%0A%09%09%09%7C%2Fsaved_searches%3Faction%3Dcreate_with_media%26search_name%3Dsearch_name%26notify_days%3D0%26realtime%3D0%26System.item_type%3Dxe_stelexos%26%26Transaction.type_channel%3D117518%26%26Item.category__hierarchy%3D117139%26%26Publication.freetext%3D%25CE%2591%25CE%25B8%25CE%25AE%25CE%25BD%25CE%25B1",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_rodeo_session",
+      "value": "a8IT8IFg45g2XPpAhrjHj%2FVrlSQ%2FDaCVwsdqYeba1UCawDX9Do3Mv1equ6nyshVfDTdTB4I8ErLnpSkQGet8xWqxxSMJfZVdZBErMtIOPhkMRYio7BNwUpvRYllwUhAc1jWqUSYHVa2HStbHNprra7nYq9%2F2MyujsATMsHpYoQ9AAQv1KMhFzNY7434mgAOli%2FcT6FkJUKPEFGPw--%2F%2Byc9Zt9lFA8EuoK--C5KHZzdANKbpmEExBndiaQ%3D%3D",
+      "domain": "www.xe.gr",
+      "path": "/",
+      "expires": 1754767901.535625,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_S00JV588D8",
+      "value": "GS2.1.s1754076529$o1$g1$t1754076707$j55$l0$h0",
+      "domain": ".xe.gr",
+      "path": "/",
+      "expires": 1788636707.616517,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "timestamp": "2025-08-01T22:33:02.345609"
+}
