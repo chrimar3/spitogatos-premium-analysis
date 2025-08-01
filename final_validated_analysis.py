@@ -26,6 +26,8 @@ class FinalValidatedAnalysis:
         # Target areas for analysis
         self.target_areas = ['Kolonaki', 'Exarchia', 'Pangrati']
         
+        logging.info("📋 Analysis includes both RENTALS and SALES properties")
+        
         logging.info("🔒 FINAL VALIDATED ANALYSIS - Only real, verified data")
     
     async def run_complete_analysis(self) -> Dict[str, Any]:
