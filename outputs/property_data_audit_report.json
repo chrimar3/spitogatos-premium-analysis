@@ -1,0 +1,586 @@
+{
+  "audit_metadata": {
+    "audit_timestamp": "2025-08-01T17:54:18.526792",
+    "data_source": "Aggregated city block analysis",
+    "total_blocks_claimed": 13,
+    "total_properties_claimed": 191,
+    "areas_analyzed": [
+      "Kolonaki",
+      "Pangrati",
+      "Exarchia"
+    ]
+  },
+  "data_availability_audit": {
+    "available_fields": [
+      "total_sqm",
+      "properties_count",
+      "area",
+      "reprocessing_notes",
+      "block_id",
+      "avg_price_per_sqm",
+      "street_boundaries",
+      "weighted_median_energy_class",
+      "confidence_score",
+      "sqm_range",
+      "price_range",
+      "energy_class_breakdown",
+      "completeness_scores"
+    ],
+    "missing_critical_fields": [
+      "individual_property_urls",
+      "property_ids",
+      "individual_property_sqm",
+      "individual_energy_classes",
+      "scraping_source_verification",
+      "scraping_timestamps",
+      "individual_property_addresses"
+    ],
+    "validation_possible": false,
+    "data_completeness_score": 0.65,
+    "critical_issue": "Individual property data not retained for validation"
+  },
+  "city_block_summary_audit": [
+    {
+      "block_id": "Kolonaki_CityBlock_01",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 644,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 7,
+        "D": 4,
+        "E": 1
+      },
+      "avg_price_per_sqm": 972.9364632097817,
+      "street_boundaries": [
+        "Street 1A",
+        "Street 1B",
+        "Avenue 1",
+        "Square 1"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_02",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 635,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 7,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 878.0472486842785,
+      "street_boundaries": [
+        "Street 2A",
+        "Street 2B",
+        "Avenue 2",
+        "Square 2"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_03",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 93,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 7,
+        "D": 4,
+        "E": 1
+      },
+      "avg_price_per_sqm": 2849.462365591398,
+      "street_boundaries": [
+        "Street 3A",
+        "Street 3B",
+        "Avenue 3",
+        "Square 3"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_04",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 430,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 6,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 383.1698086859377,
+      "street_boundaries": [
+        "Street 4A",
+        "Street 4B",
+        "Avenue 4",
+        "Square 4"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Pangrati_CityBlock_01",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 810,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 7,
+        "D": 4,
+        "E": 1
+      },
+      "avg_price_per_sqm": 1089.4549149403476,
+      "street_boundaries": [
+        "Street 1A",
+        "Street 1B",
+        "Avenue 1",
+        "Square 1"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Pangrati_CityBlock_02",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 992,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 7,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 1224.9250004104333,
+      "street_boundaries": [
+        "Street 2A",
+        "Street 2B",
+        "Avenue 2",
+        "Square 2"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Pangrati_CityBlock_03",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 0,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 7,
+        "D": 4,
+        "E": 1
+      },
+      "avg_price_per_sqm": 0,
+      "street_boundaries": [
+        "Street 3A",
+        "Street 3B",
+        "Avenue 3",
+        "Square 3"
+      ],
+      "validation_issues": [
+        "Suspiciously low price/m²: €0",
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 0.5,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Pangrati_CityBlock_04",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 628,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 6,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 904.7634244179435,
+      "street_boundaries": [
+        "Street 4A",
+        "Street 4B",
+        "Avenue 4",
+        "Square 4"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Exarchia_CityBlock_01",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 957,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 6,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 1208.550803557603,
+      "street_boundaries": [
+        "Street 1A",
+        "Street 1B",
+        "Avenue 1",
+        "Square 1"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Exarchia_CityBlock_02",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 1210,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 6,
+        "D": 6,
+        "E": 1
+      },
+      "avg_price_per_sqm": 1221.7253676148414,
+      "street_boundaries": [
+        "Street 2A",
+        "Street 2B",
+        "Avenue 2",
+        "Square 2"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 1.0,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Exarchia_CityBlock_03",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 132,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 6,
+        "D": 6,
+        "E": 1
+      },
+      "avg_price_per_sqm": 9.795454545454545,
+      "street_boundaries": [
+        "Street 3A",
+        "Street 3B",
+        "Avenue 3",
+        "Square 3"
+      ],
+      "validation_issues": [
+        "Suspiciously low price/m²: €9.795454545454545",
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 0.75,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Exarchia_CityBlock_04",
+      "claimed_properties": 15,
+      "claimed_total_sqm": 471,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 6,
+        "D": 5,
+        "E": 1
+      },
+      "avg_price_per_sqm": 30.658168613357287,
+      "street_boundaries": [
+        "Street 4A",
+        "Street 4B",
+        "Avenue 4",
+        "Square 4"
+      ],
+      "validation_issues": [
+        "Suspiciously low price/m²: €30.658168613357287",
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 0.75,
+      "suspicious_patterns": [
+        "Suspiciously consistent property count (15)",
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    },
+    {
+      "block_id": "Exarchia_CityBlock_05",
+      "claimed_properties": 11,
+      "claimed_total_sqm": 416,
+      "weighted_median_energy": "C",
+      "energy_breakdown": {
+        "B": 1,
+        "C": 5,
+        "D": 4,
+        "E": 1
+      },
+      "avg_price_per_sqm": 2291.072669226916,
+      "street_boundaries": [
+        "Street 5A",
+        "Street 5B",
+        "Avenue 5",
+        "Square 5"
+      ],
+      "validation_issues": [
+        "Generic street names detected - likely synthetic data"
+      ],
+      "data_consistency_score": 0.75,
+      "suspicious_patterns": [
+        "Generic English street names in Greek city",
+        "Perfect confidence score (100%) - unlikely for real data"
+      ]
+    }
+  ],
+  "energy_distribution_audit": {
+    "total_properties_with_energy": 191,
+    "actual_distribution": {
+      "A": 6.282722513089005,
+      "B": 10.99476439790576,
+      "C": 43.455497382198956,
+      "D": 32.460732984293195,
+      "E": 6.806282722513089
+    },
+    "expected_athens_distribution": {
+      "A+": 3,
+      "A": 7,
+      "B": 12,
+      "C": 35,
+      "D": 30,
+      "E": 10,
+      "F": 3
+    },
+    "deviations_analysis": {
+      "A+": {
+        "actual_percent": 0,
+        "expected_percent": 3,
+        "deviation": -3,
+        "deviation_ratio": -1.0
+      },
+      "A": {
+        "actual_percent": 6.3,
+        "expected_percent": 7,
+        "deviation": -0.7,
+        "deviation_ratio": -0.1
+      },
+      "B": {
+        "actual_percent": 11.0,
+        "expected_percent": 12,
+        "deviation": -1.0,
+        "deviation_ratio": -0.08
+      },
+      "C": {
+        "actual_percent": 43.5,
+        "expected_percent": 35,
+        "deviation": 8.5,
+        "deviation_ratio": 0.24
+      },
+      "D": {
+        "actual_percent": 32.5,
+        "expected_percent": 30,
+        "deviation": 2.5,
+        "deviation_ratio": 0.08
+      },
+      "E": {
+        "actual_percent": 6.8,
+        "expected_percent": 10,
+        "deviation": -3.2,
+        "deviation_ratio": -0.32
+      },
+      "F": {
+        "actual_percent": 0,
+        "expected_percent": 3,
+        "deviation": -3,
+        "deviation_ratio": -1.0
+      }
+    },
+    "realism_assessment": "Reasonably realistic distribution"
+  },
+  "pricing_data_audit": {
+    "avg_price_per_sqm_range": {
+      "min": 0,
+      "max": 2849.462365591398,
+      "avg": 1004.9662838075609,
+      "coefficient_of_variation": 0.8405931490700799
+    },
+    "price_range_analysis": {
+      "min_range": 94920,
+      "max_range": 529910,
+      "avg_range": 338163.6153846154
+    },
+    "pricing_realism": "Some unrealistically low prices detected"
+  },
+  "geographic_data_audit": {
+    "areas_analyzed": {
+      "Kolonaki": {
+        "blocks": 4,
+        "properties": 60,
+        "street_samples": [
+          "Street 1A",
+          "Street 1B",
+          "Street 2A",
+          "Street 2B",
+          "Street 3A",
+          "Street 3B",
+          "Street 4A",
+          "Street 4B"
+        ]
+      },
+      "Pangrati": {
+        "blocks": 4,
+        "properties": 60,
+        "street_samples": [
+          "Street 1A",
+          "Street 1B",
+          "Street 2A",
+          "Street 2B",
+          "Street 3A",
+          "Street 3B",
+          "Street 4A",
+          "Street 4B"
+        ]
+      },
+      "Exarchia": {
+        "blocks": 5,
+        "properties": 71,
+        "street_samples": [
+          "Street 1A",
+          "Street 1B",
+          "Street 2A",
+          "Street 2B",
+          "Street 3A",
+          "Street 3B",
+          "Street 4A",
+          "Street 4B",
+          "Street 5A",
+          "Street 5B"
+        ]
+      }
+    },
+    "geographic_coverage": 3,
+    "geographic_realism": "Street names appear realistic"
+  },
+  "data_quality_flags": [
+    {
+      "severity": "CRITICAL",
+      "issue": "Missing Individual Property Data",
+      "description": "Cannot validate URLs, addresses, or individual property details",
+      "impact": "Complete validation impossible",
+      "recommendation": "Re-run scraping with property-level data retention"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Unrealistic Confidence Scores",
+      "description": "13 blocks with perfect 100% confidence",
+      "impact": "Suggests synthetic or overly processed data",
+      "recommendation": "Review confidence calculation methodology"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Generic Street Names",
+      "description": "13 blocks with generic English street names",
+      "impact": "Indicates synthetic geographic data",
+      "recommendation": "Use actual Greek street names from xe.gr"
+    }
+  ],
+  "CRITICAL_VALIDATION_ISSUE": {
+    "issue": "Missing individual property data for validation",
+    "impact": "Cannot verify URLs, addresses, or individual property details",
+    "current_data": "Aggregated city block summaries only",
+    "required_for_validation": [
+      "Individual property URLs from xe.gr",
+      "Specific street addresses",
+      "Individual property square meters",
+      "Individual energy class ratings",
+      "Scraping timestamps and source verification"
+    ],
+    "recommendation": "Re-run analysis with property-level data retention"
+  }
+}
