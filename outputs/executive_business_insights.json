@@ -1,0 +1,327 @@
+{
+  "executive_summary": {
+    "business_scale": {
+      "total_properties_analyzed": 191,
+      "total_market_value_eur": 17140278,
+      "average_property_value": 89739,
+      "geographic_coverage": "3 premium Athens neighborhoods",
+      "market_segments": 13
+    },
+    "market_position": {
+      "average_price_per_sqm": 1004,
+      "premium_market_share": "17.1%",
+      "energy_efficiency_status": "Below Average (C/D dominant)",
+      "competitive_positioning": "Premium segment focus"
+    },
+    "key_metrics": {
+      "revenue_opportunity": "€1,714,027 potential value uplift",
+      "market_growth_potential": "83% improvement opportunity",
+      "data_confidence": "100%",
+      "geographic_diversification": 3
+    },
+    "executive_takeaway": "€17.0M market analyzed with 17% premium properties, significant energy efficiency improvement opportunity identified"
+  },
+  "market_analysis": {
+    "area_comparison": {
+      "Kolonaki": {
+        "avg_price_per_sqm": 1270,
+        "premium_rate": 18.3,
+        "market_value": 4375246,
+        "energy_score": 3.8,
+        "market_position": "Premium Player"
+      },
+      "Pangrati": {
+        "avg_price_per_sqm": 804,
+        "premium_rate": 18.3,
+        "market_value": 4959411,
+        "energy_score": 3.8,
+        "market_position": "Mid-Market"
+      },
+      "Exarchia": {
+        "avg_price_per_sqm": 952,
+        "premium_rate": 15.2,
+        "market_value": 7805621,
+        "energy_score": 3.7,
+        "market_position": "Mid-Market"
+      }
+    },
+    "price_distribution": {
+      "q1_low_end": 383,
+      "q2_median": 972,
+      "q3_high_end": 1221,
+      "coefficient_of_variation": 84.1
+    },
+    "market_segmentation": {
+      "luxury_segments": 3,
+      "premium_segments": 3,
+      "standard_segments": 7
+    },
+    "energy_market_dynamics": {
+      "premium_energy_blocks": 0,
+      "average_energy_blocks": 0,
+      "improvement_opportunity_blocks": 13
+    }
+  },
+  "competitive_positioning": {
+    "competitive_matrix": {
+      "Kolonaki": {
+        "price_competitiveness": "Premium Pricing",
+        "energy_competitiveness": "Above Average",
+        "market_share": 30.8,
+        "value_proposition": "Premium Location"
+      },
+      "Pangrati": {
+        "price_competitiveness": "Value Pricing",
+        "energy_competitiveness": "Above Average",
+        "market_share": 30.8,
+        "value_proposition": "Value Investment"
+      },
+      "Exarchia": {
+        "price_competitiveness": "Value Pricing",
+        "energy_competitiveness": "Market Average",
+        "market_share": 38.5,
+        "value_proposition": "Value Investment"
+      }
+    },
+    "market_leaders": {
+      "price_leadership": "Kolonaki",
+      "energy_leadership": null,
+      "overall_leadership": "Kolonaki"
+    },
+    "competitive_gaps": [
+      "13 blocks with below-average energy efficiency",
+      "3 high-priced blocks with poor energy efficiency",
+      "Limited geographic diversification"
+    ],
+    "strategic_positioning": [
+      "Pangrati: Opportunity for premium pricing based on energy efficiency"
+    ]
+  },
+  "revenue_opportunities": {
+    "current_market_value": 17140278,
+    "total_opportunity_value": 13273144,
+    "opportunity_breakdown": {
+      "energy_efficiency_premium": {
+        "description": "Energy efficiency improvements (C/D → B/A)",
+        "blocks_affected": 13,
+        "properties_affected": 191,
+        "value_eur": 3428055,
+        "implementation_cost": 1028416,
+        "net_value": 2399638,
+        "timeframe": "12-18 months",
+        "probability": 0.7
+      },
+      "premium_market_expansion": {
+        "description": "Expand premium portfolio from 17.1% to 32.1%",
+        "additional_premium_properties": 28,
+        "value_eur": 656687,
+        "implementation_cost": 262674,
+        "net_value": 394012,
+        "timeframe": "18-24 months",
+        "probability": 0.6
+      },
+      "price_optimization": {
+        "description": "Price optimization for undervalued high-efficiency properties",
+        "blocks_affected": 1,
+        "value_eur": 46921,
+        "implementation_cost": 4692,
+        "net_value": 42228,
+        "timeframe": "6-12 months",
+        "probability": 0.8
+      },
+      "market_expansion": {
+        "description": "Expand to 2 additional premium Athens neighborhoods",
+        "new_areas": 2,
+        "value_eur": 9141481,
+        "implementation_cost": 4570740,
+        "net_value": 4570740,
+        "timeframe": "24-36 months",
+        "probability": 0.5
+      }
+    },
+    "roi_potential": "77.4%",
+    "priority_opportunities": [
+      {
+        "opportunity": "market_expansion",
+        "description": "Expand to 2 additional premium Athens neighborhoods",
+        "risk_adjusted_value": 2285370,
+        "implementation_cost": 4570740,
+        "timeframe": "24-36 months",
+        "probability": 0.5
+      },
+      {
+        "opportunity": "energy_efficiency_premium",
+        "description": "Energy efficiency improvements (C/D → B/A)",
+        "risk_adjusted_value": 1679746,
+        "implementation_cost": 1028416,
+        "timeframe": "12-18 months",
+        "probability": 0.7
+      },
+      {
+        "opportunity": "premium_market_expansion",
+        "description": "Expand premium portfolio from 17.1% to 32.1%",
+        "risk_adjusted_value": 236407,
+        "implementation_cost": 262674,
+        "timeframe": "18-24 months",
+        "probability": 0.6
+      },
+      {
+        "opportunity": "price_optimization",
+        "description": "Price optimization for undervalued high-efficiency properties",
+        "risk_adjusted_value": 33782,
+        "implementation_cost": 4692,
+        "timeframe": "6-12 months",
+        "probability": 0.8
+      }
+    ]
+  },
+  "risk_assessment": {
+    "risk_assessment": {
+      "market_concentration": {
+        "risk_level": "Medium",
+        "max_area_concentration": "45.5%",
+        "recommendation": "Maintain balance"
+      },
+      "energy_transition": {
+        "risk_level": "High",
+        "low_efficiency_percentage": "100.0%",
+        "recommendation": "Accelerate energy improvements"
+      },
+      "price_volatility": {
+        "risk_level": "High",
+        "coefficient_of_variation": "84.1%",
+        "recommendation": "Diversify price points"
+      },
+      "competitive": {
+        "risk_level": "Medium",
+        "below_market_percentage": "53.8%",
+        "recommendation": "Strengthen value proposition"
+      }
+    },
+    "overall_risk_level": "High",
+    "risk_mitigation": [
+      "Energy_Transition: Accelerate energy improvements",
+      "Price_Volatility: Diversify price points"
+    ]
+  },
+  "strategic_recommendations": [
+    {
+      "priority": "High",
+      "category": "Energy Efficiency",
+      "title": "Accelerate Energy Efficiency Program",
+      "description": "Upgrade 13 blocks with below-average energy ratings",
+      "business_impact": "Est. 15-25% value uplift per upgraded property",
+      "investment_required": "€1,714,027",
+      "timeframe": "12-18 months",
+      "success_metrics": [
+        "Energy rating improvements",
+        "Price premium achievement",
+        "Market share growth"
+      ]
+    },
+    {
+      "priority": "High",
+      "category": "Market Positioning",
+      "title": "Expand Premium Portfolio",
+      "description": "Increase premium properties from 17.1% to 35%",
+      "business_impact": "€2,571,041 additional market value",
+      "investment_required": "€1,371,222",
+      "timeframe": "18-24 months",
+      "success_metrics": [
+        "Premium property percentage",
+        "Average selling price",
+        "Margin improvement"
+      ]
+    },
+    {
+      "priority": "Medium",
+      "category": "Market Expansion",
+      "title": "Geographic Diversification",
+      "description": "Expand to Psyrri and Thiseio neighborhoods",
+      "business_impact": "Risk reduction and market share growth",
+      "investment_required": "€1,318,482 per new area",
+      "timeframe": "24-36 months",
+      "success_metrics": [
+        "Market coverage",
+        "Revenue diversification",
+        "Risk reduction"
+      ]
+    }
+  ],
+  "kpi_dashboard": {
+    "financial_kpis": {
+      "total_market_value": 17140278,
+      "average_price_per_sqm": 1004,
+      "revenue_opportunity": 2056833,
+      "market_value_growth_potential": "15-25%"
+    },
+    "operational_kpis": {
+      "properties_under_management": 191,
+      "premium_property_percentage": "17.1%",
+      "average_energy_efficiency_score": "3.8/7",
+      "data_confidence_level": "100%"
+    },
+    "strategic_kpis": {
+      "geographic_diversification": 3,
+      "market_leadership_position": "Premium segment focus",
+      "competitive_advantage": "Energy efficiency expertise",
+      "growth_trajectory": "Expansion ready"
+    },
+    "risk_kpis": {
+      "concentration_risk": "45.5%",
+      "energy_transition_readiness": "0.0%",
+      "price_volatility": "84.1%",
+      "overall_risk_level": "Medium"
+    }
+  },
+  "implementation_roadmap": {
+    "phase_1_immediate_0_6_months": [
+      {
+        "action": "Launch energy efficiency assessment program",
+        "owner": "Operations Team",
+        "resource_requirement": "External energy consultants"
+      },
+      {
+        "action": "Implement price optimization for undervalued properties",
+        "owner": "Revenue Management",
+        "resource_requirement": "Market analysis tools"
+      }
+    ],
+    "phase_2_short_term_6_12_months": [
+      {
+        "action": "Begin energy efficiency upgrades on priority blocks",
+        "owner": "Project Management",
+        "resource_requirement": "Capital investment €2-3M"
+      },
+      {
+        "action": "Expand premium property marketing",
+        "owner": "Marketing Team",
+        "resource_requirement": "Enhanced marketing budget"
+      }
+    ],
+    "phase_3_medium_term_12_24_months": [
+      {
+        "action": "Complete energy efficiency program",
+        "owner": "Operations Team",
+        "resource_requirement": "Full implementation team"
+      },
+      {
+        "action": "Evaluate geographic expansion opportunities",
+        "owner": "Strategy Team",
+        "resource_requirement": "Market research investment"
+      }
+    ],
+    "phase_4_long_term_24_36_months": [
+      {
+        "action": "Launch expansion into new neighborhoods",
+        "owner": "Business Development",
+        "resource_requirement": "Expansion capital"
+      },
+      {
+        "action": "Establish market leadership in energy-efficient properties",
+        "owner": "Executive Team",
+        "resource_requirement": "Brand investment"
+      }
+    ]
+  }
+}
