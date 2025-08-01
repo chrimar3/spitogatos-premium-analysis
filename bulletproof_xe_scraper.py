@@ -162,8 +162,8 @@ class BulletproofXEScraper:
                         logger.warning(f"❌ Property validation failed: {prop_url}")
                         self.failed_urls.append(prop_url)
                     
-                    # Rate limiting
-                    await asyncio.sleep(random.uniform(1, 3))
+                    # Enhanced rate limiting to avoid 403 errors
+                    await asyncio.sleep(random.uniform(3, 8))
                 
             except Exception as e:
                 logger.error(f"❌ Error scraping search URL {search_url}: {e}")
@@ -449,39 +449,64 @@ class BulletproofXEScraper:
         return None
     
     def _parse_price(self, price_text: str) -> Optional[float]:
-        """Parse price from text"""
+        """Parse price from text - Fixed for Greek number format"""
         if not price_text:
             return None
         
-        # Remove non-numeric characters except dots and commas
-        price_clean = re.sub(r'[^\d.,]', '', price_text)
+        # Clean the text first
+        price_text = price_text.strip()
+        
+        # Remove currency symbols and words
+        price_clean = re.sub(r'[€$£¥₹ευρώeur]', '', price_text, flags=re.IGNORECASE)
+        price_clean = re.sub(r'[^\d.,]', '', price_clean)
         
         if not price_clean:
             return None
         
         try:
-            # Handle European number format (1.000,50 or 1,000.50)
-            if ',' in price_clean and '.' in price_clean:
-                # Determine which is thousands separator
+            # Handle Greek/European number format
+            if '.' in price_clean and ',' in price_clean:
+                # Format like: 1.500,50 (European)
                 comma_pos = price_clean.rfind(',')
                 dot_pos = price_clean.rfind('.')
                 
                 if comma_pos > dot_pos:
-                    # Comma is decimal separator
+                    # Dot is thousands separator, comma is decimal
                     price_clean = price_clean.replace('.', '').replace(',', '.')
                 else:
-                    # Dot is decimal separator
+                    # Comma is thousands separator, dot is decimal  
                     price_clean = price_clean.replace(',', '')
+            elif '.' in price_clean:
+                # Check if it's thousands separator or decimal
+                parts = price_clean.split('.')
+                if len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
+                    # Likely thousands separator like 2.500
+                    price_clean = price_clean.replace('.', '')
+                elif len(parts) > 2:
+                    # Multiple dots - thousands separators like 1.500.000
+                    price_clean = price_clean.replace('.', '')
+                # Otherwise keep as decimal
             elif ',' in price_clean:
-                # Could be thousands separator or decimal
-                if len(price_clean.split(',')[-1]) <= 2:
-                    # Likely decimal separator
-                    price_clean = price_clean.replace(',', '.')
-                else:
-                    # Likely thousands separator
+                # Check if it's thousands separator or decimal
+                parts = price_clean.split(',')
+                if len(parts) == 2 and len(parts[1]) == 3 and len(parts[0]) <= 3:
+                    # Likely thousands separator like 2,500
                     price_clean = price_clean.replace(',', '')
+                elif len(parts) > 2:
+                    # Multiple commas - thousands separators
+                    price_clean = price_clean.replace(',', '')
+                else:
+                    # Decimal separator
+                    price_clean = price_clean.replace(',', '.')
             
-            return float(price_clean)
+            price = float(price_clean)
+            
+            # Validation - Greek property prices should be reasonable
+            if price < 10:
+                # Likely in thousands, multiply by 1000
+                price = price * 1000
+            
+            return price
             
         except ValueError:
             return None
@@ -900,7 +925,7 @@ async def main():
         for neighborhood in neighborhoods:
             logger.info(f"\n🎯 SCRAPING {neighborhood.upper()}")
             
-            properties = await scraper.scrape_real_properties(neighborhood, max_properties=50)
+            properties = await scraper.scrape_real_properties(neighborhood, max_properties=5)
             
             all_scraped_properties[neighborhood] = properties
             
