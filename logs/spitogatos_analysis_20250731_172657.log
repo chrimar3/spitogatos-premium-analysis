@@ -1,0 +1,94 @@
+2025-07-31 17:26:57,683 - root - INFO - Logging system initialized
+2025-07-31 17:26:57,683 - root - INFO - Output directories created in outputs
+2025-07-31 17:26:57,715 - root - INFO - Spitogatos Premium Analyzer initialized
+2025-07-31 17:26:57,715 - root - INFO - 🚀 Starting Spitogatos Premium Analysis
+2025-07-31 17:26:57,715 - root - INFO - Target delivery: 36 hours
+2025-07-31 17:26:57,715 - root - INFO - Setting up analysis environment...
+2025-07-31 17:26:57,715 - root - INFO - Output directories created in outputs
+2025-07-31 17:26:57,715 - root - INFO - Rate limiting: 3.0s base delay
+2025-07-31 17:26:57,715 - root - INFO - Target areas: 4
+2025-07-31 17:26:57,715 - root - INFO - Success criteria: {'building_blocks_analyzed': 10, 'properties_per_block_avg': 25, 'energy_class_coverage': 0.8, 'data_validation_pass_rate': 0.9, 'statistical_confidence': 0.95}
+2025-07-31 17:26:57,715 - root - INFO - Analyzing 1 areas: ['Pangrati_Residential']
+2025-07-31 17:26:57,715 - root - INFO - 📋 Phase 1: Establishing Robust Foundation
+2025-07-31 17:26:57,715 - root - INFO - Professional Spitogatos Scraper initialized
+2025-07-31 17:26:59,494 - root - INFO - Initialized 1 professional browser sessions
+2025-07-31 17:26:59,494 - root - INFO - ✓ Scraping infrastructure initialized
+2025-07-31 17:26:59,494 - root - INFO - Searching main area: Pangrati_Residential
+2025-07-31 17:26:59,494 - root - INFO - Scraping page 1: Pangrati_Residential
+2025-07-31 17:27:00,055 - root - WARNING - Unexpected status 404
+2025-07-31 17:27:00,055 - root - INFO - Retry 2 after 14.6s delay
+2025-07-31 17:27:15,216 - root - WARNING - Unexpected status 404
+2025-07-31 17:27:15,216 - root - INFO - Retry 3 after 18.6s delay
+2025-07-31 17:27:34,260 - root - WARNING - Unexpected status 404
+2025-07-31 17:27:34,260 - root - WARNING - Failed to load page 1
+2025-07-31 17:27:34,260 - root - INFO - Scraping page 2: Pangrati_Residential
+2025-07-31 17:27:34,614 - root - WARNING - Unexpected status 404
+2025-07-31 17:27:34,614 - root - INFO - Retry 2 after 12.0s delay
+2025-07-31 17:27:46,930 - root - WARNING - Unexpected status 404
+2025-07-31 17:27:46,930 - root - INFO - Retry 3 after 19.5s delay
+2025-07-31 17:28:19,667 - root - WARNING - Error extracting properties: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"ad-card\"], .result-card, .listing-item") to be visible
+
+2025-07-31 17:28:19,668 - root - INFO - No properties found on page 2, stopping
+2025-07-31 17:28:19,668 - root - INFO - Searching street: {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 17:28:19,668 - root - INFO - Scraping page 1: {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 17:28:19,884 - root - WARNING - Unexpected status 405
+2025-07-31 17:28:19,884 - root - INFO - Retry 2 after 9.8s delay
+2025-07-31 17:28:29,892 - root - WARNING - Unexpected status 405
+2025-07-31 17:28:29,893 - root - INFO - Retry 3 after 20.8s delay
+2025-07-31 17:28:51,031 - root - WARNING - Unexpected status 405
+2025-07-31 17:28:51,032 - root - WARNING - Failed to load page 1
+2025-07-31 17:28:51,032 - root - INFO - Scraping page 2: {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 17:28:51,310 - root - WARNING - Unexpected status 405
+2025-07-31 17:28:51,311 - root - INFO - Retry 2 after 12.8s delay
+2025-07-31 17:29:04,282 - root - WARNING - Unexpected status 405
+2025-07-31 17:29:04,282 - root - INFO - Retry 3 after 13.8s delay
+2025-07-31 17:29:18,280 - root - WARNING - Unexpected status 405
+2025-07-31 17:29:18,280 - root - WARNING - Failed to load page 2
+2025-07-31 17:29:18,280 - root - INFO - Scraping page 3: {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 17:29:18,459 - root - WARNING - Unexpected status 405
+2025-07-31 17:29:18,459 - root - INFO - Retry 2 after 15.1s delay
+2025-07-31 17:29:33,772 - root - WARNING - Unexpected status 405
+2025-07-31 17:29:33,772 - root - INFO - Retry 3 after 11.9s delay
+2025-07-31 17:29:46,001 - root - WARNING - Unexpected status 405
+2025-07-31 17:29:46,001 - root - WARNING - Failed to load page 3
+2025-07-31 17:29:52,887 - root - INFO - Found 0 unique properties for Pangrati_Residential
+2025-07-31 17:29:52,889 - root - WARNING - ⚠ Connectivity test returned no results
+2025-07-31 17:29:52,889 - root - INFO - === Scraping Statistics ===
+2025-07-31 17:29:52,890 - root - INFO - requests_made: 0
+2025-07-31 17:29:52,891 - root - INFO - properties_found: 0
+2025-07-31 17:29:52,891 - root - INFO - errors: 0
+2025-07-31 17:29:52,891 - root - INFO - session_rotations: 0
+2025-07-31 17:29:52,891 - root - INFO - blocks_detected: 0
+2025-07-31 17:29:52,891 - root - INFO - ==========================
+2025-07-31 17:29:52,939 - root - INFO - ✅ Foundation phase completed
+2025-07-31 17:29:52,939 - root - INFO - 🔍 Phase 2: Intelligent Data Collection
+2025-07-31 17:29:52,939 - root - INFO - Analyzing area 1/1: Pangrati_Residential
+2025-07-31 17:29:52,939 - root - INFO - Starting comprehensive analysis for Pangrati_Residential
+2025-07-31 17:29:52,939 - root - INFO - Professional Spitogatos Scraper initialized
+2025-07-31 17:29:53,246 - root - INFO - Initialized 1 professional browser sessions
+2025-07-31 17:29:53,246 - root - INFO - Starting comprehensive discovery for Pangrati_Residential
+2025-07-31 17:29:53,246 - root - INFO - Starting systematic street discovery for Pangrati_Residential
+2025-07-31 17:29:53,246 - root - INFO - Searching Ymittou (priority 1)
+2025-07-31 17:29:53,267 - root - ERROR - Error in comprehensive analysis for Pangrati_Residential: name 'SearchParams' is not defined
+2025-07-31 17:29:53,267 - root - WARNING - ⚠ No results for Pangrati_Residential
+2025-07-31 17:29:53,267 - root - INFO - Area completed in 0.3s. Total elapsed: 0.0h
+2025-07-31 17:29:53,267 - root - INFO - Pacing: adding 30.0s delay
+2025-07-31 17:30:23,269 - root - INFO - ✅ Data collection completed: 0 total properties
+2025-07-31 17:30:23,269 - root - INFO - ⚙️ Phase 3: Advanced Processing
+2025-07-31 17:30:23,270 - root - ERROR - No properties available for processing!
+2025-07-31 17:30:23,270 - root - INFO - 📊 Phase 4: Premium Output Generation
+2025-07-31 17:30:23,271 - root - WARNING - No properties available for reporting
+2025-07-31 17:30:23,271 - root - INFO - ✅ Reporting phase completed
+2025-07-31 17:30:23,271 - root - INFO - 🎯 Analysis Finalization
+2025-07-31 17:30:23,271 - root - INFO - Total duration: 0.1 hours
+2025-07-31 17:30:23,271 - root - INFO - Areas completed: 0/4
+2025-07-31 17:30:23,271 - root - INFO - Properties discovered: 0
+2025-07-31 17:30:23,271 - root - INFO - === Performance Summary ===
+2025-07-31 17:30:23,271 - root - INFO - foundation_phase: avg=175.22s, count=1, total=175.22s
+2025-07-31 17:30:23,271 - root - INFO - data_collection_phase: avg=30.33s, count=1, total=30.33s
+2025-07-31 17:30:23,271 - root - INFO - reporting_phase: avg=0.00s, count=1, total=0.00s
+2025-07-31 17:30:23,272 - root - INFO - total_analysis: avg=205.56s, count=1, total=205.56s
+2025-07-31 17:30:23,272 - root - INFO - 🏁 Spitogatos Premium Analysis completed!
+2025-07-31 17:30:23,272 - root - INFO - ✅ Spitogatos Premium Analysis completed successfully!

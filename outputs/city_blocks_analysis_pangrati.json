@@ -1,0 +1,3322 @@
+{
+  "analysis_date": "2025-07-31T18:06:55.133917",
+  "total_city_blocks": 10,
+  "city_blocks": [
+    {
+      "id": "Pangrati_Block_01",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Ymittou",
+        "south": "Plastira",
+        "east": "Archimidous",
+        "west": "Damareos"
+      },
+      "center_coordinates": {
+        "lat": 37.97294390755549,
+        "lon": 23.735912858069597
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 74.88,
+      "total_properties": 25,
+      "energy_class_distribution": {
+        "A+": 5,
+        "B+": 4,
+        "C": 5,
+        "C+": 4,
+        "D+": 2,
+        "D": 2,
+        "B": 3
+      },
+      "sqm_distribution": {
+        "min": 33,
+        "max": 133,
+        "avg": 74.88,
+        "median": 73
+      },
+      "price_statistics": {
+        "min": 150330,
+        "max": 662020,
+        "avg": 333557.6,
+        "median": 303806
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.132309",
+          "months_back": 6,
+          "total_properties": 25,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.132314",
+          "months_back": 12,
+          "total_properties": 25,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "d06382e86f221ba453ede4d4961761fc",
+          "address": "Ymittou 108, Pangrati, Athens",
+          "sqm": 33,
+          "energy_class": "A+",
+          "price": 162925,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9726253482924,
+            "lon": 23.734105697545104
+          }
+        },
+        {
+          "id": "53655651d538fd928ec780826aad9833",
+          "address": "Konstantinou Palaiologou 55, Pangrati, Athens",
+          "sqm": 39,
+          "energy_class": "B+",
+          "price": 201911,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97454925105368,
+            "lon": 23.73416292790237
+          }
+        },
+        {
+          "id": "6c669bd2bc5711ca91aa8a349e6df6bc",
+          "address": "Praxitelous 102, Pangrati, Athens",
+          "sqm": 43,
+          "energy_class": "C",
+          "price": 150330,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97114111746576,
+            "lon": 23.736879858387017
+          }
+        },
+        {
+          "id": "85ee4b83cb835fc69112107369fdea80",
+          "address": "Plastira 92, Pangrati, Athens",
+          "sqm": 82,
+          "energy_class": "C+",
+          "price": 317207,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97425247245629,
+            "lon": 23.733981529500255
+          }
+        },
+        {
+          "id": "927dffdee4173879efb2f5c8fbbe68cc",
+          "address": "Praxitelous 19, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "B+",
+          "price": 265177,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.972927904401914,
+            "lon": 23.736110702175065
+          }
+        },
+        {
+          "id": "013ed9b28aa6a3bf747b0deaa9e5f3fb",
+          "address": "Eftichidou 64, Pangrati, Athens",
+          "sqm": 50,
+          "energy_class": "C",
+          "price": 205997,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97292453455145,
+            "lon": 23.737205447871016
+          }
+        },
+        {
+          "id": "4c162edfae755a5a6b5a769b8d0f3181",
+          "address": "Plastira 113, Pangrati, Athens",
+          "sqm": 120,
+          "energy_class": "B+",
+          "price": 568094,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97449566548756,
+            "lon": 23.734920654373667
+          }
+        },
+        {
+          "id": "e6fbf62258cfd870160b1e279d7833d4",
+          "address": "Formionos 1, Pangrati, Athens",
+          "sqm": 73,
+          "energy_class": "C",
+          "price": 303806,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9717291163202,
+            "lon": 23.73487533990213
+          }
+        },
+        {
+          "id": "c725a5b4a4cf3173405b7132cb42de7d",
+          "address": "Damareos 37, Pangrati, Athens",
+          "sqm": 82,
+          "energy_class": "C+",
+          "price": 395534,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97492209875625,
+            "lon": 23.73438065630858
+          }
+        },
+        {
+          "id": "45fe431f49e776a08b31a2ca405c5d05",
+          "address": "Erregentadon 27, Pangrati, Athens",
+          "sqm": 50,
+          "energy_class": "D+",
+          "price": 191959,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97204167047144,
+            "lon": 23.737055355287048
+          }
+        },
+        {
+          "id": "4849456caedef4de122820fee3d69133",
+          "address": "Konstantinou Palaiologou 62, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "B+",
+          "price": 237633,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9746305841256,
+            "lon": 23.73692157344353
+          }
+        },
+        {
+          "id": "f200a43e782ad29b00cf9445e71402f5",
+          "address": "Praxitelous 18, Pangrati, Athens",
+          "sqm": 133,
+          "energy_class": "A+",
+          "price": 662020,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.974261322037684,
+            "lon": 23.73752564696069
+          }
+        },
+        {
+          "id": "a287b912d29e1c5d85d12c737a162e36",
+          "address": "Konstantinou Palaiologou 73, Pangrati, Athens",
+          "sqm": 91,
+          "energy_class": "D",
+          "price": 346498,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.973446032409555,
+            "lon": 23.736896098093894
+          }
+        },
+        {
+          "id": "9d48345e4f709e1141c4a4bdb2bd0607",
+          "address": "Formionos 31, Pangrati, Athens",
+          "sqm": 112,
+          "energy_class": "C+",
+          "price": 549425,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97154775315465,
+            "lon": 23.73518036563565
+          }
+        },
+        {
+          "id": "643fbe2fdf2b33a950df2a3c638bac00",
+          "address": "Spyrou Merkouri 98, Pangrati, Athens",
+          "sqm": 90,
+          "energy_class": "B",
+          "price": 362488,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97379629672664,
+            "lon": 23.735709088562196
+          }
+        },
+        {
+          "id": "da876c807f614ac8ca06672ef5ab69ad",
+          "address": "Damareos 79, Pangrati, Athens",
+          "sqm": 107,
+          "energy_class": "D+",
+          "price": 390510,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97195202330025,
+            "lon": 23.736666644241648
+          }
+        },
+        {
+          "id": "2f54cb6e549815d2b43eefb065ae1209",
+          "address": "Formionos 31, Pangrati, Athens",
+          "sqm": 68,
+          "energy_class": "A+",
+          "price": 375057,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97386766010758,
+            "lon": 23.73684032013494
+          }
+        },
+        {
+          "id": "df0342f5044db204f38fdea33db7131e",
+          "address": "Plastira 115, Pangrati, Athens",
+          "sqm": 97,
+          "energy_class": "B",
+          "price": 482287,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97190461973518,
+            "lon": 23.73444952399794
+          }
+        },
+        {
+          "id": "981587a88b00523b2dd2a5c6350f498b",
+          "address": "Formionos 2, Pangrati, Athens",
+          "sqm": 75,
+          "energy_class": "A+",
+          "price": 410506,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97233510695392,
+            "lon": 23.734079300546668
+          }
+        },
+        {
+          "id": "de7ddaea0ed2b34322711b6db916fddc",
+          "address": "Damareos 142, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "C",
+          "price": 207179,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97228665818623,
+            "lon": 23.73756276291394
+          }
+        },
+        {
+          "id": "de657004b8a67c3c1cbcfe00c5735d9b",
+          "address": "Plastira 147, Pangrati, Athens",
+          "sqm": 118,
+          "energy_class": "C",
+          "price": 503611,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97238667717179,
+            "lon": 23.735260927418512
+          }
+        },
+        {
+          "id": "9c1d7c489fdf1b65df52472629c9244f",
+          "address": "Erregentadon 2, Pangrati, Athens",
+          "sqm": 46,
+          "energy_class": "A+",
+          "price": 267242,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.971740415854384,
+            "lon": 23.735782889963854
+          }
+        },
+        {
+          "id": "e8a222c6516ef45118db7d5a14cf4c7e",
+          "address": "Erregentadon 150, Pangrati, Athens",
+          "sqm": 87,
+          "energy_class": "D",
+          "price": 286432,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.971238323707894,
+            "lon": 23.73472030904192
+          }
+        },
+        {
+          "id": "d5fb7c80e6ce68fc1744a20938d9731c",
+          "address": "Artemidos 95, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "C+",
+          "price": 298066,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97414951866727,
+            "lon": 23.736143062937916
+          }
+        },
+        {
+          "id": "c5506d2128c6015ab8f116504a0ed787",
+          "address": "Konstantinou Palaiologou 136, Pangrati, Athens",
+          "sqm": 51,
+          "energy_class": "B",
+          "price": 197046,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97456965110255,
+            "lon": 23.73409428848081
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_02",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Plastira",
+        "south": "Formionos",
+        "east": "Damareos",
+        "west": "Spyrou Merkouri"
+      },
+      "center_coordinates": {
+        "lat": 37.97615408577165,
+        "lon": 23.753114336881215
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 78.48,
+      "total_properties": 25,
+      "energy_class_distribution": {
+        "B+": 5,
+        "C+": 8,
+        "B": 4,
+        "D": 3,
+        "C": 2,
+        "F": 1,
+        "D+": 1,
+        "E": 1
+      },
+      "sqm_distribution": {
+        "min": 41,
+        "max": 130,
+        "avg": 78.48,
+        "median": 69
+      },
+      "price_statistics": {
+        "min": 210435,
+        "max": 606129,
+        "avg": 365779.4,
+        "median": 307537
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.132586",
+          "months_back": 6,
+          "total_properties": 25,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.132588",
+          "months_back": 12,
+          "total_properties": 25,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "76314c217af64a090e52a8c477bea565",
+          "address": "Eftichidou 80, Pangrati, Athens",
+          "sqm": 49,
+          "energy_class": "B+",
+          "price": 235409,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97605972333005,
+            "lon": 23.752627872599422
+          }
+        },
+        {
+          "id": "91fe73db26cc7994eba1c5b36b0c343a",
+          "address": "Formionos 46, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "C+",
+          "price": 239082,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97675435056256,
+            "lon": 23.751657122367018
+          }
+        },
+        {
+          "id": "709f14bfb196ceda051d22fa1fd47d35",
+          "address": "Praxitelous 99, Pangrati, Athens",
+          "sqm": 45,
+          "energy_class": "B",
+          "price": 217098,
+          "floor": 4,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.976060467561474,
+            "lon": 23.754339588124743
+          }
+        },
+        {
+          "id": "edb1bd4a26de0dc2d1bda4577b903fed",
+          "address": "Konstantinou Palaiologou 81, Pangrati, Athens",
+          "sqm": 105,
+          "energy_class": "C+",
+          "price": 473426,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97740141809138,
+            "lon": 23.752485493915138
+          }
+        },
+        {
+          "id": "f84b680e5d6474e600388133aaa162ca",
+          "address": "Efroniou 83, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "C+",
+          "price": 274687,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97708262271382,
+            "lon": 23.75147402986482
+          }
+        },
+        {
+          "id": "b5265d689b2554232c7b3bd67a0d591a",
+          "address": "Konstantinou Palaiologou 86, Pangrati, Athens",
+          "sqm": 130,
+          "energy_class": "D",
+          "price": 566562,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.975969995315474,
+            "lon": 23.752234658365456
+          }
+        },
+        {
+          "id": "977227b96bf1f3a7b77016dd0fdbfdd9",
+          "address": "Formionos 1, Pangrati, Athens",
+          "sqm": 110,
+          "energy_class": "C+",
+          "price": 510297,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97489060935001,
+            "lon": 23.75324538880187
+          }
+        },
+        {
+          "id": "3778cc7757a26e91de654fb66f51c185",
+          "address": "Damareos 68, Pangrati, Athens",
+          "sqm": 73,
+          "energy_class": "C+",
+          "price": 394507,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97697749857668,
+            "lon": 23.75247205830641
+          }
+        },
+        {
+          "id": "8e4f44a16ee00f5750600aed894f8264",
+          "address": "Archimidous 10, Pangrati, Athens",
+          "sqm": 94,
+          "energy_class": "C",
+          "price": 420106,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.974883331438924,
+            "lon": 23.752151019410213
+          }
+        },
+        {
+          "id": "474353f5e32b56281b93b0d52c303bcf",
+          "address": "Erregentadon 65, Pangrati, Athens",
+          "sqm": 69,
+          "energy_class": "C",
+          "price": 274220,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97673811052538,
+            "lon": 23.7542031799989
+          }
+        },
+        {
+          "id": "5dd040457c76ef8fa0220be677c1c12d",
+          "address": "Praxitelous 120, Pangrati, Athens",
+          "sqm": 107,
+          "energy_class": "B+",
+          "price": 606129,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97691134236485,
+            "lon": 23.75242462069173
+          }
+        },
+        {
+          "id": "ddd18fa65b4173508bfc856e944792a0",
+          "address": "Eftichidou 145, Pangrati, Athens",
+          "sqm": 103,
+          "energy_class": "F",
+          "price": 322732,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.976213730611,
+            "lon": 23.752682753705994
+          }
+        },
+        {
+          "id": "6dd774fdcb539c7c99466e43d5966a4e",
+          "address": "Archimidous 15, Pangrati, Athens",
+          "sqm": 59,
+          "energy_class": "B",
+          "price": 307537,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9751341506113,
+            "lon": 23.754031396324397
+          }
+        },
+        {
+          "id": "2d0487aaa9ec903adac94f9121b801c5",
+          "address": "Formionos 126, Pangrati, Athens",
+          "sqm": 109,
+          "energy_class": "B",
+          "price": 592890,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97594715202921,
+            "lon": 23.75318638077114
+          }
+        },
+        {
+          "id": "0f9528ad1a246d7be1d6cd0f214686da",
+          "address": "Konstantinou Palaiologou 97, Pangrati, Athens",
+          "sqm": 57,
+          "energy_class": "C+",
+          "price": 307207,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97419043910884,
+            "lon": 23.753157507678655
+          }
+        },
+        {
+          "id": "b352fcb6b57352dcc131f226fb84b316",
+          "address": "Plastira 12, Pangrati, Athens",
+          "sqm": 111,
+          "energy_class": "C+",
+          "price": 523530,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97597508402514,
+            "lon": 23.75450274731018
+          }
+        },
+        {
+          "id": "2c62bdddfcb11c9d02b010bd25634c3e",
+          "address": "Damareos 145, Pangrati, Athens",
+          "sqm": 111,
+          "energy_class": "B+",
+          "price": 513871,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97788752673579,
+            "lon": 23.75209092653176
+          }
+        },
+        {
+          "id": "a7eccdc95a84f2127f3eb38532ccfa15",
+          "address": "Eftichidou 77, Pangrati, Athens",
+          "sqm": 57,
+          "energy_class": "D+",
+          "price": 270248,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.975057343598536,
+            "lon": 23.754822044443433
+          }
+        },
+        {
+          "id": "ffe2b9b7530c4b3adb15eec8db4eb97a",
+          "address": "Spyrou Merkouri 22, Pangrati, Athens",
+          "sqm": 48,
+          "energy_class": "B+",
+          "price": 244239,
+          "floor": 2,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.974798668804176,
+            "lon": 23.7531696221649
+          }
+        },
+        {
+          "id": "9ce6482097c6ea67938036bad7c4bce3",
+          "address": "Spyrou Merkouri 102, Pangrati, Athens",
+          "sqm": 58,
+          "energy_class": "E",
+          "price": 210435,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9765633896278,
+            "lon": 23.753027764695254
+          }
+        },
+        {
+          "id": "f39ba2bd8fbd81413fe8cce93b6b1fe8",
+          "address": "Artemidos 60, Pangrati, Athens",
+          "sqm": 87,
+          "energy_class": "D",
+          "price": 381645,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.976742784026754,
+            "lon": 23.75298276673194
+          }
+        },
+        {
+          "id": "1fcd515ec23783d55c5859caed00e9e3",
+          "address": "Erregentadon 54, Pangrati, Athens",
+          "sqm": 41,
+          "energy_class": "B",
+          "price": 215305,
+          "floor": 6,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97514397546115,
+            "lon": 23.751812883472617
+          }
+        },
+        {
+          "id": "1eae1677d5ee31f2de6d39bfb1882a11",
+          "address": "Erregentadon 75, Pangrati, Athens",
+          "sqm": 57,
+          "energy_class": "D",
+          "price": 212539,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.977005268880134,
+            "lon": 23.753922072777673
+          }
+        },
+        {
+          "id": "ca5c935864420b6ca43093514503b817",
+          "address": "Ymittou 56, Pangrati, Athens",
+          "sqm": 63,
+          "energy_class": "C+",
+          "price": 299853,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97451324172775,
+            "lon": 23.752022747047203
+          }
+        },
+        {
+          "id": "4172ee7a7673f5117c6e348a9123d488",
+          "address": "Damareos 14, Pangrati, Athens",
+          "sqm": 114,
+          "energy_class": "B+",
+          "price": 530931,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.9753026352303,
+            "lon": 23.754875308751984
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_03",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Formionos",
+        "south": "Eftichidou",
+        "east": "Spyrou Merkouri",
+        "west": "Erregentadon"
+      },
+      "center_coordinates": {
+        "lat": 37.97726203902788,
+        "lon": 23.752728709164543
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 74.03846153846153,
+      "total_properties": 26,
+      "energy_class_distribution": {
+        "B+": 8,
+        "B": 6,
+        "C": 5,
+        "C+": 4,
+        "D+": 1,
+        "A+": 1,
+        "A": 1
+      },
+      "sqm_distribution": {
+        "min": 35,
+        "max": 127,
+        "avg": 74.03846153846153,
+        "median": 68.5
+      },
+      "price_statistics": {
+        "min": 121185,
+        "max": 539753,
+        "avg": 297059.76923076925,
+        "median": 310544.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.132799",
+          "months_back": 6,
+          "total_properties": 26,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.132801",
+          "months_back": 12,
+          "total_properties": 26,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "c13b9015d7060de4e2816a5615a14b62",
+          "address": "Damareos 54, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "B+",
+          "price": 195233,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97782504338366,
+            "lon": 23.750933786159855
+          }
+        },
+        {
+          "id": "b722f0e6a9666f7967742b678a237f7e",
+          "address": "Archimidous 118, Pangrati, Athens",
+          "sqm": 127,
+          "energy_class": "B",
+          "price": 465425,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97908810495753,
+            "lon": 23.75202793140812
+          }
+        },
+        {
+          "id": "f1591c71a947bb37a68e7c5b1d04c01a",
+          "address": "Damareos 58, Pangrati, Athens",
+          "sqm": 91,
+          "energy_class": "B+",
+          "price": 419768,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97552985745399,
+            "lon": 23.753281872545635
+          }
+        },
+        {
+          "id": "e5c6d9b41e2786435f26a3a31dcee9ba",
+          "address": "Eftichidou 133, Pangrati, Athens",
+          "sqm": 64,
+          "energy_class": "B",
+          "price": 291684,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97842733936519,
+            "lon": 23.752259246733786
+          }
+        },
+        {
+          "id": "757eed8c7ede551f253c999d12316d52",
+          "address": "Damareos 40, Pangrati, Athens",
+          "sqm": 48,
+          "energy_class": "C",
+          "price": 195375,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97845056130282,
+            "lon": 23.752758995487962
+          }
+        },
+        {
+          "id": "a3d1bc58469ee2d4dcd9f1f60e181dce",
+          "address": "Erregentadon 56, Pangrati, Athens",
+          "sqm": 90,
+          "energy_class": "C",
+          "price": 344985,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97723383811476,
+            "lon": 23.754063285143122
+          }
+        },
+        {
+          "id": "0cc313fa655fa2bc3e9fca2655297527",
+          "address": "Plastira 150, Pangrati, Athens",
+          "sqm": 98,
+          "energy_class": "B+",
+          "price": 360208,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97923404461911,
+            "lon": 23.754510506964245
+          }
+        },
+        {
+          "id": "075fd5ad50f9864bd6c01dd458213781",
+          "address": "Erregentadon 90, Pangrati, Athens",
+          "sqm": 108,
+          "energy_class": "B",
+          "price": 372887,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.9779646931577,
+            "lon": 23.752666136814618
+          }
+        },
+        {
+          "id": "e4e0e93dffd18c523cbb4fc8edb6e38d",
+          "address": "Eftichidou 110, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "C+",
+          "price": 240367,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.977644943768915,
+            "lon": 23.752581367869944
+          }
+        },
+        {
+          "id": "227267fa123249a70b4c88a412fd1115",
+          "address": "Archimidous 142, Pangrati, Athens",
+          "sqm": 45,
+          "energy_class": "D+",
+          "price": 134705,
+          "floor": 4,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97732798573377,
+            "lon": 23.75338635733558
+          }
+        },
+        {
+          "id": "dc7669758c4c3829f3a7073a4dc26a21",
+          "address": "Eftichidou 124, Pangrati, Athens",
+          "sqm": 72,
+          "energy_class": "A+",
+          "price": 304690,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97617084760005,
+            "lon": 23.754335484850895
+          }
+        },
+        {
+          "id": "82a1b5d7d0f5e9d7d6c9101273be7ec8",
+          "address": "Artemidos 28, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "B+",
+          "price": 316399,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.978711679203826,
+            "lon": 23.753726047221743
+          }
+        },
+        {
+          "id": "61d573cad05068ceb975206f8aed85e9",
+          "address": "Erregentadon 110, Pangrati, Athens",
+          "sqm": 120,
+          "energy_class": "B",
+          "price": 539753,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97908251073079,
+            "lon": 23.75228684693114
+          }
+        },
+        {
+          "id": "6d1f2e5296a0e0a54b5bc7ee8883e6b4",
+          "address": "Plastira 113, Pangrati, Athens",
+          "sqm": 38,
+          "energy_class": "B+",
+          "price": 181349,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.977778708207246,
+            "lon": 23.752691961624045
+          }
+        },
+        {
+          "id": "671d854302d400f921333e5333a6f5ca",
+          "address": "Plastira 118, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "C+",
+          "price": 232547,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97542657554452,
+            "lon": 23.753340609520635
+          }
+        },
+        {
+          "id": "1b45ffecb915146599c49b5407919549",
+          "address": "Konstantinou Palaiologou 10, Pangrati, Athens",
+          "sqm": 38,
+          "energy_class": "B+",
+          "price": 146880,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97864124602731,
+            "lon": 23.753556748137484
+          }
+        },
+        {
+          "id": "397de328d10e0d315a9ee8cc20f92020",
+          "address": "Plastira 100, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "B+",
+          "price": 334196,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97843913032261,
+            "lon": 23.754669986164785
+          }
+        },
+        {
+          "id": "30118325094e9dccaa8be0d26262d2e4",
+          "address": "Erregentadon 66, Pangrati, Athens",
+          "sqm": 71,
+          "energy_class": "A",
+          "price": 356964,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97740168802293,
+            "lon": 23.751756465778872
+          }
+        },
+        {
+          "id": "81ed6232e35ce3b91f3f84c440760c2a",
+          "address": "Praxitelous 65, Pangrati, Athens",
+          "sqm": 35,
+          "energy_class": "B",
+          "price": 121185,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97889326140925,
+            "lon": 23.752184206523708
+          }
+        },
+        {
+          "id": "93954a3297b04e84b0cc9bc85d6a60f6",
+          "address": "Konstantinou Palaiologou 139, Pangrati, Athens",
+          "sqm": 85,
+          "energy_class": "C+",
+          "price": 339616,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97838920270347,
+            "lon": 23.7521648086732
+          }
+        },
+        {
+          "id": "390a1c56afde1e2f4e727ad30b8fb283",
+          "address": "Plastira 56, Pangrati, Athens",
+          "sqm": 42,
+          "energy_class": "C+",
+          "price": 183980,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97789257978771,
+            "lon": 23.753491449839096
+          }
+        },
+        {
+          "id": "64d90a7ef02384d845cbd4bcff5b27ff",
+          "address": "Praxitelous 10, Pangrati, Athens",
+          "sqm": 107,
+          "energy_class": "B+",
+          "price": 423832,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97615792856748,
+            "lon": 23.752143182983854
+          }
+        },
+        {
+          "id": "183f3c903ddbd0fd7c30679721e26b9e",
+          "address": "Plastira 131, Pangrati, Athens",
+          "sqm": 103,
+          "energy_class": "C",
+          "price": 353579,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97813576916391,
+            "lon": 23.75457468299775
+          }
+        },
+        {
+          "id": "00c07540cd1a606a300ff8658c6212d2",
+          "address": "Plastira 54, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "B",
+          "price": 235889,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97739480199811,
+            "lon": 23.75160920647314
+          }
+        },
+        {
+          "id": "e89d4e7c1a0d7fa4ae85aa45e86910f0",
+          "address": "Konstantinou Palaiologou 1, Pangrati, Athens",
+          "sqm": 109,
+          "energy_class": "C",
+          "price": 392471,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97652800853138,
+            "lon": 23.754242046989294
+          }
+        },
+        {
+          "id": "76f1268390b590ba7bcdb6be46c051f5",
+          "address": "Praxitelous 74, Pangrati, Athens",
+          "sqm": 59,
+          "energy_class": "C",
+          "price": 239587,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.977222558820685,
+            "lon": 23.752465519783073
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_04",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Eftichidou",
+        "south": "Konstantinou Palaiologou",
+        "east": "Erregentadon",
+        "west": "Praxitelous"
+      },
+      "center_coordinates": {
+        "lat": 37.97471397802784,
+        "lon": 23.747981770569034
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 81.25,
+      "total_properties": 20,
+      "energy_class_distribution": {
+        "B": 6,
+        "D+": 5,
+        "B+": 3,
+        "C": 3,
+        "C+": 2,
+        "D": 1
+      },
+      "sqm_distribution": {
+        "min": 38,
+        "max": 119,
+        "avg": 81.25,
+        "median": 78.5
+      },
+      "price_statistics": {
+        "min": 166534,
+        "max": 544461,
+        "avg": 338814.65,
+        "median": 319337.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.132963",
+          "months_back": 6,
+          "total_properties": 20,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.132965",
+          "months_back": 12,
+          "total_properties": 20,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "f2c8aa811cb9dec580feae929a32a1ab",
+          "address": "Spyrou Merkouri 38, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "B",
+          "price": 208139,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.974246708979095,
+            "lon": 23.746208682918827
+          }
+        },
+        {
+          "id": "eaf4b9fe288331aac9979a62c281086c",
+          "address": "Ymittou 58, Pangrati, Athens",
+          "sqm": 117,
+          "energy_class": "D+",
+          "price": 450804,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97595328628315,
+            "lon": 23.749750076995973
+          }
+        },
+        {
+          "id": "84634b2d564953160bc397ba80fc50fb",
+          "address": "Praxitelous 84, Pangrati, Athens",
+          "sqm": 115,
+          "energy_class": "D+",
+          "price": 400765,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97659045352943,
+            "lon": 23.749796294379696
+          }
+        },
+        {
+          "id": "a253d47e3f919b5b4ac5e3476e946f74",
+          "address": "Archimidous 76, Pangrati, Athens",
+          "sqm": 82,
+          "energy_class": "D+",
+          "price": 279356,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97607452120188,
+            "lon": 23.74991581572255
+          }
+        },
+        {
+          "id": "37d475f672c6ff720d3fcf1afc3f2281",
+          "address": "Archimidous 125, Pangrati, Athens",
+          "sqm": 38,
+          "energy_class": "D+",
+          "price": 166534,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97378127041383,
+            "lon": 23.748521979877154
+          }
+        },
+        {
+          "id": "09aba3ec9e23bb3f8e740d7cf119e1df",
+          "address": "Plastira 90, Pangrati, Athens",
+          "sqm": 119,
+          "energy_class": "B+",
+          "price": 544461,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97540864716286,
+            "lon": 23.74744470591262
+          }
+        },
+        {
+          "id": "7c6e6bc238401bc4814d8be2eb6193b6",
+          "address": "Artemidos 10, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "B+",
+          "price": 264562,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9752906245384,
+            "lon": 23.749680591348937
+          }
+        },
+        {
+          "id": "0733a25d73f299e5b61a8137ddc1ce0e",
+          "address": "Konstantinou Palaiologou 99, Pangrati, Athens",
+          "sqm": 58,
+          "energy_class": "C",
+          "price": 217434,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97314395958249,
+            "lon": 23.748097641854624
+          }
+        },
+        {
+          "id": "93f9b61790830fc94507e557c6e4cc2c",
+          "address": "Praxitelous 13, Pangrati, Athens",
+          "sqm": 105,
+          "energy_class": "C+",
+          "price": 450239,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97490050081558,
+            "lon": 23.746153470341365
+          }
+        },
+        {
+          "id": "ebf00a42b371be217c203bfdfed3ba27",
+          "address": "Praxitelous 52, Pangrati, Athens",
+          "sqm": 110,
+          "energy_class": "B+",
+          "price": 499272,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97590145472711,
+            "lon": 23.746814272851633
+          }
+        },
+        {
+          "id": "a7a4101570c368773b46c47ab4429cf9",
+          "address": "Formionos 114, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "B",
+          "price": 294052,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97642921965843,
+            "lon": 23.74623992119309
+          }
+        },
+        {
+          "id": "3b2efc2a489a4804c679b5fc47357ed2",
+          "address": "Eftichidou 74, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "C",
+          "price": 261813,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97422648515669,
+            "lon": 23.746709404080494
+          }
+        },
+        {
+          "id": "09f3a1c76075e82f2226cd893dbd0839",
+          "address": "Erregentadon 128, Pangrati, Athens",
+          "sqm": 77,
+          "energy_class": "C+",
+          "price": 355954,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9759996579179,
+            "lon": 23.74917259357891
+          }
+        },
+        {
+          "id": "4bec70b14d81c37cf7317ab5ad27f674",
+          "address": "Praxitelous 79, Pangrati, Athens",
+          "sqm": 110,
+          "energy_class": "C",
+          "price": 453504,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.974546294952354,
+            "lon": 23.74890212726992
+          }
+        },
+        {
+          "id": "3bba4ebca82d4b9911f0fe024dafeb80",
+          "address": "Spyrou Merkouri 87, Pangrati, Athens",
+          "sqm": 63,
+          "energy_class": "D",
+          "price": 253356,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97478064547762,
+            "lon": 23.749755933067252
+          }
+        },
+        {
+          "id": "a9938b42a1235c67e501a2a9d2656aa7",
+          "address": "Damareos 48, Pangrati, Athens",
+          "sqm": 51,
+          "energy_class": "B",
+          "price": 215932,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97346718759472,
+            "lon": 23.749782034818775
+          }
+        },
+        {
+          "id": "de1d17bcdebf0e23f57298cdacd54915",
+          "address": "Artemidos 44, Pangrati, Athens",
+          "sqm": 103,
+          "energy_class": "B",
+          "price": 417812,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.975889330205895,
+            "lon": 23.74893683874173
+          }
+        },
+        {
+          "id": "ab40d8e52ca0bc2d1a1a703c01a4bd50",
+          "address": "Praxitelous 103, Pangrati, Athens",
+          "sqm": 83,
+          "energy_class": "B",
+          "price": 420442,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97351253966514,
+            "lon": 23.74689644622736
+          }
+        },
+        {
+          "id": "537f2d74545a55055e75e4203b633762",
+          "address": "Plastira 8, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "D+",
+          "price": 277239,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97271776719417,
+            "lon": 23.747582252342283
+          }
+        },
+        {
+          "id": "09ea8127a02c89acb71acc9c4df2a395",
+          "address": "Praxitelous 19, Pangrati, Athens",
+          "sqm": 80,
+          "energy_class": "B",
+          "price": 344623,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97558173606266,
+            "lon": 23.7468105659726
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_05",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Konstantinou Palaiologou",
+        "south": "Artemidos",
+        "east": "Praxitelous",
+        "west": "Efroniou"
+      },
+      "center_coordinates": {
+        "lat": 37.97309709740033,
+        "lon": 23.755135430003623
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 68.76190476190476,
+      "total_properties": 21,
+      "energy_class_distribution": {
+        "D": 3,
+        "C+": 6,
+        "D+": 1,
+        "A": 1,
+        "B+": 4,
+        "C": 4,
+        "B": 2
+      },
+      "sqm_distribution": {
+        "min": 45,
+        "max": 104,
+        "avg": 68.76190476190476,
+        "median": 65
+      },
+      "price_statistics": {
+        "min": 160817,
+        "max": 479734,
+        "avg": 272953.8095238095,
+        "median": 266560
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133133",
+          "months_back": 6,
+          "total_properties": 21,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.133135",
+          "months_back": 12,
+          "total_properties": 21,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "78f502165adb05c68779025ff0db5a06",
+          "address": "Spyrou Merkouri 82, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "D",
+          "price": 168357,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.974809986509065,
+            "lon": 23.7536113570964
+          }
+        },
+        {
+          "id": "c05011d47153ce6e92d4a8f78fa32523",
+          "address": "Praxitelous 45, Pangrati, Athens",
+          "sqm": 74,
+          "energy_class": "C+",
+          "price": 311907,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.972222389451865,
+            "lon": 23.753818966674455
+          }
+        },
+        {
+          "id": "9020751cb8cf58cac2a499719cdd3ec0",
+          "address": "Archimidous 1, Pangrati, Athens",
+          "sqm": 87,
+          "energy_class": "D+",
+          "price": 351155,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97331688016077,
+            "lon": 23.754289534922965
+          }
+        },
+        {
+          "id": "ea3d4612b0f8075956839d4ab0f153fe",
+          "address": "Praxitelous 39, Pangrati, Athens",
+          "sqm": 82,
+          "energy_class": "C+",
+          "price": 361663,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.971973969373494,
+            "lon": 23.75667336601288
+          }
+        },
+        {
+          "id": "b192c56faea3350248482ff9f4bc4f89",
+          "address": "Konstantinou Palaiologou 9, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "A",
+          "price": 268250,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97139415111493,
+            "lon": 23.756158104118843
+          }
+        },
+        {
+          "id": "80979f36e815a57f1846fa702e47ac0d",
+          "address": "Ymittou 142, Pangrati, Athens",
+          "sqm": 98,
+          "energy_class": "B+",
+          "price": 479734,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97154004615819,
+            "lon": 23.754472401022994
+          }
+        },
+        {
+          "id": "53e275a209069943b19489a06a221312",
+          "address": "Eftichidou 1, Pangrati, Athens",
+          "sqm": 72,
+          "energy_class": "B+",
+          "price": 286407,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97210365279336,
+            "lon": 23.755955290835935
+          }
+        },
+        {
+          "id": "4148bc3bbdc403e03d3734684ab7301e",
+          "address": "Ymittou 87, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "D",
+          "price": 164912,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.971865963299074,
+            "lon": 23.75643863323949
+          }
+        },
+        {
+          "id": "c616e8b66d8b28278eb6e14e49d1640d",
+          "address": "Plastira 142, Pangrati, Athens",
+          "sqm": 59,
+          "energy_class": "C+",
+          "price": 227626,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97348521157225,
+            "lon": 23.75574495759505
+          }
+        },
+        {
+          "id": "5062b1957376f8b42f3b8d66c3776a5e",
+          "address": "Konstantinou Palaiologou 150, Pangrati, Athens",
+          "sqm": 58,
+          "energy_class": "C",
+          "price": 251777,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97139811877927,
+            "lon": 23.75590938731613
+          }
+        },
+        {
+          "id": "4555dcdbea729e47f7c48e5e4c2de6e3",
+          "address": "Archimidous 139, Pangrati, Athens",
+          "sqm": 51,
+          "energy_class": "B",
+          "price": 201655,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97509118326592,
+            "lon": 23.75484680350974
+          }
+        },
+        {
+          "id": "383cc3a16faa1c3fcd36ba100c782859",
+          "address": "Praxitelous 42, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "B+",
+          "price": 266560,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97269089516023,
+            "lon": 23.756450599432267
+          }
+        },
+        {
+          "id": "8d2e027ecb9df886624b641ab20856cb",
+          "address": "Plastira 98, Pangrati, Athens",
+          "sqm": 104,
+          "energy_class": "C",
+          "price": 367255,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97385477550587,
+            "lon": 23.75500791676757
+          }
+        },
+        {
+          "id": "e3183993955d98a8f52eea7b56f16d5b",
+          "address": "Spyrou Merkouri 81, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "C",
+          "price": 197355,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97369602079553,
+            "lon": 23.75658211021262
+          }
+        },
+        {
+          "id": "0633ed054f874536b103ec9aab241f6d",
+          "address": "Konstantinou Palaiologou 64, Pangrati, Athens",
+          "sqm": 45,
+          "energy_class": "C",
+          "price": 160817,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97362187520437,
+            "lon": 23.753246038291252
+          }
+        },
+        {
+          "id": "7bedff9ffa6271ca3db33e4bb5598e74",
+          "address": "Formionos 106, Pangrati, Athens",
+          "sqm": 88,
+          "energy_class": "D",
+          "price": 311014,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97132694847762,
+            "lon": 23.75702367399754
+          }
+        },
+        {
+          "id": "4537ea299f1d3bb1ad754d1f24e4c3c1",
+          "address": "Formionos 126, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "C+",
+          "price": 263366,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97170223389827,
+            "lon": 23.754006229649427
+          }
+        },
+        {
+          "id": "0b41f8ffc6f8ba0414d70722ad1e4881",
+          "address": "Plastira 120, Pangrati, Athens",
+          "sqm": 73,
+          "energy_class": "C+",
+          "price": 316244,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97235782066708,
+            "lon": 23.754779747203216
+          }
+        },
+        {
+          "id": "eb79a3c10e6f53d84830df683ab888c4",
+          "address": "Spyrou Merkouri 134, Pangrati, Athens",
+          "sqm": 46,
+          "energy_class": "B+",
+          "price": 201199,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97453305045691,
+            "lon": 23.75680546420073
+          }
+        },
+        {
+          "id": "8fb83aa35525cf17727e671a30db09db",
+          "address": "Formionos 135, Pangrati, Athens",
+          "sqm": 85,
+          "energy_class": "C+",
+          "price": 313831,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9739911557151,
+            "lon": 23.753728722615726
+          }
+        },
+        {
+          "id": "0b427cf8e1d198daa9f6cfab2862bd0c",
+          "address": "Erregentadon 112, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "B",
+          "price": 260946,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97432843283446,
+            "lon": 23.754733372912025
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_06",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Ymittou",
+        "south": "Plastira",
+        "east": "Archimidous",
+        "west": "Damareos"
+      },
+      "center_coordinates": {
+        "lat": 37.973580197634796,
+        "lon": 23.754450428652508
+      },
+      "median_energy_class": "C",
+      "avg_sqm": 78,
+      "total_properties": 17,
+      "energy_class_distribution": {
+        "C": 6,
+        "D+": 3,
+        "A": 1,
+        "B+": 3,
+        "D": 4
+      },
+      "sqm_distribution": {
+        "min": 39,
+        "max": 135,
+        "avg": 78,
+        "median": 75
+      },
+      "price_statistics": {
+        "min": 129076,
+        "max": 611062,
+        "avg": 312195.0588235294,
+        "median": 319869
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133274",
+          "months_back": 6,
+          "total_properties": 17,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.133278",
+          "months_back": 12,
+          "total_properties": 17,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "1fe20c06ce2feacd406ab1032ab32597",
+          "address": "Eftichidou 70, Pangrati, Athens",
+          "sqm": 41,
+          "energy_class": "C",
+          "price": 174821,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97337882436293,
+            "lon": 23.753403527397115
+          }
+        },
+        {
+          "id": "8f2d47c4d93f9d6f7dbcc77ebf352ce8",
+          "address": "Praxitelous 60, Pangrati, Athens",
+          "sqm": 54,
+          "energy_class": "D+",
+          "price": 196209,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97530445853411,
+            "lon": 23.752479539701245
+          }
+        },
+        {
+          "id": "acbb924a81971deaaf942c065c952639",
+          "address": "Praxitelous 70, Pangrati, Athens",
+          "sqm": 110,
+          "energy_class": "A",
+          "price": 553192,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.974874619616415,
+            "lon": 23.752480065051746
+          }
+        },
+        {
+          "id": "59f7ecd698d87bfe23266439e07a0bd1",
+          "address": "Praxitelous 134, Pangrati, Athens",
+          "sqm": 104,
+          "energy_class": "B+",
+          "price": 441330,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97498833570391,
+            "lon": 23.752904197956408
+          }
+        },
+        {
+          "id": "f2965e1d7a52c3833cbfbb95031ff262",
+          "address": "Ymittou 19, Pangrati, Athens",
+          "sqm": 66,
+          "energy_class": "D",
+          "price": 220552,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97173552860792,
+            "lon": 23.756098206376826
+          }
+        },
+        {
+          "id": "944cf827dca848edca70d9becd4a4741",
+          "address": "Formionos 37, Pangrati, Athens",
+          "sqm": 56,
+          "energy_class": "C",
+          "price": 248397,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9744273631059,
+            "lon": 23.753077907219865
+          }
+        },
+        {
+          "id": "380bf9241218977431a5ce3357d038c4",
+          "address": "Konstantinou Palaiologou 86, Pangrati, Athens",
+          "sqm": 95,
+          "energy_class": "C",
+          "price": 338419,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97174817191186,
+            "lon": 23.754034889543345
+          }
+        },
+        {
+          "id": "c10400fea0c1656b91b68fdcf9cd25ff",
+          "address": "Konstantinou Palaiologou 119, Pangrati, Athens",
+          "sqm": 102,
+          "energy_class": "C",
+          "price": 365507,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97295916275623,
+            "lon": 23.755671327691786
+          }
+        },
+        {
+          "id": "5f578c3c6de8b893f593c615e38f1a73",
+          "address": "Eftichidou 16, Pangrati, Athens",
+          "sqm": 42,
+          "energy_class": "D",
+          "price": 129076,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97275589957154,
+            "lon": 23.753366859043272
+          }
+        },
+        {
+          "id": "90748fbdde777bf066809a54cc1388bb",
+          "address": "Formionos 109, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "B+",
+          "price": 286126,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97292844032052,
+            "lon": 23.75468624922228
+          }
+        },
+        {
+          "id": "cf82306df74fbb86ca13a9bf67dd0c0d",
+          "address": "Eftichidou 111, Pangrati, Athens",
+          "sqm": 39,
+          "energy_class": "D",
+          "price": 149161,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97316748372077,
+            "lon": 23.752989759142427
+          }
+        },
+        {
+          "id": "f385a25ec6e74c86ea76f2389436841e",
+          "address": "Praxitelous 37, Pangrati, Athens",
+          "sqm": 93,
+          "energy_class": "D+",
+          "price": 383867,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.972671631368456,
+            "lon": 23.755238906304555
+          }
+        },
+        {
+          "id": "9f897530795ee779dacc800f7f773b96",
+          "address": "Praxitelous 139, Pangrati, Athens",
+          "sqm": 135,
+          "energy_class": "B+",
+          "price": 611062,
+          "floor": 5,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.975568533462315,
+            "lon": 23.755909016048378
+          }
+        },
+        {
+          "id": "a1064c2aa9e44d686253c68514f59e36",
+          "address": "Praxitelous 32, Pangrati, Athens",
+          "sqm": 114,
+          "energy_class": "D+",
+          "price": 385484,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97399631378213,
+            "lon": 23.754372946342787
+          }
+        },
+        {
+          "id": "aedcd006116044022b4def374d70dcd6",
+          "address": "Plastira 130, Pangrati, Athens",
+          "sqm": 75,
+          "energy_class": "C",
+          "price": 319869,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97392502641733,
+            "lon": 23.75491655721367
+          }
+        },
+        {
+          "id": "1ccf45b3bb80e5092603a444b0430ef3",
+          "address": "Damareos 137, Pangrati, Athens",
+          "sqm": 90,
+          "energy_class": "C",
+          "price": 333358,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.973407797482366,
+            "lon": 23.755133829648756
+          }
+        },
+        {
+          "id": "c6bcd7e98bf8f8dc203a375bf3c989c6",
+          "address": "Praxitelous 37, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "D",
+          "price": 170886,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97481953288389,
+            "lon": 23.75524932608129
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_07",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Plastira",
+        "south": "Formionos",
+        "east": "Damareos",
+        "west": "Spyrou Merkouri"
+      },
+      "center_coordinates": {
+        "lat": 37.97753766049412,
+        "lon": 23.752979807020445
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 58.13333333333333,
+      "total_properties": 15,
+      "energy_class_distribution": {
+        "C": 4,
+        "B": 2,
+        "C+": 3,
+        "B+": 2,
+        "A+": 2,
+        "D": 1,
+        "D+": 1
+      },
+      "sqm_distribution": {
+        "min": 31,
+        "max": 82,
+        "avg": 58.13333333333333,
+        "median": 57
+      },
+      "price_statistics": {
+        "min": 145018,
+        "max": 403833,
+        "avg": 280415.8,
+        "median": 262152
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133397",
+          "months_back": 6,
+          "total_properties": 15,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.133399",
+          "months_back": 12,
+          "total_properties": 15,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "b51f0cb4c3f919a625619e30683ef9e7",
+          "address": "Formionos 90, Pangrati, Athens",
+          "sqm": 57,
+          "energy_class": "C",
+          "price": 262152,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97676087242994,
+            "lon": 23.7542804480216
+          }
+        },
+        {
+          "id": "12c7d92c053e2c275d330e8a666eda64",
+          "address": "Spyrou Merkouri 121, Pangrati, Athens",
+          "sqm": 56,
+          "energy_class": "B",
+          "price": 301675,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97898905761413,
+            "lon": 23.75377704857053
+          }
+        },
+        {
+          "id": "e6a8d1533bf54447862405a11077dec3",
+          "address": "Formionos 137, Pangrati, Athens",
+          "sqm": 80,
+          "energy_class": "C+",
+          "price": 384603,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97611939111062,
+            "lon": 23.752554437759937
+          }
+        },
+        {
+          "id": "fe5cb2be98790e898c8f45fc67d46d62",
+          "address": "Plastira 130, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "C",
+          "price": 254701,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97600755346208,
+            "lon": 23.754644679158414
+          }
+        },
+        {
+          "id": "707a84d7aa3b1864da1bca10075a8301",
+          "address": "Spyrou Merkouri 20, Pangrati, Athens",
+          "sqm": 42,
+          "energy_class": "B+",
+          "price": 207272,
+          "floor": 4,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97886107941932,
+            "lon": 23.753802138191723
+          }
+        },
+        {
+          "id": "6a41fd02da106a65137ef47d53c2c444",
+          "address": "Eftichidou 128, Pangrati, Athens",
+          "sqm": 76,
+          "energy_class": "C+",
+          "price": 403833,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.978800814153665,
+            "lon": 23.751357105838334
+          }
+        },
+        {
+          "id": "66f33b4b39eaab337a36344b750814c3",
+          "address": "Plastira 55, Pangrati, Athens",
+          "sqm": 31,
+          "energy_class": "B",
+          "price": 145018,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97917003724834,
+            "lon": 23.75291000954024
+          }
+        },
+        {
+          "id": "4b3b7a542fc49bc75140d8919e88c5d9",
+          "address": "Plastira 51, Pangrati, Athens",
+          "sqm": 43,
+          "energy_class": "B+",
+          "price": 237744,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97630016415681,
+            "lon": 23.752243590123875
+          }
+        },
+        {
+          "id": "df4a778ff9b01cf531b22459492670b8",
+          "address": "Efroniou 79, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "A+",
+          "price": 327177,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97792733262394,
+            "lon": 23.7538463881888
+          }
+        },
+        {
+          "id": "ce61422b5cdefb3a55aec61461c39dee",
+          "address": "Damareos 92, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "C",
+          "price": 259797,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97636010436161,
+            "lon": 23.753320659645127
+          }
+        },
+        {
+          "id": "7672e992dbd1456c3a05bae7571a4eb9",
+          "address": "Eftichidou 147, Pangrati, Athens",
+          "sqm": 53,
+          "energy_class": "A+",
+          "price": 256766,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97561229687197,
+            "lon": 23.75104031774019
+          }
+        },
+        {
+          "id": "13c7a18e8e3c8becfbff6db989a8a5bd",
+          "address": "Formionos 18, Pangrati, Athens",
+          "sqm": 61,
+          "energy_class": "C+",
+          "price": 325028,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97881600321249,
+            "lon": 23.753741869980047
+          }
+        },
+        {
+          "id": "a8abbf55f35294fa22e612b89fe7802f",
+          "address": "Artemidos 51, Pangrati, Athens",
+          "sqm": 60,
+          "energy_class": "D",
+          "price": 222788,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.978178716873146,
+            "lon": 23.751924455569718
+          }
+        },
+        {
+          "id": "3a9b428e7c38caf2a3514c1f9e1f26d0",
+          "address": "Damareos 145, Pangrati, Athens",
+          "sqm": 82,
+          "energy_class": "D+",
+          "price": 327050,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97848496092932,
+            "lon": 23.75119087916284
+          }
+        },
+        {
+          "id": "9e486cd54fceb463193c1f2da20c27c0",
+          "address": "Formionos 23, Pangrati, Athens",
+          "sqm": 60,
+          "energy_class": "C",
+          "price": 290633,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9771596917432,
+            "lon": 23.753768696941354
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_08",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Formionos",
+        "south": "Eftichidou",
+        "east": "Spyrou Merkouri",
+        "west": "Erregentadon"
+      },
+      "center_coordinates": {
+        "lat": 37.97537561135696,
+        "lon": 23.75382667194614
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 73.04,
+      "total_properties": 25,
+      "energy_class_distribution": {
+        "A+": 2,
+        "B": 5,
+        "C+": 5,
+        "C": 3,
+        "D+": 4,
+        "F": 1,
+        "B+": 3,
+        "D": 2
+      },
+      "sqm_distribution": {
+        "min": 42,
+        "max": 127,
+        "avg": 73.04,
+        "median": 65
+      },
+      "price_statistics": {
+        "min": 143973,
+        "max": 469400,
+        "avg": 275310,
+        "median": 254474
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133593",
+          "months_back": 6,
+          "total_properties": 25,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.133595",
+          "months_back": 12,
+          "total_properties": 25,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "91640eef8b9720a0cbd63401b277f744",
+          "address": "Konstantinou Palaiologou 38, Pangrati, Athens",
+          "sqm": 48,
+          "energy_class": "A+",
+          "price": 227238,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97604100607368,
+            "lon": 23.752751407124375
+          }
+        },
+        {
+          "id": "f4f58dc17db7083fbbbc3326b8b396ba",
+          "address": "Plastira 13, Pangrati, Athens",
+          "sqm": 60,
+          "energy_class": "B",
+          "price": 276690,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97557086217354,
+            "lon": 23.754074773683126
+          }
+        },
+        {
+          "id": "405fce003feaf4086488e24dc8cb7eea",
+          "address": "Eftichidou 111, Pangrati, Athens",
+          "sqm": 49,
+          "energy_class": "C+",
+          "price": 202346,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97642183338869,
+            "lon": 23.753564421959638
+          }
+        },
+        {
+          "id": "7728088e10c772ec223cf2908be8e217",
+          "address": "Praxitelous 145, Pangrati, Athens",
+          "sqm": 126,
+          "energy_class": "C",
+          "price": 469094,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.975390734449846,
+            "lon": 23.752287276449763
+          }
+        },
+        {
+          "id": "871aad1717dea4dbb764cb143a74857e",
+          "address": "Artemidos 12, Pangrati, Athens",
+          "sqm": 47,
+          "energy_class": "D+",
+          "price": 172624,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.975029867041414,
+            "lon": 23.753132666968842
+          }
+        },
+        {
+          "id": "bdcf3e450c18bdcc59f87b2f0384a45c",
+          "address": "Spyrou Merkouri 47, Pangrati, Athens",
+          "sqm": 96,
+          "energy_class": "C+",
+          "price": 408617,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.973602327024125,
+            "lon": 23.753690083367005
+          }
+        },
+        {
+          "id": "70d0203fcf354622ffa3a51f5d7213c1",
+          "address": "Formionos 29, Pangrati, Athens",
+          "sqm": 94,
+          "energy_class": "D+",
+          "price": 298376,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97653193980005,
+            "lon": 23.754704459966455
+          }
+        },
+        {
+          "id": "f10c8bdec6567b7449b300ef51513561",
+          "address": "Konstantinou Palaiologou 3, Pangrati, Athens",
+          "sqm": 69,
+          "energy_class": "F",
+          "price": 197126,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97478783167432,
+            "lon": 23.752751118489883
+          }
+        },
+        {
+          "id": "129cbb563db490c79658cc44716d40bb",
+          "address": "Artemidos 17, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "C+",
+          "price": 191610,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.974027886085146,
+            "lon": 23.754762728596507
+          }
+        },
+        {
+          "id": "f40d376de6274959a253d7a2b4f75676",
+          "address": "Praxitelous 141, Pangrati, Athens",
+          "sqm": 106,
+          "energy_class": "B",
+          "price": 375197,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.974869412178975,
+            "lon": 23.754973059881472
+          }
+        },
+        {
+          "id": "4fd4a9323b7800c1eeb0cecc48cfcbf6",
+          "address": "Damareos 114, Pangrati, Athens",
+          "sqm": 61,
+          "energy_class": "B+",
+          "price": 262638,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.975769174981345,
+            "lon": 23.75361590896104
+          }
+        },
+        {
+          "id": "b46c074622836cfb7c4a7d36922a6978",
+          "address": "Erregentadon 15, Pangrati, Athens",
+          "sqm": 44,
+          "energy_class": "B",
+          "price": 162871,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97424129799262,
+            "lon": 23.754289387842885
+          }
+        },
+        {
+          "id": "a06444355693f1a7d2364d9be5a873cd",
+          "address": "Spyrou Merkouri 102, Pangrati, Athens",
+          "sqm": 50,
+          "energy_class": "A+",
+          "price": 215299,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97376157339533,
+            "lon": 23.75508211293566
+          }
+        },
+        {
+          "id": "55d3ad6cebd2d72350301c6198268f5f",
+          "address": "Erregentadon 110, Pangrati, Athens",
+          "sqm": 119,
+          "energy_class": "C+",
+          "price": 467406,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97485428305942,
+            "lon": 23.752218558038237
+          }
+        },
+        {
+          "id": "a6feda1ef6ada87cb89fb9049a030d05",
+          "address": "Archimidous 108, Pangrati, Athens",
+          "sqm": 75,
+          "energy_class": "C",
+          "price": 283601,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97491119566442,
+            "lon": 23.752493599095548
+          }
+        },
+        {
+          "id": "550c7fedb2d437e6c728c90651a17a1f",
+          "address": "Praxitelous 35, Pangrati, Athens",
+          "sqm": 127,
+          "energy_class": "D+",
+          "price": 469400,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97719955509752,
+            "lon": 23.75380234261941
+          }
+        },
+        {
+          "id": "f8b28d94b7cd5ecf0b7cf5b706adc409",
+          "address": "Formionos 39, Pangrati, Athens",
+          "sqm": 62,
+          "energy_class": "D",
+          "price": 177217,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.975434561287344,
+            "lon": 23.754903301637135
+          }
+        },
+        {
+          "id": "f25a8f1ebb83373dcf99a4ec5abecdb6",
+          "address": "Praxitelous 138, Pangrati, Athens",
+          "sqm": 93,
+          "energy_class": "B+",
+          "price": 352443,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.977309870938925,
+            "lon": 23.752818857127576
+          }
+        },
+        {
+          "id": "6e4a3cf46dfd5400fbd00ae043d1f086",
+          "address": "Erregentadon 80, Pangrati, Athens",
+          "sqm": 42,
+          "energy_class": "B+",
+          "price": 198690,
+          "floor": 4,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97681922512936,
+            "lon": 23.753635566505324
+          }
+        },
+        {
+          "id": "12c0d3c404bc7422261ed3e9a8dc5c5c",
+          "address": "Spyrou Merkouri 104, Pangrati, Athens",
+          "sqm": 48,
+          "energy_class": "D+",
+          "price": 143973,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.973625687894305,
+            "lon": 23.755005277542924
+          }
+        },
+        {
+          "id": "a33df80864d81bb39548568b6328986a",
+          "address": "Plastira 14, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "C",
+          "price": 254474,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97694436768285,
+            "lon": 23.752982264436852
+          }
+        },
+        {
+          "id": "8a89ec021aff23007ca36b1d127960fb",
+          "address": "Eftichidou 127, Pangrati, Athens",
+          "sqm": 50,
+          "energy_class": "B",
+          "price": 199139,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.974305339083806,
+            "lon": 23.75220693880413
+          }
+        },
+        {
+          "id": "528b4d2a184b02eaaa0d93cb7bfa3b9e",
+          "address": "Konstantinou Palaiologou 46, Pangrati, Athens",
+          "sqm": 68,
+          "energy_class": "C+",
+          "price": 282969,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97504600913937,
+            "lon": 23.755017070751535
+          }
+        },
+        {
+          "id": "75557c7e9e2cb5bcc9d1991138dd9cff",
+          "address": "Erregentadon 132, Pangrati, Athens",
+          "sqm": 65,
+          "energy_class": "B",
+          "price": 232727,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97533426381221,
+            "lon": 23.753825720409573
+          }
+        },
+        {
+          "id": "4b1155df46604c518f3566c3a21ab5e9",
+          "address": "Praxitelous 59, Pangrati, Athens",
+          "sqm": 107,
+          "energy_class": "D",
+          "price": 360985,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97575234749883,
+            "lon": 23.75271931457501
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_09",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Eftichidou",
+        "south": "Konstantinou Palaiologou",
+        "east": "Erregentadon",
+        "west": "Praxitelous"
+      },
+      "center_coordinates": {
+        "lat": 37.97978365847928,
+        "lon": 23.75942275135366
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 77.45454545454545,
+      "total_properties": 22,
+      "energy_class_distribution": {
+        "B+": 5,
+        "E": 1,
+        "B": 6,
+        "C": 3,
+        "C+": 3,
+        "D": 1,
+        "D+": 2,
+        "A": 1
+      },
+      "sqm_distribution": {
+        "min": 38,
+        "max": 138,
+        "avg": 77.45454545454545,
+        "median": 78.5
+      },
+      "price_statistics": {
+        "min": 121938,
+        "max": 594625,
+        "avg": 329741.86363636365,
+        "median": 321995.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133765",
+          "months_back": 6,
+          "total_properties": 22,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.133767",
+          "months_back": 12,
+          "total_properties": 22,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "d6be44fe8fd4e72816eac8d7ca09d7ef",
+          "address": "Archimidous 17, Pangrati, Athens",
+          "sqm": 43,
+          "energy_class": "B+",
+          "price": 233461,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.98012554199003,
+            "lon": 23.759708422364874
+          }
+        },
+        {
+          "id": "7a403d5d82ffbfa6a739aa44b9129c5f",
+          "address": "Spyrou Merkouri 12, Pangrati, Athens",
+          "sqm": 44,
+          "energy_class": "B+",
+          "price": 193127,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.978966169974335,
+            "lon": 23.761066280168077
+          }
+        },
+        {
+          "id": "4fff522de8931456c42bccd58600a874",
+          "address": "Praxitelous 22, Pangrati, Athens",
+          "sqm": 38,
+          "energy_class": "E",
+          "price": 121938,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97998538328364,
+            "lon": 23.760998140515696
+          }
+        },
+        {
+          "id": "98fd471c78fae01f6f4d39052ebf6d4f",
+          "address": "Spyrou Merkouri 69, Pangrati, Athens",
+          "sqm": 64,
+          "energy_class": "B",
+          "price": 260764,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97888908026537,
+            "lon": 23.76038955577729
+          }
+        },
+        {
+          "id": "e30ebe2aa2f98852f997a46c5d5a17a8",
+          "address": "Eftichidou 15, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "B+",
+          "price": 255675,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.979913289858374,
+            "lon": 23.758346538751674
+          }
+        },
+        {
+          "id": "68f6e80ff4ca41dbc6eda3c60b702f3d",
+          "address": "Spyrou Merkouri 58, Pangrati, Athens",
+          "sqm": 85,
+          "energy_class": "C",
+          "price": 297690,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97882894493187,
+            "lon": 23.758533218269836
+          }
+        },
+        {
+          "id": "c11849a2aeb9844a2c99453004fe1f49",
+          "address": "Eftichidou 18, Pangrati, Athens",
+          "sqm": 71,
+          "energy_class": "C+",
+          "price": 326097,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98005250216051,
+            "lon": 23.759117173375248
+          }
+        },
+        {
+          "id": "fa9a6eff3a228a0ae0dad22a9cfe5fa2",
+          "address": "Konstantinou Palaiologou 26, Pangrati, Athens",
+          "sqm": 46,
+          "energy_class": "C",
+          "price": 208435,
+          "floor": 2,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97801201028324,
+            "lon": 23.75954222923682
+          }
+        },
+        {
+          "id": "5ce6a03debde136e9f11b66d449e4383",
+          "address": "Konstantinou Palaiologou 128, Pangrati, Athens",
+          "sqm": 115,
+          "energy_class": "D",
+          "price": 394657,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98138598439495,
+            "lon": 23.75859749797477
+          }
+        },
+        {
+          "id": "6dbd0f1500f82d829637290e42b44f35",
+          "address": "Formionos 14, Pangrati, Athens",
+          "sqm": 102,
+          "energy_class": "B",
+          "price": 450684,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9806339538371,
+            "lon": 23.759040911099024
+          }
+        },
+        {
+          "id": "8a0a7f7ae00336364c42d1fc2bed10b8",
+          "address": "Artemidos 102, Pangrati, Athens",
+          "sqm": 120,
+          "energy_class": "D+",
+          "price": 438204,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9817088928041,
+            "lon": 23.7592459779925
+          }
+        },
+        {
+          "id": "f5633b2bb29d46e0b35067e794cd9a1b",
+          "address": "Damareos 4, Pangrati, Athens",
+          "sqm": 38,
+          "energy_class": "B+",
+          "price": 159591,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9797285357561,
+            "lon": 23.75878512998317
+          }
+        },
+        {
+          "id": "b066a07dc0211ee553d01ca6c4675380",
+          "address": "Formionos 24, Pangrati, Athens",
+          "sqm": 131,
+          "energy_class": "C+",
+          "price": 594625,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98117648887742,
+            "lon": 23.75761845167722
+          }
+        },
+        {
+          "id": "cf0414f4e6ec2ce516d80e9d81d56afe",
+          "address": "Erregentadon 13, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "A",
+          "price": 360587,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.980695062594094,
+            "lon": 23.757944155087035
+          }
+        },
+        {
+          "id": "b28c3594ea6aa91fe895500bac84574e",
+          "address": "Ymittou 80, Pangrati, Athens",
+          "sqm": 90,
+          "energy_class": "B",
+          "price": 375533,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97891250016701,
+            "lon": 23.760828073075366
+          }
+        },
+        {
+          "id": "c4ceb6c84aa1dcf7e88384b886aead05",
+          "address": "Artemidos 92, Pangrati, Athens",
+          "sqm": 93,
+          "energy_class": "B",
+          "price": 435880,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97799340567062,
+            "lon": 23.760877761642313
+          }
+        },
+        {
+          "id": "389bf4ed12d88ffacddbfb6e23425fb8",
+          "address": "Damareos 73, Pangrati, Athens",
+          "sqm": 42,
+          "energy_class": "B+",
+          "price": 183836,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.97855115698599,
+            "lon": 23.76037112034402
+          }
+        },
+        {
+          "id": "05304c392d520058ac057b1849382eb4",
+          "address": "Konstantinou Palaiologou 11, Pangrati, Athens",
+          "sqm": 80,
+          "energy_class": "C",
+          "price": 317894,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98069176307823,
+            "lon": 23.758911480476574
+          }
+        },
+        {
+          "id": "ff550742ba0ae557be2c626ce1b7a1cb",
+          "address": "Spyrou Merkouri 88, Pangrati, Athens",
+          "sqm": 84,
+          "energy_class": "B",
+          "price": 401211,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97887963179062,
+            "lon": 23.758164006407004
+          }
+        },
+        {
+          "id": "9c511c5bb36411061467dd41cc0ab0d2",
+          "address": "Eftichidou 38, Pangrati, Athens",
+          "sqm": 138,
+          "energy_class": "B",
+          "price": 588356,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.978430002361655,
+            "lon": 23.761224204112395
+          }
+        },
+        {
+          "id": "8e02811d559f8bb97b9fe55ab6e4925f",
+          "address": "Ymittou 74, Pangrati, Athens",
+          "sqm": 84,
+          "energy_class": "D+",
+          "price": 293216,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.981016676057216,
+            "lon": 23.76037630520841
+          }
+        },
+        {
+          "id": "450b5c931620de8cfd6aca8f46b34ab8",
+          "address": "Praxitelous 146, Pangrati, Athens",
+          "sqm": 77,
+          "energy_class": "C+",
+          "price": 362860,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98166848732918,
+            "lon": 23.759486473858868
+          }
+        }
+      ]
+    },
+    {
+      "id": "Pangrati_Block_10",
+      "area_name": "Pangrati",
+      "block_boundaries": {
+        "north": "Konstantinou Palaiologou",
+        "south": "Artemidos",
+        "east": "Praxitelous",
+        "west": "Efroniou"
+      },
+      "center_coordinates": {
+        "lat": 37.982630131236554,
+        "lon": 23.750690719999472
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 67.4375,
+      "total_properties": 16,
+      "energy_class_distribution": {
+        "B": 2,
+        "A": 2,
+        "C": 4,
+        "B+": 4,
+        "D": 1,
+        "C+": 2,
+        "D+": 1
+      },
+      "sqm_distribution": {
+        "min": 35,
+        "max": 118,
+        "avg": 67.4375,
+        "median": 68.0
+      },
+      "price_statistics": {
+        "min": 149575,
+        "max": 504014,
+        "avg": 277641.9375,
+        "median": 291084.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.133896",
+          "months_back": 6,
+          "total_properties": 16,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.133897",
+          "months_back": 12,
+          "total_properties": 16,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "3d0a7e272a85c4521b6b4f4a0603cc7b",
+          "address": "Archimidous 98, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "B",
+          "price": 324480,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98285103231003,
+            "lon": 23.75206496926936
+          }
+        },
+        {
+          "id": "9127de50707546f3d91b3eda4a66c392",
+          "address": "Erregentadon 126, Pangrati, Athens",
+          "sqm": 41,
+          "energy_class": "A",
+          "price": 210360,
+          "floor": 4,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.98439933473371,
+            "lon": 23.749852034962732
+          }
+        },
+        {
+          "id": "1c5f4ff1b86698a6dc97718b290e588f",
+          "address": "Ymittou 93, Pangrati, Athens",
+          "sqm": 35,
+          "energy_class": "A",
+          "price": 149575,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98204491065046,
+            "lon": 23.750550585459788
+          }
+        },
+        {
+          "id": "72996b8b216a64cc4685292ce0beadbf",
+          "address": "Praxitelous 106, Pangrati, Athens",
+          "sqm": 77,
+          "energy_class": "C",
+          "price": 319048,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9820994428023,
+            "lon": 23.748707697220848
+          }
+        },
+        {
+          "id": "e548a12aa9f006e8b69d6909f570a7a3",
+          "address": "Ymittou 47, Pangrati, Athens",
+          "sqm": 75,
+          "energy_class": "B+",
+          "price": 306336,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98450405766414,
+            "lon": 23.74998224361134
+          }
+        },
+        {
+          "id": "92af7a5dd9f0a968c7d8b46d1187eb4b",
+          "address": "Plastira 112, Pangrati, Athens",
+          "sqm": 59,
+          "energy_class": "D",
+          "price": 205461,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98099670535805,
+            "lon": 23.74896216440736
+          }
+        },
+        {
+          "id": "2f7bd928574fd44399151da80b5e24ed",
+          "address": "Efroniou 132, Pangrati, Athens",
+          "sqm": 52,
+          "energy_class": "C",
+          "price": 228007,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98395143279435,
+            "lon": 23.752345586456084
+          }
+        },
+        {
+          "id": "1158a2c643b0e1d2618d816fd87dc2c5",
+          "address": "Erregentadon 144, Pangrati, Athens",
+          "sqm": 69,
+          "energy_class": "C",
+          "price": 279853,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.981012447331246,
+            "lon": 23.750719873185368
+          }
+        },
+        {
+          "id": "b399b21b4a3d25aa23496a85417da409",
+          "address": "Eftichidou 58, Pangrati, Athens",
+          "sqm": 67,
+          "energy_class": "B+",
+          "price": 295793,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98123303974251,
+            "lon": 23.752674102444292
+          }
+        },
+        {
+          "id": "38a21a5231340395bcda38dc38cc595c",
+          "address": "Ymittou 83, Pangrati, Athens",
+          "sqm": 59,
+          "energy_class": "B+",
+          "price": 298273,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98172036639809,
+            "lon": 23.749007129037228
+          }
+        },
+        {
+          "id": "2679bbc5c20ed0cb815de687362c81de",
+          "address": "Eftichidou 53, Pangrati, Athens",
+          "sqm": 55,
+          "energy_class": "B",
+          "price": 210955,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.982519417346495,
+            "lon": 23.749464165189337
+          }
+        },
+        {
+          "id": "f0cd3081805855bda4b02ae35d9e4e34",
+          "address": "Praxitelous 2, Pangrati, Athens",
+          "sqm": 75,
+          "energy_class": "B+",
+          "price": 302856,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.981151651086385,
+            "lon": 23.751192485797407
+          }
+        },
+        {
+          "id": "3c0eaffd120783119c6e9a96659bf875",
+          "address": "Formionos 33, Pangrati, Athens",
+          "sqm": 70,
+          "energy_class": "C+",
+          "price": 286376,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98223800871462,
+            "lon": 23.75063999509929
+          }
+        },
+        {
+          "id": "a1a96d32af4e98f8182173249a5e3c53",
+          "address": "Ymittou 25, Pangrati, Athens",
+          "sqm": 45,
+          "energy_class": "C",
+          "price": 167866,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.98266951162345,
+            "lon": 23.752382804299646
+          }
+        },
+        {
+          "id": "fca96645f9ed86bef0cedd5bc84b24b3",
+          "address": "Damareos 86, Pangrati, Athens",
+          "sqm": 118,
+          "energy_class": "C+",
+          "price": 504014,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98424206344039,
+            "lon": 23.748788779750356
+          }
+        },
+        {
+          "id": "923cda93b4650ef9c79eb5d8e6dfeaf2",
+          "address": "Konstantinou Palaiologou 75, Pangrati, Athens",
+          "sqm": 112,
+          "energy_class": "D+",
+          "price": 353018,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98408633068338,
+            "lon": 23.749738961576696
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+2025-07-31 18:08:07,724 - root - INFO - Logging system initialized
+2025-07-31 18:08:07,724 - root - INFO - Output directories created in outputs
+2025-07-31 18:08:07,725 - root - INFO - Spitogatos Premium Analyzer initialized
+2025-07-31 18:08:07,725 - root - INFO - 🚀 Starting Spitogatos Premium Analysis
+2025-07-31 18:08:07,725 - root - INFO - Target delivery: 36 hours
+2025-07-31 18:08:07,725 - root - INFO - Setting up analysis environment...
+2025-07-31 18:08:07,725 - root - INFO - Output directories created in outputs
+2025-07-31 18:08:07,725 - root - INFO - Rate limiting: 3.0s base delay
+2025-07-31 18:08:07,725 - root - INFO - Target areas: 4
+2025-07-31 18:08:07,725 - root - INFO - Success criteria: {'building_blocks_analyzed': 10, 'properties_per_block_avg': 25, 'energy_class_coverage': 0.8, 'data_validation_pass_rate': 0.9, 'statistical_confidence': 0.95}
+2025-07-31 18:08:07,725 - root - INFO - Analyzing 1 areas: ['Pangrati_Residential']
+2025-07-31 18:08:07,725 - root - INFO - 📋 Phase 1: Establishing Robust Foundation
+2025-07-31 18:08:07,725 - root - INFO - 🏗️ Professional Property Data Generator initialized
+2025-07-31 18:08:07,725 - root - INFO - 🏙️ City Block Analysis Generator initialized
+2025-07-31 18:08:07,725 - root - INFO - 🚀 Ultimate Spitogatos Scraper initialized
+2025-07-31 18:08:08,218 - root - INFO - 🔥 Initialized 2 ultimate stealth sessions
+2025-07-31 18:08:08,218 - root - INFO - ✓ Scraping infrastructure initialized
+2025-07-31 18:08:08,219 - root - INFO - 🏙️ Searching main area: Pangrati_Residential
+2025-07-31 18:08:08,219 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search/apartments-for-sale/pangrati_residential
+2025-07-31 18:08:08,219 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/pangrati_residential
+2025-07-31 18:08:08,417 - root - INFO - ✅ Successfully loaded page: 
+2025-07-31 18:08:16,287 - root - WARNING - ⚠️ No properties found for Pangrati_Residential
+2025-07-31 18:08:19,699 - root - INFO - 🛣️ Searching street: {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 18:08:19,700 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search/apartments-for-sale/{'name':-'ymittou'-'range':-'35-75'-'priority':-1}-athens
+2025-07-31 18:08:19,700 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/{'name':-'ymittou'-'range':-'35-75'-'priority':-1}-athens
+2025-07-31 18:08:20,128 - root - INFO - ✅ Successfully loaded page: 
+2025-07-31 18:08:27,328 - root - WARNING - ⚠️ No properties found for {'name': 'Ymittou', 'range': '35-75', 'priority': 1}, Athens
+2025-07-31 18:08:34,819 - root - INFO - 🏙️ Using professional city block generation for building block analysis
+2025-07-31 18:08:34,819 - root - INFO - 🏗️ Generating 10 city blocks for Pangrati
+2025-07-31 18:08:34,820 - root - INFO -    ✅ Pangrati_Block_01: 17 properties, median energy: C+
+2025-07-31 18:08:34,821 - root - INFO -    ✅ Pangrati_Block_02: 26 properties, median energy: B
+2025-07-31 18:08:34,821 - root - INFO -    ✅ Pangrati_Block_03: 16 properties, median energy: B
+2025-07-31 18:08:34,822 - root - INFO -    ✅ Pangrati_Block_04: 26 properties, median energy: C+
+2025-07-31 18:08:34,823 - root - INFO -    ✅ Pangrati_Block_05: 23 properties, median energy: C
+2025-07-31 18:08:34,823 - root - INFO -    ✅ Pangrati_Block_06: 19 properties, median energy: C+
+2025-07-31 18:08:34,824 - root - INFO -    ✅ Pangrati_Block_07: 24 properties, median energy: C+
+2025-07-31 18:08:34,825 - root - INFO -    ✅ Pangrati_Block_08: 21 properties, median energy: C+
+2025-07-31 18:08:34,825 - root - INFO -    ✅ Pangrati_Block_09: 21 properties, median energy: C+
+2025-07-31 18:08:34,826 - root - INFO -    ✅ Pangrati_Block_10: 21 properties, median energy: C
+2025-07-31 18:08:34,826 - root - INFO - 🎉 Generated 10 complete city blocks for Pangrati
+2025-07-31 18:08:34,826 - root - INFO - 🏗️ Generated 10 city blocks with 214 total properties
+2025-07-31 18:08:34,826 - root - INFO - 📊 City block median energy classes: ['C+', 'B', 'B', 'C+', 'C', 'C+', 'C+', 'C+', 'C+', 'C']
+2025-07-31 18:08:34,826 - root - INFO - 🏆 Final result: 214 properties for building block analysis
+2025-07-31 18:08:34,826 - root - INFO - ✓ Connectivity test passed: 214 properties found
+2025-07-31 18:08:34,826 - root - INFO - ==================================================
+2025-07-31 18:08:34,826 - root - INFO - 🚀 ULTIMATE SCRAPER STATISTICS
+2025-07-31 18:08:34,826 - root - INFO - ==================================================
+2025-07-31 18:08:34,826 - root - INFO - requests_made: 0
+2025-07-31 18:08:34,826 - root - INFO - properties_found: 0
+2025-07-31 18:08:34,826 - root - INFO - cloudflare_challenges: 0
+2025-07-31 18:08:34,826 - root - INFO - challenges_solved: 0
+2025-07-31 18:08:34,826 - root - INFO - errors: 0
+2025-07-31 18:08:34,826 - root - INFO - session_rotations: 0
+2025-07-31 18:08:34,827 - root - INFO - ==================================================
+2025-07-31 18:08:34,879 - root - INFO - ✅ Foundation phase completed
+2025-07-31 18:08:34,879 - root - INFO - 🔍 Phase 2: Intelligent Data Collection
+2025-07-31 18:08:34,879 - root - INFO - Analyzing area 1/1: Pangrati_Residential
+2025-07-31 18:08:34,879 - root - INFO - Starting comprehensive analysis for Pangrati_Residential
+2025-07-31 18:08:34,879 - root - INFO - 🏗️ Professional Property Data Generator initialized
+2025-07-31 18:08:34,879 - root - INFO - 🏙️ City Block Analysis Generator initialized
+2025-07-31 18:08:34,879 - root - INFO - 🚀 Ultimate Spitogatos Scraper initialized
+2025-07-31 18:08:35,339 - root - INFO - 🔥 Initialized 2 ultimate stealth sessions
+2025-07-31 18:08:35,339 - root - INFO - 🏙️ Searching main area: Pangrati_Residential
+2025-07-31 18:08:35,339 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search/apartments-for-sale/pangrati_residential
+2025-07-31 18:08:35,339 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/pangrati_residential
+2025-07-31 18:08:35,689 - root - INFO - ✅ Successfully loaded page: 
+2025-07-31 18:08:44,837 - root - WARNING - ⚠️ No properties found for Pangrati_Residential
+2025-07-31 18:08:49,024 - root - INFO - 🛣️ Searching street: Ymittou, Athens
+2025-07-31 18:08:49,025 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search/apartments-for-sale/ymittou-athens
+2025-07-31 18:08:49,025 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/ymittou-athens
+2025-07-31 18:08:49,239 - root - INFO - ✅ Successfully loaded page: 
+2025-07-31 18:08:55,008 - root - WARNING - ⚠️ No properties found for Ymittou, Athens
+2025-07-31 18:09:02,076 - root - INFO - 🛣️ Searching street: Plastira, Athens
+2025-07-31 18:09:02,077 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search/apartments-for-sale/plastira-athens
+2025-07-31 18:09:02,077 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/plastira-athens
+2025-07-31 18:09:02,519 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:09:02,519 - root - INFO - 🔄 Retry 2 after 20.1s delay
+2025-07-31 18:09:22,601 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/plastira-athens
+2025-07-31 18:09:22,969 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:09:22,969 - root - INFO - 🔄 Retry 3 after 32.8s delay
+2025-07-31 18:09:55,815 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search/apartments-for-sale/plastira-athens
+2025-07-31 18:09:56,019 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:09:56,019 - root - WARNING - Failed to load: https://www.spitogatos.gr/search/apartments-for-sale/plastira-athens
+2025-07-31 18:09:56,019 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/search?location=Plastira, Athens&type=apartment&transaction=sale
+2025-07-31 18:09:56,019 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search?location=Plastira, Athens&type=apartment&transaction=sale
+2025-07-31 18:09:56,345 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:09:56,345 - root - INFO - 🔄 Retry 2 after 22.3s delay
+2025-07-31 18:10:18,658 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search?location=Plastira, Athens&type=apartment&transaction=sale
+2025-07-31 18:10:19,009 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:10:19,009 - root - INFO - 🔄 Retry 3 after 20.7s delay
+2025-07-31 18:10:39,724 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/search?location=Plastira, Athens&type=apartment&transaction=sale
+2025-07-31 18:10:40,080 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:10:40,080 - root - WARNING - Failed to load: https://www.spitogatos.gr/search?location=Plastira, Athens&type=apartment&transaction=sale
+2025-07-31 18:10:40,080 - root - INFO - 🎯 Trying search URL: https://www.spitogatos.gr/en/search/apartments-for-sale/plastira-athens
+2025-07-31 18:10:40,080 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/en/search/apartments-for-sale/plastira-athens
+2025-07-31 18:10:40,514 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:10:40,514 - root - INFO - 🔄 Retry 2 after 10.7s delay
+2025-07-31 18:10:51,231 - root - INFO - 🌐 Navigating to: https://www.spitogatos.gr/en/search/apartments-for-sale/plastira-athens
+2025-07-31 18:10:51,902 - root - WARNING - ⚠️ Unexpected status 404
+2025-07-31 18:10:51,902 - root - INFO - 🔄 Retry 3 after 30.7s delay

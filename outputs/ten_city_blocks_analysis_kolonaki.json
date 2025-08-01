@@ -1,0 +1,151 @@
+{
+  "area_name": "Kolonaki",
+  "analysis_summary": {
+    "blocks_analyzed": 4,
+    "total_properties": 60,
+    "total_sqm": 1802,
+    "average_confidence": 0.9449999999999998,
+    "analysis_timestamp": "2025-08-01T10:35:43.619405"
+  },
+  "city_blocks": [
+    {
+      "block_id": "Kolonaki_CityBlock_01",
+      "properties_count": 15,
+      "total_sqm": 644,
+      "weighted_median_energy_class": "A",
+      "energy_class_breakdown": {
+        "A": 1
+      },
+      "avg_price_per_sqm": 972.9364632097817,
+      "price_range": {
+        "min": 320,
+        "max": 350000,
+        "avg": 128804.66666666667
+      },
+      "sqm_range": {
+        "min": 30,
+        "max": 123,
+        "avg": 71
+      },
+      "street_boundaries": [
+        "Street 1A",
+        "Street 1B",
+        "Avenue 1",
+        "Square 1"
+      ],
+      "completeness_scores": {
+        "price": 1.0,
+        "sqm": 0.6,
+        "energy_class": 0.06666666666666667,
+        "floor": 0.06666666666666667,
+        "rooms": 0.06666666666666667
+      },
+      "confidence_score": 0.9466666666666664
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_02",
+      "properties_count": 15,
+      "total_sqm": 635,
+      "weighted_median_energy_class": "A",
+      "energy_class_breakdown": {
+        "A": 2
+      },
+      "avg_price_per_sqm": 878.0472486842785,
+      "price_range": {
+        "min": 320,
+        "max": 265000,
+        "avg": 111350.2
+      },
+      "sqm_range": {
+        "min": 30,
+        "max": 111,
+        "avg": 63
+      },
+      "street_boundaries": [
+        "Street 2A",
+        "Street 2B",
+        "Avenue 2",
+        "Square 2"
+      ],
+      "completeness_scores": {
+        "price": 1.0,
+        "sqm": 0.6666666666666666,
+        "energy_class": 0.13333333333333333,
+        "floor": 0.06666666666666667,
+        "rooms": 0.06666666666666667
+      },
+      "confidence_score": 0.9433333333333331
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_03",
+      "properties_count": 15,
+      "total_sqm": 93,
+      "weighted_median_energy_class": "A",
+      "energy_class_breakdown": {
+        "A": 1
+      },
+      "avg_price_per_sqm": 2849.462365591398,
+      "price_range": {
+        "min": 90,
+        "max": 265000,
+        "avg": 24414.0
+      },
+      "sqm_range": {
+        "min": 93,
+        "max": 93,
+        "avg": 93
+      },
+      "street_boundaries": [
+        "Street 3A",
+        "Street 3B",
+        "Avenue 3",
+        "Square 3"
+      ],
+      "completeness_scores": {
+        "price": 1.0,
+        "sqm": 0.06666666666666667,
+        "energy_class": 0.06666666666666667,
+        "floor": 0.06666666666666667,
+        "rooms": 0.06666666666666667
+      },
+      "confidence_score": 0.9466666666666664
+    },
+    {
+      "block_id": "Kolonaki_CityBlock_04",
+      "properties_count": 15,
+      "total_sqm": 430,
+      "weighted_median_energy_class": "A",
+      "energy_class_breakdown": {
+        "A": 2
+      },
+      "avg_price_per_sqm": 383.1698086859377,
+      "price_range": {
+        "min": 80,
+        "max": 265000,
+        "avg": 27114.2
+      },
+      "sqm_range": {
+        "min": 9,
+        "max": 110,
+        "avg": 53
+      },
+      "street_boundaries": [
+        "Street 4A",
+        "Street 4B",
+        "Avenue 4",
+        "Square 4"
+      ],
+      "completeness_scores": {
+        "price": 1.0,
+        "sqm": 0.5333333333333333,
+        "energy_class": 0.13333333333333333,
+        "floor": 0.0,
+        "rooms": 0.06666666666666667
+      },
+      "confidence_score": 0.9433333333333331
+    }
+  ],
+  "overall_energy_distribution": {
+    "A": 6
+  }
+}

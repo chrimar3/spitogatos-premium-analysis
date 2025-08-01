@@ -1,0 +1,307 @@
+{
+  "main_site": {
+    "title": "Χρυσή Ευκαιρία: Το #1 site αγγελιών στην Ελλάδα | xe.gr",
+    "property_links": [
+      [
+        "https://www.xe.gr/property",
+        "Ακίνητα"
+      ],
+      [
+        "https://www.xe.gr/property/s/enoikiaseis-katoikion",
+        "Ενοικιάσεις κατοικιών"
+      ],
+      [
+        "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "Ενοικιάσεις επαγγ. χώρων"
+      ],
+      [
+        "https://www.xe.gr/property/s/enoikiaseis-parking",
+        "Ενοικιάσεις parking"
+      ],
+      [
+        "https://www.xe.gr/property/s/poliseis-katoikion",
+        "Πωλήσεις κατοικιών"
+      ],
+      [
+        "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "Πωλήσεις επαγγ. χώρων"
+      ],
+      [
+        "https://www.xe.gr/property/s/poliseis-gis-oikopedon",
+        "Πωλήσεις γης"
+      ],
+      [
+        "https://www.xe.gr/property/s/poliseis-parking",
+        "Πωλήσεις parking"
+      ],
+      [
+        "https://www.xe.gr/property/stegastiko-daneio",
+        "Στεγαστικό δάνειο"
+      ],
+      [
+        "https://www.xe.gr/property/foititika-spitia",
+        "Φοιτητικά σπίτια"
+      ],
+      [
+        "https://www.xe.gr/property/s/enoikiaseis-epaggelmatikon-xoron",
+        "Ενοικιάσεις επαγγ. χώρων"
+      ],
+      [
+        "https://www.xe.gr/property/s/poliseis-epaggelmatikon-xoron",
+        "Πωλήσεις επαγγ. χώρων"
+      ],
+      [
+        "https://www.xe.gr/search?Item.category__hierarchy=117131&System.item_type=xe_stelexos",
+        "Οικιακά σκεύη"
+      ],
+      [
+        "https://www.xe.gr/search?Item.category__hierarchy=117141&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114567",
+        "Διακόσμηση"
+      ],
+      [
+        "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117110",
+        "Φωτογραφία"
+      ],
+      [
+        "https://www.xe.gr/search?System.type=xe_stelexos&Item.category__hierarchy=117145&from=search",
+        "Βιβλία, τύπος, ταινίες & μουσική"
+      ],
+      [
+        "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117129&Item.master_type=118030",
+        "Ποδήλατα"
+      ],
+      [
+        "https://www.xe.gr/search?System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.category__hierarchy=117107",
+        "Αθλητικά ρούχα & παπούτσια"
+      ],
+      [
+        "https://www.xe.gr/search?System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.category__hierarchy=117121",
+        "Παπούτσια"
+      ],
+      [
+        "https://www.xe.gr/search?System.Item_type=xe_stelexos&Item.category__hierarchy=117138",
+        "Αξεσουάρ"
+      ],
+      [
+        "https://www.xe.gr/search?Item.category__hierarchy=117128&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114544",
+        "Συστέγαση - συγκατοίκηση"
+      ],
+      [
+        "https://www.xe.gr/search?Item.category__hierarchy=117128&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114551",
+        "Συνοικέσια"
+      ],
+      [
+        "https://www.xe.gr/search?Item.category__hierarchy=117134&System.item_type=xe_stelexos&Transaction.type_channel=117518&Item.master_type=114653",
+        "Αστρολογία"
+      ]
+    ]
+  },
+  "working_urls": [
+    [
+      "https://www.xe.gr/property",
+      "Χρυσή Ευκαιρία: Eνοικιάσεις & πωλήσεις ακινήτων | xe.gr",
+      7
+    ],
+    [
+      "https://www.xe.gr/search",
+      "Αγγελίες για όλες τις κατηγορίες",
+      5
+    ],
+    [
+      "https://www.xe.gr/search?area=athens",
+      "Αγγελίες για όλες τις κατηγορίες",
+      6
+    ],
+    [
+      "https://www.xe.gr/search?location=kolonaki",
+      "Αγγελίες για όλες τις κατηγορίες",
+      5
+    ],
+    [
+      "https://www.xe.gr/property/search?area=athens",
+      "Ενοικιάσεις κατοικιών",
+      11
+    ]
+  ],
+  "structure_analysis": {
+    "url": "https://www.xe.gr/property",
+    "containers": {
+      "[data-testid*=\"property\"]": 29,
+      "[class*=\"property\"]": 19
+    },
+    "price_patterns": 517,
+    "area_patterns": 0,
+    "energy_patterns": 68
+  },
+  "extracted_data": {
+    "total_items": 15,
+    "real_properties": 15,
+    "properties": [
+      {
+        "text": "window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam.eu01.nr-data.net\",\"licenseKey\":\"NRJS-317e383610bf84150ea\",\"applicationID\":\"149429577\",\"transactionName\":\"JhpeRQo",
+        "element": "HTML.webpalpha",
+        "price": "383610",
+        "area": null,
+        "energy_class": "a",
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam.eu01.nr-data.net\",\"licenseKey\":\"NRJS-317e383610bf84150ea\",\"applicationID\":\"149429577\",\"transactionName\":\"JhpeRQo",
+        "element": "HEAD",
+        "price": "383610",
+        "area": null,
+        "energy_class": "a",
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam.eu01.nr-data.net\",\"licenseKey\":\"NRJS-317e383610bf84150ea\",\"applicationID\":\"149429577\",\"transactionName\":\"JhpeRQo",
+        "element": "SCRIPT",
+        "price": "383610",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:[\"apple-mapkit.com\",\"analytics.google.com\",\"google-analytics.com\",\"securepubads.g.doubleclick.net\",\"googlesyndication.co",
+        "element": "SCRIPT",
+        "price": "1752680588",
+        "area": null,
+        "energy_class": "a",
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "//<![CDATA[\n\n    window.googletag = window.googletag || {cmd: []};\n\n\n    googletag.cmd.push(function() {\n\n      slot_1591869893599_0 = googletag.defineSlot('/12392028/xe.gr_Property_Homepage/xe.gr_Pro",
+        "element": "SCRIPT",
+        "price": "1591869893599",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": ".qc-cmp-button {    background-color: #65B345 !important;    border-color: #65B345 !important;  }  .qc-cmp-button:hover {    border-color: #65B345 !important;  }  .qc-cmp-alt-action,  .qc-cmp-link {  ",
+        "element": "STYLE",
+        "price": "454545",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "(function(){function x(){function l(){var c=f.document,m=!!f.frames[e];if(!m)if(c.body){var p=c.createElement(\"iframe\");p.style.cssText=\"display:none\";p.name=e;c.body.appendChild(p)}else setTimeout(l,",
+        "element": "BODY",
+        "price": "2672746",
+        "area": null,
+        "energy_class": "e",
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "(function(){function x(){function l(){var c=f.document,m=!!f.frames[e];if(!m)if(c.body){var p=c.createElement(\"iframe\");p.style.cssText=\"display:none\";p.name=e;c.body.appendChild(p)}else setTimeout(l,",
+        "element": "SCRIPT",
+        "price": "2672746",
+        "area": null,
+        "energy_class": "e",
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "Αρχική\n            FAQ\n            Όροι χρήσης\n            Πολιτική δεδομένων\n            Πολιτική cookies\n            Ευκαιρίες καριέρας\n            Επικοινωνία\n          \n        \n      \n\n        \n ",
+        "element": "FOOTER.footer-container container-redesigned",
+        "price": "9091300",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "Αρχική\n            FAQ\n            Όροι χρήσης\n            Πολιτική δεδομένων\n            Πολιτική cookies\n            Ευκαιρίες καριέρας\n            Επικοινωνία\n          \n        \n      \n\n        \n ",
+        "element": "DIV.grid-container",
+        "price": "9091300",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "Αρχική\n            FAQ\n            Όροι χρήσης\n            Πολιτική δεδομένων\n            Πολιτική cookies\n            Ευκαιρίες καριέρας\n            Επικοινωνία\n          \n        \n      \n\n        \n ",
+        "element": "DIV.grid-x",
+        "price": "9091300",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": true
+      },
+      {
+        "text": "Ακολούθησέ μας:\n              \n            \n\n            \n              \n                \n                Facebook\n            \n\n            \n              \n                \n                Twitter\n  ",
+        "element": "DIV.tiny-12 cell",
+        "price": "2011",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "Ακολούθησέ μας:\n              \n            \n\n            \n              \n                \n                Facebook\n            \n\n            \n              \n                \n                Twitter\n  ",
+        "element": "DIV.grid-x",
+        "price": "2011",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "Ακολούθησέ μας:\n              \n            \n\n            \n              \n                \n                Facebook\n            \n\n            \n              \n                \n                Twitter\n  ",
+        "element": "DIV.footer-middle-section social-section middle-section-redesigned",
+        "price": "2011",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      },
+      {
+        "text": "Copyright 2011-2025, Χρυσή Ευκαιρία Μ.Α.Ε.",
+        "element": "DIV.footer-copyright",
+        "price": "2011",
+        "area": null,
+        "energy_class": null,
+        "has_price": true,
+        "has_area": false,
+        "has_energy": true,
+        "has_location": false
+      }
+    ]
+  }
+}

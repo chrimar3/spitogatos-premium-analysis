@@ -1,0 +1,61 @@
+{
+  "scraper_extraction": {
+    "success": false,
+    "properties_found": 0,
+    "reason": "No properties extracted from live scraping"
+  },
+  "data_generation": {
+    "success": true,
+    "completion_rate": 100.0,
+    "populated_fields": 14,
+    "total_fields": 14
+  },
+  "data_completeness": {
+    "coverage_percentage": 48.484848484848484,
+    "missing_critical": [],
+    "missing_important": [
+      "price_per_sqm",
+      "monthly_fees",
+      "bedrooms",
+      "bathrooms",
+      "building_year",
+      "parking",
+      "neighborhood",
+      "agent_name",
+      "agent_phone",
+      "listing_date"
+    ]
+  },
+  "missing_opportunities": {
+    "web_scraping": [
+      "Property photos/images",
+      "Agent contact information",
+      "Building year and characteristics",
+      "Detailed amenities (parking, elevator, etc.)",
+      "Neighborhood information",
+      "Price history/trends",
+      "Similar properties suggestions",
+      "Virtual tour links"
+    ],
+    "data_enrichment": [
+      "Nearby schools, hospitals, transport",
+      "Crime statistics for area",
+      "Market price comparisons",
+      "Investment potential scores",
+      "Rental yield calculations",
+      "Property tax estimates",
+      "Mortgage calculator integration",
+      "Walk score and commute times"
+    ],
+    "technical_improvements": [
+      "Better price extraction (handle various formats)",
+      "Address geocoding and validation",
+      "Duplicate detection and merging",
+      "Data quality scoring",
+      "Automated anomaly detection",
+      "Multi-language description processing",
+      "Image analysis for property features",
+      "Automated property categorization"
+    ]
+  }
+}

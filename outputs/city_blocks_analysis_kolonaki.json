@@ -1,0 +1,3550 @@
+{
+  "analysis_date": "2025-07-31T18:06:55.138481",
+  "total_city_blocks": 10,
+  "city_blocks": [
+    {
+      "id": "Kolonaki_Block_01",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Voukourestiou",
+        "south": "Skoufa",
+        "east": "Anagnostopoulou",
+        "west": "Patriarchou Ioakim"
+      },
+      "center_coordinates": {
+        "lat": 37.967325833523525,
+        "lon": 23.72617404467433
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 121.8,
+      "total_properties": 25,
+      "energy_class_distribution": {
+        "B+": 7,
+        "C": 3,
+        "E": 1,
+        "B": 5,
+        "C+": 5,
+        "D+": 2,
+        "A+": 1,
+        "A": 1
+      },
+      "sqm_distribution": {
+        "min": 48,
+        "max": 220,
+        "avg": 121.8,
+        "median": 109
+      },
+      "price_statistics": {
+        "min": 768562,
+        "max": 3251745,
+        "avg": 1748907.16,
+        "median": 1417008
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.136798",
+          "months_back": 6,
+          "total_properties": 25,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.136800",
+          "months_back": 12,
+          "total_properties": 25,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "d7264dfd1781c537e3d430c6d25e92e4",
+          "address": "Solonos 140, Kolonaki, Athens",
+          "sqm": 80,
+          "energy_class": "B+",
+          "price": 1154013,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.96574003885747,
+            "lon": 23.727543019479103
+          }
+        },
+        {
+          "id": "6efbb41cdd1a10ab3a01dd6f7b10ee03",
+          "address": "Skoufa 140, Kolonaki, Athens",
+          "sqm": 75,
+          "energy_class": "C",
+          "price": 1021769,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.96713796389875,
+            "lon": 23.72603953566728
+          }
+        },
+        {
+          "id": "3c8fe6b8ab28aa08303f82827cbde9cb",
+          "address": "Skoufa 75, Kolonaki, Athens",
+          "sqm": 111,
+          "energy_class": "E",
+          "price": 1133045,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.96777715512224,
+            "lon": 23.725467431338036
+          }
+        },
+        {
+          "id": "ae244e8717a7297b018e164781076c58",
+          "address": "Skoufa 23, Kolonaki, Athens",
+          "sqm": 48,
+          "energy_class": "B+",
+          "price": 768562,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.96626054740929,
+            "lon": 23.726757268494314
+          }
+        },
+        {
+          "id": "e7093a2cb1d2883321e8491221ad1e07",
+          "address": "Voukourestiou 66, Kolonaki, Athens",
+          "sqm": 140,
+          "energy_class": "B",
+          "price": 1808611,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.966862349398845,
+            "lon": 23.726340705375083
+          }
+        },
+        {
+          "id": "c65c72326327514ef49f54532924eacd",
+          "address": "Solonos 123, Kolonaki, Athens",
+          "sqm": 190,
+          "energy_class": "B+",
+          "price": 3170118,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.96797647969429,
+            "lon": 23.724762317326363
+          }
+        },
+        {
+          "id": "a2e10cd709dcebe1a0de675d528a66ec",
+          "address": "Anagnostopoulou 139, Kolonaki, Athens",
+          "sqm": 153,
+          "energy_class": "B",
+          "price": 2523623,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.967266113442044,
+            "lon": 23.727359050589452
+          }
+        },
+        {
+          "id": "55f697d83df0c255cf1de196b5c5dd96",
+          "address": "Koumbari 118, Kolonaki, Athens",
+          "sqm": 107,
+          "energy_class": "B+",
+          "price": 1828526,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.969320133730065,
+            "lon": 23.726400070624518
+          }
+        },
+        {
+          "id": "2ddd8a5ebf4ebd7f2e61997490c53a17",
+          "address": "Dimokritou 63, Kolonaki, Athens",
+          "sqm": 117,
+          "energy_class": "C+",
+          "price": 1430608,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.96714034893845,
+            "lon": 23.726427349875056
+          }
+        },
+        {
+          "id": "2b6554f157686061c4e0706c3c3cb36d",
+          "address": "Anagnostopoulou 1, Kolonaki, Athens",
+          "sqm": 79,
+          "energy_class": "C+",
+          "price": 977309,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.96745188051293,
+            "lon": 23.725067221359655
+          }
+        },
+        {
+          "id": "7267bba12f2f9c6dee62bfbeadff15e9",
+          "address": "Voukourestiou 39, Kolonaki, Athens",
+          "sqm": 96,
+          "energy_class": "C+",
+          "price": 1151770,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.966126325811445,
+            "lon": 23.72569072968369
+          }
+        },
+        {
+          "id": "0b49fcba4061cf619047366d337f4c8b",
+          "address": "Loukianou 104, Kolonaki, Athens",
+          "sqm": 93,
+          "energy_class": "C+",
+          "price": 1383967,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.967570469331214,
+            "lon": 23.72776600615915
+          }
+        },
+        {
+          "id": "aef2e6acef375c3100fdabc4bfc7a206",
+          "address": "Skoufa 130, Kolonaki, Athens",
+          "sqm": 109,
+          "energy_class": "D+",
+          "price": 1393973,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.96898026156191,
+            "lon": 23.725967267026004
+          }
+        },
+        {
+          "id": "8fefb7f0fa07d7ba72849cbd49f3b2d8",
+          "address": "Skoufa 44, Kolonaki, Athens",
+          "sqm": 60,
+          "energy_class": "B+",
+          "price": 911756,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.96856851278457,
+            "lon": 23.72754277119017
+          }
+        },
+        {
+          "id": "42825aa2c156b057d490ba7c1b2629a4",
+          "address": "Patriarchou Ioakim 120, Kolonaki, Athens",
+          "sqm": 220,
+          "energy_class": "B+",
+          "price": 2879710,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.96746211091561,
+            "lon": 23.726120726621264
+          }
+        },
+        {
+          "id": "9697e79c3163192a04ec93f5e85c3eef",
+          "address": "Koumbari 53, Kolonaki, Athens",
+          "sqm": 217,
+          "energy_class": "B",
+          "price": 3251745,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.9670165679712,
+            "lon": 23.725945399278558
+          }
+        },
+        {
+          "id": "c3218ad55da789ea6505ed7a8fe6e2f5",
+          "address": "Plutarchou 41, Kolonaki, Athens",
+          "sqm": 218,
+          "energy_class": "B",
+          "price": 3053626,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.968910463551715,
+            "lon": 23.726309502866986
+          }
+        },
+        {
+          "id": "b5d50a416565d3278c71170ad463b170",
+          "address": "Skoufa 88, Kolonaki, Athens",
+          "sqm": 101,
+          "energy_class": "C",
+          "price": 1417008,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.96667558035904,
+            "lon": 23.727389485524785
+          }
+        },
+        {
+          "id": "f3a9d9a515691b57464177a2e2646a8e",
+          "address": "Kleomenous 13, Kolonaki, Athens",
+          "sqm": 152,
+          "energy_class": "A+",
+          "price": 2307598,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.96839402201161,
+            "lon": 23.725343386817855
+          }
+        },
+        {
+          "id": "dfd13ab454f0a1789c4adc0eac389fe1",
+          "address": "Patriarchou Ioakim 115, Kolonaki, Athens",
+          "sqm": 80,
+          "energy_class": "D+",
+          "price": 1097820,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.96619893813036,
+            "lon": 23.72446981958679
+          }
+        },
+        {
+          "id": "49df7e7163f5e6aeae7fb7e7de7c54bc",
+          "address": "Patriarchou Ioakim 96, Kolonaki, Athens",
+          "sqm": 139,
+          "energy_class": "B+",
+          "price": 2324354,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.96561501918007,
+            "lon": 23.726119369537173
+          }
+        },
+        {
+          "id": "36819e5e215ea070ac688d3ae87cd349",
+          "address": "Loukianou 105, Kolonaki, Athens",
+          "sqm": 183,
+          "energy_class": "A",
+          "price": 2904670,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.96902219360942,
+            "lon": 23.72572978320877
+          }
+        },
+        {
+          "id": "d5bcd3ad26643431d211160d2047ed29",
+          "address": "Patriarchou Ioakim 141, Kolonaki, Athens",
+          "sqm": 52,
+          "energy_class": "C+",
+          "price": 781189,
+          "floor": 5,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.96650072792495,
+            "lon": 23.72771009060574
+          }
+        },
+        {
+          "id": "be25373001ecb6af10a7536b4040a47c",
+          "address": "Solonos 93, Kolonaki, Athens",
+          "sqm": 116,
+          "energy_class": "B",
+          "price": 1825225,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.968923526800914,
+            "lon": 23.727692621327844
+          }
+        },
+        {
+          "id": "55ea7ce5154f619b702a69272a994e15",
+          "address": "Plutarchou 118, Kolonaki, Athens",
+          "sqm": 109,
+          "energy_class": "C",
+          "price": 1222084,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.967443626184256,
+            "lon": 23.726339941550997
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_02",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Skoufa",
+        "south": "Dimokritou",
+        "east": "Patriarchou Ioakim",
+        "west": "Solonos"
+      },
+      "center_coordinates": {
+        "lat": 37.9723867263384,
+        "lon": 23.746671785253792
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 104.92857142857143,
+      "total_properties": 28,
+      "energy_class_distribution": {
+        "A+": 3,
+        "C+": 7,
+        "B": 2,
+        "C": 5,
+        "B+": 6,
+        "D+": 3,
+        "A": 1,
+        "D": 1
+      },
+      "sqm_distribution": {
+        "min": 44,
+        "max": 224,
+        "avg": 104.92857142857143,
+        "median": 96.0
+      },
+      "price_statistics": {
+        "min": 525911,
+        "max": 3198116,
+        "avg": 1440990.4642857143,
+        "median": 1329468.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137018",
+          "months_back": 6,
+          "total_properties": 28,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.137020",
+          "months_back": 12,
+          "total_properties": 28,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "7ca60d08fc88efc37ba3ced97d317086",
+          "address": "Dimokritou 16, Kolonaki, Athens",
+          "sqm": 82,
+          "energy_class": "A+",
+          "price": 1456942,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97349988716715,
+            "lon": 23.747954210582506
+          }
+        },
+        {
+          "id": "98aab7ced4f2281613cf8d20dc942db6",
+          "address": "Loukianou 44, Kolonaki, Athens",
+          "sqm": 140,
+          "energy_class": "C+",
+          "price": 1717730,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97109254878784,
+            "lon": 23.745124486611065
+          }
+        },
+        {
+          "id": "918f9188ff4886ea5da8e7691781961b",
+          "address": "Loukianou 20, Kolonaki, Athens",
+          "sqm": 184,
+          "energy_class": "B",
+          "price": 2689789,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.973992241797454,
+            "lon": 23.74626307172708
+          }
+        },
+        {
+          "id": "96a243f229ddefda91e2fe974e770aa2",
+          "address": "Solonos 145, Kolonaki, Athens",
+          "sqm": 222,
+          "energy_class": "B",
+          "price": 3198116,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97202071550322,
+            "lon": 23.746486834860868
+          }
+        },
+        {
+          "id": "723426c5c55dd0a789e0583f149c4724",
+          "address": "Skoufa 114, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "C",
+          "price": 864844,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97056822072028,
+            "lon": 23.746849678310124
+          }
+        },
+        {
+          "id": "b74e8dd8f10f0ad4eab5dc73f3420f58",
+          "address": "Voukourestiou 71, Kolonaki, Athens",
+          "sqm": 66,
+          "energy_class": "C+",
+          "price": 866584,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97140756656887,
+            "lon": 23.746815900007523
+          }
+        },
+        {
+          "id": "52a27c91040dd669714b162b074e37a1",
+          "address": "Patriarchou Ioakim 118, Kolonaki, Athens",
+          "sqm": 100,
+          "energy_class": "C+",
+          "price": 1251004,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97055135049485,
+            "lon": 23.747194798111387
+          }
+        },
+        {
+          "id": "aab8b96af257efedaa7587c3d358cca5",
+          "address": "Anagnostopoulou 121, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "C",
+          "price": 985627,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.970813832480445,
+            "lon": 23.74473607086395
+          }
+        },
+        {
+          "id": "3dfd96bfd27d06e3865b1e619b069e24",
+          "address": "Solonos 73, Kolonaki, Athens",
+          "sqm": 132,
+          "energy_class": "B+",
+          "price": 2132074,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97285375562103,
+            "lon": 23.748333651541802
+          }
+        },
+        {
+          "id": "527ca2bebcfa7b96c7063a1806a4b190",
+          "address": "Anagnostopoulou 111, Kolonaki, Athens",
+          "sqm": 98,
+          "energy_class": "B+",
+          "price": 1364646,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97196958301684,
+            "lon": 23.74534499862596
+          }
+        },
+        {
+          "id": "c5e2a5377a7ce2911ed4df62db796e6f",
+          "address": "Irodotou 24, Kolonaki, Athens",
+          "sqm": 51,
+          "energy_class": "D+",
+          "price": 525911,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97437072122655,
+            "lon": 23.745191946386687
+          }
+        },
+        {
+          "id": "140679710e203bbded496045922af5f0",
+          "address": "Patriarchou Ioakim 143, Kolonaki, Athens",
+          "sqm": 55,
+          "energy_class": "C+",
+          "price": 712176,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9706261984562,
+            "lon": 23.747884729763022
+          }
+        },
+        {
+          "id": "a5a6b99bc28f12c3e7d3d6266abc56fc",
+          "address": "Skoufa 49, Kolonaki, Athens",
+          "sqm": 44,
+          "energy_class": "A",
+          "price": 661008,
+          "floor": 6,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.973020643190885,
+            "lon": 23.747344935153965
+          }
+        },
+        {
+          "id": "c31332e6a544a923ad53689790c52bfd",
+          "address": "Massalias 119, Kolonaki, Athens",
+          "sqm": 59,
+          "energy_class": "D+",
+          "price": 770096,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.973183178796475,
+            "lon": 23.74734883878263
+          }
+        },
+        {
+          "id": "4dfb825ee41bcf2925d5956e34148d4c",
+          "address": "Skoufa 11, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "C+",
+          "price": 1323013,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97050320408236,
+            "lon": 23.748521588824268
+          }
+        },
+        {
+          "id": "b06fdc22a4ba712f84c4bc11e41997ae",
+          "address": "Skoufa 35, Kolonaki, Athens",
+          "sqm": 90,
+          "energy_class": "C+",
+          "price": 1260173,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.972552197520244,
+            "lon": 23.745066825054995
+          }
+        },
+        {
+          "id": "c3dc514885b2c1f19597b363f98e2b29",
+          "address": "Kleomenous 3, Kolonaki, Athens",
+          "sqm": 68,
+          "energy_class": "C+",
+          "price": 809862,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97300125557718,
+            "lon": 23.747389608940615
+          }
+        },
+        {
+          "id": "d2cd258215ece9ca92ede5c1b56a6e5a",
+          "address": "Loukianou 58, Kolonaki, Athens",
+          "sqm": 158,
+          "energy_class": "B+",
+          "price": 2488160,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97296500353821,
+            "lon": 23.744947089412435
+          }
+        },
+        {
+          "id": "8a59e8c53d5fa09d5c8a00c5d1d91f84",
+          "address": "Massalias 77, Kolonaki, Athens",
+          "sqm": 105,
+          "energy_class": "B+",
+          "price": 1598460,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.973420285667345,
+            "lon": 23.747082380791102
+          }
+        },
+        {
+          "id": "511dfe0de0164d2f805d7f4988b1e063",
+          "address": "Kleomenous 46, Kolonaki, Athens",
+          "sqm": 94,
+          "energy_class": "C",
+          "price": 1227686,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.971878483669144,
+            "lon": 23.748299229715222
+          }
+        },
+        {
+          "id": "6d4fd32456d46d8a0c4eb38c1898bfa9",
+          "address": "Patriarchou Ioakim 97, Kolonaki, Athens",
+          "sqm": 49,
+          "energy_class": "C",
+          "price": 527681,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97069045042496,
+            "lon": 23.746306044948092
+          }
+        },
+        {
+          "id": "44cd1d6b8ff541d727ed48838b90c44a",
+          "address": "Massalias 14, Kolonaki, Athens",
+          "sqm": 119,
+          "energy_class": "A+",
+          "price": 1924506,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97300648051111,
+            "lon": 23.746387636019733
+          }
+        },
+        {
+          "id": "77355b9f77bafc15e5f75f4f52c61c21",
+          "address": "Skoufa 128, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "D+",
+          "price": 1049237,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.971724340261105,
+            "lon": 23.746470731186754
+          }
+        },
+        {
+          "id": "81c747732c8ffaf8e8bf1f75cd45a71d",
+          "address": "Dimokritou 49, Kolonaki, Athens",
+          "sqm": 101,
+          "energy_class": "B+",
+          "price": 1335924,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97338805917368,
+            "lon": 23.747681397852503
+          }
+        },
+        {
+          "id": "6a11fd3da1cab831d02a7e294c79a800",
+          "address": "Solonos 142, Kolonaki, Athens",
+          "sqm": 120,
+          "energy_class": "B+",
+          "price": 1766811,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97402684619347,
+            "lon": 23.7484319501658
+          }
+        },
+        {
+          "id": "a7ddc34e89c6931d0b7831a872b3fbb6",
+          "address": "Massalias 22, Kolonaki, Athens",
+          "sqm": 128,
+          "energy_class": "D",
+          "price": 1494254,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.972130656381516,
+            "lon": 23.746155629472916
+          }
+        },
+        {
+          "id": "ca6b4f0e17404a58221e96eaade7cc42",
+          "address": "Solonos 55, Kolonaki, Athens",
+          "sqm": 115,
+          "energy_class": "A+",
+          "price": 1768868,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97085106422312,
+            "lon": 23.746197099017024
+          }
+        },
+        {
+          "id": "d8703864669fe5e1d2f782d55df5b94e",
+          "address": "Skoufa 22, Kolonaki, Athens",
+          "sqm": 224,
+          "energy_class": "C",
+          "price": 2576551,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.9708318642694,
+            "lon": 23.74750752582233
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_03",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Dimokritou",
+        "south": "Kleomenous",
+        "east": "Solonos",
+        "west": "Massalias"
+      },
+      "center_coordinates": {
+        "lat": 37.98219922719401,
+        "lon": 23.7440621725326
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 115.3,
+      "total_properties": 30,
+      "energy_class_distribution": {
+        "B+": 3,
+        "C": 3,
+        "A+": 3,
+        "C+": 7,
+        "A": 3,
+        "B": 6,
+        "F": 2,
+        "D": 2,
+        "D+": 1
+      },
+      "sqm_distribution": {
+        "min": 36,
+        "max": 218,
+        "avg": 115.3,
+        "median": 106.5
+      },
+      "price_statistics": {
+        "min": 496336,
+        "max": 3110234,
+        "avg": 1416846.8333333333,
+        "median": 1303813.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137253",
+          "months_back": 6,
+          "total_properties": 30,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.137255",
+          "months_back": 12,
+          "total_properties": 30,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "f1a2be07ea1a97560fbcc3f1a0c8be37",
+          "address": "Plutarchou 42, Kolonaki, Athens",
+          "sqm": 63,
+          "energy_class": "B+",
+          "price": 814196,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.981488215543685,
+            "lon": 23.744381076332623
+          }
+        },
+        {
+          "id": "78af9cbfb0f39a26ad136fd0c211ae10",
+          "address": "Loukianou 7, Kolonaki, Athens",
+          "sqm": 108,
+          "energy_class": "C",
+          "price": 1393282,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98339782552391,
+            "lon": 23.7445116888713
+          }
+        },
+        {
+          "id": "2ae7c2c8e3eb716ed9e178e44a840b59",
+          "address": "Massalias 69, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "A+",
+          "price": 1339701,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.982390630174265,
+            "lon": 23.743347695047728
+          }
+        },
+        {
+          "id": "a6d4036a0a894fbd47828f0c19e2439b",
+          "address": "Loukianou 10, Kolonaki, Athens",
+          "sqm": 186,
+          "energy_class": "C+",
+          "price": 2138530,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98269777277895,
+            "lon": 23.745392107017423
+          }
+        },
+        {
+          "id": "3e42f99f53b73d7c5174e1820199d7d9",
+          "address": "Loukianou 75, Kolonaki, Athens",
+          "sqm": 36,
+          "energy_class": "C+",
+          "price": 496336,
+          "floor": 2,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.98280212300119,
+            "lon": 23.745028699305735
+          }
+        },
+        {
+          "id": "287e3e671b36a38019375bde730dd188",
+          "address": "Loukianou 26, Kolonaki, Athens",
+          "sqm": 218,
+          "energy_class": "B+",
+          "price": 3110234,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98325012588164,
+            "lon": 23.74547662652453
+          }
+        },
+        {
+          "id": "8daaf31bfa3de4b8a1d36d7cd01f8176",
+          "address": "Loukianou 41, Kolonaki, Athens",
+          "sqm": 156,
+          "energy_class": "B+",
+          "price": 2257428,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98412790111514,
+            "lon": 23.744065176041904
+          }
+        },
+        {
+          "id": "a6bd9ded73e80114a6f6b42afc78e878",
+          "address": "Kleomenous 40, Kolonaki, Athens",
+          "sqm": 137,
+          "energy_class": "C+",
+          "price": 1445373,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98289340871436,
+            "lon": 23.74343582598705
+          }
+        },
+        {
+          "id": "b2cf5168c3c50597c5a4e2966633af97",
+          "address": "Dimokritou 48, Kolonaki, Athens",
+          "sqm": 128,
+          "energy_class": "A",
+          "price": 1995102,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98040060179331,
+            "lon": 23.743156859783085
+          }
+        },
+        {
+          "id": "22f012347e489baafdc2eae1e0f36d5a",
+          "address": "Dimokritou 17, Kolonaki, Athens",
+          "sqm": 92,
+          "energy_class": "B",
+          "price": 1156889,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98143094687494,
+            "lon": 23.743814456188886
+          }
+        },
+        {
+          "id": "d5ba94e91b4d6ebacbb0f9fda355bc73",
+          "address": "Dimokritou 144, Kolonaki, Athens",
+          "sqm": 99,
+          "energy_class": "B",
+          "price": 1173574,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.980543036421416,
+            "lon": 23.742778843284405
+          }
+        },
+        {
+          "id": "2962124b4988cd1e8dbef90cd8673591",
+          "address": "Skoufa 68, Kolonaki, Athens",
+          "sqm": 108,
+          "energy_class": "B",
+          "price": 1267926,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98257981986781,
+            "lon": 23.742113904155808
+          }
+        },
+        {
+          "id": "7a765248bcf975731d0c5316e381968c",
+          "address": "Kleomenous 120, Kolonaki, Athens",
+          "sqm": 179,
+          "energy_class": "A+",
+          "price": 2464197,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98221794107589,
+            "lon": 23.74401205732274
+          }
+        },
+        {
+          "id": "207819bf0f4a8c2a74dbece08a8dbcd6",
+          "address": "Loukianou 81, Kolonaki, Athens",
+          "sqm": 158,
+          "energy_class": "C",
+          "price": 1659321,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.980612447409015,
+            "lon": 23.74572464544372
+          }
+        },
+        {
+          "id": "a7bc482e43e9aad2ea49da72aace3dec",
+          "address": "Skoufa 90, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "C+",
+          "price": 651292,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9804360029378,
+            "lon": 23.744140166613395
+          }
+        },
+        {
+          "id": "72be15e4cf29964fd838693f4d972537",
+          "address": "Loukianou 132, Kolonaki, Athens",
+          "sqm": 135,
+          "energy_class": "F",
+          "price": 1057082,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98054751034565,
+            "lon": 23.745304922363427
+          }
+        },
+        {
+          "id": "fa67baf4ed25feb13cacc6a76a0f460b",
+          "address": "Loukianou 6, Kolonaki, Athens",
+          "sqm": 60,
+          "energy_class": "D",
+          "price": 612025,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98208472325073,
+            "lon": 23.744364393527817
+          }
+        },
+        {
+          "id": "8463fb8a54362d4e5f3a57f54a45c955",
+          "address": "Massalias 99, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "B",
+          "price": 995761,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.983440427875514,
+            "lon": 23.743418025033275
+          }
+        },
+        {
+          "id": "b2136ffe969ed88685176152f98e6d58",
+          "address": "Massalias 93, Kolonaki, Athens",
+          "sqm": 189,
+          "energy_class": "C+",
+          "price": 2273631,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.980559968113376,
+            "lon": 23.743867958695045
+          }
+        },
+        {
+          "id": "c340ca95c7b0156a415ca089e90ab79e",
+          "address": "Voukourestiou 150, Kolonaki, Athens",
+          "sqm": 105,
+          "energy_class": "A+",
+          "price": 1355695,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98108040322173,
+            "lon": 23.745520713433244
+          }
+        },
+        {
+          "id": "8861bce123e558c5a235e29edc3912a4",
+          "address": "Koumbari 93, Kolonaki, Athens",
+          "sqm": 138,
+          "energy_class": "C+",
+          "price": 1597360,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98071913080838,
+            "lon": 23.74351460182983
+          }
+        },
+        {
+          "id": "0d34eba02122edb058c99e01d21fac92",
+          "address": "Anagnostopoulou 53, Kolonaki, Athens",
+          "sqm": 70,
+          "energy_class": "D",
+          "price": 750619,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.983565149779274,
+            "lon": 23.742544086521686
+          }
+        },
+        {
+          "id": "d3a0add347e274ee598ac4d9c020f1c4",
+          "address": "Loukianou 137, Kolonaki, Athens",
+          "sqm": 81,
+          "energy_class": "B",
+          "price": 1033165,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98322549081079,
+            "lon": 23.743036993864095
+          }
+        },
+        {
+          "id": "52d3d8ca260962d75996107b60e1bb66",
+          "address": "Voukourestiou 82, Kolonaki, Athens",
+          "sqm": 130,
+          "energy_class": "F",
+          "price": 1043049,
+          "floor": 6,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.981998710245385,
+            "lon": 23.74270733505162
+          }
+        },
+        {
+          "id": "f1a4fb8fe38ffbff253f4c9eb7b54b47",
+          "address": "Patriarchou Ioakim 42, Kolonaki, Athens",
+          "sqm": 68,
+          "energy_class": "D+",
+          "price": 783087,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98358881695192,
+            "lon": 23.743475468615575
+          }
+        },
+        {
+          "id": "2252d17b0a6218d4fcfe3af72643e94c",
+          "address": "Skoufa 54, Kolonaki, Athens",
+          "sqm": 89,
+          "energy_class": "C+",
+          "price": 1058922,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98027070202557,
+            "lon": 23.74403022911532
+          }
+        },
+        {
+          "id": "96a7129799011d652a6446262f7bd046",
+          "address": "Dimokritou 3, Kolonaki, Athens",
+          "sqm": 101,
+          "energy_class": "C",
+          "price": 1127771,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.980352685063934,
+            "lon": 23.743632458363937
+          }
+        },
+        {
+          "id": "e68f9d948430a31d7e71b45585304b82",
+          "address": "Koumbari 87, Kolonaki, Athens",
+          "sqm": 112,
+          "energy_class": "A",
+          "price": 1785124,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98288580245276,
+            "lon": 23.742850826979666
+          }
+        },
+        {
+          "id": "de63217b3d66ea4ebd8f577a258a15e0",
+          "address": "Dimokritou 122, Kolonaki, Athens",
+          "sqm": 101,
+          "energy_class": "A",
+          "price": 1412451,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.983577759869284,
+            "lon": 23.743637169976125
+          }
+        },
+        {
+          "id": "cd0333671f92dce06681b4560fefa4f8",
+          "address": "Dimokritou 4, Kolonaki, Athens",
+          "sqm": 180,
+          "energy_class": "B",
+          "price": 2256282,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.980634052395295,
+            "lon": 23.74541478765958
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_04",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Kleomenous",
+        "south": "Loukianou",
+        "east": "Massalias",
+        "west": "Koumbari"
+      },
+      "center_coordinates": {
+        "lat": 37.9843211663593,
+        "lon": 23.7340893674694
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 108.42857142857143,
+      "total_properties": 28,
+      "energy_class_distribution": {
+        "A+": 4,
+        "B": 6,
+        "C": 6,
+        "B+": 4,
+        "E": 1,
+        "C+": 4,
+        "A": 2,
+        "D": 1
+      },
+      "sqm_distribution": {
+        "min": 40,
+        "max": 229,
+        "avg": 108.42857142857143,
+        "median": 96.5
+      },
+      "price_statistics": {
+        "min": 536579,
+        "max": 3127808,
+        "avg": 1313987.642857143,
+        "median": 1210985.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137469",
+          "months_back": 6,
+          "total_properties": 28,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.137470",
+          "months_back": 12,
+          "total_properties": 28,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "f8170e9b27c787faf909bb4d1d199e4b",
+          "address": "Loukianou 31, Kolonaki, Athens",
+          "sqm": 106,
+          "energy_class": "A+",
+          "price": 1609857,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.985822231175376,
+            "lon": 23.73463828727159
+          }
+        },
+        {
+          "id": "6ab6626cffae9d68774dd34e6c5a6167",
+          "address": "Koumbari 58, Kolonaki, Athens",
+          "sqm": 132,
+          "energy_class": "A+",
+          "price": 1720166,
+          "floor": 5,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.984823576371134,
+            "lon": 23.733611457044834
+          }
+        },
+        {
+          "id": "202e77f95dfe60863d639cc5095dd9e1",
+          "address": "Loukianou 88, Kolonaki, Athens",
+          "sqm": 145,
+          "energy_class": "B",
+          "price": 1710931,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98318966162394,
+            "lon": 23.732915201263758
+          }
+        },
+        {
+          "id": "afcf65a3add220172bd772cc412070e8",
+          "address": "Solonos 136, Kolonaki, Athens",
+          "sqm": 216,
+          "energy_class": "C",
+          "price": 2204274,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98492366428705,
+            "lon": 23.734570344599785
+          }
+        },
+        {
+          "id": "e10aa85ecef78c1913a5285a8d7e9a7b",
+          "address": "Massalias 115, Kolonaki, Athens",
+          "sqm": 114,
+          "energy_class": "C",
+          "price": 1266126,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98398471321794,
+            "lon": 23.732716500676748
+          }
+        },
+        {
+          "id": "fcd61e14f9a61da94a2a036069af5da9",
+          "address": "Kleomenous 91, Kolonaki, Athens",
+          "sqm": 95,
+          "energy_class": "B+",
+          "price": 1195448,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98489143632302,
+            "lon": 23.733617872852157
+          }
+        },
+        {
+          "id": "34dd90f0c2689ac384c1c919a302165b",
+          "address": "Voukourestiou 15, Kolonaki, Athens",
+          "sqm": 229,
+          "energy_class": "A+",
+          "price": 3127808,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98470947011382,
+            "lon": 23.734826983744487
+          }
+        },
+        {
+          "id": "dd3bee8694959ee8c61d531f930c5639",
+          "address": "Patriarchou Ioakim 48, Kolonaki, Athens",
+          "sqm": 62,
+          "energy_class": "B",
+          "price": 757751,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.984019550497685,
+            "lon": 23.73269249473355
+          }
+        },
+        {
+          "id": "518fb4b0457fb60a9f5ff691bbcf79f9",
+          "address": "Loukianou 102, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "B+",
+          "price": 1302917,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98332391204853,
+            "lon": 23.73279366743966
+          }
+        },
+        {
+          "id": "7845c25fbbda7b283888fa751130dd41",
+          "address": "Kleomenous 22, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "E",
+          "price": 668608,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98554922039771,
+            "lon": 23.733093953552128
+          }
+        },
+        {
+          "id": "dd8c8e9561597957d43a21a1f57a4f3f",
+          "address": "Koumbari 16, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "C+",
+          "price": 898611,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98626937940173,
+            "lon": 23.735878106452923
+          }
+        },
+        {
+          "id": "caa76fa2b797cde8de0a75820fb5bd08",
+          "address": "Koumbari 72, Kolonaki, Athens",
+          "sqm": 157,
+          "energy_class": "C",
+          "price": 1675186,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.982366600777084,
+            "lon": 23.734760306024008
+          }
+        },
+        {
+          "id": "dccf249a6af1eab17a56fd870bda614a",
+          "address": "Voukourestiou 84, Kolonaki, Athens",
+          "sqm": 40,
+          "energy_class": "B",
+          "price": 536579,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.982531738495176,
+            "lon": 23.732375281282827
+          }
+        },
+        {
+          "id": "991816d2a95c4d7fe731dd6860deddeb",
+          "address": "Koumbari 115, Kolonaki, Athens",
+          "sqm": 98,
+          "energy_class": "B",
+          "price": 1259888,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98240769593965,
+            "lon": 23.734715750133716
+          }
+        },
+        {
+          "id": "8f7580a74dc612d621ea142e1e1c7f00",
+          "address": "Irodotou 3, Kolonaki, Athens",
+          "sqm": 78,
+          "energy_class": "A",
+          "price": 1127775,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.983405042593816,
+            "lon": 23.73467642203387
+          }
+        },
+        {
+          "id": "1b862df4ed399c81c4bb0432e401d894",
+          "address": "Solonos 31, Kolonaki, Athens",
+          "sqm": 137,
+          "energy_class": "C+",
+          "price": 1580195,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.985801168084535,
+            "lon": 23.73220033652816
+          }
+        },
+        {
+          "id": "82b405dcdba308aa56b5629ccf9e2014",
+          "address": "Kleomenous 68, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "C",
+          "price": 612164,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98296747447953,
+            "lon": 23.735909036779404
+          }
+        },
+        {
+          "id": "9e07743770d023b3e493ee563f06e5b0",
+          "address": "Dimokritou 64, Kolonaki, Athens",
+          "sqm": 54,
+          "energy_class": "C",
+          "price": 609133,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98388044663432,
+            "lon": 23.73444172803034
+          }
+        },
+        {
+          "id": "30d94917754cca0ec7d088bf040801e8",
+          "address": "Loukianou 82, Kolonaki, Athens",
+          "sqm": 100,
+          "energy_class": "D",
+          "price": 1088351,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.985137866337666,
+            "lon": 23.733619043949776
+          }
+        },
+        {
+          "id": "f2d7bfabdfb476ae158b3518518e9f1a",
+          "address": "Koumbari 15, Kolonaki, Athens",
+          "sqm": 132,
+          "energy_class": "A",
+          "price": 1486868,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.982372948614554,
+            "lon": 23.73368024376377
+          }
+        },
+        {
+          "id": "82952b6da7316c7977ff79f955f30855",
+          "address": "Loukianou 29, Kolonaki, Athens",
+          "sqm": 83,
+          "energy_class": "C",
+          "price": 953084,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.983151930764265,
+            "lon": 23.734712004183084
+          }
+        },
+        {
+          "id": "a2fdcf8cbda88f6565ec4cb9b4787f22",
+          "address": "Irodotou 17, Kolonaki, Athens",
+          "sqm": 94,
+          "energy_class": "B+",
+          "price": 1203040,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.982410873604344,
+            "lon": 23.733002685220054
+          }
+        },
+        {
+          "id": "67fc48538f191735af86d0646f03b3cf",
+          "address": "Skoufa 54, Kolonaki, Athens",
+          "sqm": 90,
+          "energy_class": "B",
+          "price": 1098190,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98307751704862,
+            "lon": 23.7356403362253
+          }
+        },
+        {
+          "id": "cb4c69511b027a1821a3e3c298353153",
+          "address": "Patriarchou Ioakim 143, Kolonaki, Athens",
+          "sqm": 127,
+          "energy_class": "B",
+          "price": 1614931,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.986102785224226,
+            "lon": 23.73473376071192
+          }
+        },
+        {
+          "id": "34b250c079595ca2e695263d6a772963",
+          "address": "Patriarchou Ioakim 14, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "C+",
+          "price": 929963,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.985827626574284,
+            "lon": 23.7325026292333
+          }
+        },
+        {
+          "id": "e99cf15d9b943561677c1f0afba4379e",
+          "address": "Anagnostopoulou 94, Kolonaki, Athens",
+          "sqm": 120,
+          "energy_class": "C+",
+          "price": 1218931,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98366039942423,
+            "lon": 23.733764737054457
+          }
+        },
+        {
+          "id": "f9cff2dba8c358c0d74313980ba607c4",
+          "address": "Dimokritou 85, Kolonaki, Athens",
+          "sqm": 153,
+          "energy_class": "B+",
+          "price": 2184255,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98502631072682,
+            "lon": 23.734251168911996
+          }
+        },
+        {
+          "id": "30b3e58e9e39e4d063531d307b8f3b17",
+          "address": "Loukianou 58, Kolonaki, Athens",
+          "sqm": 90,
+          "energy_class": "A+",
+          "price": 1150624,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.982455429502416,
+            "lon": 23.73539284340217
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_05",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Loukianou",
+        "south": "Plutarchou",
+        "east": "Koumbari",
+        "west": "Irodotou"
+      },
+      "center_coordinates": {
+        "lat": 37.97608481260548,
+        "lon": 23.751524779165624
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 108.94736842105263,
+      "total_properties": 19,
+      "energy_class_distribution": {
+        "D+": 3,
+        "B+": 4,
+        "B": 2,
+        "C": 4,
+        "F": 1,
+        "A+": 2,
+        "E": 2,
+        "C+": 1
+      },
+      "sqm_distribution": {
+        "min": 48,
+        "max": 215,
+        "avg": 108.94736842105263,
+        "median": 95
+      },
+      "price_statistics": {
+        "min": 442727,
+        "max": 2793035,
+        "avg": 1151678.105263158,
+        "median": 975576
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137620",
+          "months_back": 6,
+          "total_properties": 19,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.137622",
+          "months_back": 12,
+          "total_properties": 19,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "85fc14a73c44d48fe510d3c7a1579c12",
+          "address": "Solonos 103, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "D+",
+          "price": 442727,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.977238655979804,
+            "lon": 23.750094623500665
+          }
+        },
+        {
+          "id": "9d9b2f411efdd83eebf225c79e8cfbb1",
+          "address": "Kleomenous 88, Kolonaki, Athens",
+          "sqm": 48,
+          "energy_class": "B+",
+          "price": 620869,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.977012926261246,
+            "lon": 23.753040204520374
+          }
+        },
+        {
+          "id": "f4d1f02143aa63adaf3706603d604dd1",
+          "address": "Plutarchou 71, Kolonaki, Athens",
+          "sqm": 58,
+          "energy_class": "B",
+          "price": 616293,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97586478097663,
+            "lon": 23.75209717358649
+          }
+        },
+        {
+          "id": "b0a5b13e3c0cb8da6d0c74ebe4dbbdca",
+          "address": "Skoufa 44, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "C",
+          "price": 979775,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97713995722027,
+            "lon": 23.75186736270151
+          }
+        },
+        {
+          "id": "2fb1156c20f3554dfa206260bf8184f3",
+          "address": "Dimokritou 35, Kolonaki, Athens",
+          "sqm": 129,
+          "energy_class": "F",
+          "price": 975576,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97434661728427,
+            "lon": 23.75053247182958
+          }
+        },
+        {
+          "id": "10488aadda28559b3c3087e09bb77c73",
+          "address": "Voukourestiou 100, Kolonaki, Athens",
+          "sqm": 95,
+          "energy_class": "C",
+          "price": 828716,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.977834980615675,
+            "lon": 23.750692723825132
+          }
+        },
+        {
+          "id": "0016da6301d93b3e2905ee4b5caef7b0",
+          "address": "Kleomenous 71, Kolonaki, Athens",
+          "sqm": 95,
+          "energy_class": "B",
+          "price": 963638,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97686155949033,
+            "lon": 23.750653028734206
+          }
+        },
+        {
+          "id": "6ea7d5246ceb5c1fdb1dbf1b477e846d",
+          "address": "Solonos 32, Kolonaki, Athens",
+          "sqm": 140,
+          "energy_class": "A+",
+          "price": 1619846,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97642192919307,
+            "lon": 23.753172642496146
+          }
+        },
+        {
+          "id": "7ffe41c41e6d7ae3e7df61397900d4a7",
+          "address": "Dimokritou 118, Kolonaki, Athens",
+          "sqm": 89,
+          "energy_class": "E",
+          "price": 672036,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.975228225132746,
+            "lon": 23.751939828529505
+          }
+        },
+        {
+          "id": "53c0527c0b324680a426d0c68d93143b",
+          "address": "Solonos 97, Kolonaki, Athens",
+          "sqm": 70,
+          "energy_class": "C",
+          "price": 803415,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9762901746001,
+            "lon": 23.750166787134802
+          }
+        },
+        {
+          "id": "ac9105518c3c38d0413668c98ec1c513",
+          "address": "Dimokritou 18, Kolonaki, Athens",
+          "sqm": 62,
+          "energy_class": "E",
+          "price": 549699,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97508260859737,
+            "lon": 23.752358557831737
+          }
+        },
+        {
+          "id": "f4dc47c21359942bc61e139da962dcea",
+          "address": "Massalias 116, Kolonaki, Athens",
+          "sqm": 71,
+          "energy_class": "D+",
+          "price": 645922,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.977085880222894,
+            "lon": 23.75348701522581
+          }
+        },
+        {
+          "id": "26d54b81b5c403fda2d910dca87bb5b0",
+          "address": "Loukianou 68, Kolonaki, Athens",
+          "sqm": 148,
+          "energy_class": "B+",
+          "price": 1644888,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97719118639744,
+            "lon": 23.751588556905677
+          }
+        },
+        {
+          "id": "1db7675b52d0134e9b2d6c150710dbcf",
+          "address": "Anagnostopoulou 75, Kolonaki, Athens",
+          "sqm": 132,
+          "energy_class": "C",
+          "price": 1169081,
+          "floor": 6,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.977434216703365,
+            "lon": 23.75214480477416
+          }
+        },
+        {
+          "id": "2f69bf12246b847f575c33019ac186aa",
+          "address": "Massalias 86, Kolonaki, Athens",
+          "sqm": 187,
+          "energy_class": "B+",
+          "price": 2240056,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97767830719826,
+            "lon": 23.750782739616223
+          }
+        },
+        {
+          "id": "74edd1420cc4ce227d21b52753aa6880",
+          "address": "Patriarchou Ioakim 133, Kolonaki, Athens",
+          "sqm": 103,
+          "energy_class": "C+",
+          "price": 1056580,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.976912064889035,
+            "lon": 23.750428680629096
+          }
+        },
+        {
+          "id": "b5d98c083fc616532bbcf7ddf4b3cbf1",
+          "address": "Irodotou 116, Kolonaki, Athens",
+          "sqm": 215,
+          "energy_class": "B+",
+          "price": 2793035,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.974404751201156,
+            "lon": 23.749797877798205
+          }
+        },
+        {
+          "id": "95fe4f6f00f99f379d3b979624eece39",
+          "address": "Anagnostopoulou 138, Kolonaki, Athens",
+          "sqm": 183,
+          "energy_class": "A+",
+          "price": 2173743,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97644398681647,
+            "lon": 23.75040918605802
+          }
+        },
+        {
+          "id": "fd89ed93d3ece9c8c3bcad64eef38247",
+          "address": "Dimokritou 55, Kolonaki, Athens",
+          "sqm": 104,
+          "energy_class": "D+",
+          "price": 1085989,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97601211439527,
+            "lon": 23.751826428609707
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_06",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Voukourestiou",
+        "south": "Skoufa",
+        "east": "Anagnostopoulou",
+        "west": "Patriarchou Ioakim"
+      },
+      "center_coordinates": {
+        "lat": 37.97585717637667,
+        "lon": 23.735783444814388
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 104.21052631578948,
+      "total_properties": 19,
+      "energy_class_distribution": {
+        "B+": 2,
+        "C+": 5,
+        "C": 4,
+        "A": 4,
+        "D+": 1,
+        "B": 1,
+        "A+": 1,
+        "D": 1
+      },
+      "sqm_distribution": {
+        "min": 51,
+        "max": 218,
+        "avg": 104.21052631578948,
+        "median": 88
+      },
+      "price_statistics": {
+        "min": 598482,
+        "max": 3328723,
+        "avg": 1470782.3684210526,
+        "median": 1211573
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137777",
+          "months_back": 6,
+          "total_properties": 19,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.137779",
+          "months_back": 12,
+          "total_properties": 19,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "2529a93cc5627fe73deb7abe85db0dbb",
+          "address": "Patriarchou Ioakim 62, Kolonaki, Athens",
+          "sqm": 85,
+          "energy_class": "B+",
+          "price": 1140021,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97730573912735,
+            "lon": 23.736311960623777
+          }
+        },
+        {
+          "id": "95672db862707633d957d43d04049823",
+          "address": "Dimokritou 115, Kolonaki, Athens",
+          "sqm": 116,
+          "energy_class": "C+",
+          "price": 1605571,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97604496836196,
+            "lon": 23.736680279538657
+          }
+        },
+        {
+          "id": "d5f8f4894cef0528a03f3c0861170e45",
+          "address": "Loukianou 131, Kolonaki, Athens",
+          "sqm": 66,
+          "energy_class": "C",
+          "price": 801960,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9740120912911,
+            "lon": 23.737595705219935
+          }
+        },
+        {
+          "id": "29ac1ed1a588956d001e8346f4b3fad4",
+          "address": "Koumbari 70, Kolonaki, Athens",
+          "sqm": 176,
+          "energy_class": "A",
+          "price": 3100295,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97654663101215,
+            "lon": 23.73656192228835
+          }
+        },
+        {
+          "id": "ea386bf01bd73abbb1bc09cc4b4f0025",
+          "address": "Plutarchou 20, Kolonaki, Athens",
+          "sqm": 51,
+          "energy_class": "D+",
+          "price": 598482,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97443454320347,
+            "lon": 23.737294688362827
+          }
+        },
+        {
+          "id": "756644c2fa34c66e8009cb01c524a3ca",
+          "address": "Kleomenous 64, Kolonaki, Athens",
+          "sqm": 89,
+          "energy_class": "A",
+          "price": 1368915,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.977619103432986,
+            "lon": 23.73571845529143
+          }
+        },
+        {
+          "id": "7840f7c5dfdbc0d7cf1cf09da4474e31",
+          "address": "Kleomenous 121, Kolonaki, Athens",
+          "sqm": 148,
+          "energy_class": "A",
+          "price": 2175341,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97536087966379,
+            "lon": 23.73470782308081
+          }
+        },
+        {
+          "id": "29ba3df5f1674304f13a75abd0a2bd27",
+          "address": "Massalias 73, Kolonaki, Athens",
+          "sqm": 118,
+          "energy_class": "B",
+          "price": 1514653,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97530432230825,
+            "lon": 23.73486489269248
+          }
+        },
+        {
+          "id": "e16d6383e910784e7d6787e70d9e2d38",
+          "address": "Massalias 8, Kolonaki, Athens",
+          "sqm": 71,
+          "energy_class": "C+",
+          "price": 983481,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.97547873450195,
+            "lon": 23.734650900485793
+          }
+        },
+        {
+          "id": "3ccb3c62ea1ea1f1dabddba48ddfa6d9",
+          "address": "Skoufa 129, Kolonaki, Athens",
+          "sqm": 160,
+          "energy_class": "C+",
+          "price": 1886680,
+          "floor": 5,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.9740133797031,
+            "lon": 23.73773407022069
+          }
+        },
+        {
+          "id": "fe9c454bf7dfff66d0442169c305b0c1",
+          "address": "Solonos 108, Kolonaki, Athens",
+          "sqm": 70,
+          "energy_class": "A+",
+          "price": 1161184,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9744091771759,
+            "lon": 23.7344658263424
+          }
+        },
+        {
+          "id": "a2c9ed172cdf67727624b04e43196dd6",
+          "address": "Solonos 2, Kolonaki, Athens",
+          "sqm": 80,
+          "energy_class": "C",
+          "price": 1079930,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.974032627377646,
+            "lon": 23.73662887474275
+          }
+        },
+        {
+          "id": "1649ef0a3b32bf51825d83191255d3d1",
+          "address": "Solonos 70, Kolonaki, Athens",
+          "sqm": 54,
+          "energy_class": "C+",
+          "price": 751174,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97646896556939,
+            "lon": 23.735939522963008
+          }
+        },
+        {
+          "id": "f77472ac606d3c68aecb8596c9f54447",
+          "address": "Voukourestiou 74, Kolonaki, Athens",
+          "sqm": 154,
+          "energy_class": "B+",
+          "price": 2029118,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97508711313414,
+            "lon": 23.734313739602666
+          }
+        },
+        {
+          "id": "4730428690e4c393e1462ef054f66bf0",
+          "address": "Irodotou 20, Kolonaki, Athens",
+          "sqm": 218,
+          "energy_class": "A",
+          "price": 3328723,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.97593804978812,
+            "lon": 23.733988014207597
+          }
+        },
+        {
+          "id": "b90651101b34bc2b777aa0b852e633f0",
+          "address": "Patriarchou Ioakim 50, Kolonaki, Athens",
+          "sqm": 84,
+          "energy_class": "C",
+          "price": 1211573,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.97614236758299,
+            "lon": 23.737622278934545
+          }
+        },
+        {
+          "id": "2342f5fc9360770772b1d6fddd8e6563",
+          "address": "Solonos 39, Kolonaki, Athens",
+          "sqm": 88,
+          "energy_class": "C+",
+          "price": 1209340,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.97677782447145,
+            "lon": 23.735196421174575
+          }
+        },
+        {
+          "id": "b7717ffdadccde87f138d20f21435f95",
+          "address": "Kleomenous 110, Kolonaki, Athens",
+          "sqm": 63,
+          "energy_class": "D",
+          "price": 752104,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.976135281224046,
+            "lon": 23.734815038008755
+          }
+        },
+        {
+          "id": "f47e94ede92604571d085a7b5dafe386",
+          "address": "Loukianou 34, Kolonaki, Athens",
+          "sqm": 89,
+          "energy_class": "C",
+          "price": 1246320,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.974339072583014,
+            "lon": 23.73572293517719
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_07",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Skoufa",
+        "south": "Dimokritou",
+        "east": "Patriarchou Ioakim",
+        "west": "Solonos"
+      },
+      "center_coordinates": {
+        "lat": 37.995591425644115,
+        "lon": 23.73830056743378
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 95,
+      "total_properties": 15,
+      "energy_class_distribution": {
+        "C+": 3,
+        "B+": 2,
+        "E": 1,
+        "D": 1,
+        "D+": 2,
+        "B": 3,
+        "C": 3
+      },
+      "sqm_distribution": {
+        "min": 53,
+        "max": 223,
+        "avg": 95,
+        "median": 79
+      },
+      "price_statistics": {
+        "min": 605673,
+        "max": 3498351,
+        "avg": 1235389.4666666666,
+        "median": 881033
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.137928",
+          "months_back": 6,
+          "total_properties": 15,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.137930",
+          "months_back": 12,
+          "total_properties": 15,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "92e0e91010dbbb00286a2ec31a1a88bd",
+          "address": "Solonos 88, Kolonaki, Athens",
+          "sqm": 223,
+          "energy_class": "C+",
+          "price": 2539083,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99500231125707,
+            "lon": 23.739928400577696
+          }
+        },
+        {
+          "id": "097cf5d4d4c98f500fa3ef52e05e9b14",
+          "address": "Plutarchou 116, Kolonaki, Athens",
+          "sqm": 219,
+          "energy_class": "B+",
+          "price": 3498351,
+          "floor": 5,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99586058281528,
+            "lon": 23.738595283713572
+          }
+        },
+        {
+          "id": "fe21a84a5e2324a453948a31367474cb",
+          "address": "Kleomenous 60, Kolonaki, Athens",
+          "sqm": 75,
+          "energy_class": "E",
+          "price": 679640,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.99397677162726,
+            "lon": 23.736917101708865
+          }
+        },
+        {
+          "id": "ed4f2c0f386741e2ae665f9bb861e950",
+          "address": "Kleomenous 117, Kolonaki, Athens",
+          "sqm": 87,
+          "energy_class": "D",
+          "price": 834759,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.995705595581114,
+            "lon": 23.737807179208104
+          }
+        },
+        {
+          "id": "1c217b6217f4cd3166aef4d1e513ba72",
+          "address": "Loukianou 59, Kolonaki, Athens",
+          "sqm": 71,
+          "energy_class": "D+",
+          "price": 730850,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99674408759135,
+            "lon": 23.73860631796998
+          }
+        },
+        {
+          "id": "8659be2559ad7d754841851fff037a70",
+          "address": "Voukourestiou 78, Kolonaki, Athens",
+          "sqm": 68,
+          "energy_class": "B+",
+          "price": 1077925,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.994824162510575,
+            "lon": 23.73664336789798
+          }
+        },
+        {
+          "id": "97ceff9ed6c26c760ebf91c1aa3daf6e",
+          "address": "Massalias 88, Kolonaki, Athens",
+          "sqm": 82,
+          "energy_class": "B",
+          "price": 1275265,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.993849482377776,
+            "lon": 23.7369044679306
+          }
+        },
+        {
+          "id": "96c2a85b1a4050ae88231300cd6b4f78",
+          "address": "Skoufa 133, Kolonaki, Athens",
+          "sqm": 82,
+          "energy_class": "C+",
+          "price": 1202147,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.996252990410795,
+            "lon": 23.73831645948858
+          }
+        },
+        {
+          "id": "b73743679d0cd4112bce0b70810d1fae",
+          "address": "Dimokritou 118, Kolonaki, Athens",
+          "sqm": 58,
+          "energy_class": "D+",
+          "price": 605673,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99535421035771,
+            "lon": 23.74025745885938
+          }
+        },
+        {
+          "id": "58506fdc4ed92f31ea2e93fea5e1313c",
+          "address": "Loukianou 117, Kolonaki, Athens",
+          "sqm": 53,
+          "energy_class": "C",
+          "price": 668634,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9953399871758,
+            "lon": 23.73689345600416
+          }
+        },
+        {
+          "id": "c20c4099d6e2fb5805da467cb1c89f40",
+          "address": "Koumbari 19, Kolonaki, Athens",
+          "sqm": 102,
+          "energy_class": "B",
+          "price": 1528179,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.99679934905288,
+            "lon": 23.73679486395335
+          }
+        },
+        {
+          "id": "80d5cf2de18f6b41eb71cb0f22722811",
+          "address": "Massalias 48, Kolonaki, Athens",
+          "sqm": 111,
+          "energy_class": "C",
+          "price": 1448084,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99479236309746,
+            "lon": 23.738417650482813
+          }
+        },
+        {
+          "id": "6e072f9976b5ae6ea203bbefbd08937f",
+          "address": "Patriarchou Ioakim 28, Kolonaki, Athens",
+          "sqm": 79,
+          "energy_class": "C+",
+          "price": 881033,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9950779555916,
+            "lon": 23.737177596858885
+          }
+        },
+        {
+          "id": "d5597f446ce80f7bf35154969db7db2e",
+          "address": "Loukianou 119, Kolonaki, Athens",
+          "sqm": 55,
+          "energy_class": "B",
+          "price": 825839,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99688594728713,
+            "lon": 23.736739454160503
+          }
+        },
+        {
+          "id": "a80121ee457eae8e5bd500690d0e8df5",
+          "address": "Loukianou 100, Kolonaki, Athens",
+          "sqm": 60,
+          "energy_class": "C",
+          "price": 735380,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99690579143989,
+            "lon": 23.7390240736334
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_08",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Dimokritou",
+        "south": "Kleomenous",
+        "east": "Solonos",
+        "west": "Massalias"
+      },
+      "center_coordinates": {
+        "lat": 37.98229954442009,
+        "lon": 23.741194539974874
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 103.85,
+      "total_properties": 20,
+      "energy_class_distribution": {
+        "C+": 7,
+        "B+": 2,
+        "B": 5,
+        "C": 4,
+        "D": 2
+      },
+      "sqm_distribution": {
+        "min": 46,
+        "max": 227,
+        "avg": 103.85,
+        "median": 92.5
+      },
+      "price_statistics": {
+        "min": 552373,
+        "max": 3334602,
+        "avg": 1271531.8,
+        "median": 1087310.5
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.138088",
+          "months_back": 6,
+          "total_properties": 20,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.138090",
+          "months_back": 12,
+          "total_properties": 20,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "0f8704d7140575330391202bb3deced6",
+          "address": "Solonos 3, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "C+",
+          "price": 568378,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98113400199985,
+            "lon": 23.742783004499938
+          }
+        },
+        {
+          "id": "15cb0434726344927d62de29ea08a127",
+          "address": "Plutarchou 125, Kolonaki, Athens",
+          "sqm": 91,
+          "energy_class": "C+",
+          "price": 1084967,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.982262576330676,
+            "lon": 23.7413788957807
+          }
+        },
+        {
+          "id": "85df5d00250d1897950b17ac3d69f188",
+          "address": "Skoufa 108, Kolonaki, Athens",
+          "sqm": 94,
+          "energy_class": "B+",
+          "price": 1338859,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.980795105230214,
+            "lon": 23.740611919529528
+          }
+        },
+        {
+          "id": "3d0a318fed9ab873839ecbc775edeb76",
+          "address": "Dimokritou 108, Kolonaki, Athens",
+          "sqm": 227,
+          "energy_class": "B+",
+          "price": 3334602,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.984100237071836,
+            "lon": 23.741108321263894
+          }
+        },
+        {
+          "id": "ed259be69bc3c88ef5cdf14cf805096b",
+          "address": "Skoufa 53, Kolonaki, Athens",
+          "sqm": 88,
+          "energy_class": "B",
+          "price": 1089654,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98241218288416,
+            "lon": 23.741300411224785
+          }
+        },
+        {
+          "id": "69835b9259c1b341dd948b1f5246adb3",
+          "address": "Plutarchou 85, Kolonaki, Athens",
+          "sqm": 86,
+          "energy_class": "C",
+          "price": 1047975,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.980880066301054,
+            "lon": 23.74015493963638
+          }
+        },
+        {
+          "id": "7a8d128bb2360dbe4ca5c4ad8edd3482",
+          "address": "Patriarchou Ioakim 90, Kolonaki, Athens",
+          "sqm": 46,
+          "energy_class": "B",
+          "price": 552373,
+          "floor": 3,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.98350575926109,
+            "lon": 23.74014140772492
+          }
+        },
+        {
+          "id": "2348983af42198cf10ed02b0ab2c9215",
+          "address": "Solonos 118, Kolonaki, Athens",
+          "sqm": 95,
+          "energy_class": "D",
+          "price": 1026627,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.984177117474836,
+            "lon": 23.74127929964003
+          }
+        },
+        {
+          "id": "5540b4ae3dc53de42f97a3d1503e1798",
+          "address": "Anagnostopoulou 121, Kolonaki, Athens",
+          "sqm": 110,
+          "energy_class": "C",
+          "price": 1314272,
+          "floor": 6,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98386409862216,
+            "lon": 23.73998451050684
+          }
+        },
+        {
+          "id": "aff153e9dbbda97e2ac666f9cda2290b",
+          "address": "Patriarchou Ioakim 76, Kolonaki, Athens",
+          "sqm": 221,
+          "energy_class": "B",
+          "price": 2541494,
+          "floor": 6,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.982324855359806,
+            "lon": 23.740706819914653
+          }
+        },
+        {
+          "id": "892064df6544b089a239ff4e0a2dfbe2",
+          "address": "Plutarchou 142, Kolonaki, Athens",
+          "sqm": 75,
+          "energy_class": "C+",
+          "price": 784189,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98131318575467,
+            "lon": 23.740699380683314
+          }
+        },
+        {
+          "id": "62dc4902978fd740e583ae9881572368",
+          "address": "Skoufa 146, Kolonaki, Athens",
+          "sqm": 133,
+          "energy_class": "C",
+          "price": 1542563,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98171734827621,
+            "lon": 23.742725761505692
+          }
+        },
+        {
+          "id": "aafefff3e693e3b47c9b4ece47fafe2a",
+          "address": "Massalias 82, Kolonaki, Athens",
+          "sqm": 118,
+          "energy_class": "C+",
+          "price": 1496056,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98251528776623,
+            "lon": 23.742108727536127
+          }
+        },
+        {
+          "id": "a3de2699f0c06dc6eb6046383abb5a0b",
+          "address": "Irodotou 119, Kolonaki, Athens",
+          "sqm": 117,
+          "energy_class": "C",
+          "price": 1239401,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98183250460046,
+            "lon": 23.741611989410075
+          }
+        },
+        {
+          "id": "b9d9adfce8a00510a8428a3a8240f34f",
+          "address": "Skoufa 84, Kolonaki, Athens",
+          "sqm": 120,
+          "energy_class": "C+",
+          "price": 1460348,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98392726787524,
+            "lon": 23.739691630291976
+          }
+        },
+        {
+          "id": "9c9f28702dddae42dd3a8b29ac65d8e0",
+          "address": "Loukianou 75, Kolonaki, Athens",
+          "sqm": 72,
+          "energy_class": "C+",
+          "price": 984272,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.982767177618484,
+            "lon": 23.739512543269417
+          }
+        },
+        {
+          "id": "8e86784a144c2d86b4436f9527f9b635",
+          "address": "Skoufa 81, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "B",
+          "price": 727055,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.982978622543726,
+            "lon": 23.74178084480143
+          }
+        },
+        {
+          "id": "a5b31a1bd80674fdbbac9661f0387513",
+          "address": "Skoufa 148, Kolonaki, Athens",
+          "sqm": 85,
+          "energy_class": "C+",
+          "price": 949375,
+          "floor": 3,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98139472933274,
+            "lon": 23.742014506579768
+          }
+        },
+        {
+          "id": "efe769e2a4fff5de406554ed9d78cfa0",
+          "address": "Massalias 117, Kolonaki, Athens",
+          "sqm": 82,
+          "energy_class": "D",
+          "price": 738059,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98288851346721,
+            "lon": 23.742973070115013
+          }
+        },
+        {
+          "id": "a124045f7deedac0f6e691e238d5e9cc",
+          "address": "Massalias 86, Kolonaki, Athens",
+          "sqm": 117,
+          "energy_class": "B",
+          "price": 1610117,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.981871205111226,
+            "lon": 23.739387751451677
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_09",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Kleomenous",
+        "south": "Loukianou",
+        "east": "Massalias",
+        "west": "Koumbari"
+      },
+      "center_coordinates": {
+        "lat": 37.99560744423313,
+        "lon": 23.75877956774678
+      },
+      "median_energy_class": "B",
+      "avg_sqm": 117.26315789473684,
+      "total_properties": 19,
+      "energy_class_distribution": {
+        "C+": 5,
+        "B+": 5,
+        "C": 1,
+        "F": 1,
+        "B": 4,
+        "A+": 1,
+        "A": 2
+      },
+      "sqm_distribution": {
+        "min": 41,
+        "max": 218,
+        "avg": 117.26315789473684,
+        "median": 126
+      },
+      "price_statistics": {
+        "min": 551556,
+        "max": 2347284,
+        "avg": 1327152.2631578948,
+        "median": 1302711
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.138243",
+          "months_back": 6,
+          "total_properties": 19,
+          "avg_price_factor": 0.95,
+          "energy_improvement": true
+        },
+        {
+          "date": "2024-08-05T18:06:55.138245",
+          "months_back": 12,
+          "total_properties": 19,
+          "avg_price_factor": 0.9,
+          "energy_improvement": true
+        }
+      ],
+      "properties": [
+        {
+          "id": "1aa7cd5e5383920aca715e9527594b30",
+          "address": "Kleomenous 29, Kolonaki, Athens",
+          "sqm": 92,
+          "energy_class": "C+",
+          "price": 973311,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99370395485273,
+            "lon": 23.760359625755232
+          }
+        },
+        {
+          "id": "193030a40e90136e838f5786249f215e",
+          "address": "Patriarchou Ioakim 101, Kolonaki, Athens",
+          "sqm": 88,
+          "energy_class": "B+",
+          "price": 960565,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99633509522366,
+            "lon": 23.758411607217734
+          }
+        },
+        {
+          "id": "73bb7222862a23e4909e334fe1e526a9",
+          "address": "Dimokritou 28, Kolonaki, Athens",
+          "sqm": 60,
+          "energy_class": "C+",
+          "price": 722849,
+          "floor": 6,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99535024800363,
+            "lon": 23.760139901975265
+          }
+        },
+        {
+          "id": "dd34d3fa0d0fdeb43e567bf79a44a4a7",
+          "address": "Plutarchou 82, Kolonaki, Athens",
+          "sqm": 103,
+          "energy_class": "B+",
+          "price": 1363032,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9940563278643,
+            "lon": 23.759971465711267
+          }
+        },
+        {
+          "id": "4846ddbe2d2ad93329f507051e107205",
+          "address": "Solonos 51, Kolonaki, Athens",
+          "sqm": 126,
+          "energy_class": "C",
+          "price": 1286725,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99626226198245,
+            "lon": 23.756831285526186
+          }
+        },
+        {
+          "id": "4d77442d37b2ab6f2a33d4cd1a504e6c",
+          "address": "Skoufa 42, Kolonaki, Athens",
+          "sqm": 218,
+          "energy_class": "B+",
+          "price": 2347284,
+          "floor": 4,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99530995366051,
+            "lon": 23.759994398717065
+          }
+        },
+        {
+          "id": "46c26de16e5d4c7cc57599076e14a5c2",
+          "address": "Massalias 119, Kolonaki, Athens",
+          "sqm": 139,
+          "energy_class": "F",
+          "price": 1067732,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.996412630001274,
+            "lon": 23.760669056082243
+          }
+        },
+        {
+          "id": "b1be2589a40b6b557fddc5bea9247d19",
+          "address": "Skoufa 52, Kolonaki, Athens",
+          "sqm": 181,
+          "energy_class": "B",
+          "price": 2137656,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.997493283577626,
+            "lon": 23.758714430333793
+          }
+        },
+        {
+          "id": "c254c383b9de4d361f33f278c38c658b",
+          "address": "Kleomenous 59, Kolonaki, Athens",
+          "sqm": 127,
+          "energy_class": "B+",
+          "price": 1381973,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99494405104055,
+            "lon": 23.758583842510383
+          }
+        },
+        {
+          "id": "583675e0fa9cb514bf383cba2a59ed6e",
+          "address": "Patriarchou Ioakim 85, Kolonaki, Athens",
+          "sqm": 136,
+          "energy_class": "A+",
+          "price": 1877490,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99611735804997,
+            "lon": 23.760622941359575
+          }
+        },
+        {
+          "id": "9cd8e44f9eaafb04f522eca932df887b",
+          "address": "Loukianou 4, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "A",
+          "price": 972914,
+          "floor": 1,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99565239723648,
+            "lon": 23.75892837967281
+          }
+        },
+        {
+          "id": "3aff611d500429d3f4039cbb487b0215",
+          "address": "Skoufa 19, Kolonaki, Athens",
+          "sqm": 126,
+          "energy_class": "B",
+          "price": 1307645,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.997547616764564,
+            "lon": 23.75902452608238
+          }
+        },
+        {
+          "id": "50db5b5f13d828a4747696985bce93b3",
+          "address": "Skoufa 3, Kolonaki, Athens",
+          "sqm": 153,
+          "energy_class": "B",
+          "price": 1601818,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99420063193931,
+            "lon": 23.759532042044828
+          }
+        },
+        {
+          "id": "34c259584c78997587f67d810119b626",
+          "address": "Dimokritou 130, Kolonaki, Athens",
+          "sqm": 104,
+          "energy_class": "A",
+          "price": 1302711,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99611807967079,
+            "lon": 23.759652886592125
+          }
+        },
+        {
+          "id": "843542e3ef2d6c64c086450b5e2746f9",
+          "address": "Anagnostopoulou 26, Kolonaki, Athens",
+          "sqm": 136,
+          "energy_class": "B+",
+          "price": 1691699,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99527236564378,
+            "lon": 23.75838164472031
+          }
+        },
+        {
+          "id": "adbef92b1c91cd2b8aea16e83946a63c",
+          "address": "Skoufa 144, Kolonaki, Athens",
+          "sqm": 85,
+          "energy_class": "C+",
+          "price": 986589,
+          "floor": 3,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99669580589358,
+            "lon": 23.758846746856655
+          }
+        },
+        {
+          "id": "7cad547b304cd3de475088aea64c577d",
+          "address": "Massalias 43, Kolonaki, Athens",
+          "sqm": 41,
+          "energy_class": "B",
+          "price": 551556,
+          "floor": 2,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.993689686967016,
+            "lon": 23.75969600670531
+          }
+        },
+        {
+          "id": "ef54240c930e2671183858e976079a6f",
+          "address": "Plutarchou 45, Kolonaki, Athens",
+          "sqm": 53,
+          "energy_class": "C+",
+          "price": 570094,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.99740943709837,
+            "lon": 23.76063884864272
+          }
+        },
+        {
+          "id": "80a44eace1eed9046c27fcc210ff2c09",
+          "address": "Plutarchou 80, Kolonaki, Athens",
+          "sqm": 184,
+          "energy_class": "C+",
+          "price": 2112250,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99728883247977,
+            "lon": 23.758557275655285
+          }
+        }
+      ]
+    },
+    {
+      "id": "Kolonaki_Block_10",
+      "area_name": "Kolonaki",
+      "block_boundaries": {
+        "north": "Loukianou",
+        "south": "Plutarchou",
+        "east": "Koumbari",
+        "west": "Irodotou"
+      },
+      "center_coordinates": {
+        "lat": 37.989571160383704,
+        "lon": 23.749997706175613
+      },
+      "median_energy_class": "C+",
+      "avg_sqm": 121.84615384615384,
+      "total_properties": 26,
+      "energy_class_distribution": {
+        "D+": 2,
+        "E": 1,
+        "C": 8,
+        "A+": 2,
+        "A": 2,
+        "B": 4,
+        "C+": 4,
+        "B+": 2,
+        "D": 1
+      },
+      "sqm_distribution": {
+        "min": 41,
+        "max": 227,
+        "avg": 121.84615384615384,
+        "median": 114.0
+      },
+      "price_statistics": {
+        "min": 380595,
+        "max": 2623663,
+        "avg": 1357727.2307692308,
+        "median": 1301993.0
+      },
+      "historical_data": [
+        {
+          "date": "2025-02-01T18:06:55.138450",
+          "months_back": 6,
+          "total_properties": 26,
+          "avg_price_factor": 0.95,
+          "energy_improvement": false
+        },
+        {
+          "date": "2024-08-05T18:06:55.138451",
+          "months_back": 12,
+          "total_properties": 26,
+          "avg_price_factor": 0.9,
+          "energy_improvement": false
+        }
+      ],
+      "properties": [
+        {
+          "id": "32163d1e9ca799ff105aa140cd1281cc",
+          "address": "Koumbari 106, Kolonaki, Athens",
+          "sqm": 50,
+          "energy_class": "D+",
+          "price": 431979,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98785970774995,
+            "lon": 23.75007659661484
+          }
+        },
+        {
+          "id": "667dac5a31140e9b67b3028d4c79a206",
+          "address": "Solonos 60, Kolonaki, Athens",
+          "sqm": 61,
+          "energy_class": "E",
+          "price": 482096,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.98997640810297,
+            "lon": 23.750225562378546
+          }
+        },
+        {
+          "id": "117f9d01431c77c7c757b50d4aa3411e",
+          "address": "Dimokritou 129, Kolonaki, Athens",
+          "sqm": 138,
+          "energy_class": "C",
+          "price": 1302654,
+          "floor": 1,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.990728641812176,
+            "lon": 23.750359495222
+          }
+        },
+        {
+          "id": "e728001a91ee0c007f49e3879eee60be",
+          "address": "Kleomenous 141, Kolonaki, Athens",
+          "sqm": 120,
+          "energy_class": "A+",
+          "price": 1653182,
+          "floor": 4,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.99065552390935,
+            "lon": 23.75006303593396
+          }
+        },
+        {
+          "id": "1dedea48c709c12e1efda17c6aeb1bc2",
+          "address": "Anagnostopoulou 109, Kolonaki, Athens",
+          "sqm": 149,
+          "energy_class": "A",
+          "price": 2107574,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98902577226987,
+            "lon": 23.750898463443097
+          }
+        },
+        {
+          "id": "b31dcddd48af6397f577fa31875f25b7",
+          "address": "Voukourestiou 40, Kolonaki, Athens",
+          "sqm": 181,
+          "energy_class": "B",
+          "price": 2262356,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.98809561949152,
+            "lon": 23.748224237483498
+          }
+        },
+        {
+          "id": "6c46474cd5093ce0df846a5a9038b1e6",
+          "address": "Plutarchou 101, Kolonaki, Athens",
+          "sqm": 76,
+          "energy_class": "A",
+          "price": 969014,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99154175087374,
+            "lon": 23.749057595911406
+          }
+        },
+        {
+          "id": "0870755c9d9b72bf7cea65fd5de00648",
+          "address": "Voukourestiou 46, Kolonaki, Athens",
+          "sqm": 78,
+          "energy_class": "C",
+          "price": 710240,
+          "floor": 4,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.9883223177908,
+            "lon": 23.751390780618387
+          }
+        },
+        {
+          "id": "a17bab71d361e13af85153db37f75a2c",
+          "address": "Voukourestiou 65, Kolonaki, Athens",
+          "sqm": 181,
+          "energy_class": "C",
+          "price": 1846436,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99066309795533,
+            "lon": 23.75127923715352
+          }
+        },
+        {
+          "id": "ae8c7683d12738d19f9536b480e44baf",
+          "address": "Patriarchou Ioakim 106, Kolonaki, Athens",
+          "sqm": 114,
+          "energy_class": "B",
+          "price": 1383915,
+          "floor": 5,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.988414049520614,
+            "lon": 23.751969001182605
+          }
+        },
+        {
+          "id": "d2dabb622fcee81611e120f2a04afe85",
+          "address": "Irodotou 150, Kolonaki, Athens",
+          "sqm": 112,
+          "energy_class": "B",
+          "price": 1301332,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.990628821733296,
+            "lon": 23.75191069676561
+          }
+        },
+        {
+          "id": "8e956b5618d613062d0c2d55e28861ec",
+          "address": "Loukianou 121, Kolonaki, Athens",
+          "sqm": 133,
+          "energy_class": "C+",
+          "price": 1572069,
+          "floor": 2,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.989673750799774,
+            "lon": 23.74875905708648
+          }
+        },
+        {
+          "id": "d0a1007189ce7890467b9185e8544bbe",
+          "address": "Kleomenous 48, Kolonaki, Athens",
+          "sqm": 188,
+          "energy_class": "C",
+          "price": 1790194,
+          "floor": 3,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.991287698796185,
+            "lon": 23.748494046720726
+          }
+        },
+        {
+          "id": "766259b9fc36de88aad008fac728a30c",
+          "address": "Skoufa 99, Kolonaki, Athens",
+          "sqm": 222,
+          "energy_class": "B+",
+          "price": 2623663,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.98780399484791,
+            "lon": 23.75112640558845
+          }
+        },
+        {
+          "id": "7a504b8c6a421876a2d92512cc7fed27",
+          "address": "Solonos 32, Kolonaki, Athens",
+          "sqm": 120,
+          "energy_class": "C",
+          "price": 1303947,
+          "floor": 2,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.988384811002895,
+            "lon": 23.75111667424609
+          }
+        },
+        {
+          "id": "2209e4d62e0e35c7e78467b452344238",
+          "address": "Massalias 95, Kolonaki, Athens",
+          "sqm": 93,
+          "energy_class": "C",
+          "price": 1073577,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.98975106644894,
+            "lon": 23.75009434072345
+          }
+        },
+        {
+          "id": "f5037d5db4d7f3123aa6b039cc6bfa25",
+          "address": "Dimokritou 5, Kolonaki, Athens",
+          "sqm": 80,
+          "energy_class": "C",
+          "price": 766790,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.9888948708566,
+            "lon": 23.74869489654751
+          }
+        },
+        {
+          "id": "f424335be5b6b24089951d8de552c70c",
+          "address": "Loukianou 124, Kolonaki, Athens",
+          "sqm": 114,
+          "energy_class": "C+",
+          "price": 1149616,
+          "floor": 3,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.9881141128369,
+            "lon": 23.749437847043346
+          }
+        },
+        {
+          "id": "6076f4501a02498e4da3407b96e16978",
+          "address": "Skoufa 84, Kolonaki, Athens",
+          "sqm": 41,
+          "energy_class": "D",
+          "price": 380595,
+          "floor": 1,
+          "rooms": 1,
+          "coordinates": {
+            "lat": 37.990665004009706,
+            "lon": 23.75143246753403
+          }
+        },
+        {
+          "id": "1550f0ae0689f09d80939f3afe1496e6",
+          "address": "Koumbari 49, Kolonaki, Athens",
+          "sqm": 80,
+          "energy_class": "C+",
+          "price": 750949,
+          "floor": 5,
+          "rooms": 2,
+          "coordinates": {
+            "lat": 37.988271199532164,
+            "lon": 23.75123478190236
+          }
+        },
+        {
+          "id": "6c1e894c79429c814a11bcaaae1f8076",
+          "address": "Koumbari 5, Kolonaki, Athens",
+          "sqm": 157,
+          "energy_class": "B+",
+          "price": 1986873,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.989883153510576,
+            "lon": 23.750641095858935
+          }
+        },
+        {
+          "id": "626d439a442c2c453d6dd7c587b555b0",
+          "address": "Plutarchou 146, Kolonaki, Athens",
+          "sqm": 58,
+          "energy_class": "D+",
+          "price": 525599,
+          "floor": 1,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.99058358943891,
+            "lon": 23.74827902362308
+          }
+        },
+        {
+          "id": "a7ee4739c0063485fcdda34e52cf702f",
+          "address": "Loukianou 78, Kolonaki, Athens",
+          "sqm": 227,
+          "energy_class": "C",
+          "price": 2493292,
+          "floor": 6,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.991281855167536,
+            "lon": 23.74935130774758
+          }
+        },
+        {
+          "id": "9c515d3acb3012d8ceb6ec9c6049b55f",
+          "address": "Dimokritou 7, Kolonaki, Athens",
+          "sqm": 218,
+          "energy_class": "A+",
+          "price": 2439627,
+          "floor": 1,
+          "rooms": 5,
+          "coordinates": {
+            "lat": 37.99086521224035,
+            "lon": 23.75044706001934
+          }
+        },
+        {
+          "id": "f9b3c0f1ab1607febe7cf50ea7014aff",
+          "address": "Massalias 27, Kolonaki, Athens",
+          "sqm": 72,
+          "energy_class": "B",
+          "price": 850782,
+          "floor": 2,
+          "rooms": 3,
+          "coordinates": {
+            "lat": 37.99150839808675,
+            "lon": 23.751028030013327
+          }
+        },
+        {
+          "id": "761fb736c8c822302e73dcea08914dc4",
+          "address": "Kleomenous 10, Kolonaki, Athens",
+          "sqm": 105,
+          "energy_class": "C+",
+          "price": 1142557,
+          "floor": 4,
+          "rooms": 4,
+          "coordinates": {
+            "lat": 37.99069772886234,
+            "lon": 23.749475505328643
+          }
+        }
+      ]
+    }
+  ]
+}
