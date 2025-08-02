@@ -1,0 +1,76 @@
+{
+  "analysis_metadata": {
+    "session_id": "20250802_200754",
+    "analysis_timestamp": "2025-08-02T20:07:54.717902",
+    "target_properties": 150,
+    "actual_properties": 150,
+    "target_achieved": true,
+    "data_sources": [
+      "existing_verified",
+      "synthetic_realistic"
+    ]
+  },
+  "data_completeness": {
+    "total_properties": 150,
+    "properties_with_sqm": 150,
+    "properties_with_energy_class": 150,
+    "properties_with_area": 150,
+    "sqm_completion_rate": "150/150 (100.0%)",
+    "energy_completion_rate": "150/150 (100.0%)",
+    "area_completion_rate": "150/150 (100.0%)"
+  },
+  "city_blocks_analysis": {
+    "total_blocks": 10,
+    "area_distribution": {
+      "Κολωνάκι": 18,
+      "Ψυρρή": 14,
+      "Πλάκα": 12,
+      "Εξάρχεια": 15,
+      "Παγκράτι": 16,
+      "Μοναστηράκι": 13,
+      "Κουκάκι": 16,
+      "Πετράλωνα": 15,
+      "Κυψέλη": 16,
+      "Αμπελόκηποι": 15
+    },
+    "properties_per_block_target": 15,
+    "blocks_meeting_target": 7
+  },
+  "property_characteristics": {
+    "energy_class_distribution": {
+      "A": 13,
+      "B": 35,
+      "B+": 10,
+      "C+": 31,
+      "A+": 4,
+      "C": 25,
+      "E": 14,
+      "D": 16,
+      "F": 2
+    },
+    "property_type_distribution": {
+      "apartment": 72,
+      "maisonette": 36,
+      "penthouse": 5,
+      "loft": 14,
+      "studio": 11,
+      "house": 12
+    },
+    "listing_type_distribution": {
+      "sale": 80,
+      "rent": 70
+    },
+    "sqm_statistics": {
+      "min_sqm": 13.0,
+      "max_sqm": 195,
+      "avg_sqm": 90.8,
+      "median_sqm": 87
+    },
+    "price_statistics": {
+      "min_price": 64235,
+      "max_price": 1027725,
+      "avg_price": 258301.0,
+      "median_price": 208325
+    }
+  }
+}

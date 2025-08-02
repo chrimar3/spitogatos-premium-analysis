@@ -1,0 +1,427 @@
+{
+  "analysis_metadata": {
+    "analysis_timestamp": "2025-08-02T20:24:44.777190",
+    "total_city_blocks": 10,
+    "total_properties": 150,
+    "overall_median_energy_class": "C+",
+    "overall_median_numeric": 3.0
+  },
+  "city_blocks_ranked": [
+    {
+      "rank": 1,
+      "area": "Κολωνάκι",
+      "median_energy_class": "A",
+      "median_numeric_value": 5.5,
+      "total_properties": 18,
+      "energy_distribution": {
+        "A": 5,
+        "B+": 2,
+        "A+": 4,
+        "B": 2,
+        "C+": 5
+      }
+    },
+    {
+      "rank": 2,
+      "area": "Πλάκα",
+      "median_energy_class": "B",
+      "median_numeric_value": 4.5,
+      "total_properties": 12,
+      "energy_distribution": {
+        "B+": 2,
+        "B": 3,
+        "A": 4,
+        "C+": 3
+      }
+    },
+    {
+      "rank": 3,
+      "area": "Κουκάκι",
+      "median_energy_class": "B",
+      "median_numeric_value": 4.0,
+      "total_properties": 16,
+      "energy_distribution": {
+        "C": 3,
+        "B": 4,
+        "A": 3,
+        "C+": 2,
+        "B+": 4
+      }
+    },
+    {
+      "rank": 4,
+      "area": "Παγκράτι",
+      "median_energy_class": "B",
+      "median_numeric_value": 3.5,
+      "total_properties": 16,
+      "energy_distribution": {
+        "B": 5,
+        "C": 5,
+        "C+": 3,
+        "B+": 2,
+        "A": 1
+      }
+    },
+    {
+      "rank": 5,
+      "area": "Αμπελόκηποι",
+      "median_energy_class": "C+",
+      "median_numeric_value": 3.0,
+      "total_properties": 15,
+      "energy_distribution": {
+        "B": 6,
+        "D": 3,
+        "C": 4,
+        "C+": 2
+      }
+    },
+    {
+      "rank": 6,
+      "area": "Ψυρρή",
+      "median_energy_class": "C+",
+      "median_numeric_value": 3.0,
+      "total_properties": 14,
+      "energy_distribution": {
+        "B": 5,
+        "D": 4,
+        "C+": 4,
+        "C": 1
+      }
+    },
+    {
+      "rank": 7,
+      "area": "Μοναστηράκι",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 13,
+      "energy_distribution": {
+        "B": 4,
+        "C+": 2,
+        "E": 4,
+        "C": 1,
+        "D": 2
+      }
+    },
+    {
+      "rank": 8,
+      "area": "Πετράλωνα",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 15,
+      "energy_distribution": {
+        "D": 1,
+        "B": 5,
+        "C": 6,
+        "E": 1,
+        "C+": 2
+      }
+    },
+    {
+      "rank": 9,
+      "area": "Εξάρχεια",
+      "median_energy_class": "D",
+      "median_numeric_value": 1.0,
+      "total_properties": 15,
+      "energy_distribution": {
+        "C+": 4,
+        "C": 2,
+        "E": 5,
+        "D": 3,
+        "B": 1
+      }
+    },
+    {
+      "rank": 10,
+      "area": "Κυψέλη",
+      "median_energy_class": "D",
+      "median_numeric_value": 1.0,
+      "total_properties": 16,
+      "energy_distribution": {
+        "C+": 4,
+        "E": 4,
+        "C": 3,
+        "D": 3,
+        "F": 2
+      }
+    }
+  ],
+  "detailed_analysis": {
+    "Αμπελόκηποι": {
+      "properties": 15,
+      "median_energy_class": "C+",
+      "all_energy_classes": [
+        "B",
+        "B",
+        "D",
+        "C",
+        "C+",
+        "C+",
+        "C",
+        "B",
+        "B",
+        "C",
+        "C",
+        "D",
+        "B",
+        "B",
+        "D"
+      ],
+      "distribution": {
+        "B": 6,
+        "D": 3,
+        "C": 4,
+        "C+": 2
+      }
+    },
+    "Εξάρχεια": {
+      "properties": 15,
+      "median_energy_class": "D",
+      "all_energy_classes": [
+        "C+",
+        "C",
+        "E",
+        "E",
+        "E",
+        "D",
+        "D",
+        "D",
+        "E",
+        "C+",
+        "E",
+        "B",
+        "C+",
+        "C+",
+        "C"
+      ],
+      "distribution": {
+        "C+": 4,
+        "C": 2,
+        "E": 5,
+        "D": 3,
+        "B": 1
+      }
+    },
+    "Κολωνάκι": {
+      "properties": 18,
+      "median_energy_class": "A",
+      "all_energy_classes": [
+        "A",
+        "A",
+        "B+",
+        "A",
+        "A+",
+        "B+",
+        "B",
+        "B",
+        "A+",
+        "C+",
+        "A",
+        "C+",
+        "C+",
+        "C+",
+        "A+",
+        "A",
+        "C+",
+        "A+"
+      ],
+      "distribution": {
+        "A": 5,
+        "B+": 2,
+        "A+": 4,
+        "B": 2,
+        "C+": 5
+      }
+    },
+    "Κουκάκι": {
+      "properties": 16,
+      "median_energy_class": "B",
+      "all_energy_classes": [
+        "C",
+        "B",
+        "A",
+        "B",
+        "C+",
+        "B+",
+        "B+",
+        "A",
+        "B",
+        "C+",
+        "B+",
+        "A",
+        "B",
+        "C",
+        "B+",
+        "C"
+      ],
+      "distribution": {
+        "C": 3,
+        "B": 4,
+        "A": 3,
+        "C+": 2,
+        "B+": 4
+      }
+    },
+    "Κυψέλη": {
+      "properties": 16,
+      "median_energy_class": "D",
+      "all_energy_classes": [
+        "C+",
+        "E",
+        "C",
+        "C",
+        "C+",
+        "E",
+        "C+",
+        "D",
+        "D",
+        "D",
+        "E",
+        "E",
+        "F",
+        "F",
+        "C",
+        "C+"
+      ],
+      "distribution": {
+        "C+": 4,
+        "E": 4,
+        "C": 3,
+        "D": 3,
+        "F": 2
+      }
+    },
+    "Μοναστηράκι": {
+      "properties": 13,
+      "median_energy_class": "C",
+      "all_energy_classes": [
+        "B",
+        "C+",
+        "E",
+        "B",
+        "E",
+        "E",
+        "E",
+        "C+",
+        "C",
+        "B",
+        "B",
+        "D",
+        "D"
+      ],
+      "distribution": {
+        "B": 4,
+        "C+": 2,
+        "E": 4,
+        "C": 1,
+        "D": 2
+      }
+    },
+    "Παγκράτι": {
+      "properties": 16,
+      "median_energy_class": "B",
+      "all_energy_classes": [
+        "B",
+        "C",
+        "C+",
+        "B",
+        "B+",
+        "C",
+        "C",
+        "A",
+        "B+",
+        "C",
+        "C+",
+        "B",
+        "C",
+        "B",
+        "C+",
+        "B"
+      ],
+      "distribution": {
+        "B": 5,
+        "C": 5,
+        "C+": 3,
+        "B+": 2,
+        "A": 1
+      }
+    },
+    "Πετράλωνα": {
+      "properties": 15,
+      "median_energy_class": "C",
+      "all_energy_classes": [
+        "D",
+        "B",
+        "B",
+        "C",
+        "E",
+        "C",
+        "C+",
+        "C",
+        "B",
+        "C+",
+        "C",
+        "B",
+        "B",
+        "C",
+        "C"
+      ],
+      "distribution": {
+        "D": 1,
+        "B": 5,
+        "C": 6,
+        "E": 1,
+        "C+": 2
+      }
+    },
+    "Πλάκα": {
+      "properties": 12,
+      "median_energy_class": "B",
+      "all_energy_classes": [
+        "B+",
+        "B",
+        "A",
+        "C+",
+        "A",
+        "B+",
+        "A",
+        "B",
+        "C+",
+        "B",
+        "A",
+        "C+"
+      ],
+      "distribution": {
+        "B+": 2,
+        "B": 3,
+        "A": 4,
+        "C+": 3
+      }
+    },
+    "Ψυρρή": {
+      "properties": 14,
+      "median_energy_class": "C+",
+      "all_energy_classes": [
+        "B",
+        "D",
+        "C+",
+        "B",
+        "D",
+        "C+",
+        "D",
+        "D",
+        "C",
+        "B",
+        "C+",
+        "C+",
+        "B",
+        "B"
+      ],
+      "distribution": {
+        "B": 5,
+        "D": 4,
+        "C+": 4,
+        "C": 1
+      }
+    }
+  }
+}

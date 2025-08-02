@@ -1,0 +1,24 @@
+{
+  "verification_timestamp": "2025-08-02T20:55:30.839802",
+  "total_properties_analyzed": 150,
+  "original_verified_properties": 9,
+  "matching_original_urls": 9,
+  "authenticity_score": "2/6",
+  "authenticity_percentage": 33.33333333333333,
+  "is_authentic": false,
+  "verdict": "🚨 DATA APPEARS HEAVILY SYNTHETIC",
+  "issues_found": [
+    "Too many repeated values",
+    "Sequential ID patterns detected",
+    "Too many unrealistic price/SQM ratios",
+    "Known synthetic patterns detected"
+  ],
+  "detailed_analysis": {
+    "repeated_prices": 0,
+    "repeated_sqms": 14,
+    "sequential_ids": 140,
+    "max_same_timestamp": 1,
+    "unrealistic_ratios": 71,
+    "synthetic_pattern_matches": 3
+  }
+}
