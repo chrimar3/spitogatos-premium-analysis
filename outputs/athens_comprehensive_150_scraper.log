@@ -1,0 +1,54 @@
+2025-08-02 21:14:52,940 - INFO - 🎯 ATHENS COMPREHENSIVE 150+ PROPERTY SCRAPER
+2025-08-02 21:14:52,940 - INFO - Mission: Extract 150+ authentic Athens properties using proven methodology
+2025-08-02 21:14:52,940 - INFO - ================================================================================
+2025-08-02 21:14:52,940 - INFO - 🚀 ATHENS COMPREHENSIVE 150+ PROPERTY SCRAPER
+2025-08-02 21:14:52,940 - INFO - 🎯 Target: Extract 150+ authentic properties from 15 Athens areas
+2025-08-02 21:14:52,940 - INFO - 📋 Search strategies: 6 different approaches
+2025-08-02 21:14:52,940 - INFO - 💯 Mission: 100% authentic data using proven methodology
+2025-08-02 21:14:52,940 - INFO - 🚀 Starting comprehensive 150+ property extraction
+2025-08-02 21:14:52,940 - INFO - 📋 Using proven Spitogatos.gr methodology at scale
+2025-08-02 21:14:53,698 - INFO - 🔍 Executing strategy: sale_athens_center
+2025-08-02 21:14:53,698 - INFO - 🔍 Strategy: sale_athens_center - Checking 20 pages
+2025-08-02 21:14:53,698 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 21:14:57,274 - INFO - ⚠️ Page 1 not found, stopping pagination
+2025-08-02 21:14:57,274 - INFO - 🎯 Strategy sale_athens_center complete: 0 total properties discovered
+2025-08-02 21:14:57,274 - WARNING - ⚠️ No properties found for sale_athens_center
+2025-08-02 21:14:57,274 - INFO - 🔍 Executing strategy: rent_athens_center
+2025-08-02 21:14:57,274 - INFO - 🔍 Strategy: rent_athens_center - Checking 20 pages
+2025-08-02 21:14:57,274 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_rent-homes/athens-center
+2025-08-02 21:15:27,276 - WARNING - ⚠️ Error on page 1: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.spitogatos.gr/en/for_rent-homes/athens-center", waiting until "networkidle"
+
+2025-08-02 21:15:27,281 - INFO - 📄 Page 2: https://www.spitogatos.gr/en/for_rent-homes/athens-center?page=2
+2025-08-02 21:15:38,500 - INFO - ⚠️ Page 2 not found, stopping pagination
+2025-08-02 21:15:38,501 - INFO - 🎯 Strategy rent_athens_center complete: 0 total properties discovered
+2025-08-02 21:15:38,501 - WARNING - ⚠️ No properties found for rent_athens_center
+2025-08-02 21:15:38,501 - INFO - 🔍 Executing strategy: sale_all_athens
+2025-08-02 21:15:38,501 - INFO - 🔍 Strategy: sale_all_athens - Checking 10 pages
+2025-08-02 21:15:38,501 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_sale-homes/athens
+2025-08-02 21:15:40,504 - INFO - ⚠️ Page 1 not found, stopping pagination
+2025-08-02 21:15:40,504 - INFO - 🎯 Strategy sale_all_athens complete: 0 total properties discovered
+2025-08-02 21:15:40,504 - WARNING - ⚠️ No properties found for sale_all_athens
+2025-08-02 21:15:40,504 - INFO - 🔍 Executing strategy: rent_all_athens
+2025-08-02 21:15:40,504 - INFO - 🔍 Strategy: rent_all_athens - Checking 10 pages
+2025-08-02 21:15:40,504 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_rent-homes/athens
+2025-08-02 21:15:42,576 - INFO - ⚠️ Page 1 not found, stopping pagination
+2025-08-02 21:15:42,577 - INFO - 🎯 Strategy rent_all_athens complete: 0 total properties discovered
+2025-08-02 21:15:42,577 - WARNING - ⚠️ No properties found for rent_all_athens
+2025-08-02 21:15:42,577 - INFO - 🔍 Executing strategy: sale_specific_types
+2025-08-02 21:15:42,577 - INFO - 🔍 Strategy: sale_specific_types - Checking 10 pages
+2025-08-02 21:15:42,577 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_sale-apartments/athens
+2025-08-02 21:15:44,760 - INFO - ⚠️ Page 1 not found, stopping pagination
+2025-08-02 21:15:44,761 - INFO - 🎯 Strategy sale_specific_types complete: 0 total properties discovered
+2025-08-02 21:15:44,761 - WARNING - ⚠️ No properties found for sale_specific_types
+2025-08-02 21:15:44,761 - INFO - 🔍 Executing strategy: rent_specific_types
+2025-08-02 21:15:44,761 - INFO - 🔍 Strategy: rent_specific_types - Checking 10 pages
+2025-08-02 21:15:44,761 - INFO - 📄 Page 1: https://www.spitogatos.gr/en/for_rent-apartments/athens
+2025-08-02 21:15:46,676 - INFO - ⚠️ Page 1 not found, stopping pagination
+2025-08-02 21:15:46,677 - INFO - 🎯 Strategy rent_specific_types complete: 0 total properties discovered
+2025-08-02 21:15:46,677 - WARNING - ⚠️ No properties found for rent_specific_types
+2025-08-02 21:15:46,811 - INFO - 🎉 Comprehensive extraction completed!
+2025-08-02 21:15:46,811 - INFO - ✅ Total authentic properties: 0
+2025-08-02 21:15:46,811 - INFO - ❌ Failed extractions: 0
+2025-08-02 21:15:46,811 - ERROR - ❌ Critical error: division by zero

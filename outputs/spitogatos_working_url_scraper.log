@@ -1,0 +1,546 @@
+2025-08-02 21:19:24,433 - INFO - 🎯 SPITOGATOS WORKING URL SCRAPER
+2025-08-02 21:19:24,433 - INFO - Mission: Extract 150+ authentic Athens properties using proven working URLs
+2025-08-02 21:19:24,433 - INFO - ================================================================================
+2025-08-02 21:19:24,434 - INFO - 🚀 SPITOGATOS WORKING URL SCRAPER
+2025-08-02 21:19:24,434 - INFO - 📋 Testing 48 URL patterns
+2025-08-02 21:19:24,434 - INFO - 🎯 Target: 150+ authentic properties using proven methodology
+2025-08-02 21:19:24,434 - INFO - 🚀 Starting comprehensive extraction using proven working URLs
+2025-08-02 21:19:25,212 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_sale-apartments/kolonaki
+2025-08-02 21:19:27,892 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_sale-apartments/kolonaki
+2025-08-02 21:19:27,892 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-apartments/pangrati
+2025-08-02 21:19:29,659 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-apartments/pangrati
+2025-08-02 21:19:29,660 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-apartments/athens-west
+2025-08-02 21:19:31,540 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-apartments/athens-west
+2025-08-02 21:19:31,541 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/monastiraki
+2025-08-02 21:19:33,395 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/monastiraki
+2025-08-02 21:19:33,395 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-apartments/exarchia
+2025-08-02 21:19:35,428 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-apartments/exarchia
+2025-08-02 21:19:35,429 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/athens-west
+2025-08-02 21:19:37,331 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/athens-west
+2025-08-02 21:19:37,331 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/athens-east
+2025-08-02 21:19:39,038 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/athens-east
+2025-08-02 21:19:39,038 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/exarchia
+2025-08-02 21:19:40,750 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/exarchia
+2025-08-02 21:19:40,750 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/plaka
+2025-08-02 21:19:42,579 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/plaka
+2025-08-02 21:19:42,579 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_sale-homes/exarchia
+2025-08-02 21:19:44,402 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_sale-homes/exarchia
+2025-08-02 21:19:44,403 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_sale-apartments/pangrati
+2025-08-02 21:19:46,233 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_sale-apartments/pangrati
+2025-08-02 21:19:46,234 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/athens-center
+2025-08-02 21:19:48,232 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/athens-center
+2025-08-02 21:19:48,232 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_rent-homes/athens-north
+2025-08-02 21:19:50,112 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_rent-homes/athens-north
+2025-08-02 21:19:50,112 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_sale-apartments/exarchia
+2025-08-02 21:19:51,861 - WARNING - ❌ URL not working: https://www.spitogatos.gr/en/for_sale-apartments/exarchia
+2025-08-02 21:19:51,861 - INFO - 🔍 Testing search URL: https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 21:19:56,017 - INFO - ✅ Found 281 properties on page 1 of https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 21:19:56,017 - INFO - 📄 Checking page 2: https://www.spitogatos.gr/en/for_sale-homes/athens-center?page=2
+2025-08-02 21:19:59,883 - INFO - ✅ Page 2: +0 properties
+2025-08-02 21:19:59,884 - INFO - 📊 No new properties on page 2, stopping pagination
+2025-08-02 21:19:59,884 - INFO - 🎯 Total from https://www.spitogatos.gr/en/for_sale-homes/athens-center: 281 properties
+2025-08-02 21:19:59,884 - INFO - 📦 Processing 281 properties from https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 21:19:59,884 - INFO - 📋 Processing 1/281: Property #1
+2025-08-02 21:19:59,884 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116925900
+2025-08-02 21:20:03,047 - INFO - ✅ AUTHENTIC: €295,000, 83.0m², Athens Center, Energy: C
+2025-08-02 21:20:03,048 - INFO - ✅ Authentic #1: Athens Center
+2025-08-02 21:20:04,049 - INFO - 📋 Processing 2/281: Property #2
+2025-08-02 21:20:04,049 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117477648
+2025-08-02 21:20:07,086 - INFO - ✅ AUTHENTIC: €275,000, 72.0m², Koukaki, Energy: C
+2025-08-02 21:20:07,087 - INFO - ✅ Authentic #2: Koukaki
+2025-08-02 21:20:10,089 - INFO - 📋 Processing 3/281: Property #3
+2025-08-02 21:20:10,089 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117333068
+2025-08-02 21:20:12,573 - INFO - ✅ AUTHENTIC: €72,000, 30.0m², Athens, Energy: C
+2025-08-02 21:20:12,573 - INFO - ✅ Authentic #3: Athens
+2025-08-02 21:20:15,574 - INFO - 📋 Processing 4/281: Property #4
+2025-08-02 21:20:15,575 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117050794
+2025-08-02 21:20:17,817 - INFO - ✅ AUTHENTIC: €210,000, 74.0m², Athens, Energy: C
+2025-08-02 21:20:17,817 - INFO - ✅ Authentic #4: Athens
+2025-08-02 21:20:18,818 - INFO - 📋 Processing 5/281: Property #5
+2025-08-02 21:20:18,819 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117776475
+2025-08-02 21:20:21,265 - INFO - ✅ AUTHENTIC: €150,000, 34.0m², Neos Kosmos, Energy: C
+2025-08-02 21:20:21,265 - INFO - ✅ Authentic #5: Neos Kosmos
+2025-08-02 21:20:22,266 - INFO - 📋 Processing 6/281: Property #6
+2025-08-02 21:20:22,267 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1114933983
+2025-08-02 21:20:24,404 - INFO - ✅ AUTHENTIC: €390,000, 85.0m², Neos Kosmos, Energy: C
+2025-08-02 21:20:24,404 - INFO - ✅ Authentic #6: Neos Kosmos
+2025-08-02 21:20:26,405 - INFO - 📋 Processing 7/281: Property #7
+2025-08-02 21:20:26,405 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117768818
+2025-08-02 21:20:29,507 - INFO - ✅ AUTHENTIC: €150,000, 52.0m², Athens, Energy: C
+2025-08-02 21:20:29,507 - INFO - ✅ Authentic #7: Athens
+2025-08-02 21:20:31,509 - INFO - 📋 Processing 8/281: Property #8
+2025-08-02 21:20:31,510 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117074430
+2025-08-02 21:20:33,793 - INFO - ✅ AUTHENTIC: €250,000, 75.0m², Koukaki, Energy: C
+2025-08-02 21:20:33,793 - INFO - ✅ Authentic #8: Koukaki
+2025-08-02 21:20:35,794 - INFO - 📋 Processing 9/281: Property #9
+2025-08-02 21:20:35,794 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117857529
+2025-08-02 21:20:38,380 - INFO - ✅ AUTHENTIC: €160,000, 53.0m², Athens, Energy: C
+2025-08-02 21:20:38,380 - INFO - ✅ Authentic #9: Athens
+2025-08-02 21:20:41,382 - INFO - 📋 Processing 10/281: Property #10
+2025-08-02 21:20:41,382 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117069390
+2025-08-02 21:20:43,826 - INFO - ✅ AUTHENTIC: €85,000, 55.0m², Athens, Energy: C
+2025-08-02 21:20:43,826 - INFO - ✅ Authentic #10: Athens
+2025-08-02 21:20:46,827 - INFO - 📋 Processing 11/281: Property #11
+2025-08-02 21:20:46,828 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117855978
+2025-08-02 21:20:49,231 - INFO - ✅ AUTHENTIC: €280,000, 110.0m², Athens, Energy: C
+2025-08-02 21:20:49,231 - INFO - ✅ Authentic #11: Athens
+2025-08-02 21:20:51,232 - INFO - 📋 Processing 12/281: Property #12
+2025-08-02 21:20:51,232 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117533786
+2025-08-02 21:20:53,859 - INFO - ✅ AUTHENTIC: €380,000, 100.0m², Athens Center, Energy: C
+2025-08-02 21:20:53,859 - INFO - ✅ Authentic #12: Athens Center
+2025-08-02 21:20:54,861 - INFO - 📋 Processing 13/281: Property #13
+2025-08-02 21:20:54,861 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117993694
+2025-08-02 21:20:57,669 - INFO - ✅ AUTHENTIC: €411,000, 51.0m², Athens, Energy: C
+2025-08-02 21:20:57,669 - INFO - ✅ Authentic #13: Athens
+2025-08-02 21:20:59,670 - INFO - 📋 Processing 14/281: Property #14
+2025-08-02 21:20:59,671 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117960878
+2025-08-02 21:21:01,879 - INFO - ✅ AUTHENTIC: €711,000, 48.0m², Kolonaki, Energy: C
+2025-08-02 21:21:01,880 - INFO - ✅ Authentic #14: Kolonaki
+2025-08-02 21:21:02,882 - INFO - 📋 Processing 15/281: Property #15
+2025-08-02 21:21:02,882 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117960817
+2025-08-02 21:21:05,393 - INFO - ✅ AUTHENTIC: €811,000, 40.0m², Kolonaki, Energy: D
+2025-08-02 21:21:05,393 - INFO - ✅ Authentic #15: Kolonaki
+2025-08-02 21:21:08,393 - INFO - 📋 Processing 16/281: Property #16
+2025-08-02 21:21:08,394 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117504968
+2025-08-02 21:21:10,730 - INFO - ✅ AUTHENTIC: €290,000, 75.0m², Koukaki, Energy: C
+2025-08-02 21:21:10,730 - INFO - ✅ Authentic #16: Koukaki
+2025-08-02 21:21:13,731 - INFO - 📋 Processing 17/281: Property #17
+2025-08-02 21:21:13,731 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117502119
+2025-08-02 21:21:16,136 - INFO - ✅ AUTHENTIC: €345,000, 48.0m², Koukaki, Energy: C
+2025-08-02 21:21:16,136 - INFO - ✅ Authentic #17: Koukaki
+2025-08-02 21:21:19,137 - INFO - 📋 Processing 18/281: Property #18
+2025-08-02 21:21:19,138 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117045891
+2025-08-02 21:21:21,598 - INFO - ✅ AUTHENTIC: €311,000, 47.0m², Athens, Energy: C
+2025-08-02 21:21:21,598 - INFO - ✅ Authentic #18: Athens
+2025-08-02 21:21:24,599 - INFO - 📋 Processing 19/281: Property #19
+2025-08-02 21:21:24,600 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116329674
+2025-08-02 21:21:27,075 - INFO - ✅ AUTHENTIC: €220,000, 97.0m², Exarchia, Energy: C
+2025-08-02 21:21:27,075 - INFO - ✅ Authentic #19: Exarchia
+2025-08-02 21:21:28,077 - INFO - 📋 Processing 20/281: Property #20
+2025-08-02 21:21:28,077 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118027423
+2025-08-02 21:21:30,661 - INFO - ✅ AUTHENTIC: €520,000, 102.0m², Kolonaki, Energy: C
+2025-08-02 21:21:30,661 - INFO - ✅ Authentic #20: Kolonaki
+2025-08-02 21:21:33,661 - INFO - 📋 Processing 21/281: Property #21
+2025-08-02 21:21:33,662 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115923811
+2025-08-02 21:21:35,980 - INFO - ✅ AUTHENTIC: €160,000, 70.0m², Exarchia, Energy: C
+2025-08-02 21:21:35,980 - INFO - ✅ Authentic #21: Exarchia
+2025-08-02 21:21:37,981 - INFO - 📋 Processing 22/281: Property #22
+2025-08-02 21:21:37,981 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117964922
+2025-08-02 21:21:40,437 - INFO - ✅ AUTHENTIC: €950,000, 200.0m², Kolonaki, Energy: C
+2025-08-02 21:21:40,437 - INFO - ✅ Authentic #22: Kolonaki
+2025-08-02 21:21:41,439 - INFO - 📋 Processing 23/281: Property #23
+2025-08-02 21:21:41,439 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117741768
+2025-08-02 21:21:43,641 - INFO - ✅ AUTHENTIC: €1,150,000, 97.0m², Kolonaki, Energy: C
+2025-08-02 21:21:43,641 - INFO - ✅ Authentic #23: Kolonaki
+2025-08-02 21:21:46,642 - INFO - 📋 Processing 24/281: Property #24
+2025-08-02 21:21:46,643 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117324144
+2025-08-02 21:21:49,141 - INFO - ✅ AUTHENTIC: €320,000, 116.0m², Exarchia, Energy: C
+2025-08-02 21:21:49,141 - INFO - ✅ Authentic #24: Exarchia
+2025-08-02 21:21:51,142 - INFO - 📋 Processing 25/281: Property #25
+2025-08-02 21:21:51,142 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117677094
+2025-08-02 21:21:53,679 - INFO - ✅ AUTHENTIC: €100,000, 58.0m², Neos Kosmos, Energy: C
+2025-08-02 21:21:53,679 - INFO - ✅ Authentic #25: Neos Kosmos
+2025-08-02 21:21:56,681 - INFO - 📋 Processing 26/281: Property #26
+2025-08-02 21:21:56,681 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118024846
+2025-08-02 21:21:59,074 - INFO - ✅ AUTHENTIC: €145,000, 62.0m², Athens, Energy: C
+2025-08-02 21:21:59,074 - INFO - ✅ Authentic #26: Athens
+2025-08-02 21:22:01,075 - INFO - 📋 Processing 27/281: Property #27
+2025-08-02 21:22:01,075 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118036892
+2025-08-02 21:22:03,217 - INFO - ✅ AUTHENTIC: €230,000, 90.0m², Athens, Energy: C
+2025-08-02 21:22:03,218 - INFO - ✅ Authentic #27: Athens
+2025-08-02 21:22:05,220 - INFO - 📋 Processing 28/281: Property #28
+2025-08-02 21:22:05,220 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117845808
+2025-08-02 21:22:07,492 - INFO - ✅ AUTHENTIC: €430,000, 107.0m², Athens, Energy: C
+2025-08-02 21:22:07,493 - INFO - ✅ Authentic #28: Athens
+2025-08-02 21:22:09,494 - INFO - 📋 Processing 29/281: Property #29
+2025-08-02 21:22:09,494 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116956597
+2025-08-02 21:22:11,615 - INFO - ✅ AUTHENTIC: €245,000, 28.0m², Plaka, Energy: C
+2025-08-02 21:22:11,615 - INFO - ✅ Authentic #29: Plaka
+2025-08-02 21:22:13,616 - INFO - 📋 Processing 30/281: Property #30
+2025-08-02 21:22:13,616 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116782048
+2025-08-02 21:22:15,710 - INFO - ✅ AUTHENTIC: €180,000, 79.0m², Athens, Energy: C
+2025-08-02 21:22:15,710 - INFO - ✅ Authentic #30: Athens
+2025-08-02 21:22:18,712 - INFO - 📋 Processing 31/281: Property #31
+2025-08-02 21:22:18,712 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115703588
+2025-08-02 21:22:21,247 - INFO - ✅ AUTHENTIC: €96,000, 48.0m², Gazi, Energy: C
+2025-08-02 21:22:21,247 - INFO - ✅ Authentic #31: Gazi
+2025-08-02 21:22:24,248 - INFO - 📋 Processing 32/281: Property #32
+2025-08-02 21:22:24,248 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117822633
+2025-08-02 21:22:26,658 - INFO - ✅ AUTHENTIC: €250,000, 70.0m², Athens, Energy: C
+2025-08-02 21:22:26,658 - INFO - ✅ Authentic #32: Athens
+2025-08-02 21:22:29,660 - INFO - 📋 Processing 33/281: Property #33
+2025-08-02 21:22:29,660 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117822604
+2025-08-02 21:22:32,003 - INFO - ✅ AUTHENTIC: €265,000, 70.0m², Athens, Energy: C
+2025-08-02 21:22:32,003 - INFO - ✅ Authentic #33: Athens
+2025-08-02 21:22:33,004 - INFO - 📋 Processing 34/281: Property #34
+2025-08-02 21:22:33,004 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117381353
+2025-08-02 21:22:35,381 - INFO - ✅ AUTHENTIC: €225,000, 105.0m², Athens, Energy: C
+2025-08-02 21:22:35,381 - INFO - ✅ Authentic #34: Athens
+2025-08-02 21:22:36,383 - INFO - 📋 Processing 35/281: Property #35
+2025-08-02 21:22:36,384 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117120360
+2025-08-02 21:22:38,659 - INFO - ✅ AUTHENTIC: €468,000, 240.0m², Athens, Energy: C
+2025-08-02 21:22:38,659 - INFO - ✅ Authentic #35: Athens
+2025-08-02 21:22:41,661 - INFO - 📋 Processing 36/281: Property #36
+2025-08-02 21:22:41,661 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117671994
+2025-08-02 21:22:44,259 - INFO - ✅ AUTHENTIC: €850,000, 101.0m², Plaka, Energy: C
+2025-08-02 21:22:44,259 - INFO - ✅ Authentic #36: Plaka
+2025-08-02 21:22:46,261 - INFO - 📋 Processing 37/281: Property #37
+2025-08-02 21:22:46,262 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117727196
+2025-08-02 21:22:48,633 - INFO - ✅ AUTHENTIC: €160,000, 30.0m², Athens, Energy: C
+2025-08-02 21:22:48,633 - INFO - ✅ Authentic #37: Athens
+2025-08-02 21:22:49,635 - INFO - 📋 Processing 38/281: Property #38
+2025-08-02 21:22:49,635 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117817543
+2025-08-02 21:22:52,069 - INFO - ✅ AUTHENTIC: €230,000, 75.0m², Athens, Energy: C
+2025-08-02 21:22:52,070 - INFO - ✅ Authentic #38: Athens
+2025-08-02 21:22:55,072 - INFO - 📋 Processing 39/281: Property #39
+2025-08-02 21:22:55,072 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118036827
+2025-08-02 21:22:57,508 - INFO - ✅ AUTHENTIC: €108,000, 52.0m², Athens, Energy: C
+2025-08-02 21:22:57,508 - INFO - ✅ Authentic #39: Athens
+2025-08-02 21:23:00,509 - INFO - 📋 Processing 40/281: Property #40
+2025-08-02 21:23:00,509 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118016228
+2025-08-02 21:23:02,690 - INFO - ✅ AUTHENTIC: €155,000, 83.0m², Athens, Energy: C
+2025-08-02 21:23:02,690 - INFO - ✅ Authentic #40: Athens
+2025-08-02 21:23:05,693 - INFO - 📋 Processing 41/281: Property #41
+2025-08-02 21:23:05,694 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117362011
+2025-08-02 21:23:08,430 - INFO - ✅ AUTHENTIC: €180,000, 84.0m², Neos Kosmos, Energy: C
+2025-08-02 21:23:08,430 - INFO - ✅ Authentic #41: Neos Kosmos
+2025-08-02 21:23:10,432 - INFO - 📋 Processing 42/281: Property #42
+2025-08-02 21:23:10,432 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117349157
+2025-08-02 21:23:12,750 - INFO - ✅ AUTHENTIC: €1,800,000, 505.0m², Athens, Energy: C
+2025-08-02 21:23:12,750 - INFO - ✅ Authentic #42: Athens
+2025-08-02 21:23:13,752 - INFO - 📋 Processing 43/281: Property #43
+2025-08-02 21:23:13,753 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117514533
+2025-08-02 21:23:16,224 - INFO - ✅ AUTHENTIC: €249,000, 110.0m², Athens, Energy: C
+2025-08-02 21:23:16,224 - INFO - ✅ Authentic #43: Athens
+2025-08-02 21:23:17,226 - INFO - 📋 Processing 44/281: Property #44
+2025-08-02 21:23:17,227 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117633239
+2025-08-02 21:23:19,531 - INFO - ✅ AUTHENTIC: €125,000, 45.0m², Athens, Energy: C
+2025-08-02 21:23:19,531 - INFO - ✅ Authentic #44: Athens
+2025-08-02 21:23:22,533 - INFO - 📋 Processing 45/281: Property #45
+2025-08-02 21:23:22,533 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116992517
+2025-08-02 21:23:24,921 - INFO - ✅ AUTHENTIC: €215,000, 65.0m², Neos Kosmos, Energy: C
+2025-08-02 21:23:24,921 - INFO - ✅ Authentic #45: Neos Kosmos
+2025-08-02 21:23:26,923 - INFO - 📋 Processing 46/281: Property #46
+2025-08-02 21:23:26,923 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116942492
+2025-08-02 21:23:29,288 - INFO - ✅ AUTHENTIC: €1,550,000, 242.0m², Neos Kosmos, Energy: C
+2025-08-02 21:23:29,288 - INFO - ✅ Authentic #46: Neos Kosmos
+2025-08-02 21:23:31,288 - INFO - 📋 Processing 47/281: Property #47
+2025-08-02 21:23:31,289 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117471852
+2025-08-02 21:23:33,469 - INFO - ✅ AUTHENTIC: €975,000, 137.0m², Kolonaki, Energy: C
+2025-08-02 21:23:33,469 - INFO - ✅ Authentic #47: Kolonaki
+2025-08-02 21:23:34,471 - INFO - 📋 Processing 48/281: Property #48
+2025-08-02 21:23:34,471 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117168894
+2025-08-02 21:23:37,008 - INFO - ✅ AUTHENTIC: €260,000, 104.0m², Athens, Energy: C
+2025-08-02 21:23:37,008 - INFO - ✅ Authentic #48: Athens
+2025-08-02 21:23:39,010 - INFO - 📋 Processing 49/281: Property #49
+2025-08-02 21:23:39,010 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117630799
+2025-08-02 21:23:41,603 - INFO - ✅ AUTHENTIC: €170,000, 92.0m², Athens, Energy: C
+2025-08-02 21:23:41,603 - INFO - ✅ Authentic #49: Athens
+2025-08-02 21:23:44,606 - INFO - 📋 Processing 50/281: Property #50
+2025-08-02 21:23:44,606 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116349256
+2025-08-02 21:23:46,990 - INFO - ✅ AUTHENTIC: €1,390,000, 165.0m², Athens, Energy: C
+2025-08-02 21:23:46,991 - INFO - ✅ Authentic #50: Athens
+2025-08-02 21:23:47,993 - INFO - 📋 Processing 51/281: Property #51
+2025-08-02 21:23:47,993 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117690666
+2025-08-02 21:23:50,232 - INFO - ✅ AUTHENTIC: €245,000, 110.0m², Athens, Energy: C
+2025-08-02 21:23:50,233 - INFO - ✅ Authentic #51: Athens
+2025-08-02 21:23:53,239 - INFO - 📋 Processing 52/281: Property #52
+2025-08-02 21:23:53,239 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117883648
+2025-08-02 21:23:55,443 - INFO - ✅ AUTHENTIC: €495,000, 121.0m², Athens, Energy: B+
+2025-08-02 21:23:55,443 - INFO - ✅ Authentic #52: Athens
+2025-08-02 21:23:57,445 - INFO - 📋 Processing 53/281: Property #53
+2025-08-02 21:23:57,445 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117699395
+2025-08-02 21:23:59,889 - INFO - ✅ AUTHENTIC: €2,100,000, 198.0m², Athens, Energy: C
+2025-08-02 21:23:59,890 - INFO - ✅ Authentic #53: Athens
+2025-08-02 21:24:02,892 - INFO - 📋 Processing 54/281: Property #54
+2025-08-02 21:24:02,893 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117057559
+2025-08-02 21:24:05,368 - INFO - ✅ AUTHENTIC: €550,000, 125.0m², Athens Center, Energy: C
+2025-08-02 21:24:05,368 - INFO - ✅ Authentic #54: Athens Center
+2025-08-02 21:24:07,371 - INFO - 📋 Processing 55/281: Property #55
+2025-08-02 21:24:07,371 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116988868
+2025-08-02 21:24:09,715 - INFO - ✅ AUTHENTIC: €1,200,000, 247.0m², Athens, Energy: C
+2025-08-02 21:24:09,715 - INFO - ✅ Authentic #55: Athens
+2025-08-02 21:24:12,717 - INFO - 📋 Processing 56/281: Property #56
+2025-08-02 21:24:12,718 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116643178
+2025-08-02 21:24:15,105 - INFO - ✅ AUTHENTIC: €650,000, 655.0m², Athens Center, Energy: C
+2025-08-02 21:24:15,105 - INFO - ✅ Authentic #56: Athens Center
+2025-08-02 21:24:18,107 - INFO - 📋 Processing 57/281: Property #57
+2025-08-02 21:24:18,107 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116116371
+2025-08-02 21:24:20,724 - INFO - ✅ AUTHENTIC: €860,000, 134.0m², Athens, Energy: C
+2025-08-02 21:24:20,724 - INFO - ✅ Authentic #57: Athens
+2025-08-02 21:24:23,726 - INFO - 📋 Processing 58/281: Property #58
+2025-08-02 21:24:23,727 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116076171
+2025-08-02 21:24:26,395 - INFO - ✅ AUTHENTIC: €950,000, 160.0m², Athens Center, Energy: C
+2025-08-02 21:24:26,395 - INFO - ✅ Authentic #58: Athens Center
+2025-08-02 21:24:27,397 - INFO - 📋 Processing 59/281: Property #59
+2025-08-02 21:24:27,398 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115784398
+2025-08-02 21:24:29,549 - INFO - ✅ AUTHENTIC: €1,200,000, 122.0m², Kolonaki, Energy: C
+2025-08-02 21:24:29,549 - INFO - ✅ Authentic #59: Kolonaki
+2025-08-02 21:24:32,550 - INFO - 📋 Processing 60/281: Property #60
+2025-08-02 21:24:32,551 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115482751
+2025-08-02 21:24:34,649 - INFO - ✅ AUTHENTIC: €2,500,000, 300.0m², Kolonaki, Energy: C
+2025-08-02 21:24:34,649 - INFO - ✅ Authentic #60: Kolonaki
+2025-08-02 21:24:37,652 - INFO - 📋 Processing 61/281: Property #61
+2025-08-02 21:24:37,652 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116952751
+2025-08-02 21:24:40,115 - INFO - ✅ AUTHENTIC: €380,000, 210.0m², Kolonaki, Energy: C
+2025-08-02 21:24:40,115 - INFO - ✅ Authentic #61: Kolonaki
+2025-08-02 21:24:42,117 - INFO - 📋 Processing 62/281: Property #62
+2025-08-02 21:24:42,117 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117539711
+2025-08-02 21:24:44,389 - INFO - ✅ AUTHENTIC: €830,000, 170.0m², Kolonaki, Energy: C
+2025-08-02 21:24:44,389 - INFO - ✅ Authentic #62: Kolonaki
+2025-08-02 21:24:45,392 - INFO - 📋 Processing 63/281: Property #63
+2025-08-02 21:24:45,393 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117164922
+2025-08-02 21:24:47,947 - INFO - ✅ AUTHENTIC: €380,000, 121.0m², Athens, Energy: C
+2025-08-02 21:24:47,947 - INFO - ✅ Authentic #63: Athens
+2025-08-02 21:24:48,948 - INFO - 📋 Processing 64/281: Property #64
+2025-08-02 21:24:48,949 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117694502
+2025-08-02 21:24:51,206 - INFO - ✅ AUTHENTIC: €450,000, 100.0m², Kolonaki, Energy: C
+2025-08-02 21:24:51,206 - INFO - ✅ Authentic #64: Kolonaki
+2025-08-02 21:24:54,209 - INFO - 📋 Processing 65/281: Property #65
+2025-08-02 21:24:54,209 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117506781
+2025-08-02 21:24:56,540 - INFO - ✅ AUTHENTIC: €570,000, 50.0m², Kolonaki, Energy: C
+2025-08-02 21:24:56,540 - INFO - ✅ Authentic #65: Kolonaki
+2025-08-02 21:24:58,542 - INFO - 📋 Processing 66/281: Property #66
+2025-08-02 21:24:58,543 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117447670
+2025-08-02 21:25:01,441 - INFO - ✅ AUTHENTIC: €465,000, 110.0m², Exarchia, Energy: C
+2025-08-02 21:25:01,442 - INFO - ✅ Authentic #66: Exarchia
+2025-08-02 21:25:03,444 - INFO - 📋 Processing 67/281: Property #67
+2025-08-02 21:25:03,444 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117439745
+2025-08-02 21:25:05,941 - INFO - ✅ AUTHENTIC: €290,000, 96.0m², Exarchia, Energy: C
+2025-08-02 21:25:05,941 - INFO - ✅ Authentic #67: Exarchia
+2025-08-02 21:25:06,944 - INFO - 📋 Processing 68/281: Property #68
+2025-08-02 21:25:06,944 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117435263
+2025-08-02 21:25:09,256 - INFO - ✅ AUTHENTIC: €190,000, 56.0m², Gazi, Energy: C
+2025-08-02 21:25:09,256 - INFO - ✅ Authentic #68: Gazi
+2025-08-02 21:25:11,258 - INFO - 📋 Processing 69/281: Property #69
+2025-08-02 21:25:11,259 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117293229
+2025-08-02 21:25:13,553 - INFO - ✅ AUTHENTIC: €180,000, 56.0m², Athens, Energy: C
+2025-08-02 21:25:13,553 - INFO - ✅ Authentic #69: Athens
+2025-08-02 21:25:15,556 - INFO - 📋 Processing 70/281: Property #70
+2025-08-02 21:25:15,556 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117299465
+2025-08-02 21:25:18,030 - INFO - ✅ AUTHENTIC: €350,000, 111.0m², Athens, Energy: C
+2025-08-02 21:25:18,030 - INFO - ✅ Authentic #70: Athens
+2025-08-02 21:25:19,031 - INFO - 📋 Processing 71/281: Property #71
+2025-08-02 21:25:19,031 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117102233
+2025-08-02 21:25:21,370 - INFO - ✅ AUTHENTIC: €350,000, 95.0m², Exarchia, Energy: C
+2025-08-02 21:25:21,370 - INFO - ✅ Authentic #71: Exarchia
+2025-08-02 21:25:22,372 - INFO - 📋 Processing 72/281: Property #72
+2025-08-02 21:25:22,372 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117044578
+2025-08-02 21:25:24,695 - INFO - ✅ AUTHENTIC: €800,000, 145.0m², Koukaki, Energy: C
+2025-08-02 21:25:24,695 - INFO - ✅ Authentic #72: Koukaki
+2025-08-02 21:25:27,696 - INFO - 📋 Processing 73/281: Property #73
+2025-08-02 21:25:27,697 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116788716
+2025-08-02 21:25:30,111 - INFO - ✅ AUTHENTIC: €750,000, 160.0m², Athens Center, Energy: C
+2025-08-02 21:25:30,112 - INFO - ✅ Authentic #73: Athens Center
+2025-08-02 21:25:33,113 - INFO - 📋 Processing 74/281: Property #74
+2025-08-02 21:25:33,113 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116740719
+2025-08-02 21:25:35,606 - INFO - ✅ AUTHENTIC: €190,000, 48.0m², Athens Center, Energy: C
+2025-08-02 21:25:35,606 - INFO - ✅ Authentic #74: Athens Center
+2025-08-02 21:25:36,608 - INFO - 📋 Processing 75/281: Property #75
+2025-08-02 21:25:36,609 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116740967
+2025-08-02 21:25:38,849 - INFO - ✅ AUTHENTIC: €225,000, 105.0m², Exarchia, Energy: C
+2025-08-02 21:25:38,849 - INFO - ✅ Authentic #75: Exarchia
+2025-08-02 21:25:41,850 - INFO - 📋 Processing 76/281: Property #76
+2025-08-02 21:25:41,851 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117906124
+2025-08-02 21:25:44,059 - INFO - ✅ AUTHENTIC: €190,000, 65.0m², Neos Kosmos, Energy: C
+2025-08-02 21:25:44,060 - INFO - ✅ Authentic #76: Neos Kosmos
+2025-08-02 21:25:45,061 - INFO - 📋 Processing 77/281: Property #77
+2025-08-02 21:25:45,062 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116453306
+2025-08-02 21:25:47,300 - INFO - ✅ AUTHENTIC: €235,000, 113.0m², Athens, Energy: C
+2025-08-02 21:25:47,300 - INFO - ✅ Authentic #77: Athens
+2025-08-02 21:25:48,302 - INFO - 📋 Processing 78/281: Property #78
+2025-08-02 21:25:48,303 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116265976
+2025-08-02 21:25:51,763 - INFO - ✅ AUTHENTIC: €120,000, 33.0m², Kolonaki, Energy: C
+2025-08-02 21:25:51,763 - INFO - ✅ Authentic #78: Kolonaki
+2025-08-02 21:25:54,765 - INFO - 📋 Processing 79/281: Property #79
+2025-08-02 21:25:54,765 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116127227
+2025-08-02 21:25:57,078 - INFO - ✅ AUTHENTIC: €390,000, 100.0m², Koukaki, Energy: C
+2025-08-02 21:25:57,078 - INFO - ✅ Authentic #79: Koukaki
+2025-08-02 21:25:58,080 - INFO - 📋 Processing 80/281: Property #80
+2025-08-02 21:25:58,080 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116051518
+2025-08-02 21:26:00,890 - INFO - ✅ AUTHENTIC: €300,000, 40.0m², Kolonaki, Energy: C
+2025-08-02 21:26:00,890 - INFO - ✅ Authentic #80: Kolonaki
+2025-08-02 21:26:02,892 - INFO - 📋 Processing 81/281: Property #81
+2025-08-02 21:26:02,894 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116034044
+2025-08-02 21:26:05,307 - WARNING - ❌ Property URL not accessible: https://www.spitogatos.gr/en/property/1116034044
+2025-08-02 21:26:06,308 - INFO - 📋 Processing 82/281: Property #81
+2025-08-02 21:26:06,308 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115992011
+2025-08-02 21:26:08,701 - INFO - ✅ AUTHENTIC: €1,000,000, 225.0m², Kolonaki, Energy: C
+2025-08-02 21:26:08,701 - INFO - ✅ Authentic #81: Kolonaki
+2025-08-02 21:26:09,704 - INFO - 📋 Processing 83/281: Property #82
+2025-08-02 21:26:09,704 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116109841
+2025-08-02 21:26:11,991 - INFO - ✅ AUTHENTIC: €870,000, 130.0m², Kolonaki, Energy: C
+2025-08-02 21:26:11,991 - INFO - ✅ Authentic #82: Kolonaki
+2025-08-02 21:26:14,993 - INFO - 📋 Processing 84/281: Property #83
+2025-08-02 21:26:14,993 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115883320
+2025-08-02 21:26:17,811 - INFO - ✅ AUTHENTIC: €440,000, 137.0m², Athens Center, Energy: C
+2025-08-02 21:26:17,811 - INFO - ✅ Authentic #83: Athens Center
+2025-08-02 21:26:18,812 - INFO - 📋 Processing 85/281: Property #84
+2025-08-02 21:26:18,813 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115807988
+2025-08-02 21:26:21,081 - INFO - ✅ AUTHENTIC: €1,000,000, 146.0m², Kolonaki, Energy: C
+2025-08-02 21:26:21,081 - INFO - ✅ Authentic #84: Kolonaki
+2025-08-02 21:26:23,083 - INFO - 📋 Processing 86/281: Property #85
+2025-08-02 21:26:23,083 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115648639
+2025-08-02 21:26:25,658 - INFO - ✅ AUTHENTIC: €600,000, 142.0m², Kolonaki, Energy: C
+2025-08-02 21:26:25,658 - INFO - ✅ Authentic #85: Kolonaki
+2025-08-02 21:26:27,659 - INFO - 📋 Processing 87/281: Property #86
+2025-08-02 21:26:27,660 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115470257
+2025-08-02 21:26:29,887 - INFO - ✅ AUTHENTIC: €520,000, 135.0m², Athens, Energy: C
+2025-08-02 21:26:29,887 - INFO - ✅ Authentic #86: Athens
+2025-08-02 21:26:32,888 - INFO - 📋 Processing 88/281: Property #87
+2025-08-02 21:26:32,889 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115365862
+2025-08-02 21:26:35,119 - INFO - ✅ AUTHENTIC: €460,000, 140.0m², Athens, Energy: C
+2025-08-02 21:26:35,119 - INFO - ✅ Authentic #87: Athens
+2025-08-02 21:26:37,120 - INFO - 📋 Processing 89/281: Property #88
+2025-08-02 21:26:37,121 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115550119
+2025-08-02 21:26:39,636 - INFO - ✅ AUTHENTIC: €330,000, 160.0m², Exarchia, Energy: C
+2025-08-02 21:26:39,636 - INFO - ✅ Authentic #88: Exarchia
+2025-08-02 21:26:40,638 - INFO - 📋 Processing 90/281: Property #89
+2025-08-02 21:26:40,638 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1114875061
+2025-08-02 21:26:43,134 - WARNING - ❌ NOT AUTHENTIC: ['SYNTHETIC_SQM_PATTERN']
+2025-08-02 21:26:45,135 - INFO - 📋 Processing 91/281: Property #89
+2025-08-02 21:26:45,136 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1114185361
+2025-08-02 21:26:47,463 - INFO - ✅ AUTHENTIC: €595,000, 102.0m², Kolonaki, Energy: C
+2025-08-02 21:26:47,463 - INFO - ✅ Authentic #89: Kolonaki
+2025-08-02 21:26:48,464 - INFO - 📋 Processing 92/281: Property #90
+2025-08-02 21:26:48,465 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1113082806
+2025-08-02 21:26:51,099 - INFO - ✅ AUTHENTIC: €200,000, 72.0m², Exarchia, Energy: C
+2025-08-02 21:26:51,099 - INFO - ✅ Authentic #90: Exarchia
+2025-08-02 21:26:52,100 - INFO - 📋 Processing 93/281: Property #91
+2025-08-02 21:26:52,101 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1112221691
+2025-08-02 21:26:54,332 - INFO - ✅ AUTHENTIC: €375,000, 86.0m², Koukaki, Energy: C
+2025-08-02 21:26:54,332 - INFO - ✅ Authentic #91: Koukaki
+2025-08-02 21:26:56,333 - INFO - 📋 Processing 94/281: Property #92
+2025-08-02 21:26:56,333 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117722079
+2025-08-02 21:26:58,694 - INFO - ✅ AUTHENTIC: €195,000, 74.0m², Athens, Energy: A
+2025-08-02 21:26:58,694 - INFO - ✅ Authentic #92: Athens
+2025-08-02 21:26:59,695 - INFO - 📋 Processing 95/281: Property #93
+2025-08-02 21:26:59,696 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115265892
+2025-08-02 21:27:02,412 - INFO - ✅ AUTHENTIC: €700,000, 198.0m², Athens, Energy: A
+2025-08-02 21:27:02,413 - INFO - ✅ Authentic #93: Athens
+2025-08-02 21:27:05,413 - INFO - 📋 Processing 96/281: Property #94
+2025-08-02 21:27:05,415 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116913722
+2025-08-02 21:27:07,569 - INFO - ✅ AUTHENTIC: €600,000, 200.0m², Athens, Energy: C
+2025-08-02 21:27:07,570 - INFO - ✅ Authentic #94: Athens
+2025-08-02 21:27:10,571 - INFO - 📋 Processing 97/281: Property #95
+2025-08-02 21:27:10,571 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115882345
+2025-08-02 21:27:12,808 - INFO - ✅ AUTHENTIC: €340,000, 82.0m², Petralona, Energy: A+
+2025-08-02 21:27:12,808 - INFO - ✅ Authentic #95: Petralona
+2025-08-02 21:27:14,809 - INFO - 📋 Processing 98/281: Property #96
+2025-08-02 21:27:14,810 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117333027
+2025-08-02 21:27:17,109 - INFO - ✅ AUTHENTIC: €385,000, 60.0m², Koukaki, Energy: C
+2025-08-02 21:27:17,109 - INFO - ✅ Authentic #96: Koukaki
+2025-08-02 21:27:18,110 - INFO - 📋 Processing 99/281: Property #97
+2025-08-02 21:27:18,111 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117636362
+2025-08-02 21:27:20,574 - INFO - ✅ AUTHENTIC: €650,000, 110.0m², Athens Center, Energy: C
+2025-08-02 21:27:20,574 - INFO - ✅ Authentic #97: Athens Center
+2025-08-02 21:27:23,576 - INFO - 📋 Processing 100/281: Property #98
+2025-08-02 21:27:23,576 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117837405
+2025-08-02 21:27:25,777 - WARNING - ❌ NOT AUTHENTIC: ['SYNTHETIC_SQM_PATTERN']
+2025-08-02 21:27:26,779 - INFO - 📋 Processing 101/281: Property #98
+2025-08-02 21:27:26,779 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117305964
+2025-08-02 21:27:29,094 - INFO - ✅ AUTHENTIC: €1,150,000, 116.0m², Kolonaki, Energy: C
+2025-08-02 21:27:29,094 - INFO - ✅ Authentic #98: Kolonaki
+2025-08-02 21:27:32,095 - INFO - 📋 Processing 102/281: Property #99
+2025-08-02 21:27:32,096 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116359886
+2025-08-02 21:27:34,565 - INFO - ✅ AUTHENTIC: €1,200,000, 215.0m², Kolonaki, Energy: C
+2025-08-02 21:27:34,565 - INFO - ✅ Authentic #99: Kolonaki
+2025-08-02 21:27:37,567 - INFO - 📋 Processing 103/281: Property #100
+2025-08-02 21:27:37,568 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118028184
+2025-08-02 21:27:39,919 - INFO - ✅ AUTHENTIC: €250,000, 68.0m², Athens Center, Energy: C
+2025-08-02 21:27:39,919 - INFO - ✅ Authentic #100: Athens Center
+2025-08-02 21:27:41,921 - INFO - 📋 Processing 104/281: Property #101
+2025-08-02 21:27:41,921 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117774017
+2025-08-02 21:27:44,393 - INFO - ✅ AUTHENTIC: €250,000, 49.0m², Koukaki, Energy: C
+2025-08-02 21:27:44,393 - INFO - ✅ Authentic #101: Koukaki
+2025-08-02 21:27:45,394 - INFO - 📋 Processing 105/281: Property #102
+2025-08-02 21:27:45,395 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117886399
+2025-08-02 21:27:47,733 - INFO - ✅ AUTHENTIC: €190,000, 49.0m², Neos Kosmos, Energy: C
+2025-08-02 21:27:47,733 - INFO - ✅ Authentic #102: Neos Kosmos
+2025-08-02 21:27:50,735 - INFO - 📋 Processing 106/281: Property #103
+2025-08-02 21:27:50,736 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118027074
+2025-08-02 21:27:53,203 - INFO - ✅ AUTHENTIC: €257,000, 56.0m², Athens Center, Energy: C
+2025-08-02 21:27:53,203 - INFO - ✅ Authentic #103: Athens Center
+2025-08-02 21:27:54,204 - INFO - 📋 Processing 107/281: Property #104
+2025-08-02 21:27:54,205 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117996501
+2025-08-02 21:27:56,437 - INFO - ✅ AUTHENTIC: €125,000, 34.0m², Athens Center, Energy: C
+2025-08-02 21:27:56,438 - INFO - ✅ Authentic #104: Athens Center
+2025-08-02 21:27:57,439 - INFO - 📋 Processing 108/281: Property #105
+2025-08-02 21:27:57,439 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117933118
+2025-08-02 21:27:59,798 - INFO - ✅ AUTHENTIC: €2,385,000, 546.0m², Athens Center, Energy: B
+2025-08-02 21:27:59,798 - INFO - ✅ Authentic #105: Athens Center
+2025-08-02 21:28:02,799 - INFO - 📋 Processing 109/281: Property #106
+2025-08-02 21:28:02,799 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117885611
+2025-08-02 21:28:05,090 - INFO - ✅ AUTHENTIC: €1,950,000, 420.0m², Athens, Energy: C
+2025-08-02 21:28:05,090 - INFO - ✅ Authentic #106: Athens
+2025-08-02 21:28:06,091 - INFO - 📋 Processing 110/281: Property #107
+2025-08-02 21:28:06,091 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117432041
+2025-08-02 21:28:08,365 - INFO - ✅ AUTHENTIC: €390,000, 64.0m², Kolonaki, Energy: C
+2025-08-02 21:28:08,365 - INFO - ✅ Authentic #107: Kolonaki
+2025-08-02 21:28:09,367 - INFO - 📋 Processing 111/281: Property #108
+2025-08-02 21:28:09,367 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117338288
+2025-08-02 21:28:11,553 - INFO - ✅ AUTHENTIC: €155,000, 55.0m², Athens, Energy: F
+2025-08-02 21:28:11,553 - INFO - ✅ Authentic #108: Athens
+2025-08-02 21:28:12,555 - INFO - 📋 Processing 112/281: Property #109
+2025-08-02 21:28:12,555 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117126170
+2025-08-02 21:28:14,820 - WARNING - ❌ NOT AUTHENTIC: ['SYNTHETIC_SQM_PATTERN']
+2025-08-02 21:28:17,821 - INFO - 📋 Processing 113/281: Property #109
+2025-08-02 21:28:17,822 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117126164
+2025-08-02 21:28:20,210 - INFO - ✅ AUTHENTIC: €950,000, 96.0m², Kolonaki, Energy: D
+2025-08-02 21:28:20,210 - INFO - ✅ Authentic #109: Kolonaki
+2025-08-02 21:28:23,211 - INFO - 📋 Processing 114/281: Property #110
+2025-08-02 21:28:23,212 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116960030
+2025-08-02 21:28:25,841 - INFO - ✅ AUTHENTIC: €550,000, 60.0m², Kolonaki, Energy: C
+2025-08-02 21:28:25,841 - INFO - ✅ Authentic #110: Kolonaki
+2025-08-02 21:28:26,842 - INFO - 📋 Processing 115/281: Property #111
+2025-08-02 21:28:26,844 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116418199
+2025-08-02 21:28:29,341 - INFO - ✅ AUTHENTIC: €1,500,000, 123.0m², Kolonaki, Energy: C
+2025-08-02 21:28:29,341 - INFO - ✅ Authentic #111: Kolonaki
+2025-08-02 21:28:31,342 - INFO - 📋 Processing 116/281: Property #112
+2025-08-02 21:28:31,342 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116429293
+2025-08-02 21:28:33,642 - INFO - ✅ AUTHENTIC: €900,000, 135.0m², Kolonaki, Energy: A
+2025-08-02 21:28:33,642 - INFO - ✅ Authentic #112: Kolonaki
+2025-08-02 21:28:36,645 - INFO - 📋 Processing 117/281: Property #113
+2025-08-02 21:28:36,646 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116402749
+2025-08-02 21:28:38,990 - INFO - ✅ AUTHENTIC: €2,000,000, 210.0m², Kolonaki, Energy: C
+2025-08-02 21:28:38,990 - INFO - ✅ Authentic #113: Kolonaki
+2025-08-02 21:28:41,992 - INFO - 📋 Processing 118/281: Property #114
+2025-08-02 21:28:41,992 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116377364
+2025-08-02 21:28:44,391 - INFO - ✅ AUTHENTIC: €650,000, 126.0m², Kolonaki, Energy: D
+2025-08-02 21:28:44,391 - INFO - ✅ Authentic #114: Kolonaki
+2025-08-02 21:28:47,392 - INFO - 📋 Processing 119/281: Property #115
+2025-08-02 21:28:47,393 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116306839
+2025-08-02 21:28:50,082 - INFO - ✅ AUTHENTIC: €480,000, 215.0m², Athens, Energy: G
+2025-08-02 21:28:50,082 - INFO - ✅ Authentic #115: Athens
+2025-08-02 21:28:51,083 - INFO - 📋 Processing 120/281: Property #116
+2025-08-02 21:28:51,084 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1113750391
+2025-08-02 21:28:53,352 - INFO - ✅ AUTHENTIC: €710,000, 142.0m², Kolonaki, Energy: D
+2025-08-02 21:28:53,352 - INFO - ✅ Authentic #116: Kolonaki
+2025-08-02 21:28:55,353 - INFO - 📋 Processing 121/281: Property #117
+2025-08-02 21:28:55,353 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116436867
+2025-08-02 21:28:57,692 - INFO - ✅ AUTHENTIC: €375,000, 110.0m², Athens, Energy: C
+2025-08-02 21:28:57,692 - INFO - ✅ Authentic #117: Athens
+2025-08-02 21:28:59,692 - INFO - 📋 Processing 122/281: Property #118
+2025-08-02 21:28:59,693 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117603682
+2025-08-02 21:29:01,787 - INFO - ✅ AUTHENTIC: €210,000, 70.0m², Athens Center, Energy: C
+2025-08-02 21:29:01,789 - INFO - ✅ Authentic #118: Athens Center
+2025-08-02 21:29:03,790 - INFO - 📋 Processing 123/281: Property #119
+2025-08-02 21:29:03,790 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118019986
+2025-08-02 21:29:06,072 - INFO - ✅ AUTHENTIC: €250,000, 99.0m², Athens, Energy: C
+2025-08-02 21:29:06,072 - INFO - ✅ Authentic #119: Athens
+2025-08-02 21:29:09,073 - INFO - 📋 Processing 124/281: Property #120
+2025-08-02 21:29:09,074 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117836526
+2025-08-02 21:29:11,480 - INFO - ✅ AUTHENTIC: €520,000, 130.0m², Exarchia, Energy: C
+2025-08-02 21:29:11,480 - INFO - ✅ Authentic #120: Exarchia
+2025-08-02 21:29:12,482 - INFO - 📋 Processing 125/281: Property #121
+2025-08-02 21:29:12,482 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117795465
+2025-08-02 21:29:14,685 - INFO - ✅ AUTHENTIC: €950,000, 247.0m², Athens, Energy: C
+2025-08-02 21:29:14,685 - INFO - ✅ Authentic #121: Athens
+2025-08-02 21:29:16,686 - INFO - 📋 Processing 126/281: Property #122
+2025-08-02 21:29:16,686 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117393860
+2025-08-02 21:29:19,136 - INFO - ✅ AUTHENTIC: €610,000, 104.0m², Koukaki, Energy: C
+2025-08-02 21:29:19,136 - INFO - ✅ Authentic #122: Koukaki
+2025-08-02 21:29:22,137 - INFO - 📋 Processing 127/281: Property #123
+2025-08-02 21:29:22,138 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116658164
+2025-08-02 21:29:24,669 - INFO - ✅ AUTHENTIC: €2,200,000, 1770.0m², Athens, Energy: C
+2025-08-02 21:29:24,669 - INFO - ✅ Authentic #123: Athens

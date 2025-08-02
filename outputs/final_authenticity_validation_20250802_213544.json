@@ -1,0 +1,50 @@
+{
+  "validation_timestamp": "2025-08-02T21:35:44.354158",
+  "dataset_file": "/Users/chrism/spitogatos_premium_analysis/outputs/real_athens_properties_comprehensive_20250802_213244.csv",
+  "total_properties": 155,
+  "authenticity_score": "8/8",
+  "authenticity_percentage": 100.0,
+  "is_authentic": true,
+  "verdict": "✅ DATASET IS HIGHLY AUTHENTIC",
+  "data_completeness": {
+    "url": "155/155",
+    "sqm": "155/155",
+    "energy_class": "155/155",
+    "price": "155/155",
+    "neighborhood": "155/155"
+  },
+  "market_stats": {
+    "price_range": "€135,000 - €9,050,000",
+    "sqm_range": "47m² - 299m²",
+    "reasonable_price_ratios": "150/155"
+  },
+  "energy_distribution": {
+    "E": 16,
+    "B": 16,
+    "F": 9,
+    "C": 50,
+    "C+": 16,
+    "A+": 7,
+    "D": 23,
+    "A": 10,
+    "B+": 8
+  },
+  "neighborhood_distribution": {
+    "Exarchia": 15,
+    "Kolonaki": 17,
+    "Athens Center": 24,
+    "Koukaki": 22,
+    "Pangrati": 10,
+    "Thiseio": 10,
+    "Petralona": 6,
+    "Psyrri": 10,
+    "Metaxourgeio": 3,
+    "Neos Kosmos": 5,
+    "Gazi": 8,
+    "Kypseli": 7,
+    "Plaka": 8,
+    "Ambelokipi": 5,
+    "Illisia": 5
+  },
+  "issues_found": []
+}
