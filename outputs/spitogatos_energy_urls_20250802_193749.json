@@ -1,0 +1,24 @@
+{
+  "extraction_metadata": {
+    "session_id": "20250802_193749",
+    "extraction_timestamp": "2025-08-02T19:37:54.143847",
+    "extraction_focus": "energy_class_and_urls",
+    "total_properties": 0,
+    "properties_with_energy_class": 0,
+    "properties_with_price": 0,
+    "properties_with_sqm": 0,
+    "kolonaki_properties": 0,
+    "pangrati_properties": 0,
+    "energy_class_success_rate": "0/0 (0.0%)"
+  },
+  "energy_analysis": {
+    "energy_class_distribution": {},
+    "properties_by_neighborhood": {
+      "Κολωνάκι": 0,
+      "Παγκράτι": 0,
+      "Other": 0
+    }
+  },
+  "price_analysis": {},
+  "properties": []
+}

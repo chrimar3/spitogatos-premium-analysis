@@ -1,0 +1,17 @@
+{
+  "extraction_metadata": {
+    "session_id": "20250802_193547",
+    "extraction_timestamp": "2025-08-02T19:35:52.540039",
+    "target_neighborhoods": [
+      "Κολωνάκι",
+      "Παγκράτι"
+    ],
+    "total_properties": 0,
+    "properties_with_energy_class": 0,
+    "properties_with_price": 0,
+    "properties_with_sqm": 0,
+    "kolonaki_properties": 0,
+    "pangrati_properties": 0
+  },
+  "properties": []
+}
