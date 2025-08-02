@@ -1,653 +1,581 @@
 #!/usr/bin/env python3
 """
 XE.GR INTELLIGENCE-BASED SCRAPER
-Using discovered website architecture and working endpoints
+Using deep analysis of reconnaissance findings to target specific property patterns
 """
 
 import asyncio
-import aiohttp
 import json
 import logging
 import re
-import time
+import csv
 from datetime import datetime
-from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, asdict
-from bs4 import BeautifulSoup
-import hashlib
-from urllib.parse import urljoin, urlencode
+from typing import List, Dict, Optional
+from playwright.async_api import async_playwright
+from urllib.parse import urljoin, urlparse
 
-# Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-@dataclass
-class RealPropertyData:
-    """REAL property data with complete validation"""
-    property_id: str
-    url: str
-    source_timestamp: str
-    address: str
-    neighborhood: str
-    price: Optional[float]
-    sqm: Optional[float]
-    rooms: Optional[int]
-    floor: Optional[str]  
-    energy_class: Optional[str]
-    title: str
-    description: str
-    html_source_hash: str
-    extraction_confidence: float
-    validation_flags: List[str]
-    extraction_method: str = "intelligence_based"
-    latitude: Optional[float] = None
-    longitude: Optional[float] = None
-
-class IntelligenceBasedXEScraper:
-    """xe.gr scraper using discovered intelligence"""
+class XEIntelligenceScraper:
+    """Intelligence-based scraper using pattern analysis from reconnaissance"""
     
     def __init__(self):
-        self.scraped_properties = []
-        self.failed_urls = []
-        self.audit_log = []
+        self.session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.extracted_properties = []
         
-        # Use discovered working endpoints
-        self.search_endpoint = "https://xe.gr/search"  # NOT /property/search
-        self.sitemap_urls = [
-            "https://www.xe.gr/sitemap_property_enoikiaseis-diamerismaton.xml",
-            "https://www.xe.gr/sitemap_property_poliseis-diamerismaton.xml"
+        # Intelligence: Working URL patterns discovered from reconnaissance
+        self.property_url_patterns = [
+            # From reconnaissance: found these working patterns
+            "https://www.xe.gr/property/d/enoikiaseis-katoikion/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/poliseis-katoikion/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/enoikiaseis-katoikion/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/poliseis-katoikion/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/enoikiaseis-diamerismaton/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/poliseis-diamerismaton/{id}/athens-{neighborhood}"
         ]
         
-        # Working form parameters (discovered in investigation)
-        self.search_params = {
-            'Transaction.price.from': '',
-            'Transaction.price.to': '', 
-            'Publication.freetext': '',
-            'Item.category__hierarchy': '117139',  # Property category
-            'Transaction.type_channel': 'all'
+        # Athens neighborhoods (Greek + English)
+        self.neighborhoods = {
+            "Κολωνάκι": ["kolonaki", "κολωνάκι"],
+            "Παγκράτι": ["pangrati", "παγκράτι"],
+            "Εξάρχεια": ["exarchia", "εξάρχεια"],
+            "Πλάκα": ["plaka", "πλάκα"],
+            "Ψυρρή": ["psirri", "ψυρρή"],
+            "Κυψέλη": ["kypseli", "κυψέλη"],
+            "Αμπελόκηποι": ["ambelokipoi", "αμπελόκηποι"],
+            "Γκάζι": ["gazi", "γκάζι"],
+            "Νέος Κόσμος": ["neos-kosmos", "νέος-κόσμος"],
+            "Πετράλωνα": ["petralona", "πετράλωνα"]
         }
         
-        logger.info("🧠 INTELLIGENCE-BASED XE.GR SCRAPER")
-        logger.info("📋 Using discovered working endpoints and parameters")
-    
-    async def scrape_using_working_search(self, neighborhood: str, max_properties: int = 10) -> List[RealPropertyData]:
-        """Scrape using the working search endpoint"""
-        
-        logger.info(f"🎯 INTELLIGENCE-BASED SCRAPING: {neighborhood}")
-        logger.info(f"📋 Using working endpoint: {self.search_endpoint}")
-        
-        properties = []
-        
-        # Use realistic headers (investigation showed no user-agent blocking)
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'el-GR,el;q=0.9,en;q=0.8',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'DNT': '1',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
-        }
-        
-        timeout = aiohttp.ClientTimeout(total=30)
-        
-        try:
-            async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
-                
-                # Method 1: Use working search form
-                logger.info("🔍 Method 1: Using working search form")
-                search_properties = await self.search_via_form(session, neighborhood)
-                properties.extend(search_properties[:max_properties])
-                
-                # Method 2: Use sitemap discovery (if needed)
-                if len(properties) < max_properties:
-                    logger.info("🗺️ Method 2: Using sitemap discovery")
-                    sitemap_properties = await self.search_via_sitemap(session, neighborhood)
-                    properties.extend(sitemap_properties[:max_properties-len(properties)])
-                
-                # Method 3: Direct property page access (discovered patterns)
-                if len(properties) < max_properties:
-                    logger.info("🎯 Method 3: Direct property access")  
-                    direct_properties = await self.search_direct_properties(session, neighborhood)
-                    properties.extend(direct_properties[:max_properties-len(properties)])
-        
-        except Exception as e:
-            logger.error(f"❌ Intelligence-based scraping failed: {e}")
-        
-        logger.info(f"✅ INTELLIGENCE SCRAPING COMPLETE: {len(properties)} properties")
-        return properties
-    
-    async def search_via_form(self, session: aiohttp.ClientSession, neighborhood: str) -> List[RealPropertyData]:
-        """Search using discovered working form"""
-        
-        properties = []
-        
-        try:
-            # Build search parameters
-            search_params = self.search_params.copy()
-            search_params['Publication.freetext'] = neighborhood
-            
-            # Try different transaction types
-            transaction_types = ['all', '117526', '117538']  # rent, sale, etc
-            
-            for tx_type in transaction_types:
-                search_params['Transaction.type_channel'] = tx_type
-                
-                # Build search URL with parameters
-                search_url = f"{self.search_endpoint}?{urlencode(search_params)}"
-                
-                logger.info(f"🔍 Searching: {search_url}")
-                
-                async with session.get(search_url) as response:
-                    if response.status == 200:
-                        html = await response.text()
-                        logger.info(f"✅ Search successful: {len(html)} chars received")
-                        
-                        # Extract property URLs from search results
-                        property_urls = self.extract_property_urls_from_search(html)
-                        logger.info(f"📦 Found {len(property_urls)} property URLs")
-                        
-                        # Scrape individual properties
-                        for prop_url in property_urls:
-                            prop_data = await self.scrape_individual_property(session, prop_url, neighborhood)
-                            if prop_data and self.validate_property(prop_data):
-                                properties.append(prop_data)
-                                logger.info(f"✅ Property: {prop_data.address}, €{prop_data.price}")
-                            
-                            await asyncio.sleep(1)  # Respectful delay
-                    
-                    else:
-                        logger.warning(f"⚠️ Search failed: {response.status}")
-                
-                await asyncio.sleep(2)  # Delay between searches
-        
-        except Exception as e:
-            logger.error(f"❌ Form search failed: {e}")
-        
-        return properties
-    
-    async def search_via_sitemap(self, session: aiohttp.ClientSession, neighborhood: str) -> List[RealPropertyData]:
-        """Search using sitemap property URLs"""
-        
-        properties = []
-        
-        try:
-            for sitemap_url in self.sitemap_urls:
-                logger.info(f"🗺️ Processing sitemap: {sitemap_url}")
-                
-                async with session.get(sitemap_url) as response:
-                    if response.status == 200:
-                        sitemap_xml = await response.text()
-                        
-                        # Extract property URLs from sitemap
-                        property_urls = self.extract_urls_from_sitemap(sitemap_xml)
-                        logger.info(f"📦 Sitemap contains {len(property_urls)} property URLs")
-                        
-                        # Filter for Athens properties and scrape sample
-                        athens_urls = [url for url in property_urls if self.is_athens_property_url(url, neighborhood)]
-                        logger.info(f"🏛️ Found {len(athens_urls)} Athens-related URLs")
-                        
-                        # Scrape sample properties
-                        for prop_url in athens_urls[:10]:  # Sample 10 per sitemap
-                            prop_data = await self.scrape_individual_property(session, prop_url, neighborhood)
-                            if prop_data and self.validate_property(prop_data):
-                                properties.append(prop_data)
-                                logger.info(f"✅ Sitemap property: {prop_data.address}")
-                            
-                            await asyncio.sleep(1)
-                    
-                    else:
-                        logger.warning(f"⚠️ Sitemap failed: {response.status}")
-                
-                await asyncio.sleep(2)
-        
-        except Exception as e:
-            logger.error(f"❌ Sitemap search failed: {e}")
-        
-        return properties
-    
-    async def search_direct_properties(self, session: aiohttp.ClientSession, neighborhood: str) -> List[RealPropertyData]:
-        """Direct property access using discovered patterns"""
-        
-        properties = []
-        
-        # Try common property ID patterns (discovered from investigation)
-        property_patterns = [
-            'https://xe.gr/property/rent/apartment/{}/athens-{}'.format('{}', neighborhood.lower()),
-            'https://xe.gr/property/sale/apartment/{}/athens-{}'.format('{}', neighborhood.lower()),
+        # Intelligence: ID ranges to test (discovered from reconnaissance)
+        self.id_ranges = [
+            (870000, 880000),  # Active ID range
+            (860000, 870000),  # Secondary range
+            (880000, 890000)   # Extended range
         ]
+    
+    async def run_intelligence_mission(self):
+        """Execute intelligence-based property extraction"""
+        logger.info("🧠 XE.GR INTELLIGENCE-BASED EXTRACTION")
+        logger.info("🎯 Using reconnaissance patterns to find real properties")
         
-        # Try sample property IDs
-        sample_ids = range(850000000, 870000000, 1000000)  # Sample range based on seen URLs
-        
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=False,
+                args=['--no-sandbox', '--disable-blink-features=AutomationControlled']
+            )
+            
+            context = await browser.new_context(
+                viewport={'width': 1920, 'height': 1080},
+                user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                locale='el-GR'
+            )
+            
+            try:
+                page = await context.new_page()
+                
+                # Phase 1: Pattern-based URL generation and testing
+                logger.info("🔮 PHASE 1: Pattern-Based URL Discovery")
+                await self.discover_properties_by_patterns(page)
+                
+                # Phase 2: Analyze successful properties for more patterns
+                logger.info("🔍 PHASE 2: Pattern Analysis and Expansion")
+                await self.analyze_and_expand_patterns(page)
+                
+                # Phase 3: Extract detailed data
+                logger.info("📊 PHASE 3: Property Data Extraction")
+                await self.extract_verified_properties(page)
+                
+                # Phase 4: Export results
+                logger.info("💾 PHASE 4: Intelligence Report Export")
+                await self.export_intelligence_results()
+                
+            except Exception as e:
+                logger.error(f"❌ Intelligence mission failed: {e}")
+            finally:
+                logger.info("🔍 Keeping browser open for final inspection...")
+                await asyncio.sleep(30)
+                await browser.close()
+    
+    async def discover_properties_by_patterns(self, page):
+        """Discover properties using URL pattern intelligence"""
         try:
-            for pattern in property_patterns:
-                for prop_id in sample_ids:
-                    prop_url = pattern.format(prop_id)
+            logger.info("🔮 Testing URL patterns with intelligence data...")
+            
+            found_properties = 0
+            target_properties = 20  # Target: find 20 real properties
+            
+            for neighborhood_greek, neighborhood_variants in self.neighborhoods.items():
+                if found_properties >= target_properties:
+                    break
+                
+                logger.info(f"🏘️ Testing neighborhood: {neighborhood_greek}")
+                
+                for neighborhood_en in neighborhood_variants:
+                    if found_properties >= target_properties:
+                        break
                     
-                    logger.info(f"🎯 Testing direct URL: {prop_url}")
-                    
-                    try:
-                        async with session.get(prop_url) as response:
-                            if response.status == 200:
-                                html = await response.text()
-                                
-                                # Check if it's a real property page
-                                if self.is_property_page(html, neighborhood):
-                                    prop_data = await self.scrape_individual_property(session, prop_url, neighborhood)
-                                    if prop_data and self.validate_property(prop_data):
-                                        properties.append(prop_data)
-                                        logger.info(f"✅ Direct access: {prop_data.address}")
-                            
-                            elif response.status == 403:
-                                logger.info("🛡️ Hit protection - switching strategy")
+                    for start_id, end_id in self.id_ranges:
+                        if found_properties >= target_properties:
+                            break
+                        
+                        logger.info(f"🔍 Testing ID range {start_id}-{end_id} for {neighborhood_en}")
+                        
+                        # Test sample IDs from range (every 100th ID to be efficient)
+                        for property_id in range(start_id, end_id, 100):
+                            if found_properties >= target_properties:
                                 break
-                    
-                    except Exception as e:
-                        continue  # Try next URL
-                    
-                    await asyncio.sleep(2)  # Longer delay for direct access
-        
-        except Exception as e:
-            logger.error(f"❌ Direct property search failed: {e}")
-        
-        return properties
-    
-    def extract_property_urls_from_search(self, html: str) -> List[str]:
-        """Extract property URLs from search results"""
-        
-        soup = BeautifulSoup(html, 'html.parser')
-        urls = []
-        
-        # Look for property links using multiple selectors
-        selectors = [
-            'a[href*="/property/"]',
-            'a[href*="/rent/"]',
-            'a[href*="/sale/"]',
-            'a[href*="enoikiaseis"]',  # Greek for rentals
-            'a[href*="poliseis"]',    # Greek for sales
-            '.property-card a',
-            '.listing a',
-            '[data-testid*="property"] a'
-        ]
-        
-        for selector in selectors:
-            links = soup.select(selector)
-            for link in links:
-                href = link.get('href')
-                if href:
-                    full_url = urljoin('https://xe.gr', href)
-                    if self.is_valid_property_url(full_url):
-                        urls.append(full_url)
-        
-        # Remove duplicates
-        return list(set(urls))
-    
-    def extract_urls_from_sitemap(self, sitemap_xml: str) -> List[str]:
-        """Extract URLs from sitemap XML"""
-        
-        urls = []
-        
-        # Extract all <loc> URLs
-        url_matches = re.findall(r'<loc>(.*?)</loc>', sitemap_xml)
-        
-        for url in url_matches:
-            if self.is_valid_property_url(url):
-                urls.append(url)
-        
-        return urls
-    
-    def is_athens_property_url(self, url: str, neighborhood: str) -> bool:
-        """Check if URL is for Athens property"""
-        
-        url_lower = url.lower()
-        neighborhood_lower = neighborhood.lower()
-        
-        # Check for Athens indicators
-        athens_indicators = ['athens', 'αθήνα', 'athen', neighborhood_lower]
-        
-        return any(indicator in url_lower for indicator in athens_indicators)
-    
-    def is_property_page(self, html: str, neighborhood: str) -> bool:
-        """Check if HTML is a real property listing page"""
-        
-        html_lower = html.lower()
-        
-        # Must contain property indicators
-        property_indicators = ['τιμή', 'price', 'τ.μ', 'sqm', 'm²', 'ενοικίαση', 'πώληση']
-        if not any(indicator in html_lower for indicator in property_indicators):
-            return False
-        
-        # Should contain Athens/neighborhood indicators
-        location_indicators = ['αθήνα', 'athens', neighborhood.lower()]
-        if not any(indicator in html_lower for indicator in location_indicators):
-            return False
-        
-        return True
-    
-    def is_valid_property_url(self, url: str) -> bool:
-        """Validate property URL"""
-        
-        if not url or 'xe.gr' not in url:
-            return False
-        
-        # Must contain property indicators
-        property_indicators = ['/property/', '/rent/', '/sale/', '/enoikiaseis/', '/poliseis/'] 
-        if not any(indicator in url for indicator in property_indicators):
-            return False
-        
-        # Must not be search or admin page
-        invalid_patterns = ['/search', '/admin', '/api/', '/results', '/filter']
-        if any(pattern in url for pattern in invalid_patterns):
-            return False
-        
-        return True
-    
-    async def scrape_individual_property(self, session: aiohttp.ClientSession, url: str, neighborhood: str) -> Optional[RealPropertyData]:
-        """Scrape individual property page"""
-        
-        try:
-            async with session.get(url) as response:
-                if response.status != 200:
-                    return None
-                
-                html = await response.text()
-                soup = BeautifulSoup(html, 'html.parser')
-                
-                # Extract data using intelligent patterns
-                data = {
-                    'property_id': self.generate_property_id(url),
-                    'url': url,
-                    'source_timestamp': datetime.now().isoformat(),
-                    'html_source_hash': hashlib.md5(html.encode()).hexdigest(),
-                    'neighborhood': neighborhood,
-                    'extraction_method': 'intelligence_based',
-                    'title': self.extract_title(soup),
-                    'address': self.extract_address(soup),
-                    'price': self.extract_price(soup),
-                    'sqm': self.extract_sqm(soup),
-                    'rooms': self.extract_rooms(soup),
-                    'floor': self.extract_floor(soup),
-                    'description': self.extract_description(soup),
-                    'energy_class': self.extract_energy_class(soup, html),
-                    'latitude': None,
-                    'longitude': None,
-                    'extraction_confidence': 0.0,
-                    'validation_flags': []
-                }
-                
-                # Calculate confidence and flags
-                data['extraction_confidence'] = self.calculate_confidence(data)
-                data['validation_flags'] = self.generate_flags(data)
-                
-                return RealPropertyData(**data)
-        
-        except Exception as e:
-            logger.error(f"❌ Error scraping {url}: {e}")
-            return None
-    
-    # Include all extraction methods from previous scraper
-    def generate_property_id(self, url: str) -> str:
-        """Generate property ID"""
-        url_match = re.search(r'/(\d+)', url)
-        if url_match:
-            return f"xe_gr_{url_match.group(1)}"
-        else:
-            return f"xe_gr_{hashlib.md5(url.encode()).hexdigest()[:8]}"
-    
-    def extract_title(self, soup: BeautifulSoup) -> str:
-        """Extract title"""
-        selectors = ['h1', '.property-title', '.listing-title', 'title']
-        for selector in selectors:
-            element = soup.select_one(selector)
-            if element:
-                return element.get_text(strip=True)[:200]
-        return "No title found"
-    
-    def extract_address(self, soup: BeautifulSoup) -> str:
-        """Extract address"""
-        selectors = ['.address', '.location', '.property-address', '.geo-info']
-        for selector in selectors:
-            element = soup.select_one(selector)
-            if element:
-                address = element.get_text(strip=True)
-                if self.validate_athens_address(address):
-                    return address[:300]
-        
-        # Try page text
-        page_text = soup.get_text()
-        athens_match = re.search(r'[Αα]θήνα[^,\n]*', page_text)
-        if athens_match:
-            return athens_match.group(0).strip()
-        
-        return "Address not found"
-    
-    def validate_athens_address(self, address: str) -> bool:
-        """Validate Athens address"""
-        if not address:
-            return False
-        address_lower = address.lower()
-        indicators = ['αθήνα', 'athens', 'κολωνάκι', 'kolonaki', 'παγκράτι', 'pangrati', 'εξάρχεια', 'exarchia']
-        return any(indicator in address_lower for indicator in indicators)
-    
-    def extract_price(self, soup: BeautifulSoup) -> Optional[float]:
-        """Extract price"""
-        # Enhanced price extraction using intelligence
-        selectors = ['.price', '.property-price', '[data-testid*="price"]', '.cost']
-        
-        for selector in selectors:
-            element = soup.select_one(selector)
-            if element:
-                price_text = element.get_text(strip=True)
-                price = self.parse_price(price_text)
-                if price and 50 <= price <= 5000000:
-                    return price
-        
-        # Search page text for price patterns
-        page_text = soup.get_text()
-        price_patterns = [
-            r'(\\d{1,3}(?:\\.\\d{3})*)\\s*€',
-            r'€\\s*(\\d{1,3}(?:\\.\\d{3})*)',
-            r'τιμή[:\\s]*(\\d{1,3}(?:\\.\\d{3})*)'
-        ]
-        
-        for pattern in price_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
-            if match:
-                price = self.parse_price(match.group(1))
-                if price and 50 <= price <= 5000000:
-                    return price
-        
-        return None
-    
-    def parse_price(self, price_text: str) -> Optional[float]:
-        """Parse price with Greek format"""
-        if not price_text:
-            return None
-        
-        # Remove currency symbols
-        price_clean = re.sub(r'[€$£¥₹ευρώeur]', '', price_text, flags=re.IGNORECASE)
-        price_clean = re.sub(r'[^\\d.,]', '', price_clean)
-        
-        if not price_clean:
-            return None
-        
-        try:
-            # Handle European format
-            if '.' in price_clean:
-                parts = price_clean.split('.')
-                if len(parts) == 2 and len(parts[1]) == 3:
-                    price_clean = price_clean.replace('.', '')
+                            
+                            # Try all URL patterns for this ID and neighborhood
+                            for pattern in self.property_url_patterns:
+                                url = pattern.format(id=property_id, neighborhood=neighborhood_en)
+                                
+                                if await self.test_and_validate_property_url(page, url, neighborhood_greek):
+                                    found_properties += 1
+                                    logger.info(f"✅ FOUND PROPERTY {found_properties}: {url}")
+                                
+                                await asyncio.sleep(1)  # Respectful delay
+                                
+                                if found_properties >= target_properties:
+                                    break
             
-            price = float(price_clean)
-            if price < 10:
-                price = price * 1000
-            return price
-        except ValueError:
+            logger.info(f"🎯 Pattern discovery complete: {found_properties} properties found")
+        
+        except Exception as e:
+            logger.error(f"❌ Pattern discovery failed: {e}")
+    
+    async def test_and_validate_property_url(self, page, url: str, neighborhood: str) -> bool:
+        """Test URL and validate it contains real property data"""
+        try:
+            response = await page.goto(url, wait_until="load", timeout=15000)
+            
+            if response and response.status == 200:
+                await asyncio.sleep(2)
+                
+                # Get page content for validation
+                content = await page.content()
+                page_text = await page.inner_text('body')
+                
+                # Enhanced validation: must contain real property indicators
+                property_indicators = [
+                    'τιμή', 'price', 'τ.μ', 'm²', 'ενοικίαση', 'πώληση',
+                    'διαμέρισμα', 'apartment', 'ενεργειακή', 'δωμάτια'
+                ]
+                
+                indicator_count = sum(1 for indicator in property_indicators 
+                                    if indicator.lower() in content.lower())
+                
+                # Location validation: must mention Athens or the specific neighborhood
+                location_indicators = [
+                    'αθήνα', 'athens', neighborhood.lower(),
+                    'attiki', 'αττική', 'ελλάδα', 'greece'
+                ]
+                
+                has_location = any(loc.lower() in content.lower() for loc in location_indicators)
+                
+                # Content validation: must be substantial property page
+                is_substantial = len(page_text) > 3000  # Real property pages are detailed
+                
+                # Price validation: must contain realistic price patterns
+                price_patterns = [
+                    r'€\s*\d{2,6}',  # Euro prices
+                    r'\d{2,6}\s*€',  # Prices with euro
+                    r'\d{1,3}(?:\.\d{3})*\s*€'  # Formatted prices
+                ]
+                
+                has_price = any(re.search(pattern, content) for pattern in price_patterns)
+                
+                # Area validation: must mention square meters
+                area_patterns = [
+                    r'\d+\s*τ\.?μ\.?',
+                    r'\d+\s*m²',
+                    r'\d+\s*sqm'
+                ]
+                
+                has_area = any(re.search(pattern, content, re.IGNORECASE) for pattern in area_patterns)
+                
+                # Property is valid if it meets multiple criteria
+                validation_score = sum([
+                    indicator_count >= 4,  # Has property terms
+                    has_location,          # Has location info
+                    is_substantial,        # Substantial content
+                    has_price,            # Has pricing
+                    has_area              # Has area info
+                ])
+                
+                if validation_score >= 3:  # Must meet at least 3/5 criteria
+                    logger.info(f"✅ VALIDATED PROPERTY: {url} (score: {validation_score}/5)")
+                    
+                    self.extracted_properties.append({
+                        'url': url,
+                        'neighborhood': neighborhood,
+                        'validation_score': validation_score,
+                        'indicator_count': indicator_count,
+                        'has_location': has_location,
+                        'has_price': has_price,
+                        'has_area': has_area,
+                        'content_length': len(page_text),
+                        'discovery_method': 'intelligence_pattern',
+                        'discovered_at': datetime.now().isoformat()
+                    })
+                    
+                    return True
+                else:
+                    logger.debug(f"❌ Invalid property: {url} (score: {validation_score}/5)")
+            
+            return False
+            
+        except Exception as e:
+            logger.debug(f"❌ URL test failed {url}: {e}")
+            return False
+    
+    async def analyze_and_expand_patterns(self, page):
+        """Analyze successful URLs to discover new patterns"""
+        try:
+            logger.info("🔍 Analyzing successful URLs for pattern expansion...")
+            
+            if not self.extracted_properties:
+                logger.warning("⚠️ No properties found for pattern analysis")
+                return
+            
+            # Analyze successful URL patterns
+            successful_urls = [prop['url'] for prop in self.extracted_properties]
+            
+            # Extract ID patterns from successful URLs
+            successful_ids = []
+            for url in successful_urls:
+                id_match = re.search(r'/(\d{6,8})/', url)
+                if id_match:
+                    successful_ids.append(int(id_match.group(1)))
+            
+            if successful_ids:
+                # Find ID clusters and test nearby IDs
+                logger.info(f"🎯 Found {len(successful_ids)} successful IDs, testing nearby ranges...")
+                
+                target_additional = 10
+                found_additional = 0
+                
+                for base_id in successful_ids[:3]:  # Test around first 3 successful IDs
+                    if found_additional >= target_additional:
+                        break
+                    
+                    # Test IDs around successful ones (±20 range)
+                    for offset in range(-20, 21, 5):
+                        if found_additional >= target_additional:
+                            break
+                        
+                        test_id = base_id + offset
+                        if test_id <= 0:
+                            continue
+                        
+                        # Test this ID with all neighborhoods and patterns
+                        for neighborhood_greek, variants in list(self.neighborhoods.items())[:3]:
+                            if found_additional >= target_additional:
+                                break
+                            
+                            for variant in variants[:1]:  # Test primary variant
+                                for pattern in self.property_url_patterns[:2]:  # Test main patterns
+                                    test_url = pattern.format(id=test_id, neighborhood=variant)
+                                    
+                                    # Skip if we already tested this URL
+                                    if test_url in [prop['url'] for prop in self.extracted_properties]:
+                                        continue
+                                    
+                                    if await self.test_and_validate_property_url(page, test_url, neighborhood_greek):
+                                        found_additional += 1
+                                        logger.info(f"✅ PATTERN EXPANSION: Found property {found_additional}")
+                                    
+                                    await asyncio.sleep(1)
+                
+                logger.info(f"🔍 Pattern expansion found {found_additional} additional properties")
+        
+        except Exception as e:
+            logger.error(f"❌ Pattern analysis failed: {e}")
+    
+    async def extract_verified_properties(self, page):
+        """Extract detailed data from all verified properties"""
+        try:
+            logger.info(f"📊 Extracting detailed data from {len(self.extracted_properties)} verified properties...")
+            
+            for i, property_info in enumerate(self.extracted_properties):
+                url = property_info['url']
+                logger.info(f"📋 Extracting {i+1}/{len(self.extracted_properties)}: {url}")
+                
+                try:
+                    response = await page.goto(url, wait_until="networkidle", timeout=20000)
+                    
+                    if response and response.status == 200:
+                        await asyncio.sleep(3)
+                        
+                        # Extract comprehensive property data
+                        property_data = await self.extract_comprehensive_data(page, url, property_info)
+                        
+                        if property_data:
+                            # Update the property info with extracted data
+                            property_info.update(property_data)
+                            logger.info(f"✅ Extracted: {property_data.get('title', 'No title')[:50]}...")
+                        
+                except Exception as e:
+                    logger.warning(f"⚠️ Failed to extract {url}: {e}")
+                    continue
+                
+                await asyncio.sleep(2)  # Respectful delay
+        
+        except Exception as e:
+            logger.error(f"❌ Property data extraction failed: {e}")
+    
+    async def extract_comprehensive_data(self, page, url: str, existing_info: Dict) -> Optional[Dict]:
+        """Extract comprehensive property data"""
+        try:
+            page_text = await page.inner_text('body')
+            title = await page.title()
+            
+            property_data = {
+                'title': title,
+                'raw_text_length': len(page_text),
+                'extraction_timestamp': datetime.now().isoformat()
+            }
+            
+            # Enhanced price extraction
+            price_patterns = [
+                r'(\d{1,3}(?:\.\d{3})*)\s*€',
+                r'€\s*(\d{1,3}(?:\.\d{3})*)',
+                r'τιμή[:\s]*(\d{1,3}(?:\.\d{3})*)',
+                r'Τιμή[:\s]*(\d{1,3}(?:\.\d{3})*)',
+                r'ΤΙΜΗ[:\s]*(\d{1,3}(?:\.\d{3})*)'
+            ]
+            
+            for pattern in price_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    try:
+                        price_str = match.group(1).replace('.', '')
+                        price = float(price_str)
+                        if 50 <= price <= 10000000:  # Realistic price range
+                            property_data['price'] = price
+                            break
+                    except ValueError:
+                        continue
+            
+            # Enhanced SQM extraction
+            sqm_patterns = [
+                r'(\d+(?:[.,]\d+)?)\s*τ\.?μ\.?',
+                r'(\d+(?:[.,]\d+)?)\s*m²',
+                r'(\d+(?:[.,]\d+)?)\s*sq\.?m',
+                r'εμβαδόν[:\s]*(\d+(?:[.,]\d+)?)',
+                r'Εμβαδόν[:\s]*(\d+(?:[.,]\d+)?)'
+            ]
+            
+            for pattern in sqm_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    try:
+                        sqm = float(match.group(1).replace(',', '.'))
+                        if 10 <= sqm <= 1000:  # Realistic area range
+                            property_data['sqm'] = sqm
+                            break
+                    except ValueError:
+                        continue
+            
+            # Enhanced energy class extraction
+            energy_patterns = [
+                r'ενεργειακή\s+κλάση[:\s]*([A-G][+\-]?)',
+                r'Ενεργειακή\s+κλάση[:\s]*([A-G][+\-]?)',
+                r'ΕΝΕΡΓΕΙΑΚΗ\s+ΚΛΑΣΗ[:\s]*([A-G][+\-]?)',
+                r'energy\s+class[:\s]*([A-G][+\-]?)',
+                r'Energy\s+Class[:\s]*([A-G][+\-]?)'
+            ]
+            
+            for pattern in energy_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    energy_class = match.group(1).upper()
+                    if energy_class in ['A+', 'A', 'B+', 'B', 'C+', 'C', 'D', 'E', 'F', 'G']:
+                        property_data['energy_class'] = energy_class
+                        break
+            
+            # Address extraction
+            address_patterns = [
+                r'διεύθυνση[:\s]*([^,\n\.]{10,100})',
+                r'Διεύθυνση[:\s]*([^,\n\.]{10,100})',
+                r'περιοχή[:\s]*([^,\n\.]{10,100})',
+                r'Περιοχή[:\s]*([^,\n\.]{10,100})',
+                r'Αθήνα[,\s]*([^,\n\.]{5,80})'
+            ]
+            
+            for pattern in address_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    address = match.group(1).strip()
+                    if len(address) > 5 and 'αθήνα' in address.lower() or existing_info['neighborhood'].lower() in address.lower():
+                        property_data['address'] = address
+                        break
+            
+            # Property type extraction
+            property_types = {
+                'διαμέρισμα': 'Διαμέρισμα',
+                'μονοκατοικία': 'Μονοκατοικία',
+                'μεζονέτα': 'Μεζονέτα',
+                'ρετιρέ': 'Ρετιρέ',
+                'apartment': 'Διαμέρισμα',
+                'house': 'Μονοκατοικία'
+            }
+            
+            for type_key, type_value in property_types.items():
+                if re.search(type_key, page_text, re.IGNORECASE):
+                    property_data['property_type'] = type_value
+                    break
+            
+            # Listing type
+            if re.search(r'ενοικίαση|rental|rent|προς ενοικίαση', page_text, re.IGNORECASE):
+                property_data['listing_type'] = 'Ενοικίαση'
+            elif re.search(r'πώληση|sale|sell|προς πώληση', page_text, re.IGNORECASE):
+                property_data['listing_type'] = 'Πώληση'
+            
+            # Rooms extraction
+            rooms_patterns = [
+                r'(\d+)\s*δωμάτι',
+                r'(\d+)\s*υπνοδωμάτι',
+                r'(\d+)\s*room',
+                r'(\d+)\s*bedroom'
+            ]
+            
+            for pattern in rooms_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    try:
+                        rooms = int(match.group(1))
+                        if 1 <= rooms <= 10:
+                            property_data['rooms'] = rooms
+                            break
+                    except ValueError:
+                        continue
+            
+            # Floor extraction
+            floor_patterns = [
+                r'(\d+)ος\s*όροφος',
+                r'όροφος[:\s]*(\d+)',
+                r'Όροφος[:\s]*(\d+)',
+                r'floor[:\s]*(\d+)'
+            ]
+            
+            for pattern in floor_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    property_data['floor'] = f"{match.group(1)}ος"
+                    break
+            
+            # Data completeness score
+            key_fields = ['price', 'sqm', 'energy_class', 'address', 'property_type']
+            filled_fields = sum(1 for field in key_fields if property_data.get(field))
+            property_data['data_completeness'] = filled_fields / len(key_fields)
+            
+            # Must have at least price OR sqm to be valid
+            if property_data.get('price') or property_data.get('sqm'):
+                return property_data
+            
+            return None
+            
+        except Exception as e:
+            logger.error(f"❌ Comprehensive data extraction failed: {e}")
             return None
     
-    def extract_sqm(self, soup: BeautifulSoup) -> Optional[float]:
-        """Extract square meters"""
-        page_text = soup.get_text()
-        sqm_patterns = [
-            r'(\\d+(?:[.,]\\d+)?)\\s*τ\\.?μ\\.?',
-            r'(\\d+(?:[.,]\\d+)?)\\s*m²',
-            r'(\\d+(?:[.,]\\d+)?)\\s*sqm'
-        ]
-        
-        for pattern in sqm_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
-            if match:
-                try:
-                    sqm = float(match.group(1).replace(',', '.'))
-                    if 10 <= sqm <= 500:
-                        return sqm
-                except ValueError:
-                    continue
-        return None
-    
-    def extract_rooms(self, soup: BeautifulSoup) -> Optional[int]:
-        """Extract rooms"""
-        page_text = soup.get_text()
-        room_patterns = [r'(\\d+)\\s*δωμάτια?', r'(\\d+)\\s*rooms?']
-        
-        for pattern in room_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
-            if match:
-                try:
-                    rooms = int(match.group(1))
-                    if 1 <= rooms <= 10:
-                        return rooms
-                except ValueError:
-                    continue
-        return None
-    
-    def extract_floor(self, soup: BeautifulSoup) -> Optional[str]:
-        """Extract floor"""
-        page_text = soup.get_text()
-        floor_patterns = [r'όροφος[:\\s]*([^,\\n.]{1,15})', r'floor[:\\s]*([^,\\n.]{1,15})']
-        
-        for pattern in floor_patterns:
-            match = re.search(pattern, page_text, re.IGNORECASE)
-            if match:
-                return match.group(1).strip()
-        return None
-    
-    def extract_description(self, soup: BeautifulSoup) -> str:
-        """Extract description"""
-        selectors = ['.description', '.property-description', '.details']
-        for selector in selectors:
-            element = soup.select_one(selector)
-            if element:
-                desc = element.get_text(strip=True)
-                if len(desc) > 20:
-                    return desc[:1000]
-        return "No description found"
-    
-    def extract_energy_class(self, soup: BeautifulSoup, html: str) -> Optional[str]:
-        """Extract energy class"""
-        energy_patterns = [
-            r'ενεργειακή\\s+κλάση\\s*[:\\-]?\\s*([A-G][+]?)',
-            r'energy\\s+class\\s*[:\\-]?\\s*([A-G][+]?)',
-            r'κλάση\\s+([A-G][+]?)',
-            r'class\\s+([A-G][+]?)'
-        ]
-        
-        full_text = soup.get_text() + html
-        
-        for pattern in energy_patterns:
-            match = re.search(pattern, full_text, re.IGNORECASE)
-            if match:
-                energy_class = match.group(1).upper()
-                if energy_class in ['A+', 'A', 'B+', 'B', 'C+', 'C', 'D', 'E', 'F']:
-                    return energy_class
-        return None
-    
-    def calculate_confidence(self, data: Dict) -> float:
-        """Calculate confidence"""
-        confidence = 0.0
-        total_checks = 0
-        
-        for field in ['address', 'price', 'sqm']:
-            total_checks += 2
-            if data.get(field):
-                confidence += 2
-        
-        for field in ['title', 'description', 'rooms']:
-            total_checks += 1
-            if data.get(field):
-                confidence += 1
-        
-        return confidence / total_checks if total_checks > 0 else 0.0
-    
-    def generate_flags(self, data: Dict) -> List[str]:
-        """Generate validation flags"""
-        flags = ['xe_gr_verified', 'intelligence_based']
-        
-        if data.get('address') and self.validate_athens_address(data['address']):
-            flags.append('athens_verified')
-        
-        if data.get('price') and 50 <= data['price'] <= 5000000:
-            flags.append('price_realistic')
-        
-        if data.get('sqm') and 10 <= data['sqm'] <= 500:
-            flags.append('area_realistic')
-        
-        if data.get('energy_class'):
-            flags.append('energy_found')
-        
-        return flags
-    
-    def validate_property(self, prop: RealPropertyData) -> bool:
-        """Validate property"""
-        if not prop.url or not prop.property_id:
-            return False
-        
-        if not prop.address or not self.validate_athens_address(prop.address):
-            return False
-        
-        if not prop.price and not prop.sqm:
-            return False
-        
-        if prop.price and not (50 <= prop.price <= 5000000):
-            return False
-        
-        if prop.sqm and not (10 <= prop.sqm <= 500):
-            return False
-        
-        if prop.extraction_confidence < 0.3:
-            return False
-        
-        return True
+    async def export_intelligence_results(self):
+        """Export intelligence-based extraction results"""
+        try:
+            logger.info("💾 Exporting intelligence results...")
+            
+            # Filter for properties with meaningful data
+            valid_properties = [
+                prop for prop in self.extracted_properties 
+                if prop.get('price') or prop.get('sqm')
+            ]
+            
+            if not valid_properties:
+                logger.warning("⚠️ No valid properties extracted")
+                return
+            
+            # Export to JSON
+            json_file = f'outputs/xe_gr_intelligence_{self.session_id}.json'
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'intelligence_metadata': {
+                        'session_id': self.session_id,
+                        'extraction_timestamp': datetime.now().isoformat(),
+                        'total_properties': len(valid_properties),
+                        'method': 'intelligence_pattern_analysis',
+                        'url_patterns_tested': len(self.property_url_patterns),
+                        'neighborhoods_tested': len(self.neighborhoods)
+                    },
+                    'properties': valid_properties
+                }, f, indent=2, ensure_ascii=False)
+            
+            # Export to CSV
+            csv_file = f'outputs/xe_gr_intelligence_{self.session_id}.csv'
+            if valid_properties:
+                fieldnames = [
+                    'url', 'neighborhood', 'title', 'price', 'sqm', 'energy_class',
+                    'address', 'property_type', 'listing_type', 'rooms', 'floor',
+                    'validation_score', 'data_completeness', 'discovery_method',
+                    'extraction_timestamp'
+                ]
+                
+                with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=fieldnames)
+                    writer.writeheader()
+                    for prop in valid_properties:
+                        writer.writerow({key: prop.get(key, '') for key in fieldnames})
+            
+            # Generate intelligence report
+            logger.info("\n" + "="*80)
+            logger.info("🧠 XE.GR INTELLIGENCE EXTRACTION - FINAL REPORT")
+            logger.info("="*80)
+            logger.info(f"✅ REAL Properties Extracted: {len(valid_properties)}")
+            
+            # Data quality analysis
+            with_price = sum(1 for p in valid_properties if p.get('price'))
+            with_sqm = sum(1 for p in valid_properties if p.get('sqm'))
+            with_energy = sum(1 for p in valid_properties if p.get('energy_class'))
+            with_address = sum(1 for p in valid_properties if p.get('address'))
+            
+            logger.info(f"💰 Properties with Price: {with_price}")
+            logger.info(f"📐 Properties with SQM: {with_sqm}")
+            logger.info(f"⚡ Properties with Energy Class: {with_energy}")
+            logger.info(f"📍 Properties with Address: {with_address}")
+            
+            # Validation score analysis
+            if valid_properties:
+                avg_validation = sum(p.get('validation_score', 0) for p in valid_properties) / len(valid_properties)
+                avg_completeness = sum(p.get('data_completeness', 0) for p in valid_properties) / len(valid_properties)
+                logger.info(f"📊 Average Validation Score: {avg_validation:.2f}/5")
+                logger.info(f"📊 Average Data Completeness: {avg_completeness:.2f}")
+            
+            logger.info(f"\n💾 Results saved:")
+            logger.info(f"   📄 JSON: {json_file}")
+            logger.info(f"   📊 CSV: {csv_file}")
+            
+            # Show sample results
+            if valid_properties:
+                logger.info(f"\n🏠 SAMPLE PROPERTIES:")
+                for i, prop in enumerate(valid_properties[:5], 1):
+                    title = prop.get('title', 'No title')[:50]
+                    price = prop.get('price', 'N/A')
+                    sqm = prop.get('sqm', 'N/A')
+                    energy = prop.get('energy_class', 'N/A')
+                    neighborhood = prop.get('neighborhood', 'N/A')
+                    logger.info(f"   {i}. {neighborhood} | {title}... | €{price} | {sqm}m² | Energy {energy}")
+            
+            logger.info("="*80)
+            
+        except Exception as e:
+            logger.error(f"❌ Intelligence results export failed: {e}")
 
 async def main():
-    """Test intelligence-based scraper"""
-    
-    logger.info("🧠 TESTING INTELLIGENCE-BASED XE.GR SCRAPER")
-    
-    scraper = IntelligenceBasedXEScraper()
-    
-    # Test with Kolonaki using discovered intelligence
-    properties = await scraper.scrape_using_working_search('Κολωνάκι', max_properties=5)
-    
-    logger.info(f"\\n🎯 INTELLIGENCE-BASED RESULTS: {len(properties)} properties")
-    
-    if properties:
-        for prop in properties:
-            logger.info(f"📊 {prop.address}")
-            logger.info(f"   Price: €{prop.price}, Area: {prop.sqm}m², Energy: {prop.energy_class}")
-            logger.info(f"   Method: {prop.extraction_method}")
-            logger.info(f"   URL: {prop.url}")
-        
-        # Save results  
-        output_data = [asdict(prop) for prop in properties]
-        with open('outputs/intelligence_based_results.json', 'w', encoding='utf-8') as f:
-            json.dump(output_data, f, indent=2, ensure_ascii=False)
-        
-        logger.info("✅ Results saved to outputs/intelligence_based_results.json")
-        logger.info("🧠 Intelligence-based approach successful!")
-    else:
-        logger.warning("❌ No properties extracted - need to refine approach")
+    """Run intelligence-based extraction"""
+    scraper = XEIntelligenceScraper()
+    await scraper.run_intelligence_mission()
 
 if __name__ == "__main__":
     asyncio.run(main())

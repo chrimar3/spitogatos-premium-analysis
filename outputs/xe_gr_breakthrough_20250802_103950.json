@@ -1,0 +1,25 @@
+{
+  "extraction_metadata": {
+    "session_id": "20250802_103950",
+    "extraction_timestamp": "2025-08-02T10:43:27.816218",
+    "total_properties": 1,
+    "method": "breakthrough_scraping"
+  },
+  "properties": [
+    {
+      "url": "https://www.xe.gr/property/times-akiniton",
+      "title": "Τιμές ακινήτων ανά περιοχή & τάσεις της αγοράς | xe.gr",
+      "raw_content_length": 5031,
+      "price": "2.377",
+      "sqm": "80",
+      "address": "και εμβαδό (τετραγωνικά μέτρα) καθώς και τη μέση τιμή ανά τετραγωνικό μέτρο για το τρέχον έτος σε σύγκριση με το προηγούμενο. Και μην ξεχνάς",
+      "listing_type": "Ενοικίαση",
+      "data_completeness": 0.6,
+      "discovery_method": "search_results",
+      "source_category": "",
+      "neighborhood_search": "Παγκράτι",
+      "extraction_timestamp": "2025-08-02T10:43:25.813980",
+      "session_id": "20250802_103950"
+    }
+  ]
+}
