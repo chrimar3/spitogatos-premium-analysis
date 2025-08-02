@@ -1,0 +1,292 @@
+{
+  "analysis_metadata": {
+    "analysis_timestamp": "2025-08-02T22:01:27.888556",
+    "data_source": "authentic_spitogatos_extraction",
+    "total_neighborhoods": 15,
+    "total_properties": 155,
+    "overall_median_energy_class": "C",
+    "overall_median_numeric": 2.0,
+    "weighted_average_price_per_sqm": 8320.703858715271
+  },
+  "neighborhoods_ranked": [
+    {
+      "rank": 1,
+      "neighborhood": "Metaxourgeio",
+      "median_energy_class": "A",
+      "median_numeric_value": 6.0,
+      "total_properties": 3,
+      "avg_price": 433333.3333333333,
+      "avg_sqm": 146.0,
+      "avg_price_per_sqm": 3035.3909465020574,
+      "energy_distribution": {
+        "C": 1,
+        "A": 2
+      }
+    },
+    {
+      "rank": 2,
+      "neighborhood": "Illisia",
+      "median_energy_class": "B",
+      "median_numeric_value": 4.0,
+      "total_properties": 5,
+      "avg_price": 424000.0,
+      "avg_sqm": 110.6,
+      "avg_price_per_sqm": 3880.058813873001,
+      "energy_distribution": {
+        "A": 1,
+        "B+": 1,
+        "C": 1,
+        "D": 1,
+        "B": 1
+      }
+    },
+    {
+      "rank": 3,
+      "neighborhood": "Pangrati",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.5,
+      "total_properties": 10,
+      "avg_price": 624000.0,
+      "avg_sqm": 118.6,
+      "avg_price_per_sqm": 5251.853474388284,
+      "energy_distribution": {
+        "C+": 4,
+        "C": 2,
+        "D": 3,
+        "A": 1
+      }
+    },
+    {
+      "rank": 4,
+      "neighborhood": "Ambelokipi",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 5,
+      "avg_price": 458000.0,
+      "avg_sqm": 98.0,
+      "avg_price_per_sqm": 4659.927226704635,
+      "energy_distribution": {
+        "E": 1,
+        "C": 2,
+        "A+": 1,
+        "C+": 1
+      }
+    },
+    {
+      "rank": 5,
+      "neighborhood": "Athens Center",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 24,
+      "avg_price": 744375.0,
+      "avg_sqm": 128.58333333333334,
+      "avg_price_per_sqm": 5646.8660846672165,
+      "energy_distribution": {
+        "F": 3,
+        "C": 7,
+        "E": 5,
+        "D": 3,
+        "B": 3,
+        "C+": 3
+      }
+    },
+    {
+      "rank": 6,
+      "neighborhood": "Exarchia",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 15,
+      "avg_price": 955333.3333333334,
+      "avg_sqm": 146.93333333333334,
+      "avg_price_per_sqm": 6281.36173583647,
+      "energy_distribution": {
+        "E": 2,
+        "C": 5,
+        "A+": 2,
+        "B": 2,
+        "D": 1,
+        "A": 2,
+        "F": 1
+      }
+    },
+    {
+      "rank": 7,
+      "neighborhood": "Gazi",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 8,
+      "avg_price": 730625.0,
+      "avg_sqm": 118.75,
+      "avg_price_per_sqm": 5589.347952495504,
+      "energy_distribution": {
+        "C+": 2,
+        "C": 5,
+        "D": 1
+      }
+    },
+    {
+      "rank": 8,
+      "neighborhood": "Kolonaki",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 17,
+      "avg_price": 3444117.6470588236,
+      "avg_sqm": 120.94117647058823,
+      "avg_price_per_sqm": 27078.40155346109,
+      "energy_distribution": {
+        "B": 4,
+        "C": 5,
+        "D": 1,
+        "E": 3,
+        "A": 1,
+        "B+": 2,
+        "C+": 1
+      }
+    },
+    {
+      "rank": 9,
+      "neighborhood": "Koukaki",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 22,
+      "avg_price": 992500.0,
+      "avg_sqm": 134.4090909090909,
+      "avg_price_per_sqm": 7250.136551592985,
+      "energy_distribution": {
+        "C": 7,
+        "C+": 4,
+        "A+": 2,
+        "D": 4,
+        "B": 2,
+        "E": 2,
+        "F": 1
+      }
+    },
+    {
+      "rank": 10,
+      "neighborhood": "Kypseli",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 7,
+      "avg_price": 350714.28571428574,
+      "avg_sqm": 140.57142857142858,
+      "avg_price_per_sqm": 2430.8481557279542,
+      "energy_distribution": {
+        "C": 3,
+        "B+": 2,
+        "A": 1,
+        "E": 1
+      }
+    },
+    {
+      "rank": 11,
+      "neighborhood": "Plaka",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 8,
+      "avg_price": 1656250.0,
+      "avg_sqm": 118.5,
+      "avg_price_per_sqm": 14145.85365106253,
+      "energy_distribution": {
+        "C": 3,
+        "B+": 2,
+        "D": 1,
+        "A+": 1,
+        "F": 1
+      }
+    },
+    {
+      "rank": 12,
+      "neighborhood": "Psyrri",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 10,
+      "avg_price": 407000.0,
+      "avg_sqm": 96.7,
+      "avg_price_per_sqm": 4111.815442102133,
+      "energy_distribution": {
+        "C": 3,
+        "F": 1,
+        "B": 1,
+        "D": 2,
+        "A": 2,
+        "E": 1
+      }
+    },
+    {
+      "rank": 13,
+      "neighborhood": "Thiseio",
+      "median_energy_class": "C",
+      "median_numeric_value": 2.0,
+      "total_properties": 10,
+      "avg_price": 1498000.0,
+      "avg_sqm": 170.1,
+      "avg_price_per_sqm": 8285.50244732034,
+      "energy_distribution": {
+        "C": 3,
+        "B": 3,
+        "D": 3,
+        "B+": 1
+      }
+    },
+    {
+      "rank": 14,
+      "neighborhood": "Neos Kosmos",
+      "median_energy_class": "D",
+      "median_numeric_value": 1.0,
+      "total_properties": 5,
+      "avg_price": 483000.0,
+      "avg_sqm": 141.4,
+      "avg_price_per_sqm": 3371.3681504312785,
+      "energy_distribution": {
+        "A+": 1,
+        "C+": 1,
+        "D": 3
+      }
+    },
+    {
+      "rank": 15,
+      "neighborhood": "Petralona",
+      "median_energy_class": "D",
+      "median_numeric_value": 1.0,
+      "total_properties": 6,
+      "avg_price": 485000.0,
+      "avg_sqm": 143.83333333333334,
+      "avg_price_per_sqm": 3345.9746893674296,
+      "energy_distribution": {
+        "C": 3,
+        "E": 1,
+        "F": 2
+      }
+    }
+  ],
+  "market_insights": {
+    "premium_neighborhoods": [
+      "Kolonaki",
+      "Plaka",
+      "Thiseio"
+    ],
+    "mid_tier_neighborhoods": [
+      "Koukaki",
+      "Exarchia",
+      "Athens Center",
+      "Gazi",
+      "Pangrati",
+      "Ambelokipi",
+      "Psyrri"
+    ],
+    "affordable_neighborhoods": [
+      "Illisia",
+      "Neos Kosmos",
+      "Petralona",
+      "Metaxourgeio",
+      "Kypseli"
+    ],
+    "investment_opportunities": [
+      "Illisia",
+      "Metaxourgeio"
+    ],
+    "best_energy_efficiency": "Metaxourgeio",
+    "needs_energy_improvement": "Petralona"
+  }
+}
