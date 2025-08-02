@@ -1,0 +1,223 @@
+{
+  "timestamp": "2025-08-02T12:59:17.361284",
+  "website": "spitogatos.gr",
+  "anti_bot_protection": {
+    "homepage": {
+      "pardon_interruption": false,
+      "javascript_challenge": false,
+      "cookie_requirements": true
+    }
+  },
+  "url_patterns": {},
+  "search_functionality": {
+    "Direct URL": {
+      "url": "https://www.spitogatos.gr/search?location=Athens",
+      "success": true,
+      "title": "Η σελίδα που ψάχνεις δε μπορεί να βρεθεί",
+      "property_elements_found": 0,
+      "property_links_found": 0,
+      "contains_listings": false
+    },
+    "Sale Properties": {
+      "url": "https://www.spitogatos.gr/for_sale-homes",
+      "success": true,
+      "title": "Η σελίδα που ψάχνεις δε μπορεί να βρεθεί",
+      "property_elements_found": 0,
+      "property_links_found": 0,
+      "contains_listings": false
+    },
+    "Rent Properties": {
+      "url": "https://www.spitogatos.gr/for_rent-homes",
+      "success": true,
+      "title": "Η σελίδα που ψάχνεις δε μπορεί να βρεθεί",
+      "property_elements_found": 0,
+      "property_links_found": 0,
+      "contains_listings": false
+    },
+    "English Version": {
+      "url": "https://www.spitogatos.gr/en",
+      "success": true,
+      "title": "Greek Real Estate - Property in Greece | Spitogatos",
+      "property_elements_found": 0,
+      "property_links_found": 8,
+      "contains_listings": true,
+      "sample_property_urls": [
+        "https://www.spitogatos.gr/en/property-index",
+        "https://www.spitogatos.gr/en/page/addListing/",
+        "https://www.spitogatos.gr/en/property-index",
+        "https://www.spitogatos.gr/en/property-index",
+        "https://www.spitogatos.gr/en/page/addListing/"
+      ]
+    },
+    "Athens Center": {
+      "url": "https://www.spitogatos.gr/en/for_sale-homes/athens-center",
+      "success": true,
+      "title": "Homes for sale: Athens - Center | Spitogatos",
+      "property_elements_found": 0,
+      "property_links_found": 604,
+      "contains_listings": true,
+      "sample_property_urls": [
+        "https://www.spitogatos.gr/en/page/addListing/",
+        "https://www.spitogatos.gr/en/property-index",
+        "https://www.spitogatos.gr/en/property/1117629227",
+        "https://www.spitogatos.gr/en/property/1117629227",
+        "https://www.spitogatos.gr/en/property/1117360402"
+      ]
+    }
+  },
+  "property_data_structure": {
+    "https://www.spitogatos.gr/en/property/1117629227": {
+      "accessible": true,
+      "title": "Sale, Apartment, 140m² Neos Kosmos, Kinosargous | 17629227 | Spitogatos",
+      "price_elements": 1,
+      "sqm_elements": 0,
+      "energy_elements": 1,
+      "contact_elements": 1,
+      "has_property_data": true
+    }
+  },
+  "accessibility_analysis": {
+    "https://www.spitogatos.gr": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:17 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.38843900000000003",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "q80MS5ou_PvOfwbukTMobqf2R3im90yw_C0wySpFXbuuNhNi6xFvJg=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    },
+    "https://www.spitogatos.gr/en": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:17 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.3651",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "3OTq6G2OK9_BUL_5fe1tlzXIopLbG7S1U-mX93PejzTexLpIaenbDA=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    },
+    "https://www.spitogatos.gr/search": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:17 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.41745",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "7xzfUUvIUzFwSh-c9FAafL-6qHLfYAvU3EcPHbPJWaAHOWsKaL_L9A=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    },
+    "https://www.spitogatos.gr/for_sale-homes": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:18 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.394859",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "N76CzZ4vkqgKfpldPrtdOUMcNIjrNuVvonl2tfyIC09pKtDZYRlBBQ=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    },
+    "https://www.spitogatos.gr/for_rent-homes": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:17 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.39417800000000003",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "YGAICxNYEYSQv7uljVlkNnRBCIdhcn0L1k1X75pt2ftARKmIkVuEug=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    },
+    "https://www.spitogatos.gr/en/for_sale-homes/athens-center": {
+      "status": 405,
+      "headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "3914",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-cache, no-store",
+        "Date": "Sat, 02 Aug 2025 09:59:18 GMT",
+        "Server": "bon",
+        "server-timing": "bon, total;dur=0.33768600000000004",
+        "Vary": "origin, access-control-request-method, access-control-request-headers",
+        "X-Cache": "LambdaGeneratedResponse from cloudfront",
+        "Via": "1.1 fea7ea7cffd9be19eeefb71ceb99207a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "ATH51-P1",
+        "X-Amz-Cf-Id": "2whmt8qi5gkLACmJB5UhAOc4-zEq5RsOfu1_EQdbnYaqNG2C5vNbhQ=="
+      },
+      "anti_bot_detected": true,
+      "javascript_required": true,
+      "cloudflare_protection": false,
+      "content_size": 3914
+    }
+  },
+  "homepage_analysis": {
+    "title": "Αγγελίες Ακινήτων - Αγγελίες Σπιτιών | Spitogatos",
+    "search_forms_found": 0,
+    "navigation_links": 119,
+    "anti_bot_status": {
+      "pardon_interruption": false,
+      "javascript_challenge": false,
+      "cookie_requirements": true
+    }
+  }
+}
