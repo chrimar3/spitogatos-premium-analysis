@@ -1,0 +1,42 @@
+{
+  "extraction_summary": {
+    "timestamp": "2025-08-02T13:05:17.422545",
+    "total_authentic_properties": 9,
+    "target_neighborhood_properties": 0,
+    "kolonaki_properties": 0,
+    "pangrati_properties": 0,
+    "failed_extractions": 0,
+    "success_rate": "100.0%"
+  },
+  "data_quality": {
+    "properties_with_price": 9,
+    "properties_with_sqm": 9,
+    "properties_with_energy_class": 0,
+    "properties_with_contact": 0,
+    "authenticity_rate": "100.0%"
+  },
+  "neighborhood_analysis": {
+    "all_properties": {
+      "count": 9,
+      "avg_price": 333111.1111111111,
+      "min_price": 140000.0,
+      "max_price": 650000.0,
+      "avg_sqm": 86.0,
+      "avg_price_per_sqm": 6536.214576260139,
+      "with_energy_class": 0,
+      "property_types": [
+        "apartment",
+        "maisonette"
+      ]
+    },
+    "kolonaki": {},
+    "pangrati": {}
+  },
+  "property_type_breakdown": {
+    "apartment": 8,
+    "maisonette": 1
+  },
+  "listing_type_breakdown": {
+    "sale": 9
+  }
+}

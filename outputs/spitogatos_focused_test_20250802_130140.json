@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://www.spitogatos.gr/en/property/1117629227",
+    "title": "Apartment, 140m²",
+    "price": 340000.0,
+    "sqm": null,
+    "energy_class": null,
+    "is_target_neighborhood": false,
+    "extracted_at": "2025-08-02T13:01:11.906058"
+  },
+  {
+    "url": "https://www.spitogatos.gr/en/property/1117629227",
+    "title": "Apartment, 140m²",
+    "price": 340000.0,
+    "sqm": null,
+    "energy_class": null,
+    "is_target_neighborhood": false,
+    "extracted_at": "2025-08-02T13:01:16.351094"
+  },
+  {
+    "url": "https://www.spitogatos.gr/en/property/1117360402",
+    "title": "Apartment, 95m²",
+    "price": 535000.0,
+    "sqm": 14.0,
+    "energy_class": null,
+    "is_target_neighborhood": false,
+    "extracted_at": "2025-08-02T13:01:21.341141"
+  },
+  {
+    "url": "https://www.spitogatos.gr/en/property/1117360402",
+    "title": "Apartment, 95m²",
+    "price": 535000.0,
+    "sqm": 14.0,
+    "energy_class": null,
+    "is_target_neighborhood": false,
+    "extracted_at": "2025-08-02T13:01:25.686281"
+  },
+  {
+    "url": "https://www.spitogatos.gr/en/property/1115428362",
+    "title": "Detached house, 187m²",
+    "price": 520000.0,
+    "sqm": null,
+    "energy_class": null,
+    "is_target_neighborhood": false,
+    "extracted_at": "2025-08-02T13:01:30.475521"
+  }
+]

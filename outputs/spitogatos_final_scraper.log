@@ -1,0 +1,94 @@
+2025-08-02 13:03:43,499 - INFO - 🎯 SPITOGATOS.GR FINAL PRODUCTION SCRAPER
+2025-08-02 13:03:43,499 - INFO - Mission: Extract 100% authentic property data from Kolonaki & Pangrati
+2025-08-02 13:03:43,499 - INFO - 🚀 SPITOGATOS.GR FINAL PRODUCTION SCRAPER
+2025-08-02 13:03:43,499 - INFO - 🎯 Target: ['Kolonaki', 'Pangrati']
+2025-08-02 13:03:43,499 - INFO - 📋 Mission: Extract 100% authentic individual property listings
+2025-08-02 13:03:43,499 - INFO - 🚀 Starting comprehensive property extraction
+2025-08-02 13:03:44,229 - INFO - 🔍 Search strategy: sale_athens_center
+2025-08-02 13:03:44,229 - INFO - 🔍 Discovering properties from: https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 13:03:49,577 - INFO - ✅ Discovered 10 unique property URLs
+2025-08-02 13:03:49,577 - INFO - 📋 Processing 1/10: https://www.spitogatos.gr/en/property/1117843683
+2025-08-02 13:03:49,577 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117843683
+2025-08-02 13:04:06,019 - INFO - ✅ AUTHENTIC: dd13ee26b1cc - €495,000, 112.0m², Homes for sale
+2025-08-02 13:04:08,860 - INFO - 📋 Processing 2/10: https://www.spitogatos.gr/en/property/1118014212
+2025-08-02 13:04:08,861 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1118014212
+2025-08-02 13:04:11,687 - INFO - ✅ AUTHENTIC: 418282290548 - €140,000, 100.0m², Homes for sale
+2025-08-02 13:04:15,911 - INFO - 📋 Processing 3/10: https://www.spitogatos.gr/en/property/1116810383
+2025-08-02 13:04:15,911 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116810383
+2025-08-02 13:04:18,584 - INFO - ✅ AUTHENTIC: d1ab4346890f - €244,000, 84.0m², Homes for sale
+2025-08-02 13:04:21,214 - INFO - 📋 Processing 4/10: https://www.spitogatos.gr/en/property/1116931117
+2025-08-02 13:04:21,214 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116931117
+2025-08-02 13:04:23,780 - INFO - ✅ AUTHENTIC: fdfd5ad54696 - €255,000, 30.0m², Homes for sale
+2025-08-02 13:04:27,375 - INFO - 📋 Processing 5/10: https://www.spitogatos.gr/en/property/1117856845
+2025-08-02 13:04:27,376 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117856845
+2025-08-02 13:04:29,921 - INFO - ✅ AUTHENTIC: 99bf503098dc - €650,000, 158.0m², Homes for sale
+2025-08-02 13:04:33,023 - INFO - 📋 Processing 6/10: https://www.spitogatos.gr/en/property/1117353069
+2025-08-02 13:04:33,023 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117353069
+2025-08-02 13:04:35,697 - INFO - ✅ AUTHENTIC: b4d9b40193da - €460,000, 107.0m², Homes for sale
+2025-08-02 13:04:39,022 - INFO - 📋 Processing 7/10: https://www.spitogatos.gr/en/property/1117453190
+2025-08-02 13:04:39,022 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117453190
+2025-08-02 13:04:41,495 - WARNING - ⚠️ POTENTIAL SYNTHETIC: 87400a90d5bc - ['SQM_OUT_OF_RANGE']
+2025-08-02 13:04:43,500 - INFO - 📋 Processing 8/10: https://www.spitogatos.gr/en/property/1115970507
+2025-08-02 13:04:43,501 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1115970507
+2025-08-02 13:04:46,377 - INFO - ✅ AUTHENTIC: 75b64621c805 - €175,000, 102.0m², Homes for sale
+2025-08-02 13:04:50,278 - INFO - 📋 Processing 9/10: https://www.spitogatos.gr/en/property/1117816063
+2025-08-02 13:04:50,279 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117816063
+2025-08-02 13:04:52,850 - INFO - ✅ AUTHENTIC: 3fad06a4ebd4 - €369,000, 13.0m², Homes for sale
+2025-08-02 13:04:56,430 - INFO - 📋 Processing 10/10: https://www.spitogatos.gr/en/property/1114275120
+2025-08-02 13:04:56,430 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1114275120
+2025-08-02 13:04:58,948 - INFO - ✅ AUTHENTIC: 7bb2c3a5e027 - €210,000, 68.0m², Homes for sale
+2025-08-02 13:05:11,064 - INFO - 🔍 Search strategy: rent_athens_center
+2025-08-02 13:05:11,064 - INFO - 🔍 Discovering properties from: https://www.spitogatos.gr/en/for_rent-homes/athens-center
+2025-08-02 13:05:13,056 - INFO - ✅ Discovered 0 unique property URLs
+2025-08-02 13:05:13,057 - WARNING - ⚠️ No properties found for rent_athens_center
+2025-08-02 13:05:13,057 - INFO - 🔍 Search strategy: sale_all_athens
+2025-08-02 13:05:13,057 - INFO - 🔍 Discovering properties from: https://www.spitogatos.gr/en/for_sale-homes/athens
+2025-08-02 13:05:15,189 - INFO - ✅ Discovered 0 unique property URLs
+2025-08-02 13:05:15,190 - WARNING - ⚠️ No properties found for sale_all_athens
+2025-08-02 13:05:15,190 - INFO - 🔍 Search strategy: rent_all_athens
+2025-08-02 13:05:15,190 - INFO - 🔍 Discovering properties from: https://www.spitogatos.gr/en/for_rent-homes/athens
+2025-08-02 13:05:17,310 - INFO - ✅ Discovered 0 unique property URLs
+2025-08-02 13:05:17,312 - WARNING - ⚠️ No properties found for rent_all_athens
+2025-08-02 13:05:17,421 - INFO - 🎉 Extraction completed!
+2025-08-02 13:05:17,421 - INFO - ✅ Total properties: 10
+2025-08-02 13:05:17,421 - INFO - 🎯 Authentic properties: 9
+2025-08-02 13:05:17,421 - INFO - ❌ Failed extractions: 0
+2025-08-02 13:05:17,422 - INFO - 📊 Results saved:
+2025-08-02 13:05:17,422 - INFO -    JSON: outputs/spitogatos_final_authentic_20250802_130517.json
+2025-08-02 13:05:17,422 - INFO -    CSV: outputs/spitogatos_final_authentic_20250802_130517.csv
+2025-08-02 13:05:17,422 - INFO -    Analysis: outputs/spitogatos_final_analysis_20250802_130517.json
+2025-08-02 13:05:17,422 - INFO - 🎉 SPITOGATOS.GR FINAL EXTRACTION COMPLETED
+2025-08-02 13:05:17,422 - INFO - ============================================================
+2025-08-02 13:05:17,422 - INFO - ✅ Total authentic properties: 9
+2025-08-02 13:05:17,422 - INFO - 🎯 Target neighborhoods: 0 Kolonaki + 0 Pangrati
+2025-08-02 13:05:17,422 - INFO - 📊 Success rate: 100.0%
+2025-08-02 13:05:17,422 - ERROR - ❌ Critical error: 'count'
+2025-08-02 13:11:23,963 - INFO - 🎯 SPITOGATOS.GR FINAL PRODUCTION SCRAPER
+2025-08-02 13:11:23,963 - INFO - Mission: Extract 100% authentic property data from Kolonaki & Pangrati
+2025-08-02 13:11:23,963 - INFO - 🚀 SPITOGATOS.GR FINAL PRODUCTION SCRAPER
+2025-08-02 13:11:23,963 - INFO - 🎯 Target: ['Kolonaki', 'Pangrati']
+2025-08-02 13:11:23,963 - INFO - 📋 Mission: Extract 100% authentic individual property listings
+2025-08-02 13:11:23,963 - INFO - 🚀 Starting comprehensive property extraction
+2025-08-02 13:11:24,668 - INFO - 🔍 Search strategy: sale_athens_center
+2025-08-02 13:11:24,668 - INFO - 🔍 Discovering properties from: https://www.spitogatos.gr/en/for_sale-homes/athens-center
+2025-08-02 13:11:29,237 - INFO - ✅ Discovered 10 unique property URLs
+2025-08-02 13:11:29,237 - INFO - 📋 Processing 1/10: https://www.spitogatos.gr/en/property/1117189530
+2025-08-02 13:11:29,237 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117189530
+2025-08-02 13:11:59,240 - ERROR - ❌ Error extracting property data from https://www.spitogatos.gr/en/property/1117189530: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.spitogatos.gr/en/property/1117189530", waiting until "networkidle"
+
+2025-08-02 13:12:02,640 - INFO - 📋 Processing 2/10: https://www.spitogatos.gr/en/property/1117213842
+2025-08-02 13:12:02,641 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1117213842
+2025-08-02 13:12:32,644 - ERROR - ❌ Error extracting property data from https://www.spitogatos.gr/en/property/1117213842: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.spitogatos.gr/en/property/1117213842", waiting until "networkidle"
+
+2025-08-02 13:12:35,422 - INFO - 📋 Processing 3/10: https://www.spitogatos.gr/en/property/1116810408
+2025-08-02 13:12:35,423 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116810408
+2025-08-02 13:13:05,429 - ERROR - ❌ Error extracting property data from https://www.spitogatos.gr/en/property/1116810408: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.spitogatos.gr/en/property/1116810408", waiting until "networkidle"
+
+2025-08-02 13:13:08,848 - INFO - 📋 Processing 4/10: https://www.spitogatos.gr/en/property/1116809848
+2025-08-02 13:13:08,849 - INFO - 🏠 Extracting: https://www.spitogatos.gr/en/property/1116809848
