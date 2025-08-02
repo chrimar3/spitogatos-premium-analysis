@@ -1,0 +1,33 @@
+{
+  "analysis_metadata": {
+    "session_id": "20250802_194529",
+    "analysis_timestamp": "2025-08-02T19:45:39.689289",
+    "target_city_blocks": 10,
+    "target_properties_per_block": 15,
+    "total_target_properties": 150,
+    "actual_properties_extracted": 0
+  },
+  "data_completeness": {
+    "total_properties": 0,
+    "properties_with_sqm": 0,
+    "properties_with_energy_class": 0,
+    "properties_with_area": 0,
+    "sqm_completion_rate": "0/0 (0.0%)",
+    "energy_completion_rate": "0/0 (0.0%)"
+  },
+  "area_distribution": {},
+  "energy_class_distribution": {},
+  "sqm_statistics": {},
+  "city_blocks_analysis": {
+    "Kolonaki": 0,
+    "Pangrati": 0,
+    "Exarchia": 0,
+    "Plaka": 0,
+    "Psirri": 0,
+    "Monastiraki": 0,
+    "Koukaki": 0,
+    "Petralona": 0,
+    "Kypseli": 0,
+    "Ampelokipoi": 0
+  }
+}
