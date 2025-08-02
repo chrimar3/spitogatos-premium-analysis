@@ -1,0 +1,104 @@
+{
+  "investigation_metadata": {
+    "session_id": "20250802_105257",
+    "extraction_timestamp": "2025-08-02T10:59:19.366284",
+    "neighborhoods_investigated": [
+      "Κολωνάκι",
+      "Παγκράτι"
+    ],
+    "total_properties": 4,
+    "high_quality_properties": 4,
+    "medium_quality_properties": 0,
+    "method": "deep_investigation_two_neighborhoods"
+  },
+  "quality_metrics": {
+    "properties_with_price": 4,
+    "properties_with_sqm": 4,
+    "properties_with_energy_class": 0,
+    "properties_with_address": 4,
+    "properties_with_rooms": 0,
+    "average_data_completeness": 0.6666666666666666
+  },
+  "neighborhood_breakdown": {
+    "Κολωνάκι": 4,
+    "Παγκράτι": 0
+  },
+  "properties": [
+    {
+      "url": "https://xe.gr/property/d/enoikiaseis-diamerismaton/871000/athens-kolonaki",
+      "neighborhood": "Κολωνάκι",
+      "validation_score": 5,
+      "content_length": 6524,
+      "discovery_method": "deep_investigation",
+      "discovered_at": "2025-08-02T10:53:10.680864",
+      "status": "validated",
+      "title": "Ενοικιάσεις διαμερισμάτων",
+      "extraction_timestamp": "2025-08-02T10:57:12.382731",
+      "data_quality": "high",
+      "price": 740.0,
+      "price_currency": "EUR",
+      "sqm": 63.0,
+      "address": "ς και ταυτοποίησης μέσω σάρωσης συσκευών",
+      "property_type": "Διαμέρισμα",
+      "listing_type": "Ενοικίαση",
+      "data_completeness": 0.6666666666666666
+    },
+    {
+      "url": "https://xe.gr/property/d/poliseis-diamerismaton/871000/athens-kolonaki",
+      "neighborhood": "Κολωνάκι",
+      "validation_score": 5,
+      "content_length": 6548,
+      "discovery_method": "deep_investigation",
+      "discovered_at": "2025-08-02T10:53:15.326935",
+      "status": "validated",
+      "title": "Πωλήσεις διαμερισμάτων",
+      "extraction_timestamp": "2025-08-02T10:57:19.733042",
+      "data_quality": "high",
+      "price": 670000.0,
+      "price_currency": "EUR",
+      "sqm": 138.0,
+      "address": "ς και ταυτοποίησης μέσω σάρωσης συσκευών",
+      "property_type": "Διαμέρισμα",
+      "listing_type": "Πώληση",
+      "data_completeness": 0.6666666666666666
+    },
+    {
+      "url": "https://www.xe.gr/property/d/enoikiaseis-katoikion/871050/athens-kolonaki",
+      "neighborhood": "Κολωνάκι",
+      "validation_score": 5,
+      "content_length": 6502,
+      "discovery_method": "deep_investigation",
+      "discovered_at": "2025-08-02T10:53:20.048621",
+      "status": "validated",
+      "title": "Ενοικιάσεις κατοικιών",
+      "extraction_timestamp": "2025-08-02T10:57:26.305489",
+      "data_quality": "high",
+      "price": 740.0,
+      "price_currency": "EUR",
+      "sqm": 63.0,
+      "address": "ς και ταυτοποίησης μέσω σάρωσης συσκευών",
+      "property_type": "Διαμέρισμα",
+      "listing_type": "Ενοικίαση",
+      "data_completeness": 0.6666666666666666
+    },
+    {
+      "url": "https://www.xe.gr/property/d/poliseis-katoikion/871050/athens-kolonaki",
+      "neighborhood": "Κολωνάκι",
+      "validation_score": 5,
+      "content_length": 6586,
+      "discovery_method": "deep_investigation",
+      "discovered_at": "2025-08-02T10:53:25.103146",
+      "status": "validated",
+      "title": "Πωλήσεις κατοικιών",
+      "extraction_timestamp": "2025-08-02T10:57:33.652422",
+      "data_quality": "high",
+      "price": 3000000.0,
+      "price_currency": "EUR",
+      "sqm": 270.0,
+      "address": "ς και ταυτοποίησης μέσω σάρωσης συσκευών",
+      "property_type": "Διαμέρισμα",
+      "listing_type": "Πώληση",
+      "data_completeness": 0.6666666666666666
+    }
+  ]
+}

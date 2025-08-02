@@ -1,628 +1,639 @@
 #!/usr/bin/env python3
 """
-XE.GR DEEP INVESTIGATION - WEBSITE ARCHITECTURE ANALYSIS
-Understanding the target before building the extraction strategy
+XE.GR DEEP INVESTIGATION - TWO NEIGHBORHOODS
+Focused extraction for Κολωνάκι and Παγκράτι using intelligence patterns
 """
 
 import asyncio
-import aiohttp
 import json
 import logging
 import re
-import time
+import csv
 from datetime import datetime
-from typing import List, Dict, Any, Optional
-from bs4 import BeautifulSoup
-import subprocess
+from typing import List, Dict, Optional
+from playwright.async_api import async_playwright
+from urllib.parse import urljoin, urlparse
 
-# Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-class XEGRInvestigator:
-    """Deep investigation of xe.gr website architecture"""
+class XEDeepInvestigation:
+    """Deep investigation of two key Athens neighborhoods"""
     
     def __init__(self):
-        self.investigation_data = {
-            'timestamp': datetime.now().isoformat(),
-            'website': 'xe.gr',
-            'findings': {}
+        self.session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.extracted_properties = []
+        
+        # Focus on two prime neighborhoods first
+        self.target_neighborhoods = {
+            "Κολωνάκι": ["kolonaki", "κολωνάκι", "kolwnaki"],  # Premium area
+            "Παγκράτι": ["pangrati", "παγκράτι", "pagrati"]    # Up-and-coming area
         }
         
-        logger.info("🔍 STARTING DEEP XE.GR INVESTIGATION")
-        logger.info("📋 Analyzing website structure, APIs, security measures")
+        # Enhanced URL patterns based on reconnaissance intelligence
+        self.property_url_patterns = [
+            "https://www.xe.gr/property/d/enoikiaseis-katoikion/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/poliseis-katoikion/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/enoikiaseis-katoikion/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/poliseis-katoikion/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/enoikiaseis-diamerismaton/{id}/athens-{neighborhood}",
+            "https://www.xe.gr/property/d/poliseis-diamerismaton/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/enoikiaseis-diamerismaton/{id}/athens-{neighborhood}",
+            "https://xe.gr/property/d/poliseis-diamerismaton/{id}/athens-{neighborhood}"
+        ]
+        
+        # Refined ID ranges based on reconnaissance findings
+        self.id_ranges = [
+            (871000, 872000),  # Most active range discovered
+            (873000, 874000),  # Secondary active range
+            (875000, 876000),  # Extended range
+            (877000, 878000),  # Additional range
+            (879000, 880000)   # Final range
+        ]
+        
+        # Target: 20 properties per neighborhood = 40 total
+        self.target_per_neighborhood = 20
     
-    async def investigate_website_structure(self):
-        """Investigate xe.gr website structure and technology"""
+    async def run_deep_investigation(self):
+        """Execute deep investigation on two neighborhoods"""
+        logger.info("🔍 XE.GR DEEP INVESTIGATION - TWO NEIGHBORHOODS")
+        logger.info("🎯 Target: Κολωνάκι & Παγκράτι (40 properties total)")
         
-        logger.info("🏗️ INVESTIGATING WEBSITE STRUCTURE")
-        
-        findings = {}
-        
-        # 1. Basic website analysis
-        try:
-            timeout = aiohttp.ClientTimeout(total=30)
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-            }
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=False,
+                args=['--no-sandbox', '--disable-blink-features=AutomationControlled']
+            )
             
-            async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
-                # Test homepage
-                logger.info("🏠 Analyzing homepage...")
-                async with session.get('https://xe.gr') as response:
-                    if response.status == 200:
-                        html = await response.text()
-                        findings['homepage'] = self.analyze_homepage(html, dict(response.headers))
-                    else:
-                        findings['homepage'] = {'error': f'Status {response.status}'}
-                
-                # Test robots.txt
-                logger.info("🤖 Checking robots.txt...")
-                try:
-                    async with session.get('https://xe.gr/robots.txt') as response:
-                        if response.status == 200:
-                            robots = await response.text()
-                            findings['robots_txt'] = self.analyze_robots_txt(robots)
-                        else:
-                            findings['robots_txt'] = {'status': response.status}
-                except:
-                    findings['robots_txt'] = {'error': 'Not accessible'}
-                
-                # Test sitemap
-                logger.info("🗺️ Checking sitemap...")
-                try:
-                    async with session.get('https://xe.gr/sitemap.xml') as response:
-                        if response.status == 200:
-                            sitemap = await response.text()
-                            findings['sitemap'] = self.analyze_sitemap(sitemap)
-                        else:
-                            findings['sitemap'] = {'status': response.status}
-                except:
-                    findings['sitemap'] = {'error': 'Not accessible'}
-                
-                # Test API discovery
-                logger.info("🔌 Discovering API endpoints...")
-                findings['api_discovery'] = await self.discover_api_endpoints(session)
-                
-        except Exception as e:
-            logger.error(f"❌ Website structure analysis failed: {e}")
-            findings['error'] = str(e)
-        
-        self.investigation_data['findings']['website_structure'] = findings
-        return findings
-    
-    def analyze_homepage(self, html: str, headers: Dict) -> Dict:
-        """Analyze homepage for technology stack and structure"""
-        
-        soup = BeautifulSoup(html, 'html.parser')
-        analysis = {
-            'size': len(html),
-            'technologies': [],
-            'security_headers': {},
-            'javascript_frameworks': [],
-            'api_endpoints_found': [],
-            'form_endpoints': [],
-            'interesting_urls': []
-        }
-        
-        # Analyze headers for security and technology clues
-        security_headers = ['x-frame-options', 'x-content-type-options', 'x-xss-protection', 'content-security-policy', 'strict-transport-security']
-        for header in security_headers:
-            if header in [h.lower() for h in headers.keys()]:
-                analysis['security_headers'][header] = headers.get(header, headers.get(header.upper()))
-        
-        # Look for technology indicators
-        if 'react' in html.lower():
-            analysis['technologies'].append('React')
-        if 'angular' in html.lower():
-            analysis['technologies'].append('Angular')
-        if 'vue' in html.lower():
-            analysis['technologies'].append('Vue.js')
-        if 'jquery' in html.lower():
-            analysis['technologies'].append('jQuery')
-        
-        # Find JavaScript files that might contain API endpoints
-        script_tags = soup.find_all('script', src=True)
-        for script in script_tags:
-            src = script.get('src')
-            if src:
-                analysis['javascript_frameworks'].append(src)
-        
-        # Look for API endpoints in JavaScript
-        api_patterns = [
-            r'/api/[^"\s]+',
-            r'/graphql[^"\s]*',
-            r'ajax[^"\s]*',
-            r'endpoint[^"\s]*'
-        ]
-        
-        for pattern in api_patterns:
-            matches = re.findall(pattern, html, re.IGNORECASE)
-            analysis['api_endpoints_found'].extend(matches)
-        
-        # Find forms (potential data submission endpoints)
-        forms = soup.find_all('form')
-        for form in forms:
-            action = form.get('action')
-            method = form.get('method', 'GET')
-            if action:
-                analysis['form_endpoints'].append({'action': action, 'method': method})
-        
-        # Look for interesting URLs
-        url_patterns = [
-            r'https://xe\.gr/[^"\s]+/search[^"\s]*',
-            r'https://xe\.gr/[^"\s]+/property[^"\s]*',
-            r'https://xe\.gr/[^"\s]+/api[^"\s]*'
-        ]
-        
-        for pattern in url_patterns:
-            matches = re.findall(pattern, html, re.IGNORECASE)
-            analysis['interesting_urls'].extend(matches)
-        
-        return analysis
-    
-    def analyze_robots_txt(self, robots: str) -> Dict:
-        """Analyze robots.txt for crawling restrictions"""
-        
-        analysis = {
-            'disallowed_paths': [],
-            'allowed_paths': [],
-            'crawl_delay': None,
-            'sitemaps': [],
-            'user_agents': []
-        }
-        
-        lines = robots.split('\n')
-        current_user_agent = None
-        
-        for line in lines:
-            line = line.strip()
-            if line.startswith('User-agent:'):
-                current_user_agent = line.split(':', 1)[1].strip()
-                analysis['user_agents'].append(current_user_agent)
-            elif line.startswith('Disallow:'):
-                path = line.split(':', 1)[1].strip()
-                analysis['disallowed_paths'].append(path)
-            elif line.startswith('Allow:'):
-                path = line.split(':', 1)[1].strip()
-                analysis['allowed_paths'].append(path)
-            elif line.startswith('Crawl-delay:'):
-                delay = line.split(':', 1)[1].strip()
-                analysis['crawl_delay'] = delay
-            elif line.startswith('Sitemap:'):
-                sitemap = line.split(':', 1)[1].strip()
-                analysis['sitemaps'].append(sitemap)
-        
-        return analysis
-    
-    def analyze_sitemap(self, sitemap: str) -> Dict:
-        """Analyze sitemap for URL patterns"""
-        
-        analysis = {
-            'total_urls': 0,
-            'property_urls': [],
-            'search_urls': [],
-            'api_urls': [],
-            'url_patterns': {}
-        }
-        
-        # Count URLs
-        url_matches = re.findall(r'<loc>(.*?)</loc>', sitemap)
-        analysis['total_urls'] = len(url_matches)
-        
-        # Categorize URLs
-        for url in url_matches:
-            if '/property/' in url.lower():
-                analysis['property_urls'].append(url)
-            elif '/search' in url.lower():
-                analysis['search_urls'].append(url)
-            elif '/api/' in url.lower():
-                analysis['api_urls'].append(url)
-        
-        # Find URL patterns
-        pattern_counts = {}
-        for url in url_matches:
-            # Extract URL pattern
-            pattern = re.sub(r'/\d+', '/{id}', url)
-            pattern = re.sub(r'[?&][^=]+=[^&]*', '', pattern)  # Remove query params
-            pattern_counts[pattern] = pattern_counts.get(pattern, 0) + 1
-        
-        analysis['url_patterns'] = pattern_counts
-        
-        return analysis
-    
-    async def discover_api_endpoints(self, session: aiohttp.ClientSession) -> Dict:
-        """Discover API endpoints through common paths"""
-        
-        logger.info("🔍 Testing common API endpoints...")
-        
-        common_api_paths = [
-            '/api',
-            '/api/v1',
-            '/api/v2',
-            '/graphql',
-            '/rest',
-            '/ajax',
-            '/search/api',
-            '/property/api',
-            '/api/search',
-            '/api/properties',
-            '/api/listings'
-        ]
-        
-        findings = {
-            'accessible_endpoints': [],
-            'blocked_endpoints': [],
-            'redirect_endpoints': [],
-            'error_endpoints': []
-        }
-        
-        for path in common_api_paths:
-            url = f'https://xe.gr{path}'
+            context = await browser.new_context(
+                viewport={'width': 1920, 'height': 1080},
+                user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                locale='el-GR'
+            )
+            
             try:
-                async with session.get(url) as response:
-                    status = response.status
-                    
-                    if status == 200:
-                        findings['accessible_endpoints'].append({
-                            'path': path,
-                            'status': status,
-                            'content_type': response.headers.get('content-type', ''),
-                            'size': len(await response.text())
-                        })
-                    elif status in [301, 302, 307, 308]:
-                        findings['redirect_endpoints'].append({
-                            'path': path,
-                            'status': status,
-                            'location': response.headers.get('location', '')
-                        })
-                    elif status in [403, 429]:
-                        findings['blocked_endpoints'].append({
-                            'path': path,
-                            'status': status
-                        })
-                    else:
-                        findings['error_endpoints'].append({
-                            'path': path,
-                            'status': status
-                        })
-                        
+                page = await context.new_page()
+                
+                # Phase 1: Systematic pattern testing
+                logger.info("🔮 PHASE 1: Systematic Pattern Testing")
+                await self.systematic_pattern_testing(page)
+                
+                # Phase 2: Density-based ID exploration
+                logger.info("🎯 PHASE 2: Density-Based ID Exploration")
+                await self.density_based_exploration(page)
+                
+                # Phase 3: Enhanced data extraction
+                logger.info("📊 PHASE 3: Enhanced Data Extraction")
+                await self.enhanced_data_extraction(page)
+                
+                # Phase 4: Quality analysis and export
+                logger.info("💎 PHASE 4: Quality Analysis & Export")
+                await self.quality_analysis_and_export()
+                
             except Exception as e:
-                findings['error_endpoints'].append({
-                    'path': path,
-                    'error': str(e)
-                })
-            
-            # Small delay between requests
-            await asyncio.sleep(0.5)
-        
-        return findings
+                logger.error(f"❌ Deep investigation failed: {e}")
+            finally:
+                logger.info("🔍 Investigation complete - keeping browser open for review...")
+                await asyncio.sleep(45)
+                await browser.close()
     
-    async def analyze_search_functionality(self):
-        """Analyze how xe.gr search functionality works"""
-        
-        logger.info("🔍 ANALYZING SEARCH FUNCTIONALITY")
-        
-        findings = {}
-        
+    async def systematic_pattern_testing(self, page):
+        """Systematically test all pattern combinations"""
         try:
-            timeout = aiohttp.ClientTimeout(total=30)
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-            }
+            logger.info("🔮 Testing all pattern combinations systematically...")
             
-            async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
+            for neighborhood_greek, neighborhood_variants in self.target_neighborhoods.items():
+                neighborhood_found = 0
+                logger.info(f"🏘️ Investigating {neighborhood_greek} (target: {self.target_per_neighborhood})")
                 
-                # Test basic search page
-                search_urls = [
-                    'https://xe.gr/search',
-                    'https://xe.gr/property/search',
-                    'https://xe.gr/en/search',
-                    'https://xe.gr/el/search'
-                ]
-                
-                findings['search_pages'] = {}
-                
-                for search_url in search_urls:
-                    try:
-                        logger.info(f"🔍 Testing: {search_url}")
-                        async with session.get(search_url) as response:
-                            findings['search_pages'][search_url] = {
-                                'status': response.status,
-                                'content_type': response.headers.get('content-type', ''),
-                                'size': len(await response.text()) if response.status == 200 else 0
-                            }
-                            
-                            if response.status == 200:
-                                html = await response.text()
-                                findings['search_pages'][search_url]['analysis'] = self.analyze_search_page(html)
-                                
-                    except Exception as e:
-                        findings['search_pages'][search_url] = {'error': str(e)}
+                for neighborhood_en in neighborhood_variants:
+                    if neighborhood_found >= self.target_per_neighborhood:
+                        break
                     
-                    await asyncio.sleep(1)
+                    logger.info(f"🔍 Testing variant: {neighborhood_en}")
+                    
+                    for start_id, end_id in self.id_ranges:
+                        if neighborhood_found >= self.target_per_neighborhood:
+                            break
+                        
+                        logger.info(f"📋 ID Range: {start_id}-{end_id}")
+                        
+                        # Test every 50th ID for better coverage
+                        for property_id in range(start_id, end_id, 50):
+                            if neighborhood_found >= self.target_per_neighborhood:
+                                break
+                            
+                            # Test all URL patterns for this specific ID
+                            for pattern_idx, pattern in enumerate(self.property_url_patterns):
+                                url = pattern.format(id=property_id, neighborhood=neighborhood_en)
+                                
+                                if await self.test_and_store_property(page, url, neighborhood_greek):
+                                    neighborhood_found += 1
+                                    logger.info(f"✅ {neighborhood_greek} [{neighborhood_found}/{self.target_per_neighborhood}]: {url}")
+                                    
+                                    if neighborhood_found >= self.target_per_neighborhood:
+                                        break
+                                
+                                await asyncio.sleep(0.8)  # Efficient testing pace
                 
+                logger.info(f"🎯 {neighborhood_greek} complete: {neighborhood_found} properties found")
+                await asyncio.sleep(3)  # Neighborhood transition delay
+            
+            logger.info(f"📊 Systematic testing complete: {len(self.extracted_properties)} total properties")
+        
         except Exception as e:
-            findings['error'] = str(e)
-        
-        self.investigation_data['findings']['search_functionality'] = findings
-        return findings
+            logger.error(f"❌ Systematic testing failed: {e}")
     
-    def analyze_search_page(self, html: str) -> Dict:
-        """Analyze search page structure"""
+    async def density_based_exploration(self, page):
+        """Explore around successful IDs for higher density"""
+        try:
+            logger.info("🎯 Analyzing successful IDs for density exploration...")
+            
+            if not self.extracted_properties:
+                logger.warning("⚠️ No successful properties for density analysis")
+                return
+            
+            # Extract successful IDs
+            successful_ids = []
+            for prop in self.extracted_properties:
+                id_match = re.search(r'/(\d{6,8})/', prop['url'])
+                if id_match:
+                    successful_ids.append(int(id_match.group(1)))
+            
+            if not successful_ids:
+                logger.warning("⚠️ No IDs extracted for density analysis")
+                return
+            
+            logger.info(f"🎯 Found {len(successful_ids)} successful IDs for density exploration")
+            
+            # Test around each successful ID
+            additional_found = 0
+            target_additional = 10  # Target additional properties
+            
+            for base_id in successful_ids[:5]:  # Test around top 5 successful IDs
+                if additional_found >= target_additional:
+                    break
+                
+                logger.info(f"🔍 Density exploration around ID {base_id}")
+                
+                # Test ±15 range around successful ID
+                for offset in range(-15, 16, 3):
+                    if additional_found >= target_additional:
+                        break
+                    
+                    test_id = base_id + offset
+                    if test_id <= 0:
+                        continue
+                    
+                    # Test this ID with both neighborhoods
+                    for neighborhood_greek, variants in self.target_neighborhoods.items():
+                        if additional_found >= target_additional:
+                            break
+                        
+                        for variant in variants[:1]:  # Test primary variant
+                            for pattern in self.property_url_patterns[:3]:  # Test top 3 patterns
+                                test_url = pattern.format(id=test_id, neighborhood=variant)
+                                
+                                # Skip if already found
+                                if any(prop['url'] == test_url for prop in self.extracted_properties):
+                                    continue
+                                
+                                if await self.test_and_store_property(page, test_url, neighborhood_greek):
+                                    additional_found += 1
+                                    logger.info(f"✅ DENSITY FIND {additional_found}: {test_url}")
+                                
+                                await asyncio.sleep(1)
+                                
+                                if additional_found >= target_additional:
+                                    break
+            
+            logger.info(f"🎯 Density exploration found {additional_found} additional properties")
         
-        soup = BeautifulSoup(html, 'html.parser')
+        except Exception as e:
+            logger.error(f"❌ Density exploration failed: {e}")
+    
+    async def test_and_store_property(self, page, url: str, neighborhood: str) -> bool:
+        """Test URL and store if valid property"""
+        try:
+            response = await page.goto(url, wait_until="load", timeout=12000)
+            
+            if response and response.status == 200:
+                await asyncio.sleep(1.5)
+                
+                # Enhanced validation
+                content = await page.content()
+                page_text = await page.inner_text('body')
+                
+                # Multi-tier validation system
+                validation_score = await self.calculate_validation_score(content, page_text, neighborhood)
+                
+                if validation_score >= 4:  # High-quality threshold
+                    logger.info(f"✅ HIGH-QUALITY PROPERTY: {url} (score: {validation_score}/6)")
+                    
+                    self.extracted_properties.append({
+                        'url': url,
+                        'neighborhood': neighborhood,
+                        'validation_score': validation_score,
+                        'content_length': len(page_text),
+                        'discovery_method': 'deep_investigation',
+                        'discovered_at': datetime.now().isoformat(),
+                        'status': 'validated'
+                    })
+                    
+                    return True
+                elif validation_score >= 3:  # Medium-quality
+                    logger.info(f"🔶 MEDIUM-QUALITY PROPERTY: {url} (score: {validation_score}/6)")
+                    
+                    self.extracted_properties.append({
+                        'url': url,
+                        'neighborhood': neighborhood,
+                        'validation_score': validation_score,
+                        'content_length': len(page_text),
+                        'discovery_method': 'deep_investigation',
+                        'discovered_at': datetime.now().isoformat(),
+                        'status': 'medium_quality'
+                    })
+                    
+                    return True
+            
+            return False
+            
+        except Exception as e:
+            logger.debug(f"❌ URL test failed {url}: {e}")
+            return False
+    
+    async def calculate_validation_score(self, content: str, page_text: str, neighborhood: str) -> int:
+        """Calculate comprehensive validation score (0-6)"""
+        score = 0
         
-        analysis = {
-            'forms': [],
-            'javascript_files': [],
-            'ajax_endpoints': [],
-            'search_parameters': [],
-            'filters': []
-        }
+        content_lower = content.lower()
+        text_lower = page_text.lower()
         
-        # Find search forms
-        forms = soup.find_all('form')
-        for form in forms:
-            form_data = {
-                'action': form.get('action'),
-                'method': form.get('method', 'GET'),
-                'inputs': []
+        # 1. Property indicators (essential)
+        property_indicators = ['τιμή', 'price', 'τ.μ', 'm²', 'ενοικίαση', 'πώληση', 'διαμέρισμα']
+        if sum(1 for indicator in property_indicators if indicator in content_lower) >= 4:
+            score += 1
+        
+        # 2. Location validation (essential)
+        location_indicators = ['αθήνα', 'athens', neighborhood.lower()]
+        if any(loc in content_lower for loc in location_indicators):
+            score += 1
+        
+        # 3. Substantial content (quality indicator)
+        if len(page_text) > 4000:  # Rich content
+            score += 1
+        
+        # 4. Price information (data richness)
+        price_patterns = [r'€\s*\d{2,6}', r'\d{2,6}\s*€', r'\d{1,3}(?:\.\d{3})*\s*€']
+        if any(re.search(pattern, content) for pattern in price_patterns):
+            score += 1
+        
+        # 5. Area information (data richness)
+        area_patterns = [r'\d+\s*τ\.?μ\.?', r'\d+\s*m²', r'\d+\s*sqm']
+        if any(re.search(pattern, content, re.IGNORECASE) for pattern in area_patterns):
+            score += 1
+        
+        # 6. Energy class (premium data)
+        energy_patterns = [r'ενεργειακή\s+κλάση', r'energy\s+class', r'κλάση\s+[A-G]']
+        if any(re.search(pattern, content, re.IGNORECASE) for pattern in energy_patterns):
+            score += 1
+        
+        return score
+    
+    async def enhanced_data_extraction(self, page):
+        """Extract detailed data from all validated properties"""
+        try:
+            logger.info(f"📊 Extracting detailed data from {len(self.extracted_properties)} properties...")
+            
+            for i, property_info in enumerate(self.extracted_properties):
+                url = property_info['url']
+                logger.info(f"📋 Extracting {i+1}/{len(self.extracted_properties)}: {url}")
+                
+                try:
+                    response = await page.goto(url, wait_until="networkidle", timeout=15000)
+                    
+                    if response and response.status == 200:
+                        await asyncio.sleep(2)
+                        
+                        # Extract comprehensive data
+                        extracted_data = await self.extract_property_details(page, url, property_info)
+                        
+                        if extracted_data:
+                            # Merge extracted data with property info
+                            property_info.update(extracted_data)
+                            logger.info(f"✅ Extracted: {extracted_data.get('title', 'No title')[:40]}...")
+                        
+                except Exception as e:
+                    logger.warning(f"⚠️ Failed to extract {url}: {e}")
+                    property_info['extraction_error'] = str(e)
+                
+                await asyncio.sleep(1.5)  # Respectful extraction pace
+        
+        except Exception as e:
+            logger.error(f"❌ Enhanced data extraction failed: {e}")
+    
+    async def extract_property_details(self, page, url: str, existing_info: Dict) -> Optional[Dict]:
+        """Extract comprehensive property details"""
+        try:
+            page_text = await page.inner_text('body')
+            title = await page.title()
+            
+            details = {
+                'title': title,
+                'extraction_timestamp': datetime.now().isoformat(),
+                'data_quality': 'high' if existing_info['validation_score'] >= 4 else 'medium'
             }
             
-            inputs = form.find_all(['input', 'select', 'textarea'])
-            for inp in inputs:
-                form_data['inputs'].append({
-                    'name': inp.get('name'),
-                    'type': inp.get('type'),
-                    'value': inp.get('value'),
-                    'placeholder': inp.get('placeholder')
-                })
-            
-            analysis['forms'].append(form_data)
-        
-        # Find JavaScript files (might contain search logic)
-        scripts = soup.find_all('script', src=True)
-        for script in scripts:
-            src = script.get('src')
-            if src and ('search' in src.lower() or 'filter' in src.lower()):
-                analysis['javascript_files'].append(src)
-        
-        # Look for AJAX endpoints in JavaScript
-        ajax_patterns = [
-            r'ajax[^"]*',
-            r'fetch\([^)]*["\']([^"\']+)["\']',
-            r'\.get\([^)]*["\']([^"\']+)["\']',
-            r'\.post\([^)]*["\']([^"\']+)["\']'
-        ]
-        
-        for pattern in ajax_patterns:
-            matches = re.findall(pattern, html, re.IGNORECASE)
-            analysis['ajax_endpoints'].extend(matches)
-        
-        return analysis
-    
-    async def investigate_anti_bot_measures(self):
-        """Investigate anti-bot protection measures"""
-        
-        logger.info("🛡️ INVESTIGATING ANTI-BOT MEASURES")
-        
-        findings = {
-            'detection_methods': [],
-            'blocking_patterns': [],
-            'javascript_challenges': [],
-            'rate_limiting': {},
-            'security_services': []
-        }
-        
-        try:
-            # Test with different user agents
-            user_agents = [
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                'curl/7.68.0',
-                'python-requests/2.25.1',
-                'Scrapy/2.5.0',
-                'bot'
+            # Enhanced price extraction with multiple patterns
+            price_patterns = [
+                r'(\d{1,3}(?:\.\d{3})*)\s*€',
+                r'€\s*(\d{1,3}(?:\.\d{3})*)',
+                r'τιμή[:\s]*(\d{1,3}(?:\.\d{3})*)',
+                r'Τιμή[:\s]*(\d{1,3}(?:\.\d{3})*)',
+                r'ΤΙΜΗ[:\s]*(\d{1,3}(?:\.\d{3})*)',
+                r'Αξία[:\s]*(\d{1,3}(?:\.\d{3})*)'
             ]
             
-            timeout = aiohttp.ClientTimeout(total=15)
-            
-            findings['user_agent_tests'] = {}
-            
-            for ua in user_agents:
-                try:
-                    headers = {'User-Agent': ua}
-                    async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
-                        async with session.get('https://xe.gr') as response:
-                            findings['user_agent_tests'][ua] = {
-                                'status': response.status,
-                                'headers': dict(response.headers),
-                                'blocked': response.status in [403, 429, 503]
-                            }
-                            
-                            if response.status == 200:
-                                html = await response.text()
-                                # Check for anti-bot indicators
-                                if 'captcha' in html.lower():
-                                    findings['user_agent_tests'][ua]['has_captcha'] = True
-                                if 'cloudflare' in html.lower():
-                                    findings['user_agent_tests'][ua]['has_cloudflare'] = True
-                                if 'blocked' in html.lower():
-                                    findings['user_agent_tests'][ua]['blocked_message'] = True
-                            
-                except Exception as e:
-                    findings['user_agent_tests'][ua] = {'error': str(e)}
-                
-                await asyncio.sleep(2)
-            
-            # Test rate limiting
-            logger.info("⏱️ Testing rate limiting...")
-            findings['rate_limit_test'] = await self.test_rate_limiting()
-            
-        except Exception as e:
-            findings['error'] = str(e)
-        
-        self.investigation_data['findings']['anti_bot_measures'] = findings
-        return findings
-    
-    async def test_rate_limiting(self) -> Dict:
-        """Test rate limiting behavior"""
-        
-        rate_test = {
-            'requests_sent': 0,
-            'successful_requests': 0,
-            'blocked_requests': 0,
-            'first_block_at': None,
-            'block_duration': None
-        }
-        
-        timeout = aiohttp.ClientTimeout(total=10)
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
-        }
-        
-        try:
-            async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
-                for i in range(10):  # Send 10 rapid requests
+            for pattern in price_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
                     try:
-                        start_time = time.time()
-                        async with session.get('https://xe.gr') as response:
-                            rate_test['requests_sent'] += 1
-                            
-                            if response.status == 200:
-                                rate_test['successful_requests'] += 1
-                            elif response.status in [403, 429, 503]:
-                                rate_test['blocked_requests'] += 1
-                                if rate_test['first_block_at'] is None:
-                                    rate_test['first_block_at'] = i + 1
-                                    
-                    except Exception as e:
-                        rate_test['requests_sent'] += 1
-                        rate_test['blocked_requests'] += 1
-                    
-                    await asyncio.sleep(0.5)  # Very short delay
-                        
+                        price_str = match.group(1).replace('.', '')
+                        price = float(price_str)
+                        if 100 <= price <= 10000000:  # Realistic price range
+                            details['price'] = price
+                            details['price_currency'] = 'EUR'
+                            break
+                    except ValueError:
+                        continue
+            
+            # Enhanced SQM extraction
+            sqm_patterns = [
+                r'(\d+(?:[.,]\d+)?)\s*τ\.?μ\.?',
+                r'(\d+(?:[.,]\d+)?)\s*m²',
+                r'(\d+(?:[.,]\d+)?)\s*sq\.?m',
+                r'εμβαδόν[:\s]*(\d+(?:[.,]\d+)?)',
+                r'Εμβαδόν[:\s]*(\d+(?:[.,]\d+)?)',
+                r'τετραγωνικά[:\s]*(\d+(?:[.,]\d+)?)'
+            ]
+            
+            for pattern in sqm_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    try:
+                        sqm = float(match.group(1).replace(',', '.'))
+                        if 15 <= sqm <= 800:  # Realistic area range
+                            details['sqm'] = sqm
+                            break
+                    except ValueError:
+                        continue
+            
+            # Enhanced energy class extraction
+            energy_patterns = [
+                r'ενεργειακή\s+κλάση[:\s]*([A-G][+\-]?)',
+                r'Ενεργειακή\s+κλάση[:\s]*([A-G][+\-]?)',
+                r'ΕΝΕΡΓΕΙΑΚΗ\s+ΚΛΑΣΗ[:\s]*([A-G][+\-]?)',
+                r'energy\s+class[:\s]*([A-G][+\-]?)',
+                r'Energy\s+Class[:\s]*([A-G][+\-]?)',
+                r'κλάση\s+ενέργειας[:\s]*([A-G][+\-]?)'
+            ]
+            
+            for pattern in energy_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    energy_class = match.group(1).upper()
+                    if energy_class in ['A+', 'A', 'B+', 'B', 'C+', 'C', 'D', 'E', 'F', 'G']:
+                        details['energy_class'] = energy_class
+                        break
+            
+            # Enhanced address extraction
+            address_patterns = [
+                r'διεύθυνση[:\s]*([^,\n\.]{15,120})',
+                r'Διεύθυνση[:\s]*([^,\n\.]{15,120})',
+                r'περιοχή[:\s]*([^,\n\.]{10,100})',
+                r'Περιοχή[:\s]*([^,\n\.]{10,100})',
+                r'τοποθεσία[:\s]*([^,\n\.]{10,100})',
+                r'Αθήνα[,\s]*([^,\n\.]{8,80})'
+            ]
+            
+            for pattern in address_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    address = match.group(1).strip()
+                    if len(address) > 8:
+                        details['address'] = address
+                        break
+            
+            # Property type classification
+            property_types = {
+                'διαμέρισμα': 'Διαμέρισμα',
+                'μονοκατοικία': 'Μονοκατοικία', 
+                'μεζονέτα': 'Μεζονέτα',
+                'ρετιρέ': 'Ρετιρέ',
+                'penthouse': 'Ρετιρέ',
+                'apartment': 'Διαμέρισμα',
+                'house': 'Μονοκατοικία',
+                'maisonette': 'Μεζονέτα'
+            }
+            
+            for type_key, type_value in property_types.items():
+                if re.search(type_key, page_text, re.IGNORECASE):
+                    details['property_type'] = type_value
+                    break
+            
+            # Listing type determination
+            if re.search(r'ενοικίαση|rental|rent|προς ενοικίαση|for rent', page_text, re.IGNORECASE):
+                details['listing_type'] = 'Ενοικίαση'
+            elif re.search(r'πώληση|sale|sell|προς πώληση|for sale', page_text, re.IGNORECASE):
+                details['listing_type'] = 'Πώληση'
+            
+            # Room count extraction
+            rooms_patterns = [
+                r'(\d+)\s*δωμάτι',
+                r'(\d+)\s*υπνοδωμάτι',
+                r'(\d+)\s*room',
+                r'(\d+)\s*bedroom',
+                r'(\d+)\s*χώρ'
+            ]
+            
+            for pattern in rooms_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    try:
+                        rooms = int(match.group(1))
+                        if 1 <= rooms <= 10:
+                            details['rooms'] = rooms
+                            break
+                    except ValueError:
+                        continue
+            
+            # Floor extraction
+            floor_patterns = [
+                r'(\d+)ος\s*όροφος',
+                r'όροφος[:\s]*(\d+)',
+                r'Όροφος[:\s]*(\d+)',
+                r'floor[:\s]*(\d+)',
+                r'(\d+)(st|nd|rd|th)\s*floor'
+            ]
+            
+            for pattern in floor_patterns:
+                match = re.search(pattern, page_text, re.IGNORECASE)
+                if match:
+                    floor_num = match.group(1)
+                    details['floor'] = f"{floor_num}ος"
+                    break
+            
+            # Calculate data completeness
+            key_fields = ['price', 'sqm', 'energy_class', 'address', 'property_type', 'rooms']
+            filled_fields = sum(1 for field in key_fields if details.get(field))
+            details['data_completeness'] = filled_fields / len(key_fields)
+            
+            # Must have critical data to be considered valid
+            if details.get('price') or details.get('sqm'):
+                return details
+            
+            return None
+            
         except Exception as e:
-            rate_test['error'] = str(e)
-        
-        return rate_test
+            logger.error(f"❌ Property details extraction failed: {e}")
+            return None
     
-    async def run_full_investigation(self):
-        """Run complete investigation"""
-        
-        logger.info("🎯 STARTING COMPREHENSIVE XE.GR INVESTIGATION")
-        
-        # 1. Website structure analysis
-        await self.investigate_website_structure()
-        
-        # 2. Search functionality analysis  
-        await self.analyze_search_functionality()
-        
-        # 3. Anti-bot measures investigation
-        await self.investigate_anti_bot_measures()
-        
-        # 4. Save results
-        await self.save_investigation_results()
-        
-        # 5. Generate recommendations
-        recommendations = self.generate_recommendations()
-        
-        return self.investigation_data, recommendations
-    
-    async def save_investigation_results(self):
-        """Save investigation results to file"""
-        
-        filename = f'outputs/xe_gr_investigation_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
-        
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(self.investigation_data, f, indent=2, ensure_ascii=False)
-        
-        logger.info(f"💾 Investigation results saved: {filename}")
-    
-    def generate_recommendations(self) -> Dict:
-        """Generate recommendations based on investigation"""
-        
-        logger.info("💡 GENERATING EXTRACTION RECOMMENDATIONS")
-        
-        recommendations = {
-            'optimal_strategy': 'unknown',
-            'technical_approach': [],
-            'risk_level': 'high',
-            'success_probability': 0,
-            'implementation_complexity': 'high'
-        }
-        
-        findings = self.investigation_data['findings']
-        
-        # Analyze findings and generate recommendations
-        if 'website_structure' in findings:
-            homepage = findings['website_structure'].get('homepage', {})
+    async def quality_analysis_and_export(self):
+        """Analyze data quality and export results"""
+        try:
+            logger.info("💎 Performing quality analysis and export...")
             
-            # Check for JavaScript frameworks
-            if 'React' in homepage.get('technologies', []):
-                recommendations['technical_approach'].append('Browser automation required (React SPA)')
-                recommendations['implementation_complexity'] = 'very_high'
+            # Filter for properties with meaningful data
+            valid_properties = [
+                prop for prop in self.extracted_properties 
+                if prop.get('price') or prop.get('sqm')
+            ]
             
-            # Check for API endpoints
-            api_endpoints = homepage.get('api_endpoints_found', [])
-            if api_endpoints:
-                recommendations['technical_approach'].append('Direct API calls possible')
-                recommendations['success_probability'] += 30
-        
-        if 'anti_bot_measures' in findings:
-            anti_bot = findings['anti_bot_measures']
+            if not valid_properties:
+                logger.warning("⚠️ No valid properties with meaningful data found")
+                return
             
-            # Check user agent blocking
-            ua_tests = anti_bot.get('user_agent_tests', {})
-            bot_detected = any(test.get('blocked', False) for test in ua_tests.values())
+            # Quality analysis
+            high_quality = [p for p in valid_properties if p.get('validation_score', 0) >= 4]
+            medium_quality = [p for p in valid_properties if p.get('validation_score', 0) == 3]
             
-            if bot_detected:
-                recommendations['technical_approach'].append('User agent rotation required')
-                recommendations['risk_level'] = 'very_high'
+            with_price = [p for p in valid_properties if p.get('price')]
+            with_sqm = [p for p in valid_properties if p.get('sqm')]
+            with_energy = [p for p in valid_properties if p.get('energy_class')]
+            with_address = [p for p in valid_properties if p.get('address')]
+            with_rooms = [p for p in valid_properties if p.get('rooms')]
             
-            # Check rate limiting
-            rate_test = anti_bot.get('rate_limit_test', {})
-            if rate_test.get('blocked_requests', 0) > 0:
-                recommendations['technical_approach'].append('Rate limiting bypass needed')
-        
-        # Determine optimal strategy
-        if recommendations['success_probability'] > 70:
-            recommendations['optimal_strategy'] = 'api_direct'
-        elif recommendations['success_probability'] > 40:
-            recommendations['optimal_strategy'] = 'browser_automation'
-        else:
-            recommendations['optimal_strategy'] = 'advanced_evasion'
-        
-        logger.info(f"🎯 Recommended strategy: {recommendations['optimal_strategy']}")
-        logger.info(f"📊 Success probability: {recommendations['success_probability']}%")
-        
-        return recommendations
+            # Neighborhood breakdown
+            kolonaki_props = [p for p in valid_properties if p.get('neighborhood') == 'Κολωνάκι']
+            pangrati_props = [p for p in valid_properties if p.get('neighborhood') == 'Παγκράτι']
+            
+            # Export to JSON
+            json_file = f'outputs/xe_gr_investigation_{self.session_id}.json'
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'investigation_metadata': {
+                        'session_id': self.session_id,
+                        'extraction_timestamp': datetime.now().isoformat(),
+                        'neighborhoods_investigated': list(self.target_neighborhoods.keys()),
+                        'total_properties': len(valid_properties),
+                        'high_quality_properties': len(high_quality),
+                        'medium_quality_properties': len(medium_quality),
+                        'method': 'deep_investigation_two_neighborhoods'
+                    },
+                    'quality_metrics': {
+                        'properties_with_price': len(with_price),
+                        'properties_with_sqm': len(with_sqm),
+                        'properties_with_energy_class': len(with_energy),
+                        'properties_with_address': len(with_address),
+                        'properties_with_rooms': len(with_rooms),
+                        'average_data_completeness': sum(p.get('data_completeness', 0) for p in valid_properties) / len(valid_properties) if valid_properties else 0
+                    },
+                    'neighborhood_breakdown': {
+                        'Κολωνάκι': len(kolonaki_props),
+                        'Παγκράτι': len(pangrati_props)
+                    },
+                    'properties': valid_properties
+                }, f, indent=2, ensure_ascii=False)
+            
+            # Export to CSV
+            csv_file = f'outputs/xe_gr_investigation_{self.session_id}.csv'
+            if valid_properties:
+                fieldnames = [
+                    'url', 'neighborhood', 'title', 'price', 'price_currency', 'sqm', 'energy_class',
+                    'address', 'property_type', 'listing_type', 'rooms', 'floor',
+                    'validation_score', 'data_completeness', 'data_quality',
+                    'discovery_method', 'extraction_timestamp'
+                ]
+                
+                with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=fieldnames)
+                    writer.writeheader()
+                    for prop in valid_properties:
+                        writer.writerow({key: prop.get(key, '') for key in fieldnames})
+            
+            # Generate comprehensive report
+            logger.info("\n" + "="*80)
+            logger.info("🔍 XE.GR DEEP INVESTIGATION - FINAL REPORT")
+            logger.info("="*80)
+            logger.info(f"✅ Total Properties Extracted: {len(valid_properties)}")
+            logger.info(f"💎 High Quality (Score ≥4): {len(high_quality)}")
+            logger.info(f"🔶 Medium Quality (Score =3): {len(medium_quality)}")
+            
+            logger.info(f"\n📊 DATA RICHNESS:")
+            logger.info(f"💰 Properties with Price: {len(with_price)}")
+            logger.info(f"📐 Properties with SQM: {len(with_sqm)}")
+            logger.info(f"⚡ Properties with Energy Class: {len(with_energy)}")
+            logger.info(f"📍 Properties with Address: {len(with_address)}")
+            logger.info(f"🏠 Properties with Room Count: {len(with_rooms)}")
+            
+            logger.info(f"\n🏘️ NEIGHBORHOOD BREAKDOWN:")
+            logger.info(f"🏛️ Κολωνάκι: {len(kolonaki_props)} properties")
+            logger.info(f"🏢 Παγκράτι: {len(pangrati_props)} properties")
+            
+            if valid_properties:
+                avg_completeness = sum(p.get('data_completeness', 0) for p in valid_properties) / len(valid_properties)
+                logger.info(f"\n📈 QUALITY METRICS:")
+                logger.info(f"📊 Average Data Completeness: {avg_completeness:.2f}")
+                
+                # Price analysis
+                prices = [p['price'] for p in valid_properties if p.get('price')]
+                if prices:
+                    avg_price = sum(prices) / len(prices)
+                    logger.info(f"💰 Average Price: €{avg_price:,.0f}")
+                    logger.info(f"💰 Price Range: €{min(prices):,.0f} - €{max(prices):,.0f}")
+                
+                # Area analysis
+                areas = [p['sqm'] for p in valid_properties if p.get('sqm')]
+                if areas:
+                    avg_area = sum(areas) / len(areas)
+                    logger.info(f"📐 Average Area: {avg_area:.1f}m²")
+                    logger.info(f"📐 Area Range: {min(areas):.0f} - {max(areas):.0f}m²")
+            
+            logger.info(f"\n💾 Results saved:")
+            logger.info(f"   📄 JSON: {json_file}")
+            logger.info(f"   📊 CSV: {csv_file}")
+            
+            # Show sample results
+            if valid_properties:
+                logger.info(f"\n🏠 SAMPLE PROPERTIES:")
+                for i, prop in enumerate(valid_properties[:5], 1):
+                    title = prop.get('title', 'No title')[:40]
+                    price = f"€{prop.get('price', 'N/A')}"
+                    sqm = f"{prop.get('sqm', 'N/A')}m²"
+                    energy = prop.get('energy_class', 'N/A')
+                    neighborhood = prop.get('neighborhood', 'N/A')
+                    score = prop.get('validation_score', 0)
+                    logger.info(f"   {i}. {neighborhood} | {title}... | {price} | {sqm} | Energy {energy} | Score {score}/6")
+            
+            logger.info("="*80)
+            
+        except Exception as e:
+            logger.error(f"❌ Quality analysis and export failed: {e}")
 
 async def main():
-    """Run xe.gr investigation"""
-    
-    investigator = XEGRInvestigator()
-    
-    investigation_data, recommendations = await investigator.run_full_investigation()
-    
-    # Print summary
-    logger.info("\n" + "="*80)
-    logger.info("🎯 INVESTIGATION SUMMARY")
-    logger.info("="*80)
-    
-    logger.info(f"💡 Optimal Strategy: {recommendations['optimal_strategy']}")
-    logger.info(f"📊 Success Probability: {recommendations['success_probability']}%")
-    logger.info(f"🔧 Implementation Complexity: {recommendations['implementation_complexity']}")
-    logger.info(f"⚠️ Risk Level: {recommendations['risk_level']}")
-    
-    logger.info("\n🛠️ Technical Approach Required:")
-    for approach in recommendations['technical_approach']:
-        logger.info(f"  • {approach}")
-    
-    logger.info("\n📄 Full investigation data saved to outputs/")
-    logger.info("🎯 Ready for targeted extraction strategy implementation")
+    """Run deep investigation on two neighborhoods"""
+    scraper = XEDeepInvestigation()
+    await scraper.run_deep_investigation()
 
 if __name__ == "__main__":
     asyncio.run(main())
