@@ -1,0 +1,21 @@
+url,neighborhood,title,energy_class,price,price_currency,sqm,property_type,listing_type,energy_confidence,energy_certificate_number,energy_consumption_kwh,data_completeness,discovery_method,extraction_timestamp
+https://www.xe.gr/property/d/enoikiaseis-katoikion/880000/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:05:31.680105
+https://www.xe.gr/property/d/poliseis-katoikion/880000/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:05:40.432045
+https://xe.gr/property/d/enoikiaseis-katoikion/880000/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:05:50.626640
+https://xe.gr/property/d/poliseis-katoikion/880000/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:05:59.545632
+https://www.xe.gr/property/d/enoikiaseis-katoikion/880025/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:06:09.323048
+https://www.xe.gr/property/d/poliseis-katoikion/880025/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,,,270.0,Διαμέρισμα,Πώληση,basic,,,0.8,energy_focused,2025-08-02T11:06:17.956649
+https://xe.gr/property/d/enoikiaseis-katoikion/880025/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:06:26.377720
+https://xe.gr/property/d/poliseis-katoikion/880025/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:06:35.481834
+https://www.xe.gr/property/d/enoikiaseis-katoikion/880050/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:06:44.181009
+https://www.xe.gr/property/d/poliseis-katoikion/880050/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:06:54.578196
+https://xe.gr/property/d/enoikiaseis-katoikion/880050/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:07:03.310077
+https://xe.gr/property/d/poliseis-katoikion/880050/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:07:12.673118
+https://www.xe.gr/property/d/enoikiaseis-katoikion/880075/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:07:21.388049
+https://www.xe.gr/property/d/poliseis-katoikion/880075/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:07:30.711522
+https://xe.gr/property/d/enoikiaseis-katoikion/880075/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:07:39.506355
+https://xe.gr/property/d/poliseis-katoikion/880075/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:07:48.526063
+https://www.xe.gr/property/d/enoikiaseis-katoikion/880100/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:07:56.874598
+https://www.xe.gr/property/d/poliseis-katoikion/880100/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:08:05.556155
+https://xe.gr/property/d/enoikiaseis-katoikion/880100/athens-kolonaki,Κολωνάκι,Ενοικιάσεις κατοικιών,A,740.0,EUR,63.0,Διαμέρισμα,Ενοικίαση,basic,,,1.0,energy_focused,2025-08-02T11:08:14.128569
+https://xe.gr/property/d/poliseis-katoikion/880100/athens-kolonaki,Κολωνάκι,Πωλήσεις κατοικιών,A,3000000.0,EUR,270.0,Διαμέρισμα,Πώληση,basic,,,1.0,energy_focused,2025-08-02T11:08:23.285916

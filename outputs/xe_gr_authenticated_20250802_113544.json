@@ -1,0 +1,10 @@
+{
+  "extraction_metadata": {
+    "session_id": "20250802_113544",
+    "extraction_timestamp": "2025-08-02T11:36:07.529006",
+    "method": "authenticated_xe_gr_extraction",
+    "authentication_successful": true,
+    "authenticated_properties_found": 0
+  },
+  "authenticated_properties": []
+}
