@@ -1,0 +1,150 @@
+{
+  "analysis_metadata": {
+    "analysis_timestamp": "2025-08-04T01:09:22.143108",
+    "total_properties": 155,
+    "sqm_range": "47m² - 299m²",
+    "overall_median_energy": "C",
+    "correlations": {
+      "sqm_energy": 0.1366868943687981,
+      "sqm_price": 0.05104066193932237,
+      "energy_price": 0.10472008137509883
+    }
+  },
+  "size_categories": {
+    "Small (≤80m²)": {
+      "count": 32,
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "median_sqm": 60.0,
+      "sqm_range": "47m² - 79m²",
+      "avg_price_per_sqm": 7235.884070171953,
+      "energy_distribution": {
+        "E": 6,
+        "F": 3,
+        "C": 11,
+        "D": 4,
+        "B": 2,
+        "C+": 3,
+        "A": 2,
+        "B+": 1
+      },
+      "best_property": {
+        "property_id": "spitogatos_1116373355",
+        "energy_class": "A",
+        "sqm": "52",
+        "price_per_sqm": 2692.3076923076924,
+        "neighborhood": "Kypseli"
+      },
+      "worst_property": {
+        "property_id": "spitogatos_1116355874",
+        "energy_class": "F",
+        "sqm": "62",
+        "price_per_sqm": 6451.612903225807,
+        "neighborhood": "Athens Center"
+      }
+    },
+    "Medium (81-150m²)": {
+      "count": 71,
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "median_sqm": 114.0,
+      "sqm_range": "81m² - 150m²",
+      "avg_price_per_sqm": 8487.344791874284,
+      "energy_distribution": {
+        "B": 9,
+        "C": 23,
+        "C+": 11,
+        "D": 12,
+        "E": 2,
+        "F": 3,
+        "A": 5,
+        "B+": 4,
+        "A+": 2
+      },
+      "best_property": {
+        "property_id": "spitogatos_1116687202",
+        "energy_class": "A+",
+        "sqm": "129",
+        "price_per_sqm": 5038.759689922481,
+        "neighborhood": "Ambelokipi"
+      },
+      "worst_property": {
+        "property_id": "spitogatos_1116185041",
+        "energy_class": "F",
+        "sqm": "99",
+        "price_per_sqm": 8333.333333333334,
+        "neighborhood": "Athens Center"
+      }
+    },
+    "Large (151-200m²)": {
+      "count": 35,
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "median_sqm": 171.0,
+      "sqm_range": "151m² - 199m²",
+      "avg_price_per_sqm": 8593.696298460118,
+      "energy_distribution": {
+        "C": 12,
+        "E": 6,
+        "D": 4,
+        "A+": 3,
+        "B": 3,
+        "C+": 1,
+        "A": 2,
+        "F": 3,
+        "B+": 1
+      },
+      "best_property": {
+        "property_id": "spitogatos_1116004344",
+        "energy_class": "A+",
+        "sqm": "178",
+        "price_per_sqm": 6460.6741573033705,
+        "neighborhood": "Exarchia"
+      },
+      "worst_property": {
+        "property_id": "spitogatos_1116801209",
+        "energy_class": "F",
+        "sqm": "186",
+        "price_per_sqm": 3225.8064516129034,
+        "neighborhood": "Petralona"
+      }
+    },
+    "Extra Large (>200m²)": {
+      "count": 17,
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "median_sqm": 233.0,
+      "sqm_range": "208m² - 299m²",
+      "avg_price_per_sqm": 9104.703363893328,
+      "energy_distribution": {
+        "A+": 2,
+        "D": 3,
+        "B": 2,
+        "B+": 2,
+        "E": 2,
+        "C": 4,
+        "C+": 1,
+        "A": 1
+      },
+      "best_property": {
+        "property_id": "spitogatos_1116258354",
+        "energy_class": "A+",
+        "sqm": "230",
+        "price_per_sqm": 10000.0,
+        "neighborhood": "Koukaki"
+      },
+      "worst_property": {
+        "property_id": "spitogatos_1116385155",
+        "energy_class": "E",
+        "sqm": "233",
+        "price_per_sqm": 5686.695278969957,
+        "neighborhood": "Athens Center"
+      }
+    }
+  },
+  "key_insights": {
+    "size_energy_independence": true,
+    "price_premium_factor": 1.2582710385625298,
+    "energy_efficiency_driver": "building_quality_not_size"
+  }
+}
