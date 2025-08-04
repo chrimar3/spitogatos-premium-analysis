@@ -1,0 +1,63 @@
+name: Athens Real Estate Analysis
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run analysis weekly on Sundays at 2 AM UTC
+    - cron: '0 2 * * 0'
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run correlation analysis
+      run: |
+        python analyzers/sqm_energy_correlation_analyzer.py
+    
+    - name: Run comprehensive analysis
+      run: |
+        python analyzers/elegant_comprehensive_block_analyzer.py
+    
+    - name: Archive analysis results
+      uses: actions/upload-artifact@v3
+      with:
+        name: analysis-results
+        path: outputs/
+        retention-days: 30
+    
+    - name: Create analysis summary
+      run: |
+        echo "## Analysis Summary" > analysis_summary.md
+        echo "Analysis completed on $(date)" >> analysis_summary.md
+        echo "Generated files:" >> analysis_summary.md
+        ls -la outputs/*.json | tail -5 >> analysis_summary.md
+    
+    - name: Comment PR with results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const summary = fs.readFileSync('analysis_summary.md', 'utf8');
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: summary
+          });
