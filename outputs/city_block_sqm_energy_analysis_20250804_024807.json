@@ -1,0 +1,288 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-08-04T02:48:07.173043",
+    "total_properties": 150,
+    "blocks_analyzed": 10,
+    "overall_median_sqm": 86.5,
+    "overall_median_energy_class": "C+"
+  },
+  "block_analysis": {
+    "Κολωνάκι": {
+      "total_properties": 18,
+      "median_sqm": 109.5,
+      "mean_sqm": 114.7,
+      "sqm_range": "13.0m² - 195.0m²",
+      "median_energy_class": "A",
+      "median_energy_numeric": 5.5,
+      "energy_distribution": {
+        "A": 5,
+        "B+": 2,
+        "A+": 4,
+        "B": 2,
+        "C+": 5
+      },
+      "median_price_per_sqm": 3999.19,
+      "best_property": {
+        "property_id": "SPT_1117816063",
+        "energy_class": "A+",
+        "sqm": 13.0,
+        "price_per_sqm": 28384.62
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001005",
+        "energy_class": "C+",
+        "sqm": 128.0,
+        "price_per_sqm": 32.68
+      }
+    },
+    "Πλάκα": {
+      "total_properties": 12,
+      "median_sqm": 71.5,
+      "mean_sqm": 75.9,
+      "sqm_range": "41.0m² - 138.0m²",
+      "median_energy_class": "B",
+      "median_energy_numeric": 4.5,
+      "energy_distribution": {
+        "B+": 2,
+        "B": 3,
+        "A": 4,
+        "C+": 3
+      },
+      "median_price_per_sqm": 24.44,
+      "best_property": {
+        "property_id": "SPT_1118001044",
+        "energy_class": "A",
+        "sqm": 60.0,
+        "price_per_sqm": 29.03
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001045",
+        "energy_class": "C+",
+        "sqm": 80.0,
+        "price_per_sqm": 25.73
+      }
+    },
+    "Κουκάκι": {
+      "total_properties": 16,
+      "median_sqm": 86.5,
+      "mean_sqm": 88.1,
+      "sqm_range": "52.0m² - 134.0m²",
+      "median_energy_class": "B",
+      "median_energy_numeric": 4.0,
+      "energy_distribution": {
+        "C": 3,
+        "B": 4,
+        "A": 3,
+        "C+": 2,
+        "B+": 4
+      },
+      "median_price_per_sqm": 2267.1,
+      "best_property": {
+        "property_id": "SPT_1118001082",
+        "energy_class": "A",
+        "sqm": 86.0,
+        "price_per_sqm": 13.07
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001080",
+        "energy_class": "C",
+        "sqm": 134.0,
+        "price_per_sqm": 3194.74
+      }
+    },
+    "Παγκράτι": {
+      "total_properties": 16,
+      "median_sqm": 115.0,
+      "mean_sqm": 105.9,
+      "sqm_range": "55.0m² - 145.0m²",
+      "median_energy_class": "B",
+      "median_energy_numeric": 3.5,
+      "energy_distribution": {
+        "B": 5,
+        "C": 5,
+        "C+": 3,
+        "B+": 2,
+        "A": 1
+      },
+      "median_price_per_sqm": 18.66,
+      "best_property": {
+        "property_id": "SPT_1118001021",
+        "energy_class": "A",
+        "sqm": 98.0,
+        "price_per_sqm": 15.76
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001015",
+        "energy_class": "C",
+        "sqm": 131.0,
+        "price_per_sqm": 9.97
+      }
+    },
+    "Αμπελόκηποι": {
+      "total_properties": 15,
+      "median_sqm": 107.0,
+      "mean_sqm": 102.5,
+      "sqm_range": "60.0m² - 150.0m²",
+      "median_energy_class": "C+",
+      "median_energy_numeric": 3.0,
+      "energy_distribution": {
+        "B": 6,
+        "D": 3,
+        "C": 4,
+        "C+": 2
+      },
+      "median_price_per_sqm": 1411.32,
+      "best_property": {
+        "property_id": "SPT_1118001127",
+        "energy_class": "B",
+        "sqm": 107.0,
+        "price_per_sqm": 1147.76
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001129",
+        "energy_class": "D",
+        "sqm": 63.0,
+        "price_per_sqm": 11.9
+      }
+    },
+    "Ψυρρή": {
+      "total_properties": 14,
+      "median_sqm": 72.0,
+      "mean_sqm": 68.9,
+      "sqm_range": "35.0m² - 100.0m²",
+      "median_energy_class": "C+",
+      "median_energy_numeric": 3.0,
+      "energy_distribution": {
+        "B": 5,
+        "D": 4,
+        "C+": 4,
+        "C": 1
+      },
+      "median_price_per_sqm": 2110.66,
+      "best_property": {
+        "property_id": "SPT_1118014212",
+        "energy_class": "B",
+        "sqm": 100.0,
+        "price_per_sqm": 1400.0
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001054",
+        "energy_class": "D",
+        "sqm": 88.0,
+        "price_per_sqm": 3037.91
+      }
+    },
+    "Μοναστηράκι": {
+      "total_properties": 13,
+      "median_sqm": 53.0,
+      "mean_sqm": 53.4,
+      "sqm_range": "33.0m² - 77.0m²",
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "energy_distribution": {
+        "B": 4,
+        "C+": 2,
+        "E": 4,
+        "C": 1,
+        "D": 2
+      },
+      "median_price_per_sqm": 15.29,
+      "best_property": {
+        "property_id": "SPT_1118001067",
+        "energy_class": "B",
+        "sqm": 71.0,
+        "price_per_sqm": 13.55
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001069",
+        "energy_class": "E",
+        "sqm": 48.0,
+        "price_per_sqm": 11.48
+      }
+    },
+    "Πετράλωνα": {
+      "total_properties": 15,
+      "median_sqm": 122.0,
+      "mean_sqm": 116.9,
+      "sqm_range": "66.0m² - 157.0m²",
+      "median_energy_class": "C",
+      "median_energy_numeric": 2.0,
+      "energy_distribution": {
+        "D": 1,
+        "B": 5,
+        "C": 6,
+        "E": 1,
+        "C+": 2
+      },
+      "median_price_per_sqm": 1475.85,
+      "best_property": {
+        "property_id": "SPT_1118001097",
+        "energy_class": "B",
+        "sqm": 152.0,
+        "price_per_sqm": 1814.52
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001100",
+        "energy_class": "E",
+        "sqm": 126.0,
+        "price_per_sqm": 1679.18
+      }
+    },
+    "Εξάρχεια": {
+      "total_properties": 15,
+      "median_sqm": 72.0,
+      "mean_sqm": 78.8,
+      "sqm_range": "39.0m² - 115.0m²",
+      "median_energy_class": "D",
+      "median_energy_numeric": 1.0,
+      "energy_distribution": {
+        "C+": 4,
+        "C": 2,
+        "E": 5,
+        "D": 3,
+        "B": 1
+      },
+      "median_price_per_sqm": 1762.47,
+      "best_property": {
+        "property_id": "SPT_1118001040",
+        "energy_class": "B",
+        "sqm": 66.0,
+        "price_per_sqm": 2783.06
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001031",
+        "energy_class": "E",
+        "sqm": 78.0,
+        "price_per_sqm": 2438.09
+      }
+    },
+    "Κυψέλη": {
+      "total_properties": 16,
+      "median_sqm": 85.5,
+      "mean_sqm": 87.7,
+      "sqm_range": "62.0m² - 130.0m²",
+      "median_energy_class": "D",
+      "median_energy_numeric": 1.0,
+      "energy_distribution": {
+        "C+": 4,
+        "E": 4,
+        "C": 3,
+        "D": 3,
+        "F": 2
+      },
+      "median_price_per_sqm": 9.66,
+      "best_property": {
+        "property_id": "SPT_1118001111",
+        "energy_class": "C+",
+        "sqm": 62.0,
+        "price_per_sqm": 1773.11
+      },
+      "worst_property": {
+        "property_id": "SPT_1118001123",
+        "energy_class": "F",
+        "sqm": 79.0,
+        "price_per_sqm": 7.3
+      }
+    }
+  }
+}
